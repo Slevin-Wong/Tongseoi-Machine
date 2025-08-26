@@ -1,7 +1,7 @@
 ### **“创意池”高级时尚人像生成指令集**
-### **Vogue-Level Creative Pool: Master Prompt v11.0 (Integration Edition)**
+### **Vogue-Level Creative Pool: Master Prompt v12.0 (Urban Poetics Edition)**
 
-**Preamble:** This version integrates deep learnings from a new corpus of 25 proven, high-stability prompts, including a significant number of cosplay cases. It establishes a new foundational "Charm Framework" to guide concept creation, refines stability protocols based on empirical data, and codifies newly identified successful patterns into actionable rules. This is the definitive and complete instruction set.
+**Preamble:** This version establishes new high-priority "Ironclad Rules," refines stability protocols by adjusting element frequencies, and most significantly, integrates a massive new "Urban Street Poetics" creative module. This module provides a deep, structured vocabulary for generating sophisticated urban narratives, dramatically expanding the system's thematic range.
 
 ---
 
@@ -41,7 +41,7 @@ The final aesthetic must always balance **"Mainstream Masculine Appeal"** with a
 * **Facial Features:** `a beautiful young woman with delicate and charming facial features`.
 * **Race Options & Frequency Control:** The default character is **human**. To enhance creative diversity, the following non-human attributes are permitted but **MUST** be used with **low frequency (压低频率)**:
     * **Permitted:** `elf ears`, `kemonomimi` (e.g., fox, cat, wolf ears), `angel halo/wings`.
-    * **Absolutely Prohibited:** The character **MUST NOT** have `horns`.
+    * **Absolutely Prohibited:** `horns`, `facial masks`.
 
 #### **2.2. 身体轮廓与皮肤质感 (Body Silhouette & Skin Texture)**
 * **Core Physique:** The model is **ALWAYS** described as: `a slender, toned woman with a captivating, naturally curvaceous hourglass figure`.
@@ -57,7 +57,7 @@ The final aesthetic must always balance **"Mainstream Masculine Appeal"** with a
 * **Approved List:**
     * `featuring a beautiful swan neck (天鹅颈)`
     * `featuring prominent collarbones (锁骨突出)`
-    * `featuring a beautiful butterfly back (蝴蝶背)`
+    * `featuring a well-defined, elegant back (优雅的美背线条)` **(REVISED)**
     * `featuring sharp right-angle shoulders (直角肩)`
     * `featuring defined athletic abs (马甲线)`
     * `featuring a slim waistline (细腰)`
@@ -67,7 +67,7 @@ The final aesthetic must always balance **"Mainstream Masculine Appeal"** with a
 
 #### **2.3. 发型与发色 (Hair Style & Color)**
 * **Guiding Principle:** Hair is a primary tool for storytelling and must serve the core concept.
-* **Length & Style:** The preferred default is `waist-length`. Other lengths (`bob`, `shoulder-length`, etc.) and styles (`updo`, `pigtails`, `cornrows`, `loose braid`) are permitted if the concept requires it.
+* **Length & Style:** The character's hair is **ALWAYS** `waist-length`. Styles like `flowing`, `loose braid`, `pigtails`, or `updo` are permitted, but the fundamental length must remain `waist-length`. Other lengths are prohibited.
 * **2.3.1. 双轨色彩哲学 (Dual Color Philosophy)**
     * **Aesthetic Track (美学轨道):** The default and preferred track for high-fashion concepts. Prioritizes creative, vibrant coloring techniques like **`Ombre`**, `Panel Highlights`, `Dip Dye`, etc., using the **Candy Color Palettes**.
     * **Narrative Track (叙事轨道):** Used for concepts requiring realism, specific character archetypes, or a grounded atmosphere. This track utilizes **natural colors** (`natural, gentle brown`, `natural black`, `sun-bleached blonde`).
@@ -142,16 +142,16 @@ The final aesthetic must always balance **"Mainstream Masculine Appeal"** with a
 * **Narrative Lighting:** Use light to tell a story (e.g., `sunlight streams through a broken roof`, `lit by the full moon through the glass ceiling`).
 
 #### **4.4. 场景设定 (Scene Setting)**
-* **Core Principle:** Scenes must be "High-Identity," serving the core narrative. Prioritize "Spectacle Landscapes" and "Dramatized Micro-Environments."
+* **Core Principle:** Scenes must be "High-Identity," serving the core narrative. Prioritize "Spectacle Landscapes" and "Dramatized Micro-Environments.". The new **Urban Street Poetics Module (Section 7.1)** is now a primary source for scene generation.
 * **Clarity Mandate (Enhanced):** AVOID backgrounds with high-frequency, messy details. Specifically, **`do not generate scenes with a table covered in many different small objects`** as this leads to visual instability.
 * **Prohibited Scenes:**
     * `Factory-like spaces`, `Bio-labs`, `Crystal/Ore Environments` (unless a stylized, ethereal garden), `Control Rooms/Cockpits`.
-    * `Mushroom environments (出现蘑菇)`.
-    * Scenes centered on `sculptures/sculpture works (雕塑/雕塑作品)`.
+    * `Mushroom environments`.
+    * Scenes centered on `sculptures/sculpture works`.
 * **Discouraged Scenes & Themes (Suppress Frequency):**
-    * **High-Frequency Scenes to Suppress:** `Planetarium/Telescope`, `Library/Bookshelves`, `Laboratory`, `Wine Cellar/Vineyard`, `Watering plants`, `Chef/Kitchen`.
-    * **High-Instability Themes to Discourage:** `Archery (拉弓射箭)`, `Blacksmith/Forging (铁匠/锻造)`, `Doctor/Medical Treatment (医生/治疗)`, `Antiquity Restoration/Watchmaking/Operating precise instruments or looms (文物修复/钟表维修...)`.
-    * **Other Discouraged Themes:** `Art Galleries`, `Gambling/Poker`, `Day of the Dead festival`.
+    * **High-Frequency Scenes to Suppress:** `Planetarium/Telescope`, `Library/Bookshelves`, `Laboratory`, `Wine Cellar/Vineyard`, `Watering plants`, `Chef/Kitchen`,`Planetarium/Telescope`, `Library/Bookshelves`, `Laboratory`, `Wine Cellar/Vineyard`.
+    * **High-Instability Themes to Discourage:** `Archery`, `Blacksmith/Forging`, `Doctor/Medical Treatment`, `Antiquity Restoration/Watchmaking/Operating precise instruments or looms`,`Archaeological excavation`, `Steampunk/gear mechanisms`, `Complex food preparation equipment`, `Archery`, `Blacksmith/Forging`, `Doctor/Medical Treatment`, `Antiquity Restoration/Watchmaking`.
+    * **Other Discouraged Themes:** `Art Galleries`, `Gambling/Poker`, `Day of the Dead festival`,`Art Galleries`, `Gambling/Poker`, `Day of the Dead festival`, `Veterinarian`.
 
 ---
 
@@ -229,5 +229,37 @@ The final aesthetic must always balance **"Mainstream Masculine Appeal"** with a
 * **Divergent Thinking Protocol:** Actively avoid creative ruts by using analogy, principle recombination, and controlled experimentation to generate novel yet stable concepts.
 * **Fairness:** Ensure all elements in the creative pool have an even chance of being selected. Do not develop a bias for recently used items, unless suppressing frequency as noted.
 * **Innovation:** Each new prompt generation **MUST** create a novel combination of **`[Scene] x [Hairstyle] x [Wardrobe]`**. Do not repeat a highly similar concept in consecutive generations.
+
+### **第七部分：核心创意模组 (Core Creative Modules) - NEW**
+
+#### **7.1. 创意模组：都市街头诗学 (Creative Module: Urban Street Poetics)**
+* **Guiding Principle:** This module provides the vocabulary and conceptual framework for creating high-fashion narratives within urban environments. Combine elements from these categories to build a unique, atmospheric scene.
+
+##### **7.1.1. Urban Functional Zones**
+* **Central Business District (CBD):** `glass-clad skyscrapers`, `elevated pedestrian walkways`, `bustling thoroughfares`, `subterranean shopping arcades`, `LED-lit plazas pulsating with digital advertisements`.
+* **Historic & Cultural Quarters:** `timeworn residential blocks`, `cobblestone alleys bearing the patina of age`, `vibrant graffiti murals`, `retro barbershops frozen in nostalgia`.
+* **Transportation Nodes:** `subway platforms humming with activity`, `the underbelly of an overpass`, `labyrinthine bus terminals`, `the kinetic periphery of a train station`, `the chiaroscuro threshold of a tunnel entrance`.
+* **Residential Enclaves:** `smoke-scented alleyways`, `laundry fluttering like urban banners`, `corner convenience store`, `a pickup basketball game in a neighborhood park`, `nocturnal street-food stalls under makeshift halos of light`.
+
+##### **7.1.2. Architectural Elements & Structures**
+* **Verticality & Geometry:** `the razor-edged facade of a high-rise`, `soaring bridge pylons`, `a wrought-iron staircase spiraling into oblivion`, `skeletal scaffolding`, `the brutalist poetry of reinforced concrete`.
+* **Horizontality & Continuity:** `zebra stripes of a crosswalk`, `infinite sidewalks`, `ribbed guardrails`, `an elongated corridor dissolving into perspective`, `liquid mirrors of reflected waterways`. 
+* **Texture & Decay:** `crumbling brickwork`, `oxidized iron gates`, `peeling paint revealing layered pasts`, `derelict machinery fossilized by time`, `walls transformed into anarchic canvases by street art`.
+* **Modernity & Sheen:** `glacially smooth curtain walls`, `metallic exteriors catching the sky’s mood`, `polished marble floors doubling the world`, `obsidian reflecting pools`.
+
+##### **7.1.3. Temporal Lightscapes**
+* **Daylight:**
+    * **Noon:** `stark chiaroscuro carving monolithic shadows`, `a chiaroscuro ballet of urban rigor`.
+    * **Golden Hours:** `gilded, honeyed luminescence stretching silhouettes into elongated whispers`, `cinematic melancholy or wistful reverie`.
+    * **Overcast/Rain:** `diffused glow muting edges`, `post-rain puddles amplifying chromatic depth`, `noirish ambiguity or languid introspection`.
+* **Nocturnal Illumination:**
+    * **Neon & Signage:** `electrifying veins of a cyberpunk dreamscape`, `psychedelic reveries`.
+    * **Streetlights & Traffic:** `rivers of molten light`, `silhouettes in motion`, `the dynamism of nightlife’s pulse`.
+    * **Artificial Flares:** `staccato bursts of off-camera flashes sculpting dramatic tableaux from darkness`.
+
+##### **7.1.4. Human Vignettes & Ambience**
+* **Slice-of-Life:** `the unvarnished poetry of a wet market`, `the sizzle of a sidewalk grill`, `commuters suspended in waiting`, `a busker weaving soundtracks into the air`.
+* **Street Artivism:** `a monumental mural shouting a silent manifesto`, `guerrilla graffiti encoding rebellion`, `an avant-garde installation challenging passersby`.
+* **Urban Athletics:** `the gritty ballet of a skatepark`, `an asphalt court echoing with sneaker squeaks`, `gravity-defying feats against a graffiti backdrop`.
 
 如果你已经理解了需求，请开始书写，一批32条，并且在每一条最前面加上编号（方式你来决定）和vibe描述（30个中文字）
