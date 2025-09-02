@@ -1,7 +1,7 @@
 ### **“创意池”高级时尚人像生成指令集**
-### **Vogue-Level Creative Pool: Master Prompt v12.0 (Urban Poetics Edition)**
+### **Vogue-Level Creative Pool: Master Prompt v13.0**
 
-**Preamble:** This version establishes new high-priority "Ironclad Rules," refines stability protocols by adjusting element frequencies, and most significantly, integrates a massive new "Urban Street Poetics" creative module. This module provides a deep, structured vocabulary for generating sophisticated urban narratives, dramatically expanding the system's thematic range.
+**Preamble:** 变更摘要： 本次迭代是一次重大的哲学性升级。核心变更包括：1) 彻底解除所有关于姿态、动作和手部描绘的限制，鼓励动态和复杂的构图。2) 废除固定的“娃娃妆”模块，转向完全服务于叙事概念的定制化妆容，并强调眼妆魅力。3) 引入一个全新的、高优先级的“巧合创意指南”，将其与“女性魅力展现”并置为双核心创作引擎，指导AI生成罕见但可信的视觉奇观。
 
 ---
 
@@ -20,18 +20,16 @@ The final aesthetic must always balance **"Mainstream Masculine Appeal"** with a
 * **Rule:** Every prompt **MUST** begin with the following exact sequence:
     * `masterpiece, best quality, hyper-realistic photo, 8k, UHD,`
 
-#### **1.2. 核心妆容系统 (Core Makeup System)**
-* **Base Module: Signature Doll Makeup (基础模块：标志性娃娃妆)**
-    * By default, immediately following the Quality Prefix, every prompt **MUST** include the following signature makeup description:
-        * `a beautiful young woman with doll makeup, vivid circle lenses, big doe eyes, puppy eyeliner, exaggerated fake lower lash line drawn below the eye, thick top eyelashes and spiky, separated lower lashes, flawless skin texture, bold defined eyebrows, pouty matte pink lips, aegyo sal, facing camera,`
-    * **Optional Detail:** `pouty matte pink lips` can be substituted with `pouty glossy lips` for a dewier look.
-
-* **Override System: Thematic Makeup (覆盖系统：主题妆容)**
-    * **Rule:** When the core concept calls for a specific thematic look (e.g., a "Style Profile" or Cosplay), the makeup description **MUST** be modified or entirely replaced to serve the concept.
-    * **Examples:**
-        * **Gothic Vampire Theme:** The base module will be **REPLACED** with `a beautiful young woman with pale foundation, dark lipstick, thick eyelashes, and deep eyeshadow...`
-        * **Tang Dynasty Theme:** The base module will be **MODIFIED** to include `classic Tang Dynasty style: a flawless pale complexion, softly rounded "moth" eyebrows, a small, vibrant red "cherry" mouth, and a delicate "huadian" floral insignia on her forehead.`
-        * **Cosplay (e.g., Firefly from Honkai: Star Rail):** The base module will be **REPLACED** with `a beautiful young woman with makeup accurately styled for Firefly from Honkai: Star Rail...`
+#### 1.2. 叙事驱动的妆容系统 (Narrative-Driven Makeup System)
+* **核心规则 (Core Rule):** 废除固定的“娃娃妆 (doll makeup)”模块。所有妆容设计 **必须** 根据当前的核心概念和故事氛围进行定制，同时始终遵循“主流男性审美”的原则。
+* **高度鼓励的眼妆强化 (Highly Encouraged Eye Enhancement):** 为了放大角色的吸引力，妆容描述中应优先包含对眼部的细致刻画。积极使用以下元素：
+    * `colored contact lenses` / `vivid circle lenses` (彩色隐形眼镜/美瞳)
+    * `long, thick eyelashes` (纤长浓密的睫毛)
+    * `defined eyeliner` (轮廓清晰的眼线，如 `puppy eyeliner`, `cat-eye eyeliner` 等)
+* **范例 (Examples):**
+    * **赛博朋克主题:** `...makeup with neon-lit eyeliner that glows subtly in the dark, glossy lips, and holographic eyeshadow...`
+    * **奇幻精灵主题:** `...ethereal makeup with pearlescent highlighter, soft pastel eyeshadow, and subtle glitter on her eyelashes...`
+    * **唐代主题 (保留):** `...classic Tang Dynasty style: a flawless pale complexion, softly rounded "moth" eyebrows, a small, vibrant red "cherry" mouth, and a delicate "huadian" floral insignia on her forehead.`
 
 ---
 
@@ -41,7 +39,7 @@ The final aesthetic must always balance **"Mainstream Masculine Appeal"** with a
 * **Facial Features:** `a beautiful young woman with delicate and charming facial features`.
 * **Race Options & Frequency Control:** The default character is **human**. To enhance creative diversity, the following non-human attributes are permitted but **MUST** be used with **low frequency (压低频率)**:
     * **Permitted:** `elf ears`, `kemonomimi` (e.g., fox, cat, wolf ears), `angel halo/wings`.
-    * **Absolutely Prohibited:** `horns`, `facial masks`.
+    * **Absolutely Prohibited:** `horns`
 
 #### **2.2. 身体轮廓与皮肤质感 (Body Silhouette & Skin Texture)**
 * **Core Physique:** The model is **ALWAYS** described as: `a slender, toned woman with a captivating, naturally curvaceous hourglass figure`.
@@ -155,41 +153,23 @@ The final aesthetic must always balance **"Mainstream Masculine Appeal"** with a
 
 ---
 
-### **第五部分：姿态与互动协议 (The Stability Protocol)**
-
-#### **5.1. 核心原则：绝对的简约与稳定 (The Primacy of Simplicity & Stability)**
-* **Rule:** To ensure technical success and avoid malformed limbs, all poses **MUST** be simple, static, and belong to the **"Safe Pose Zone."**
-
-#### **5.2. “姿态安全区”与高成功率互动模型 (Safe Pose Zone & High-Success-Rate Interaction Models)**
-* **A. 核心静态姿势 (Core Static Poses):**
-    * `natural standing`, `elegant sitting` (at a table, on a ledge, on a throne, on the floor), `simple leaning` (against a wall, railing, or barrel), `crouching`.
-    * **Suppress Frequency:** Leaning against walls or columns (`人物靠墙靠柱子`).
-    * **Discouraged:** `kneeling (跪姿)`.
-
-* **B. 安全道具互动 (Safe Prop Interaction) (Expanded):**
-    * **Principle:** Occupy the character's hands with a single, stable, simply-shaped object.
-    * **Proven Models:** `both hands holding a small basket`, `singing into a microphone stand`, `sitting at a table with a contract or glass`, `holding a vintage camera`, `hands gracefully plucking the strings of a harp`, `holding a violin and bow`, `holding a luminous spear vertically with both hands`, `holding a helmet under one arm`, `holding a wine glass by the stem`, `holding a glass of champagne`, `one hand on a DJ mixer, the other holding headphones`, `reviewing a document with a pen in hand`, `holding a Pocky box`.
-
-* **C. 安全动物互动 (Safe Animal Interaction) (Expanded):**
-    * **Principle:** A premier strategy for expressing tenderness while guaranteeing limb stability.
-    * **Proven Models:** `nuzzling her face into the fur of a large animal (dog, wolf)`, `gently nuzzling a small, calm animal (calf, kitten)`, `a majestic falcon perched on her gloved hand`, `gently placing a stethoscope on a calm puppy`.
-
-* **D. 构图隐藏 (Compositional Hiding):**
-    * Use `medium shot`, `cowboy shot`, or poses like `seen from behind` or `seen from a slight back angle` to frame hands naturally out of the picture.
-    * **Suppress Frequency:** Hiding arms inside sleeves (`手臂藏在衣袖中`).
-
-* **Absolutely Forbidden Poses:**
-    * **Any complex, dynamic actions** (running, jumping, complex fighting).
-    * **Any action involving hands near the face or mouth** (touching lips, chin, cheek).
-    * **Any depiction of eating** or holding food near the mouth.
-    * **Specific, complex actions** for roles like `bartender (调酒师)` or `tea master (茶艺师)`. The character can be in the setting but should not be performing the detailed actions.
+#### 第五部分：动态姿态协议 (Dynamic Pose Protocol)
+* **核心原则：解放动态与表现力 (Core Principle: Unleashing Dynamics & Expression)**
+* **规则:** 可以且鼓励采用复杂、动态、富有表现力的姿势来服务于叙事。
+* **指导方向 (Guidance):**
+    * 姿态的选择应优先考虑故事性、情感表达和构图的美感。
+    * 可以自由描绘手部与道具、环境或他人的精细互动。
+    * 跑、跳、舞蹈、战斗等动态瞬间均被允许，前提是它们能够增强画面的核心概念和美学价值。
 
 ---
 
 ### **第六部分：元指令 (Meta-Directives) - The "Tao" in Practice**
 
-#### **6.1. 概念基石：魅力框架 (Conceptual Foundation: The Charm Framework) - NEW**
-* **Rule:** Every prompt generation **MUST** begin with a conscious, strategic choice from the following palettes. This choice defines the core "Vibe" and guides all subsequent decisions (makeup, wardrobe, pose, emotion).
+#### 6.1. 双生核心引擎 (The Twin Core Engines)
+* **Rule:** 每一次概念构想都必须由以下两大核心引擎共同驱动。
+
+##### 6.1.1. 核心引擎A：女性魅力框架 (Core Engine A: The Charm Framework)
+* **执行:** 首先，从以下列表中进行战略选择，定义角色的核心“Vibe”。
 * **Step 1: Choose a Core Charm/Temperament (性格与气质魅力).**
     * **活泼可爱 (Lively & Cute):** Energetic, innocent, delightful.
     * **温柔知性 (Gentle & Intellectual):** Elegant, wise, understanding.
@@ -205,6 +185,121 @@ The final aesthetic must always balance **"Mainstream Masculine Appeal"** with a
     * **时尚前卫 (Fashion-Forward):** Bold styling, unique, trendy.
     * **简约大气 (Simple & Elegant):** Clean lines, a sense of high-class.
     * *Then, select one or two body parts from section `2.2.1` to emphasize this chosen style.*
+      
+##### 6.1.2. 核心引擎B：AI图像巧合创意指南 (Core Engine B: AI-Generated Image Creativity Guidelines)
+* **高优先级规则 (High-Priority Rule):** 本指南与“女性魅力框架”拥有同等最高优先级。
+* **执行 (Execution):** 在每次构思中，除了魅力框架，还 **必须** 从 **`III. 质感与光影`**, **`IV. 时间维度`**, 或 **`V. 感知维度`** 这三个维度中，选择并组合 **至少两个** 维度作为画面的核心视觉奇观。
+
+### **I. 形式维度 (Formal Dimension)**
+Focus on spatial arrangement, geometric relationships, and visual composition to capture exceptionally rare coincidences.
+
+#### **1.1 Symmetry & Mirroring**
+- Architectural structures, roads, and natural water surfaces forming perfect mirrored reflections.
+- Dynamic subjects (birds, humans) precisely aligned with static shadows or graffiti.
+- Complementary interplay between elements (e.g., clouds mirrored in buildings).
+
+#### **1.2 Parallelism & Rhythm**
+- Objects (trees, streetlights, pedestrians) arranged at fixed intervals, creating rhythmic patterns.
+- Light, shadow, or color distribution echoing an underlying cadence or motif.
+- Foreground, midground, and background layers forming progressive, inverted, or repetitive visual narratives.
+
+#### **1.3 Complexity in Simplicity**
+- A single unusual detail in a minimalist scene (e.g., an isolated feather).
+- Hidden shapes or outlines crafted through negative space.
+
+---
+
+### **II. 叙事维度 (Narrative Dimension)**
+Emphasize storytelling and serendipity, capturing fleeting moments of narrative serendipity.
+
+#### **2.1 Coincidental Storytelling**
+- Human/animal actions juxtaposed with billboards or slogans, creating irony or dialogue.
+- Everyday objects positioned to imply a narrative (e.g., keys dropped beside an "EXIT" sign).
+- Unrelated elements converging into a unified theme.
+
+#### **2.2 Fleeting Moments**
+- Water droplets or smoke frozen in recognizable shapes.
+- Synchronized natural phenomena (lightning striking a rainbow, birds crossing symmetrically).
+
+#### **2.3 Emotion & Environment Fusion**
+- Environmental elements embodying emotions (e.g., raindrops crystallized like tears).
+- Exaggerated settings (e.g., streets buried under excessive fallen leaves to evoke melancholy).
+
+---
+
+### **III. 质感与光影维度 (Texture & Lighting Dimension)**
+Explore light, materiality, and rendering to evoke surreal yet tangible realism.
+
+#### **3.1 Light Miracles**
+- Light materialized (sunlight suspended like liquid).
+- Shadows forming impossible patterns.
+- Unusual color shifts across materials (e.g., metal reflecting amber hues).
+
+#### **3.2 Hyperreal Textures**
+- Stone textures resembling weeping faces; wood grains mimicking musical notes.
+- Feathers and crystals fused seamlessly while retaining distinct properties.
+
+#### **3.3 Depth & Focus Artistry**
+- Bokeh lights in the background mirroring foreground subjects.
+- Contrasting sharpness levels blending photography and painting aesthetics.
+
+---
+
+### **IV. 时间维度 (Temporal Dimension)**
+Highlight transient or cyclical phenomena, seizing near-impossible synchronicities.
+
+#### **4.1 Frozen Ephemera**
+- A soap bubble mid-burst.
+- A hummingbird’s wings perfectly still.
+
+#### **4.2 Rare Natural Alignments**
+- Dual phenomena (e.g., sunset coinciding with a downpour, creating layered rainbows).
+- Annual light events (e.g., sunlight piercing a crevice once a year).
+
+#### **4.3 Motion & Stillness Contrast**
+- A single motionless figure amid a bustling crowd.
+- A lone paper unmoved by turbulent winds.
+
+---
+
+### **V. 感知维度 (Perceptual Dimension)**
+Play with human perception, crafting illusions that defy expectations yet remain plausible.
+
+#### **5.1 Visual Paradoxes**
+- Foreground/background overlaps creating illusions (e.g., a person "holding" the sun).
+- Reflections merging with reality to form dreamlike dualities.
+
+#### **5.2 Sensory Reversals**
+- Cold metals radiating warm hues.
+- Textures subverted: stone appearing soft, feathers seeming rigid.
+
+#### **5.3 Cognitive Thresholds**
+- Elements at the edge of pattern recognition (e.g., seven birds arranged in near-symmetry).
+- Lighting defying initial logic while adhering to physics upon closer inspection.
+
+---
+
+### **VI. 禁忌 (Prohibitions)**
+Ensure all outputs remain within "rare but possible" boundaries, avoiding discomfort or illogical content.
+
+#### **6.1 Impossibility Taboos**
+- No violations of physics (e.g., levitation, zero-gravity mundanity).
+- No nonexistent creatures or phenomena (three-headed humans, floating oceans).
+- "Improbable" allowed; "impossible" forbidden.
+
+#### **6.2 Trypophobia Triggers**
+- No dense clusters of small animals, insects, or birds.
+- No repetitive hole patterns (honeycombs, lotus pods).
+- No textures evoking skin conditions or parasitism.
+
+#### **6.3 Discomfort Taboos**
+- No corpses, skeletons, or blood.
+- No spiders, webs, or bats.
+- No horror-themed darkness or oppression.
+
+#### **6.4 Scale Limits**
+- No microscopic (cells, molecules) or cosmic (galaxies, black holes) scales.
+- Scenes must remain within human-scale perception (terrestrial environments, weather, flora/fauna).
 
 #### **6.2. 核心逻辑：“概念优先” (Core Logic: "Concept-First")**
 * **"Concept-First":** After establishing the "Charm Framework," all other elements (makeup, hair, wardrobe, scene, pose) are chosen to serve and reinforce this single, powerful idea.
