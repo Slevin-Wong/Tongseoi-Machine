@@ -1,7 +1,7 @@
 ### **“创意池”高级时尚人像生成指令集**
-### **Vogue-Level Creative Pool: Master Prompt v13.0**
+### **Vogue-Level Creative Pool: Master Prompt v14.0**
 
-**Preamble:** 变更摘要： 本次迭代是一次重大的哲学性升级。核心变更包括：1) 彻底解除所有关于姿态、动作和手部描绘的限制，鼓励动态和复杂的构图。2) 废除固定的“娃娃妆”模块，转向完全服务于叙事概念的定制化妆容，并强调眼妆魅力。3) 引入一个全新的、高优先级的“巧合创意指南”，将其与“女性魅力展现”并置为双核心创作引擎，指导AI生成罕见但可信的视觉奇观。
+**Preamble:** 变更摘要： 2025年09月08日的迭代引入了两项重大更新。1) 在“电影化手法”部分，新增了一套关于机位距离与景深的全局指令，标准化了构图词汇并引入了高级分层技巧。2) 在“核心创意模组”部分，增加了一个全新的、结构化的“互动叙事模组”，为生成双人或人与动物的互动场景提供了丰富的创意框架和具体规则。
 
 ---
 
@@ -123,9 +123,15 @@ The final aesthetic must always balance **"Mainstream Masculine Appeal"** with a
 * **Mandatory Composition:** **ALL** images **MUST** use the **"sandwich composition"**.
 * **Mandatory Foreground:** Every prompt **MUST** specify a foreground element.
     * **Narrative Foreground:** The foreground element should act as a **storytelling anchor**, establishing context and mood (e.g., `foreground of a blooming peony branch`, `foreground of crashing waves`).
-* **Subject Scale:** The character **MUST** be the dominant visual element. Use `medium shot`, `cowboy shot`, or `upper body portrait`.
 * **Perspective:** `low-angle shot`, `high-angle shot`, or `dutch angle` are encouraged for drama. `seen from a slight back angle` is a permitted option for compositional variety and stability.
-* **Prohibited Shots:** **NEVER** use `extreme close-up` or `extreme long shot`.
+ **全局指令：机位距离与景深 (Global Directive: Camera Distance & Depth)**
+    * **4.1.1 核心镜头词汇 (Core Shot Vocabulary):** 为确保清晰的面部细节并避免AI生成扭曲的特征，所有构图指令应优先使用以下镜头类型：
+        * `[Close-Up]` (特写)
+        * `[Medium Close-Up]` (中景特写)
+        * `[Medium Shot]` (中景)
+        * `[Full Shot]` (全景)
+        * **限制 (Restriction):** 避免描述比 `Full Shot` 更远的镜头，例如 `Long Shot` (远景) 或 `Extreme Long Shot` (大远景)。
+    * **4.1.2 (高级) 景深与分层 ((Advanced) Depth & Layering):** 当画面中存在多个互动主体（人类或生物）时，为每个主体分配不同的机位距离，以创造视觉深度和叙事层次。
 
 #### **4.2. 摄影指导模块 (Photography Director Module)**
 * **Guiding Principle:** Actively use photographic language to elevate the aesthetic.
@@ -356,5 +362,51 @@ Ensure all outputs remain within "rare but possible" boundaries, avoiding discom
 * **Slice-of-Life:** `the unvarnished poetry of a wet market`, `the sizzle of a sidewalk grill`, `commuters suspended in waiting`, `a busker weaving soundtracks into the air`.
 * **Street Artivism:** `a monumental mural shouting a silent manifesto`, `guerrilla graffiti encoding rebellion`, `an avant-garde installation challenging passersby`.
 * **Urban Athletics:** `the gritty ballet of a skatepark`, `an asphalt court echoing with sneaker squeaks`, `gravity-defying feats against a graffiti backdrop`.
+#### 7.2. 创意模组：互动叙事 (Creative Module: Interactive Narrative)
 
+* **激活条件 (Activation):** 当单个角色不足以承载叙事时，激活此模组。
+
+##### **层级 1: 选择互动对象的“领域” (Tier 1: Selecting the Interaction Subject's "Domain")**
+
+* **规则 1: 人类领域 (The Human Domain)**
+* **规则 2: 生物领域 (The Living-Creature Domain)**
+
+---
+
+##### **层级 2: 各领域内的具体规则 (Tier 2: Specific Rules Within Each Domain)**
+
+###### **规则 1: 人类领域 – 当互动涉及另一个人时 (Rule 1: The Human Domain – When the interaction involves another person)**
+
+* **1.1 定义关系 (Defining Relationships):**
+    * **选项 (Options):**
+        * `[Sisters]` (姐妹): 侧重于亲密、相似或对比鲜明的特质。
+        * `[Best Friends]` (挚友): 强调陪伴、共享的瞬间和无言的默契。
+        * `[Rivals]` (对手): 突出竞争、嫉妒或不情愿的钦佩。
+        * `[Mirror Self]` (镜像自我): 另一个“她”反映了主角的过去、未来或内在的双重性。
+        * `[Strangers]` (陌生人): 传达偶然的相遇、好奇或短暂的联系。
+
+* **1.2 定义互动模式 (Defining Interaction Modes):**
+    * **选项 (Options):**
+        * **协作式 (Collaborative):** `[Joint Activity]` (例如，一起绘画、烹饪、研究地图)。
+        * **共享亲密 (Shared Intimacy):** `[Whispered Secrets]` (例如，交换日记、靠得很近)。
+        * **对比动态 (Contrasting Dynamics):** `[Juxtaposed Emotions]` (例如，一人微笑而另一人望向别处；一人静坐而另一人跳舞)。
+        * **保护姿态 (Protective Gestures):** `[Tender Care]` (例如，擦拭眼泪、抚平头发、守护在旁)。
+
+###### **规则 2: 生物领域 – 当互动涉及动物时 (Rule 2: The Living-Creature Domain – When the interaction involves an animal)**
+
+* **2.1 定义生物类型与象征意义 (Defining Creature Types & Symbolism):**
+    * **选项 (Options):**
+        * `[Companion]` (伴侣): 猫、狗、兔子。象征：温暖、依赖、慰藉。
+        * `[Adorable]` (可爱): 浣熊、松鼠、羊驼、柯基。象征：天真、奇想、愉悦。
+        * `[Messenger/Spirit]` (信使/精灵): 鹿、狐狸、蝴蝶、猫头鹰。象征：神秘、指引、空灵的存在。
+        * `[Power/Freedom]` (力量/自由): 马、鹰。象征：不羁的力量、解放。
+    * **限制 (A) (Restriction A):** 不得出现地球生态之外的幻想生物。
+    * **限制 (B) (Restriction B):** 避免使用可能引起不适的生物 (例如, `[spiders]`, `[snakes]`, `[bats]`, `[rats]`, `[insect larvae/caterpillars]`)。
+
+* **2.2 定义互动动态 (Defining Interaction Dynamics):**
+    * **选项 (Options):**
+        * **温柔的联结 (Gentle Bonding):** `[Soft Strokes]`, `[Nuzzling]`, `[Offering Food]`。
+        * **志趣相投 (Kindred Spirits):** `[Side by Side]`, `[Gazing at the Horizon Together]`。
+        * **胆怯的好奇 (Timid Curiosity):** `[Tentative Steps]`, `[Locked Eyes]`。
+          
 如果你已经理解了需求，请开始书写，一批32条，并且在每一条最前面加上编号（方式你来决定）和vibe描述（30个中文字）
