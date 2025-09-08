@@ -1,7 +1,7 @@
 ### **“创意池”高级时尚人像生成指令集**
-### **Vogue-Level Creative Pool: Master Prompt v14.0**
+### **Vogue-Level Creative Pool: Master Prompt v15.0**
 
-**Preamble:** 变更摘要： 2025年09月08日的迭代引入了两项重大更新。1) 在“电影化手法”部分，新增了一套关于机位距离与景深的全局指令，标准化了构图词汇并引入了高级分层技巧。2) 在“核心创意模组”部分，增加了一个全新的、结构化的“互动叙事模组”，为生成双人或人与动物的互动场景提供了丰富的创意框架和具体规则。
+**Preamble:** 变更摘要： 2025年09月08日,上午的迭代引入了两项重大更新。1) 在“电影化手法”部分，新增了一套关于机位距离与景深的全局指令，标准化了构图词汇并引入了高级分层技巧。2) 在“核心创意模组”部分，增加了一个全新的、结构化的“互动叙事模组”，为生成双人或人与动物的互动场景提供了丰富的创意框架和具体规则；下午的迭代引入了两套全新的可选增强模组，旨在深化叙事和视觉氛围。1) 在“互动叙事模组”中，新增了“互补人设”子模组，为双人肖像提供了一套结构化的对比性格、风格和角色原型，以增强故事张力。2) 新增了“梦幻氛围的多源光照”创意模组，提供了一套完整的策略库，通过组合不同光源来营造电影感和空灵的视觉效果。
 
 ---
 
@@ -408,5 +408,99 @@ Ensure all outputs remain within "rare but possible" boundaries, avoiding discom
         * **温柔的联结 (Gentle Bonding):** `[Soft Strokes]`, `[Nuzzling]`, `[Offering Food]`。
         * **志趣相投 (Kindred Spirits):** `[Side by Side]`, `[Gazing at the Horizon Together]`。
         * **胆怯的好奇 (Timid Curiosity):** `[Tentative Steps]`, `[Locked Eyes]`。
-          
+---
+##### 7.2.1. 可选增强模组：互补人设 (Optional Enhancement Module: Complementary Personas)
+
+**模组名称 (Module Name):** `Complementary_Personas_Module_V1.0`
+
+**目标 (Objective):** 当生成双人（女性主角）肖像的描述时，此模组通过为两位模特分配对比鲜明又相辅相成的人设，来丰富叙事深度和视觉冲击力。
+
+###### **第一部分：模组激活逻辑 (Part I: Module Activation Logic)**
+本部分指导代理（Agent）何时以及如何调用此模组。
+
+1. **触发条件 (Trigger Conditions):**
+   - 主指令集的“层级 1: 选择互动对象的‘领域’”必须已选择“规则 1: 人类领域”。
+   - 在“人类领域” → “1.1 定义关系”下，必须已选择一个具体关系（例如, *[sisters]*, *[best friends]*）。
+   - **关键决策 (Key Decision):** 系统随机或有意地激活可选的“人设深化 (Persona Deepening)”流程。
+
+2. **执行方法 (Execution Method):**
+   - 这是一个**可选增强模组 (optional enhancement module)**，非强制性。
+   - 一旦触发，代理从“第二部分：人设对比库”中选择一个**“对比类型”**（例如，“气质/性格对比”）。
+   - 从所选类型中，代理挑选**一对 contrasting tags**（例如, *[lively and cheerful]* vs. *[serene and elegant]*）。
+   - 这些标签随后被分配给两位模特，并整合到最终的描述中。
+
+###### **第二部分：人设对比库 (Part II: Persona Contrast Library)**
+为确保清晰度和冲击力，**每次生成只应使用一种对比类型。**
+
+**类型A：气质/性格对比 (Type A: Temperament/Personality Contrast)**
+*专注于内在的角色特质，为故事叙述创造动态与静态、温暖与冷酷的并置。*
+- **标签对 (Tag Pairs) (选择其一):**
+  - *[Dynamic vs. Serene]* → **模特A:** *lively and cheerful* vs. **模特B:** *serene and elegant*
+  - *[Fiery vs. Icy]* → **模特A:** *passionate and bold* vs. **模特B:** *aloof and distant*
+  - *[Bold vs. Gentle]* → **模特A:** *confident and assertive* vs. **模特B:** *soft-spoken and easygoing*
+  - *[Sunny vs. Melancholic]* → **模特A:** *radiant like sunshine* vs. **模特B:** *tinged with wistful melancholy*
+
+**类型B：风格/气场对比 (Type B: Style/Aura Contrast)**
+*强调视觉美学——服装、妆容和风度——以产生引人注目的视觉张力。*
+- **标签对 (Tag Pairs) (选择其一):**
+  - *[Sensual vs. Innocent]* → **模特A:** *voluptuous and alluring* vs. **模特B:** *pure and cherubic*
+  - *[Light vs. Dark]* → **模特A:** *ethereal in white* vs. **模特B:** *gothic in black lace*
+  - *[Vintage vs. Modern]* → **模特A:** *qipao-clad with old-world charm* vs. **模特B:** *streetwear-clad and urban*
+  - *[Sweet vs. Edgy]* → **模特A:** *adorably girlish* vs. **模特B:** *androgynously cool*
+
+**类型C：角色/原型对比 (Type C: Role/Archetype Contrast)**
+*突显叙事角色——守护者与依赖者、领导者与追随者——以暗示更深层次的故事。*
+- **标签对 (Tag Pairs) (选择其一):**
+  - *[Protector vs. Dependent]* → **模特A:** *older-sister energy* vs. **模特B:** *clingy and trusting*
+  - *[Dominant vs. Submissive]* → **模特A:** *commanding and intense* vs. **模特B:** *demure and shy*
+  - *[Rebel vs. Conformist]* → **模特A:** *defiant and wild-eyed* vs. **模特B:** *docile and rule-abiding*
+
+#### 7.3. 创意模组：梦幻氛围的多源光照 (Creative Module: Dreamlike Ambiance with Multi-Source Lighting)
+
+**模组名称 (Module Name):** `Multi_Source_Lighting_Module_V1.0`
+
+**目标 (Objective):** 通过融合两种或多种光源（在类型、色温或质感上有所不同），此模组可打造出具有更高深度和情绪的、富有层次感、空灵或电影感的视觉效果。
+
+##### **第一部分：模组激活逻辑 (Part I: Module Activation Logic)**
+
+1. **触发条件 (Trigger Conditions):**
+   - 基础场景和角色构图必须已最终确定。
+   - **关键决策 (Key Decision):** 系统激活可选的“高级光照氛围 (Advanced Lighting Atmosphere)”流程，以超越扁平的单一光源照明。
+
+2. **执行方法 (Execution Method):**
+   - 这是一个**可选增强模组 (optional enhancement module)**，用光线“重塑”现有场景。
+   - 一旦触发，代理从“第二部分：多源策略库”中选择一个**“组合策略”**。
+   - 选定的*主要*和*次要*光源被应用于场景，强调其相互作用——阴影、色彩冲突和质感。
+
+##### **第二部分：多源组合策略库 (Part II: Multi-Source Combination Strategy Library)**
+每种策略都代表一种经典的照明方法，旨在唤起梦幻感。
+
+**策略A：自然光 + 人造光 (Strategy A: Natural + Artificial Light)**
+*以柔和的环境光为基础，通过定向的人造光进行点缀以突出焦点。*
+- **组合范例 (Pair Examples) (选择其一):**
+  - **主要:** *moonlight filtering through curtains* vs. **次要:** *a warm desk lamp’s glow*
+  - **主要:** *twilight’s blue hour* vs. **次要:** *a model’s handheld vintage lantern*
+  - **主要:** *rain-diffused skylight* vs. **次要:** *distant neon signs*
+
+**策略B：色温对比 (Strategy B: Color Temperature Contrast)**
+*冲突的暖/冷光增强了戏剧性和空间错觉。*
+- **组合范例 (Pair Examples) (选择其一):**
+  - **冷:** *glowing digital screens* vs. **暖:** *twinkling fairy lights*
+  - **冷:** *sci-fi purple ambiance* vs. **暖:** *flickering candlelight*
+  - **冷:** *pre-dawn chill* vs. **暖:** *amber cityscape windows*
+
+**策略C：对焦光 & 散景光 (Strategy C: In-Focus & Bokeh Light)**
+*清晰的主体照明 + 模糊的背景散景，营造奇幻感。*
+- **组合范例 (Pair Examples) (选择其一):**
+  - **对焦:** *studio softbox* vs. **散景:** *out-of-focus traffic lights*
+  - **对焦:** *dramatic spotlight* vs. **散景:** *raindrop-refracted halos*
+  - **对焦:** *flattering face light* vs. **散景:** *dappled sunlight through leaves*
+
+**策略D：反射光 & 透射光 (Strategy D: Reflected & Transmitted Light)**
+*光线通过表面反弹/折射，增加复杂性。*
+- **组合范-例 (Pair Examples) (选择其一):**
+  - **直接:** *natural skylight* vs. **反射:** *neon puddle reflections*
+  - **直接:** *sunbeam through a window* vs. **透射:** *prism-cast rainbows*
+  - **直接:** *key light* vs. **反射:** *disco ball glitter*
+
 如果你已经理解了需求，请开始书写，一批32条，并且在每一条最前面加上编号（方式你来决定）和vibe描述（30个中文字）
