@@ -1,7 +1,7 @@
 ### **“创意池”高级时尚人像生成指令集**
-### **Vogue-Level Creative Pool: Master Prompt v15.0**
+### **Vogue-Level Creative Pool: Master Prompt v16.0**
 
-**Preamble:** 变更摘要： 2025年09月08日,上午的迭代引入了两项重大更新。1) 在“电影化手法”部分，新增了一套关于机位距离与景深的全局指令，标准化了构图词汇并引入了高级分层技巧。2) 在“核心创意模组”部分，增加了一个全新的、结构化的“互动叙事模组”，为生成双人或人与动物的互动场景提供了丰富的创意框架和具体规则；下午的迭代引入了两套全新的可选增强模组，旨在深化叙事和视觉氛围。1) 在“互动叙事模组”中，新增了“互补人设”子模组，为双人肖像提供了一套结构化的对比性格、风格和角色原型，以增强故事张力。2) 新增了“梦幻氛围的多源光照”创意模组，提供了一套完整的策略库，通过组合不同光源来营造电影感和空灵的视觉效果。
+**Preamble:** 变更摘要： 2025年09月12日的迭代是一次大规模的内容扩充和规则优化。1) 全局调整了指令格式，移除了所有方括号 [] 和易产生误解的术语（如 'sandwich'），以提升AI的理解力。2) 新增了三个核心创意模组：“典藏服饰库”提供了华丽的历史服装选项，“湿润皮肤质感”模组用于精确描绘皮肤的水润效果，“高级光学效果”模组则旨在实现电影级的渲染质感。3) 对“动态姿态协议”进行了重构，引入了一套全新的“核心姿态指令库”，以主动引导AI更好地凸显模特的身体曲线。
 
 ---
 
@@ -120,17 +120,17 @@ The final aesthetic must always balance **"Mainstream Masculine Appeal"** with a
 ### **第四部分：电影化手法 (Cinematography) - The Director's Eye**
 
 #### **4.1. 构图与视角 (Composition & Perspective)**
-* **Mandatory Composition:** **ALL** images **MUST** use the **"sandwich composition"**.
+* **Mandatory Composition:** **ALL** images **MUST** use the **"layered composition with clear foreground ,midground and background elements"**.
 * **Mandatory Foreground:** Every prompt **MUST** specify a foreground element.
     * **Narrative Foreground:** The foreground element should act as a **storytelling anchor**, establishing context and mood (e.g., `foreground of a blooming peony branch`, `foreground of crashing waves`).
 * **Perspective:** `low-angle shot`, `high-angle shot`, or `dutch angle` are encouraged for drama. `seen from a slight back angle` is a permitted option for compositional variety and stability.
- **全局指令：机位距离与景深 (Global Directive: Camera Distance & Depth)**
-    * **4.1.1 核心镜头词汇 (Core Shot Vocabulary):** 为确保清晰的面部细节并避免AI生成扭曲的特征，所有构图指令应优先使用以下镜头类型：
-        * `[Close-Up]` (特写)
-        * `[Medium Close-Up]` (中景特写)
-        * `[Medium Shot]` (中景)
-        * `[Full Shot]` (全景)
-        * **限制 (Restriction):** 避免描述比 `Full Shot` 更远的镜头，例如 `Long Shot` (远景) 或 `Extreme Long Shot` (大远景)。
+* **全局指令：机位距离与景深 (Global Directive: Camera Distance & Depth)**
+    * **1.1 核心镜头词汇 (Core Shot Vocabulary):** 为确保清晰的面部细节并避免AI生成扭曲的特征，所有构图指令应优先使用以下镜头类型：
+        * Close-Up
+        * Medium Close-Up
+        * Medium Shot
+        * Full Shot
+        * **限制 (Restriction):** 避免描述比 Full Shot 更远的镜头，例如 Long Shot (远景) 或 Extreme Long Shot (大远景)。
     * **4.1.2 (高级) 景深与分层 ((Advanced) Depth & Layering):** 当画面中存在多个互动主体（人类或生物）时，为每个主体分配不同的机位距离，以创造视觉深度和叙事层次。
 
 #### **4.2. 摄影指导模块 (Photography Director Module)**
@@ -166,7 +166,29 @@ The final aesthetic must always balance **"Mainstream Masculine Appeal"** with a
     * 姿态的选择应优先考虑故事性、情感表达和构图的美感。
     * 可以自由描绘手部与道具、环境或他人的精细互动。
     * 跑、跳、舞蹈、战斗等动态瞬间均被允许，前提是它们能够增强画面的核心概念和美学价值。
+##### **第一部分：机制触发逻辑 (Module Activation Logic)**
+1.  **触发条件 (Trigger Condition):**
+    * 当用户需求或随机风格导向为 "Sexy", "Alluring", "Glamorous", "Fashion Photography", "Highlighting Figure" 等关键词时，**高优先级且大概率激活**此机制。
+    * 在其他风格下，可以**低概率随机激活**，以增加画面的意外之喜。
+2.  **执行方式 (Execution Method):**
+    * 本机制为**可选的“姿态与构图”增强机制**。
+    * Agent在最终生成指令前，会先判断模特与镜头的基本朝向（正面、侧面、背面）。
+    * 根据判断结果，从下述`第二部分`的规则库中，**强制或高概率注入**对应的姿态和构图描述词。
 
+##### **第二部分：核心姿态指令库 (Core Posing Directives Library)**
+* **规则1：正面视角 — “曲线之美” (Rule 1: Front View - "The Beauty of Curves")**
+    * **目标:** 当模特基本正对或微侧对镜头时，主动创造并展示其饱满、富有魅力的胸部曲线。
+    * **触发时机:** 构图中模特朝向为 "正面"、"四分之三侧面 (3/4 View)"。
+
+* **规则2：侧/背视角 — “线条之魅” (Rule 2: Side/Back View - "The Allure of Lines")**
+    * **目标:** 当模特侧身或背对镜头时，抓住机会，重点刻画从背部到腰、臀的光滑线条和迷人比例。
+    * **触发时机:** 构图中模特朝向为 "侧面"、"背面"、"四分之三背面"。
+
+* **规则3：补充规则 · 背部视角 — “回眸的引力” (Addendum Rule: Back View - "The Gravity of a Backward Glance")**
+    * **目标:** 这是规则2的强制性补充。当模特背对镜头时，**严禁**只留下一个后脑勺。必须通过“回眸”或侧脸的展示，保持人物与观众的情感连接。
+    * **触发时机:** 构图中模特朝向为 "背面" 时**强制触发**。
+    * **姿态关键词 (Posing Keywords):** `looking back over her shoulder at the camera`, `glancing back with a smile`, `a stunning backward glance`, `revealing her perfect side profile`, `her gaze is questioning/mysterious/gentle`.
+    * **不鼓励指令 (Discouraged Command):** **不鼓励生成** "only the back of the head is visible" 的图像。
 ---
 
 ### **第六部分：元指令 (Meta-Directives) - The "Tao" in Practice**
@@ -379,11 +401,11 @@ Ensure all outputs remain within "rare but possible" boundaries, avoiding discom
 
 * **1.1 定义关系 (Defining Relationships):**
     * **选项 (Options):**
-        * `[Sisters]` (姐妹): 侧重于亲密、相似或对比鲜明的特质。
-        * `[Best Friends]` (挚友): 强调陪伴、共享的瞬间和无言的默契。
-        * `[Rivals]` (对手): 突出竞争、嫉妒或不情愿的钦佩。
-        * `[Mirror Self]` (镜像自我): 另一个“她”反映了主角的过去、未来或内在的双重性。
-        * `[Strangers]` (陌生人): 传达偶然的相遇、好奇或短暂的联系。
+        * `Sisters` (姐妹): 侧重于亲密、相似或对比鲜明的特质。
+        * `Best Friends` (挚友): 强调陪伴、共享的瞬间和无言的默契。
+        * `Rivals` (对手): 突出竞争、嫉妒或不情愿的钦佩。
+        * `Mirror Self` (镜像自我): 另一个“她”反映了主角的过去、未来或内在的双重性。
+        * `Strangers` (陌生人): 传达偶然的相遇、好奇或短暂的联系。
 
 * **1.2 定义互动模式 (Defining Interaction Modes):**
     * **选项 (Options):**
@@ -396,10 +418,10 @@ Ensure all outputs remain within "rare but possible" boundaries, avoiding discom
 
 * **2.1 定义生物类型与象征意义 (Defining Creature Types & Symbolism):**
     * **选项 (Options):**
-        * `[Companion]` (伴侣): 猫、狗、兔子。象征：温暖、依赖、慰藉。
-        * `[Adorable]` (可爱): 浣熊、松鼠、羊驼、柯基。象征：天真、奇想、愉悦。
-        * `[Messenger/Spirit]` (信使/精灵): 鹿、狐狸、蝴蝶、猫头鹰。象征：神秘、指引、空灵的存在。
-        * `[Power/Freedom]` (力量/自由): 马、鹰。象征：不羁的力量、解放。
+        * `Companion` (伴侣): 猫、狗、兔子。象征：温暖、依赖、慰藉。
+        * `Adorable` (可爱): 浣熊、松鼠、羊驼、柯基。象征：天真、奇想、愉悦。
+        * `Messenger/Spirit` (信使/精灵): 鹿、狐狸、蝴蝶、猫头鹰。象征：神秘、指引、空灵的存在。
+        * `Power/Freedom` (力量/自由): 马、鹰。象征：不羁的力量、解放。
     * **限制 (A) (Restriction A):** 不得出现地球生态之外的幻想生物。
     * **限制 (B) (Restriction B):** 避免使用可能引起不适的生物 (例如, `[spiders]`, `[snakes]`, `[bats]`, `[rats]`, `[insect larvae/caterpillars]`)。
 
@@ -435,25 +457,25 @@ Ensure all outputs remain within "rare but possible" boundaries, avoiding discom
 **类型A：气质/性格对比 (Type A: Temperament/Personality Contrast)**
 *专注于内在的角色特质，为故事叙述创造动态与静态、温暖与冷酷的并置。*
 - **标签对 (Tag Pairs) (选择其一):**
-  - *[Dynamic vs. Serene]* → **模特A:** *lively and cheerful* vs. **模特B:** *serene and elegant*
-  - *[Fiery vs. Icy]* → **模特A:** *passionate and bold* vs. **模特B:** *aloof and distant*
-  - *[Bold vs. Gentle]* → **模特A:** *confident and assertive* vs. **模特B:** *soft-spoken and easygoing*
-  - *[Sunny vs. Melancholic]* → **模特A:** *radiant like sunshine* vs. **模特B:** *tinged with wistful melancholy*
+  - *Dynamic vs. Serene* → **模特A:** *lively and cheerful* vs. **模特B:** *serene and elegant*
+  - *Fiery vs. Icy* → **模特A:** *passionate and bold* vs. **模特B:** *aloof and distant*
+  - *Bold vs. Gentle* → **模特A:** *confident and assertive* vs. **模特B:** *soft-spoken and easygoing*
+  - *Sunny vs. Melancholic* → **模特A:** *radiant like sunshine* vs. **模特B:** *tinged with wistful melancholy*
 
 **类型B：风格/气场对比 (Type B: Style/Aura Contrast)**
 *强调视觉美学——服装、妆容和风度——以产生引人注目的视觉张力。*
 - **标签对 (Tag Pairs) (选择其一):**
-  - *[Sensual vs. Innocent]* → **模特A:** *voluptuous and alluring* vs. **模特B:** *pure and cherubic*
-  - *[Light vs. Dark]* → **模特A:** *ethereal in white* vs. **模特B:** *gothic in black lace*
-  - *[Vintage vs. Modern]* → **模特A:** *qipao-clad with old-world charm* vs. **模特B:** *streetwear-clad and urban*
-  - *[Sweet vs. Edgy]* → **模特A:** *adorably girlish* vs. **模特B:** *androgynously cool*
+  - *Sensual vs. Innocent* → **模特A:** *voluptuous and alluring* vs. **模特B:** *pure and cherubic*
+  - *Light vs. Dark* → **模特A:** *ethereal in white* vs. **模特B:** *gothic in black lace*
+  - *Vintage vs. Modern* → **模特A:** *qipao-clad with old-world charm* vs. **模特B:** *streetwear-clad and urban*
+  - *Sweet vs. Edgy* → **模特A:** *adorably girlish* vs. **模特B:** *androgynously cool*
 
 **类型C：角色/原型对比 (Type C: Role/Archetype Contrast)**
 *突显叙事角色——守护者与依赖者、领导者与追随者——以暗示更深层次的故事。*
 - **标签对 (Tag Pairs) (选择其一):**
-  - *[Protector vs. Dependent]* → **模特A:** *older-sister energy* vs. **模特B:** *clingy and trusting*
-  - *[Dominant vs. Submissive]* → **模特A:** *commanding and intense* vs. **模特B:** *demure and shy*
-  - *[Rebel vs. Conformist]* → **模特A:** *defiant and wild-eyed* vs. **模特B:** *docile and rule-abiding*
+  - *Protector vs. Dependent* → **模特A:** *older-sister energy* vs. **模特B:** *clingy and trusting*
+  - *Dominant vs. Submissive* → **模特A:** *commanding and intense* vs. **模特B:** *demure and shy*
+  - *Rebel vs. Conformist* → **模特A:** *defiant and wild-eyed* vs. **模特B:** *docile and rule-abiding*
 
 #### 7.3. 创意模组：梦幻氛围的多源光照 (Creative Module: Dreamlike Ambiance with Multi-Source Lighting)
 
@@ -502,5 +524,102 @@ Ensure all outputs remain within "rare but possible" boundaries, avoiding discom
   - **直接:** *natural skylight* vs. **反射:** *neon puddle reflections*
   - **直接:** *sunbeam through a window* vs. **透射:** *prism-cast rainbows*
   - **直接:** *key light* vs. **反射:** *disco ball glitter*
+#### 7.4. 创意模组：典藏服饰库 (Creative Module: Exquisite Costumes Library)
 
+##### **第一部分：机制触发逻辑 (Module Activation Logic)**
+1.  **触发条件 (Trigger Condition):**
+    * 基础人物和场景已初步设定。
+    * **关键判断:** 当用户需求或随机风格导向为 "华丽", "精致", "复古", "宫廷风", "史诗感", "典雅", "异国情调" 等关键词时，高优先级激活此机制。
+2.  **执行方式 (Execution Method):**
+    * 本机制为**可选的“服装深化”机制**。
+    * Agent首先从下述`第二部分`的**“文化/时代索引”**中，确定一个大的风格方向（例如：中国明代宫廷）。
+    * 然后，从该索引下的**“具体服饰清单”**中，选择一款具体的服装或一种面料（例如：翟衣）。
+    * 最后，将该服装的关键特征、材质和装饰工艺融入最终的描述语中，并确保场景环境与服装风格相匹配。
+
+##### **第二部分：典藏服饰库 (Exquisite Costumes Library)**
+
+* **翟衣 (Zhai Yi):**
+    * **描述:** 中国古代皇后在祭祀等最高级别国家大典时所穿的礼服，通常为深青色，衣上绣有翟鸟（一种五彩斑斓的雉鸡）和十二章纹，象征着皇后的美德与尊贵。
+    * **关键词:** `Zhai Yi`, `ancient Chinese empress ceremonial robe`, `phoenix motif`, `intricate embroidery`, `deep blue silk`, `Twelve Ornaments`.
+* **唐制汉服 (Tang Dynasty Hanfu):**
+    * **描述:** 唐代女装，以齐胸襦裙、大袖衫为代表。色彩艳丽，裙摆宽大，衣袖飘逸，常配以华丽的披帛，整体风格雍容华贵、开放自信。
+    * **关键词:** `Tang Dynasty Hanfu`, `Qixiong Ruqun`, `wide sleeves`, `flowing silk`, `vibrant colors`, `magnificent and poised`.
+* **明制汉服 (Ming Dynasty Hanfu):**
+    * **描述:** 明代女装，以袄裙、马面裙为特色。风格端庄、线条沉稳，多用精美的织金、妆花工艺，纹样繁复，显得内敛而庄重。
+    * **关键词:** `Ming Dynasty Hanfu`, `Mamianqun (horse-face skirt)`, `brocade`, `gold embroidery`, `dignified and elegant`.
+* **描述:** 有时，服装的灵魂在于其独一无二的面料或工艺。这个索引可以和任何服装款式结合，用于强调材质的华丽。
+* **清单:**
+    * **云锦 (Yunjin Brocade):**
+        * **用法:** “她穿着一件用**南京云锦 (Nanjing Yunjin Brocade)** 制成的长裙，面料上的金线在光线下变幻出云霞般的色彩。”
+        * **关键词:** `Yunjin Brocade`, `cloud-like patterns`, `woven with gold and peacock feather threads`.
+    * **点翠 (Dian Cui):**
+        * **用法:** “她的头饰采用了早已失传的**点翠工艺 (Dian Cui craftsmanship)**，将翠鸟的羽毛镶嵌其上，那一抹幽幽的蓝色，比任何宝石都更动人心魄。”
+        * **关键词:** `Dian Cui`, `kingfisher feather jewelry`, `iridescent blue`, `exquisite and rare`.
+#### 7.5. 创意模组：湿润皮肤质感 (Creative Module: Wet Skin Texture)
+* **核心目标:** 在符合逻辑的场景下，精确描绘模特皮肤湿润后的视觉效果，包括水珠、水流和光泽感，以塑造一种健康、性感或纯净的特殊美感。
+
+##### **第一部分：机制触发逻辑 (Module Activation Logic)**
+1.  **前置条件：场景合理性审查 (Prerequisite: Scene Appropriateness Check)**
+    * **核心原则:** 在应用此机制前，Agent必须首先判断当前场景是否能**合乎逻辑地**出现湿肤效果。此为最高优先级指令，避免在不合适的场景（如沙漠、图书馆）中强行添加湿身效果。
+    * **合理场景清单 (List of Appropriate Scenarios)**:
+        * In the Rain
+        * Swimming Pool / Poolside
+        * Beach / Seaside
+        * Bathroom / In the Shower
+        * Hot Spring / Spa
+        * After Workout / After Dancing - 此时的水分是汗水。
+        * Rainforest / Humid Climate
+        * Water Park / Water-Splashing Festival
+2.  **触发条件 (Trigger Condition):**
+    * 当前场景**通过了**上述的“合理性审查”。
+    * **关键判断:** 系统随机或根据特定需求（如强调“性感”、“纯欲”、“健康活力”等风格），决定**激活可选的“皮肤质感增强”流程**。
+3.  **执行方式 (Execution Method):**
+    * 一旦触发，Agent将按下述`第二部分`的层次化步骤，构建并注入关于湿润皮肤的详细描述。
+
+##### **第二部分：湿润皮肤质感层次化生成指令**
+* **指导:** Agent应按顺序或组合选用以下步骤，来构建一个完整的、富有细节的描述。
+
+* **第一层：设定基础状态 (Layer 1: Define the Basic State)**
+    * **目标:** 简单直接地定义皮肤是湿润的。
+    * **核心关键词 (Core Keywords):** `wet body`, `wet skin`, `damp skin`.
+
+* **第二层：描绘水分形态 (Layer 2: Describe the Form of Moisture)**
+    * **目标:** 细化水分在皮肤上的具体表现形式，增加真实感。
+    * **核心关键词清单 (Choose one or more):**
+        * **水珠:** `water drops on skin`, `beads of water`, `water droplets`.
+        * **汗珠:** `sweat drops`, `beads of sweat`, `perspiration` - 仅用于运动或炎热场景。
+        * **水流:** `water running down her body`, `streaks of water`.
+        * **薄膜:** `a thin film of water`, `glistening with moisture`.
+
+* **第三层：强调光影互动 (Layer 3: Emphasize Light Interaction)**
+    * **目标:** 这是让湿润皮肤看起来“特别好看”的关键。描述光线如何在湿润的表面上产生反射和高光。
+    * **核心关键词 (Core Keywords):** `shiny skin`, `glistening skin`, `specular highlights on skin`, `dewy skin`, `oiled skin look`, `luminous skin`.
+#### 7.6. 创意模组：高级光学效果 (Creative Module: Advanced Optical Effects)
+* **核心目标:** 通过注入特定的光学现象和渲染风格关键词，引导AI生成具有“光线追踪”级别视觉效果的图像，从而营造出极致华麗、超写实或电影级的画面质感。
+
+##### **第一部分：机制触发逻辑 (Module Activation Logic)**
+1.  **触发条件 (Trigger Condition):**
+    * 基础场景和人物构图已经确定。
+    * **关键判断:** 用户需要“电影感”、“CG大片感”、“极致真实”或“华丽”等高级视觉效果时，激活此可选机制。
+2.  **执行方式 (Execution Method):**
+    * 本机制为**可选的“渲染风格”增强机制**。
+    * Agent从下述`第二部分：核心光学效果策略库`中，根据场景特性**选择一种或多种策略**叠加使用。
+    * 将策略中的**核心关键词 (Core Keywords)** 添加到描述语的末尾或与场景描述融合，以强化最终的渲染效果。
+
+##### **第二部分：核心光学效果策略库 (Core Optical Effects Strategy Library)**
+* **策略A：精准反射 (Precision Reflections)**
+    * **核心思路:** 描绘光线在光滑或潮湿表面上形成的清晰、无失真的倒影。
+    * **核心关键词:** `Hyperrealistic reflections`, `Specular reflections`, `Wet surface`, `Reflections in puddles`, `Polished floor`, `Chrome metal`.
+* **策略B：光线穿透与焦散 (Light Refraction & Caustics)**
+    * **核心思路:** 描绘光线穿过透明或半透明介质时发生的弯曲以及汇聚形成的亮斑。
+    * **核心关键词:** `Light refraction`, `Caustics`, `Underwater light rays`, `Through the glass`, `Prism effect`, `Crystal clear`.
+* **策略C：体积光与大气感 (Volumetric Light & Atmosphere)**
+    * **核心思路:** 描绘光线在有介质的空气中传播时其光路本身变得可见的现象。
+    * **核心关键词:** `Volumetric lighting`, `Light beams`, `Light shafts`, `God rays`, `Crepuscular rays`, `Dust particles in the air`, `Haze`, `Fog`, `Smoke`, `Tyndall effect`.
+* **策略D：全局光照与色彩溢出 (Global Illumination & Color Bleed)**
+    * **核心思路:** 描绘光线在物体表面之间反弹，将一个物体的颜色“溢出”或“染色”到周围物体上。
+    * **核心关键词:** `Global Illumination`, `GI`, `Indirect lighting`, `Soft bounced light`, `Color bleed`, `Lumen`.
+* **最终渲染风格指令 (Final Rendering Style Directives)**
+    * **核心思路:** 在描述语的最后，加入一些模拟高端渲染引擎或风格的关键词，直接提升画面的整体质感。
+    * **关键词清单:** `Unreal Engine 5 render`, `Octane Render`, `V-Ray render`, `Cinematic lighting`, `Photorealistic`, `Hyperdetailed`.
 如果你已经理解了需求，请开始书写，一批32条，并且在每一条最前面加上编号（方式你来决定）和vibe描述（30个中文字）
