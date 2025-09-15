@@ -1,7 +1,7 @@
 ### **“创意池”高级时尚人像生成指令集**
-### **Vogue-Level Creative Pool: Master Prompt v16.0**
+### **Vogue-Level Creative Pool: Master Prompt v17.0**
 
-**Preamble:** 变更摘要： 2025年09月12日的迭代是一次大规模的内容扩充和规则优化。1) 全局调整了指令格式，移除了所有方括号 [] 和易产生误解的术语（如 'sandwich'），以提升AI的理解力。2) 新增了三个核心创意模组：“典藏服饰库”提供了华丽的历史服装选项，“湿润皮肤质感”模组用于精确描绘皮肤的水润效果，“高级光学效果”模组则旨在实现电影级的渲染质感。3) 对“动态姿态协议”进行了重构，引入了一套全新的“核心姿态指令库”，以主动引导AI更好地凸显模特的身体曲线。
+**Preamble:** 变更摘要： 2025年09月15日的迭代主要聚焦于风格统一、规则微调和内容扩充。1) 优化了背部视角下的姿态指令，以解决长发与美背展示的冲突。2) 为确保纯粹的摄影质感，移除了所有3D渲染引擎相关的关键词。3) 调整了“Vogue风格”指令的格式，以提高AI模型的识别率。4) 新增了一个内容丰富的“亚文化时装库”，收录了多种流行风格，极大地增强了个性化服装的生成能力。
 
 ---
 
@@ -133,12 +133,13 @@ The final aesthetic must always balance **"Mainstream Masculine Appeal"** with a
         * **限制 (Restriction):** 避免描述比 Full Shot 更远的镜头，例如 Long Shot (远景) 或 Extreme Long Shot (大远景)。
     * **4.1.2 (高级) 景深与分层 ((Advanced) Depth & Layering):** 当画面中存在多个互动主体（人类或生物）时，为每个主体分配不同的机位距离，以创造视觉深度和叙事层次。
 
-#### **4.2. 摄影指导模块 (Photography Director Module)**
-* **Guiding Principle:** Actively use photographic language to elevate the aesthetic.
-* **Mandatory Techniques (Use as needed to fit concept):**
-    * `(Vogue cover style:1.2)`
-    * `(compressed telephoto lens effect)`
-    * `(dynamic wide-angle lens effect)`
+#### 4.2. 摄影指导模块 (Photography Director Module)
+* **指导原则 (Guiding Principle):** 积极使用摄影语言来提升美学高度。
+* **可选技术 (Optional Techniques) (根据概念需求使用):**
+    * `in the style of a Vogue cover photograph` (Vogue封面摄影风格)
+    * `shot in a high-fashion editorial style` (高级时尚大片风格)
+    * `compressed telephoto lens effect` (长焦镜头压缩效果)
+    * `dynamic wide-angle lens effect` (广角镜头动态效果)
 
 #### **4.3. 光影与氛围 (Lighting & Atmosphere)**
 * **Lighting Techniques:** Utilize advanced lighting such as `Sidelighting`, `Backlighting (rim light)`, `Rembrandt Lighting`, `Projected Patterns`, `Tyndall Effect`, or `strobing neon lights`.
@@ -183,6 +184,7 @@ The final aesthetic must always balance **"Mainstream Masculine Appeal"** with a
 * **规则2：侧/背视角 — “线条之魅” (Rule 2: Side/Back View - "The Allure of Lines")**
     * **目标:** 当模特侧身或背对镜头时，抓住机会，重点刻画从背部到腰、臀的光滑线条和迷人比例。
     * **触发时机:** 构图中模特朝向为 "侧面"、"背面"、"四分之三背面"。
+   * **发型处理指南 (Hair Styling Guideline):** 为确保背部线条不被遮挡，当触发此规则时，应将及腰长发描述为 `draped over one shoulder` (搭在一侧肩膀上) 或 `cascading down one side` (如瀑布般垂在一侧)，从而巧妙地露出背部。
 
 * **规则3：补充规则 · 背部视角 — “回眸的引力” (Addendum Rule: Back View - "The Gravity of a Backward Glance")**
     * **目标:** 这是规则2的强制性补充。当模特背对镜头时，**严禁**只留下一个后脑勺。必须通过“回眸”或侧脸的展示，保持人物与观众的情感连接。
@@ -622,4 +624,43 @@ Ensure all outputs remain within "rare but possible" boundaries, avoiding discom
 * **最终渲染风格指令 (Final Rendering Style Directives)**
     * **核心思路:** 在描述语的最后，加入一些模拟高端渲染引擎或风格的关键词，直接提升画面的整体质感。
     * **关键词清单:** `Unreal Engine 5 render`, `Octane Render`, `V-Ray render`, `Cinematic lighting`, `Photorealistic`, `Hyperdetailed`.
-如果你已经理解了需求，请开始书写，一批32条，并且在每一条最前面加上编号（方式你来决定）和vibe描述（30个中文字）
+ 
+#### 7.7. 创意模组：亚文化时装库 (Creative Module: Subculture Fashion Library)
+* **核心目标:** 收录多种流行亚文化（Subculture）标志性服饰，为模特设定具有高度风格化、能引发特定社群共鸣的着装方案，创造出个性鲜明的视觉作品。
+
+##### **第一部分：机制触发逻辑 (Module Activation Logic)**
+1.  **触发条件 (Trigger Condition):**
+    * 当用户需求或随机风格导向为 "Youthful", "Trendy", "Personalized", "ACGN", "特定风格（如哥特/赛博朋克）" 等关键词时，高优先级激活此机制。
+2.  **执行方式 (Execution Method):**
+    * 本机制为**可选的“服装风格化”机制**。
+    * Agent首先从下述`第二部分`的**“风格索引”**中，确定一个大的亚文化方向（例如：日系学院风）。
+    * 然后，从该索引下的**“具体服饰清单”**中，选择一款具体的服装（例如：JK水手服）。
+    * 最后，将该服装的关键特征、搭配和精神内核融入最终的描述语中。
+
+##### **第二部分：亚文化时装库 (Subculture Fashion Library)**
+
+###### **索引A：日系风尚 (Japanese-Inspired Styles)**
+* **1. JK制服 (JK Uniform):**
+    * **描述:** 日本女高中生制服风格。核心是清纯、元气、校园感。分为两大类：
+        * **水手服 (Sailor Fuku):** 标志性的水手领（襟），上衣下裙。
+        * **西式制服 (Blazer Style):** 西装外套 + 衬衫 + 格裙 + 领结/领带。
+    * **关键词:** `JK uniform`, `Sailor Fuku`, `plaid skirt`, `school blazer`, `knee-high socks`, `loafers`, `innocent and youthful`.
+
+* **2. 哥特萝莉塔 (Gothic Lolita):**
+    * **描述:** 融合了哥特文化的黑暗、神秘元素与洛可可时期的精致、华丽风格。整体呈现出如人偶般的美感，但色调偏暗，主题常与十字架、蔷薇、蝙蝠等相关。
+    * **关键词:** `Gothic Lolita dress`, `Victorian-inspired`, `dark and elegant`, `lace and frills`, `corset top`, `platform shoes`, `cross motifs`, `doll-like makeup`.
+
+* **3. 甜美萝莉塔 (Sweet Lolita):**
+    * **描述:** Lolita风格的一个分支，与哥特萝莉塔相对。色彩以粉、白、浅蓝等马卡龙色系为主，图案多为蛋糕、糖果、草莓、小动物等可爱元素，强调天真烂漫和甜美感。
+    * **关键词:** `Sweet Lolita dress`, `pastel colors`, `cute prints`, `ribbons and bows`, `cupcake silhouette`, `innocent and princess-like`.
+
+###### **索引B：中式元素新潮 (Modern Chinese Elements)**
+* **1. 新中式/国潮 (New Chinese Style / Guochao):**
+    * **描述:** 将中国传统服饰元素（如盘扣、立领、斜襟、水墨印花、传统刺绣）与现代时装剪裁（如西装、连衣裙、衬衫）相融合的风格。既有古典韵味，又符合现代审美。
+    * **关键词:** `New Chinese Style`, `modern Hanfu-inspired`, `mandarin collar`, `frog buttons`, `ink wash painting print`, `delicate embroidery`, `elegant and chic`.
+
+* **2. 仙侠/古风幻想 (Xianxia / Guofeng Fantasy):**
+    * **描述:** 源自仙侠游戏和影视剧的服装风格，非严格历史考据。特点是飘逸、层叠的纱质长衫，宽大的袖袍，仙气十足，常配有发簪、璎珞等饰品。
+    * **关键词:** `Xianxia style dress`, `ethereal and flowing robes`, `wide sleeves`, `multi-layered gauze`, `jade hairpins`, `immortal fairy look`.
+      
+如果你已经理解了需求，请开始书写，每一批都是32个全新的故事，并且在每一条最前面加上编号（方式你来决定，需要适配4位数的计数器）和vibe描述（30个中文字）
