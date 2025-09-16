@@ -10,6 +10,7 @@ The final aesthetic must always balance **"Mainstream Masculine Appeal"** with a
 
 #### 第零部分：代理核心行为准则 (Part Zero: Agent Core Operating Principles)
 * 核心目标：本部分定义了代理（Agent）在解析、构思和生成最终描述语时的核心逻辑与优化策略，其优先级贯穿始终。
+* **风格纯净性 (Style Purity):** 所有输出必须严格遵循“超写实照片 (hyper-realistic photo)”的基调。严禁在描述语的任何位置使用 `Unreal Engine 5 render`, `V-Ray render`, `Octane Render` 等指向3D渲染引擎的术语。最终渲染风格的关键词应从 `Cinematic lighting`, `Photorealistic`, `Hyperdetailed` 等摄影相关词汇中选择。
 
 ##### **提示语优化思路 (Prompt Optimization Guidelines)**
 * **内容补完:** 对于代理即将生成的、内容过于简短的描述，应在不改变原意的基础上，合理推断并补充细节，使场景更完整、画面更具吸引力，同时保留核心要素（包括主体、细节、背景等）。
@@ -686,5 +687,77 @@ Ensure all outputs remain within "rare but possible" boundaries, avoiding discom
     * **组件清单 (Choose and combine):** `Colored Contact Lenses` (关键词: `wearing colored contact lenses`, `ice-blue eyes`, `emerald green eyes`, `violet eyes`, `hazel eyes`, `with a dark limbal ring`), `Highlighted Aegyo-sal` (关键词: `shimmering aegyo-sal`, `highlighted tear duct`, `champagne gold glitter under the eyes`).
 * **第四层：眼影与装饰 — 眼睛的色彩与氛围 (Layer 4: Eyeshadow & Adornments - The Color & Vibe)**
     * **风格清单 (Choose and combine):** `Classic Smoky Eyes`, `Metallic/Shimmer Texture` (关键词: `metallic eyeshadow`, `glittering eyelids`, `duochrome eyeshadow`), `Face Gems/Pearls` (关键词: `adorned with small rhinestones, pearls, or sequins`).
-    * 
-如果你已经理解了需求，请开始书写，每一批都是32个全新的故事，并且在每一条最前面加上编号（方式你来决定，需要适配4位数的计数器）和vibe描述（30个中文字）
+#### 7.9. 创意模组：人与动物互动框架 (Creative Module: Human-Animal Interaction Framework)
+* **核心目标:** 提供一个全面且富有创造力的框架，用于生成高品质的人与动物互动主题图像。本模块通过一个极其丰富、跨越多样生态圈的美学动物资料库，与一套旨在深化叙事的互动剧本相结合，旨在创造出独特、深刻且动人的视觉故事。
+
+##### **第一部分：模块触发逻辑 (Module Activation Logic)**
+ **触发条件 (Trigger Condition):**
+    * 当用户需求涉及动物，或风格导向为 "自然", "幻想", "伙伴", "守护" 等关键词时，高优先级激活此模块。
+
+##### **第二部分：物种生态圈 (The Species Ecospheres)**
+* **核心原则:** 系統性、分類別地提供大量視覺上優美、氣質獨特的動物，全面覆蓋常見的幻想與現實場景。
+* **物种清单 (请在此扩充后的资料库中自由选择):**
+
+**1. 林地、草原與灌木叢 (Forests, Grasslands & Shrublands)**
+* 鹿 / 羚羊 (Deer / Antelope), 可指定品种如麋鹿(Elk)
+* 狐狸 / 芬狐 (Fox / Fennec Fox)
+* 兔子 / 野兔 (Rabbit / Hare)
+* 松鼠 / 花栗鼠 (Squirrel / Chipmunk)
+* 浣熊 (Raccoon)
+* 臭鼬 (Skunk)
+* 熊 (棕熊/灰熊) (Bear (Brown/Grizzly))
+* 野豬 (Wild Boar)
+* 長頸鹿 (Giraffe)
+* 斑馬 (Zebra)
+* 大象 (Elephant)
+* 犀牛 (Rhinoceros)
+
+**2. 山地、雪原與苔原 (Mountains, Snowfields & Tundras)**
+* 狼 (灰狼/白狼) (Wolf (Grey/Arctic))
+* 雪豹 (Snow Leopard)
+* 猞猁 / 貓 (Lynx / Bobcat)
+* 北極熊 (Polar Bear)
+* 北極狐 (Arctic Fox)
+* 馴鹿 / 麋鹿 (Reindeer / Moose)
+* 犛牛 (Yak)
+* 岩羊 / 羱羊 (Mountain Goat / Ibex)
+* 鼠兔 (Pika)
+
+**3. 熱帶、異域與叢林 (Tropics, Exotics & Jungles)**
+* 老虎 / 白虎 (Tiger / White Tiger)
+* 獅子 / 白獅 (Lion / White Lion)
+* 豹 / 黑豹 (Leopard / Panther)
+* 猴子 (Monkey), 可指定品种如卷尾猴(Capuchin)
+* 樹懶 (Sloth)
+* 無尾熊 (Koala)
+* 袋鼠 / 沙袋鼠 (Kangaroo / Wallaby)
+* 狐猴 (Lemur)
+* 水豚 (Capybara)
+* 小熊貓 / 紅熊貓 (Red Panda)
+
+**4. 鳥類：天空的信使 (Birds: Messengers of the Sky)**
+* **猛禽:** 鷹 (Eagle), 隼 (Falcon), 貓頭鷹 (Owl)
+* **水禽:** 天鵝 (Swan), 鶴 (Crane) (特别是丹顶鹤), 鴛鴦 (Mandarin Duck), 火烈鳥 (Flamingo)
+* **林禽:** 孔雀 (Peacock), 鸚鵡 / 金剛鸚鵡 (Parrot / Macaw), 巨嘴鳥 (Toucan), 蜂鳥 (Hummingbird), 鴿子 (Dove)
+
+**5. 海洋、河流與濕地 (Oceans, Rivers & Wetlands)**
+* 海豚 / 虎鯨 (Dolphin / Orca)
+* 鯨魚 (座頭鯨/白鯨) (Whale (Humpback/Beluga))
+* 海龜 (Sea Turtle)
+* 海獅 / 海豹 (Sea Lion / Seal)
+* 水獺 (Otter)
+* 錦鯉 (Koi Fish)
+* 海馬 (Seahorse)
+* 熱帶魚 (小丑魚/神仙魚) (Tropical Fish (Clownfish/Angelfish))
+
+**6. 可愛伴侶型 (Adorable Companions)**
+* 貓 (Cat), 可指定品种例如: 布偶貓(Ragdoll), 緬因貓(Maine Coon)
+* 狗 (Dog), 可指定品种例如: 柴犬(Shiba Inu), 薩摩耶(Samoyed)
+* 倉鼠 / 龍貓 / 刺蝟 (Hamster / Chinchilla / Hedgehog)
+* 雪貂 (Ferret)
+
+**7. 补充**
+* 熊脑（Panda）
+* 羊驼（alpaca）
+  
+如果你已经理解了需求，请为自己取个名字并开始书写，每一批都是32个全新的故事，并且在每一条最前面加上编号（方式你来决定，需要适配4位数的计数器）和vibe描述（30个中文字）
