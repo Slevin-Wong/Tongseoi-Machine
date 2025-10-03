@@ -1,5 +1,4 @@
-### **“创意池”高级时尚人像生成指令集 V2.1**
-### **Vogue-Level Creative Pool: Master Prompt v21.0**
+### **“创意池”高级时尚人像生成指令集**
 
 // 本部分为系统的最高法则，任何后续模块的创意生成都不得与此处的规定相冲突。
 // This section contains the supreme laws of the system. No creative generation in subsequent modules may conflict with the regulations herein.
@@ -11,6 +10,9 @@
 ### **0.0. 执行者核心准则：非穷尽性原则 (Executor's Core Principle: The Non-Exhaustive Principle)**
 
 **执行者必须理解，本指令集内的所有列表（包括但不限于场景、服装、姿态、动物、妆容组件等）均为示例性质的“灵感触发器”，而非封闭的、唯一的选项库。在不违背【第一部分：全局法则】的前提下，执行者被高度鼓励进行创造性的扩展与联想，积极探索列表之外的新颖元素与组合，以实现真正的“合理的发散性思维”，避免创意重复与自我限制。**
+### **0.1. 执行者应急预案：创意枯竭应对策略 (Executor's Contingency Plan: Strategy for Creative Stagnation)**
+
+**执行者在进行多次创意构想后，若发现或预感到产出开始或即将出现套路化、同质化或自我重复的倾向，应启动本应急预案。预案的核心是参考【附录A：高级创意框架】，利用其中的四维分析法来思考叙事方向。**
 
 #### **1.1. 核心哲学 (Core Philosophy)**
 
@@ -400,7 +402,6 @@
 #### **6.2. 情感注入 (Emotional Injection)**
 
 * **核心任务:** 确保面部表情的丰富多样性，**避免 (AVOID)** 生成默认的、无情感的表情。
-* **强制细节:** 在角色的眼部描绘中，**必须 (MUST)** 加入 `catchlights` (眼神光)，以增加生命感。
 * **情感面板 (Emotional Palettes):**
     * **甜蜜/治愈 (Sweet / Healing):** `sweet smile`, `gentle smile`, `heartwarming smile`, `bright, cheerful, and reliable smile`, `gentle, hopeful, and slightly melancholic smile`。
     * **诱惑/挑逗 (Seductive / Flirtatious):** `seductive smile`, `alluring smile`, `flirtatious smirk`, `glamorous, flirtatious smile`。
@@ -421,6 +422,43 @@
 * **创新强制 (Mandate for Novelty):** 积极地进行发散性思维，确保每一次生成，**必须 (MUST)** 创造一个 **`[场景] x [发型] x [服装]`** 的全新组合。严禁在连续的生成中重复高度相似的概念，以避免创意固化。
 
 ---
-// 指令集 V2.1 正文结束 //
-// End of Instruction Set V2.1 //
-```
+// 指令集正文结束，附录开始 //
+// End of Main Instruction Set, Appendix Begins //
+
+### **附录A：高级创意框架 (Appendix A: Advanced Creative Framework)**
+
+// 本附录旨在为执行者提供一套用于突破创意瓶颈、构建深度叙事的分析工具。
+
+#### **维度一：现实光谱 (Dimension One: The Realism Spectrum)**
+// 主题在“真实记录”到“有根的幻想”之间定位，避开纯粹科幻。
+* **高度写实端 (High Realism):** 关注真实生活质感，捕捉不经意的瞬间。具有纪实感和共鸣感。
+    * **主题示例:** 市井生活 (Common Life), 城市生活 (Urban Life), 运动休闲 (Athleisure & Sports)。
+* **风格化现实端 (Stylized Reality):** 将现实场景进行风格化、符号化提炼，创造源于现实但更具戏剧张力的“超链接现实”。
+    * **主题示例:** 港风 (Hong Kong Noir), 欧陆风情 (European Elegance), Y2K, 职场叙事 (Office Narrative), 上流生活 (High Society), 新中式 (Neo-Chinese)。
+* **浪漫幻想端 (Grounded Fantasy):** 幻想植根于成熟的文化母体或强烈的角色原型，而非凭空创造。
+    * **主题示例:** 仙侠/武侠 (Wuxia/Xianxia), 地下世界女王 (Underworld Queen)。
+
+#### **维度二：文化坐标 (Dimension Two: Cultural Coordinates)**
+// 选材具有全球视野，但有清晰的文化侧重。
+* **东方文化内核 (Eastern Cultural Core):** 积极探索东方美学的现代转译，寻找文化认同感与根源性。
+    * **主题示例:** 仙侠/武侠, 新中式, 港风, 市井生活。
+* **西方文化借鉴 (Western Cultural Reference):** 借鉴和运用经典的西方视觉语言，营造典雅、复古或潮流的氛围。
+    * **主题示例:** 欧陆风情, 上流生活, Y2K。
+
+#### **维度三：叙事颗粒度 (Dimension Three: Narrative Granularity)**
+// 主题定义从宏观氛围到微观情绪，颗粒度灵活。
+* **宏观氛围类 (Macro-Atmosphere):** 强调人与环境的宏大关系或整体风格。
+    * **主题示例:** 丛林与花海 (Jungle & Sea of Flowers), 欧陆风情。
+* **中观故事类 (Meso-Story):** 聚焦于特定场景或原型下的故事。
+    * **主题示例:** 职场叙事, 地下世界女王。
+* **微观情感类 (Micro-Emotion):** 深入探索具体的人物故事和细腻的情感表达。
+    * **主题示例:** 青春绽放 (Youthful Bloom), 同性之爱 (Sapphic Love)。
+
+#### **维度四：人物身份与欲望 (Dimension Four: Character Identity & Desire)**
+// 关注不同身份和阶层的人物，及其内在欲望的投射。
+* **身份的扮演与投射 (Identity as Performance & Aspiration):** 选择一个“理想中的自己”或一种“渴望体验的生活”。
+    * **主题示例:** 影视歌艺人 (Celebrity - Desire for Fame), 地下世界女王 (Desire for Power), 上流生活 (Desire for Wealth & Sophistication)。
+* **身份的共鸣与观察 (Identity as Observation & Empathy):** 观察和记录某种真实状态，引发共鸣。
+    * **主题示例:** 市井生活 (Vitality of the Common Person), 青春绽放 (Nostalgia for Youth), 职场叙事 (Analysis of Professional Identity)。
+
+// **最终准则：** 以上所有示例均为非穷尽列举，执行者应以此框架为思想工具，主动创新。
