@@ -240,10 +240,46 @@
         * **现代与未来:** `sleek futuristic skyscrapers` (未来主义摩天大楼), `brutalist architectural monuments` (粗野主义建筑), `infinity pool overlooking a city` (俯瞰城市的无边泳池), `a grand, modern art museum` (宏伟的现代美术馆)。
         * **特定地标 (作为灵感):** 可引用世界著名地标的风格，例如埃菲尔铁塔的结构美学，或泰姬陵的对称与倒影。
 
-    * **C. 城市与人文 (Urban & Cultural Environments)**
-        * **街头与集市:** `bustling night market in Asia` (亚洲繁华的夜市), `charming European cobblestone street` (迷人的欧洲鹅卵石街道), `a lively Moroccan souk` (充满活力的摩洛哥露天市场), `New York's Times Square with neon lights` (霓虹闪烁的纽约时代广场)。
-        * **生活气息:** `a quiet corner in a bustling cafe` (咖啡馆的安静角落), `a rooftop garden overlooking the city` (俯瞰城市的屋顶花园), `a vintage bookstore` (复古书店), `a vibrant fish market at dawn` (黎明时分充满活力的鱼市)。
-        * **都市街头诗学模块:** 此前定义的 `glass-clad skyscrapers` (玻璃幕墙摩天楼), `the underbelly of an overpass` (高架桥下), `subway platforms` (地铁站台), `cobblestone alleys` (鹅卵石小巷), `vibrant graffiti murals` (涂鸦墙) 等元素依然是本分类下的重要组成部分。
+    * **C. 城市与人文 (Urban & Cultural Environments)
+        
+        * C.1. 通用城市与人文元素 (Generic Urban & Cultural Elements)
+            * **街头与集市:** `bustling night market in Asia`， `charming European cobblestone street`， `a lively Moroccan souk`， `New York's Times Square with neon lights`。
+            * **生活气息:** `a quiet corner in a bustling cafe`, `a rooftop garden overlooking the city`, `a vintage bookstore`, `a vibrant fish market at dawn`。
+            * **都市街头诗学机制:** 此前定义的 `glass-clad skyscrapers`, `the underbelly of an overpass`, `subway platforms`, `graffiti murals` 等元素依然是本分类下的重要组成部分。
+
+        * C.2. 全球都市街拍圣地 (Global Urban Street Photography Hotspots)
+            // 本机制提供具有强烈视觉风格和文化符号的具体地点，旨在激发高度风格化的创意。
+            
+            * **亚洲：潮流、传统与未来的十字路口 (Asia: Crossroads of Trends, Tradition & Future)**
+                * **东京, 日本 (Tokyo, Japan):**
+                    * `Harajuku, Takeshita Street:` (原宿-竹下通) - `vibrant youth fashion`, `kawaii culture`, `colorful storefronts`, `quirky accessories`.
+                    * `Shinjuku:` (新宿) - `dazzling neon signs`, `nightlife`, `Blade Runner aesthetic`, `crowded streets of Kabukicho`, `Izakaya alleys`.
+                    * `Shibuya:` (渋谷) - `iconic Shibuya Crossing`, `organized chaos`, `giant video screens`, `modern architecture`.
+                    * `Ginza:` (銀座) - `high fashion`, `luxury boutiques`, `elegant department stores`, `sophisticated atmosphere`.
+                * **香港 (Hong Kong):**
+                    * `Mong Kok:` (旺角) - `dense vertical neon signs`, `street food stalls`, `gritty urban texture`, `organized chaos`.
+                    * `Central:` (中環) - `sleek skyscrapers`, `steep hillside streets`, `double-decker trams`, `fusion of East and West`.
+                * **首尔, 韩国 (Seoul, South Korea):**
+                    * `Hongdae:` (弘大) - `indie music scene`, `K-pop fashion`, `university town energy`, `artistic graffiti`.
+                * **台北, 台湾 (Taipei, Taiwan):**
+                    * `Ximending:` (西門町) - `Taiwanese Harajuku`, `anime culture`, `street performers`, `youthful energy`.
+
+            * **欧洲：古典、艺术与优雅的漫步 (Europe: A Stroll Through Classicism, Art & Elegance)**
+                * **巴黎, 法国 (Paris, France):**
+                    * `Le Marais:` (玛黑区) - `historic cobblestone streets`, `chic boutiques`, `art galleries`, `charming hidden courtyards`.
+                * **伦敦, 英国 (London, UK):**
+                    * `Soho / Carnaby Street:` (苏活区/卡纳比街) - `bohemian history`, `independent boutiques`, `vibrant nightlife`, `iconic archways`.
+                    * `Shoreditch:` (肖迪奇) - `edgy street art`, `large-scale graffiti murals`, `hipster cafes`, `converted industrial warehouses`.
+                * **米兰, 意大利 (Milan, Italy):**
+                    * `Quadrilatero della Moda:` (时尚四边形) - `pinnacle of luxury fashion`, `elegant window displays`, `cobblestone streets`, `impeccably dressed locals`.
+
+            * **北美：多元、现代与文化熔炉 (North America: Diversity, Modernity & The Melting Pot)**
+                * **纽约, 美国 (New York City, USA):**
+                    * `SoHo:` - `cast-iron architecture`, `upscale art galleries`, `cobblestone streets`, `fashionistas on parade`.
+                    * `Times Square:` - `overwhelming neon billboards`, `a river of yellow cabs`, `theatrical energy`, `massive crowds`.
+                * **洛杉矶, 美国 (Los Angeles, USA):**
+                    * `Melrose Avenue:` - `quirky boutiques`, `pink walls`, `influencer culture`, `LA street style`.
+                    * `Venice Beach:` - `bohemian vibe`, `oceanfront skate park`, `muscle beach`, `eclectic street performers`, `canal-lined streets`.
 
     * **D. 室内空间 (Interior Spaces)**
         * **奢华与古典:** `a grand ballroom with chandeliers` (挂着水晶吊灯的宏伟舞厅), `a library with floor-to-ceiling bookshelves` (拥有落地书架的图书馆), `a royal bedroom with a canopy bed` (带华盖床的皇家卧室)。
