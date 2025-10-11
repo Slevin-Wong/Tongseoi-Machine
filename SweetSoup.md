@@ -10,9 +10,17 @@
 ### **0.0. 执行者核心准则：非穷尽性原则 (Executor's Core Principle: The Non-Exhaustive Principle)**
 
 **执行者必须理解，本指令集内的所有列表（包括但不限于场景、服装、姿态、动物、妆容组件等）均为示例性质的“灵感触发器”，而非封闭的、唯一的选项库。在不违背【第一部分：全局法则】的前提下，执行者被高度鼓励进行创造性的扩展与联想，积极探索列表之外的新颖元素与组合，以实现真正的“合理的发散性思维”，避免创意重复与自我限制。**
-### **0.1. 执行者应急预案：创意枯竭应对策略 (Executor's Contingency Plan: Strategy for Creative Stagnation)**
+### **0.1. 创意深度指令 (Creative Depth Mandate) **
 
-**执行者在进行多次创意构想后，若发现或预感到产出开始或即将出现套路化、同质化或自我重复的倾向，应启动本应急预案。预案的核心是参考【附录A：高级创意框架】，利用其中的四维分析法来思考叙事方向。**
+**执行者在构思每一批作品时，应有意识地、高频率地主动运用【附录A：高级创意框架】中的分析法来构建核心概念，以确保故事的深度与多样性，避免产出可预测的、套路化的内容，同时执行者应当知道“主题示例”是非穷尽性举例，不要因此过度拟合或者限制自己的创意发散程度。建议在每批（32个）故事中，至少有30%-50%的概念显著体现附录A中的多种维度。**
+
+### **0.2. 输出规格与执行指令 (Output Specifications & Execution Command) (V2.4 新增)**
+
+* **1. 长度与细节要求 (Length & Detail Requirement):**
+    * 由于指令集提供了极为丰富的细节组件，执行者在生成每一条描述语时，有责任进行充分的组合与细化。**每一条独立的描述语文本长度应不少于900字符。** 必须避免因节省Token而牺牲故事的细节、氛围和完整性。
+
+* **2. 最终行动指令 (Final Action Command):**
+    * **如果你已经理解了需求，请为自己取个名字并开始书写，每一批都是32个全新的故事，并且在每一条最前面加上编号（方式你来决定，需要适配4位数的计数器）和vibe描述（30个中文字）。**
 
 #### **1.1. 核心哲学 (Core Philosophy)**
 
@@ -130,7 +138,7 @@
         * `Classic Highlights` (经典挑染), `Streaks / Block Dye` (发片/区块染), `Ombré / Balayage` (渐变/退晕染), `Under-dye / Hidden Dye` (裙摆染/隐藏染)。
     * **第三步：选择亮点色系 (Step 3: Choose the Accent Color Palette):**
         * 高对比度色系 (High-Contrast Palette): `Platinum Blonde`, `Silver Grey`, `Fiery Red`, `Sapphire Blue`。
-        * 糖果幻想色系 (Candy Fantasy Palette) (重点推荐): `Cotton Candy Pink`, `Mint Green`, `Baby Blue`, `Pastel Lilac`, `Lemon Yellow`, `Coral Peach`。可选择2-3种混合挑染，打造“彩虹”效果。
+        * 糖果幻想色系 (Candy Fantasy Palette) (重点推荐): `Cotton Candy Pink`， `Mint Green`， `Baby Blue`, `Pastel Lilac`, `Lemon Yellow`, `Coral Peach`。可选择2-3种混合挑染，打造“彩虹”效果。
 
 #### **2.4. 妆容系统 (Makeup System)**
 
@@ -140,15 +148,15 @@
     * **镜头关联规则:** 如果画面焦点在于 **面部表情** 或 **精细手部姿态**，**鼓励 (ENCOURAGED)** 从 `Close-Up` 或 `Medium Close-Up` 中选择镜头类型，以确保关键细节清晰。
 
 * **2.4.2. 眼妆组件库 (Eye Makeup Components Library)**
-    * **第一层：眼线 (Layer 1: Eyeliner):** 可选风格 `Classic Cat-Eye`, `Cleopatra/Egyptian Style` (粗黑眼线包围上下眼睑并在眼尾戏剧性延伸), `Puppy-Dog Style` (无辜下垂眼线)。
+    * **第一层：眼线 (Layer 1: Eyeliner):** 可选风格 `Classic Cat-Eye`， `Cleopatra/Egyptian Style` (粗黑眼线包围上下眼睑并在眼尾戏剧性延伸), `Puppy-Dog Style` (无辜下垂眼线)。
     * **第二层：睫毛 (Layer 2: Eyelashes):** 形态可组合 `Voluminous Upper Lashes` (浓密卷翘的上睫毛，关键词: `thick, curled false eyelashes`), `Long Upper Lashes` (纤长的上睫毛，关键词: `long, wispy eyelashes`), `Anime-style Lower Lashes` (动漫风格、强调分簇感的下睫毛)。
-    * **第三层：瞳孔与卧蚕 (Layer 3: Iris & Aegyo-sal):** 可组合 `Colored Contact Lenses / vivid circle lenses` (彩色隐形眼镜/美瞳，可指定颜色如 `ice-blue eyes`, `emerald green eyes`), `Highlighted Aegyo-sal` (卧蚕提亮，关键词: `shimmering aegyo-sal`, `highlighted tear duct`)。
+    * **第三层：瞳孔与卧蚕 (Layer 3: Iris & Aegyo-sal):** 可组合 `Colored Contact Lenses / vivid circle lenses` (彩色隐形眼镜/美瞳，可指定颜色如 `ice-blue eyes`， `emerald green eyes`), `Highlighted Aegyo-sal` (卧蚕提亮，关键词: `shimmering aegyo-sal`, `highlighted tear duct`)。
     * **第四层：眼影 (Layer 4: Eyeshadow):** 可选风格 `Classic Smoky Eyes` (经典烟熏妆), `Metallic/Shimmer Texture` (金属/珠光质感，关键词: `metallic eyeshadow`, `glittering eyelids`, `duochrome eyeshadow`)。
 
 * **2.4.3. 妆容组合应用 (Makeup Combination Blueprints)**
     * **说明:** 此为应用范例，展示如何组合组件以服务特定主题。
-    * **赛博朋克主题:** `...makeup with neon-lit eyeliner that glows subtly in the dark, glossy lips, and holographic eyeshadow...`
-    * **奇幻精灵主题:** `...ethereal makeup with pearlescent highlighter, soft pastel eyeshadow, and subtle glitter on her eyelashes...`
+    * **赛博朋克主题:** `...makeup with neon-lit eyeliner that glows subtly in the dark, glossy lips, 和 holographic eyeshadow...`
+    * **奇幻精灵主题:** `...ethereal makeup with pearlescent highlighter, soft pastel eyeshadow, 和 subtle glitter on her eyelashes...`
     * **唐代主题:** `...classic Tang Dynasty style: a flawless pale complexion, softly rounded "moth" eyebrows, a small, vibrant red "cherry" mouth, and a delicate "huadian" floral insignia on her forehead.`
     
 ### **第三部分：服装与配饰 (Part Three: Wardrobe & Accessories)**
@@ -195,13 +203,13 @@
         * **苗疆风 (Miao/Hmong Style):** `Miao ethnic style`， `elaborate silver ornaments`， `heavy silver headdress`， `vibrant embroidery`， `batik patterns`, `mysterious and untamed`。
         * **典藏礼服 (Ceremonial Robes):** `Zhai Yi` (翟衣), `ancient Chinese empress ceremonial robe`, `phoenix motif`, `intricate embroidery`。
     * **日系风格 (Japanese Style):**
-        * **哥特萝莉塔:** `Gothic Lolita dress`, `black and wine-red colors`, `lace and ribbons`, `cross motifs`, `corset`, `darkly elegant doll`。
+        * **哥特萝莉塔:** `Gothic Lolita dress`， `black and wine-red colors`, `lace and ribbons`, `cross motifs`, `corset`, `darkly elegant doll`。
         * **甜美萝莉塔:** `Sweet Lolita dress`, `pastel pink and baby blue`, `cupcake silhouette`, `heavy use of bows and frills`, `princess-like`。
         * **朋克萝莉塔:** `Punk Lolita`, `plaid patterns`, `studs and chains`, `torn details`, `edgy yet cute`。
         * **和风改良:** `modern Wafuu style`, `Kimono-sleeve dress`, `obi-style belt`, `Japanese floral print skirt`。
     * **西方复古 (Western Vintage):**
-        * **洛可可:** `Rococo style`， `pastel color palette`, `delicate embroidery`, `asymmetrical designs`, `abundant ruffles and bows`, `light and playful elegance`。
-    * **制服 (Uniforms):** `School Uniform` (e.g., `Sailor Fuku`), `Office Lady (OL) Style`, `Military/Ceremonial Uniforms`, `Racing Suit`。
+        * **洛可可:** `Rococo style`， `pastel color palette`， `delicate embroidery`, `asymmetrical designs`, `abundant ruffles and bows`, `light and playful elegance`。
+    * **制服 (Uniforms):** `School Uniform` (e.g., `Sailor Fuku`), `Office Lady (OL) Style`, `Military/Ceremonial Uniforms`， `Racing Suit`。
     * **泳装 (Swimwear):** `Bikini`， `One-Piece Swimsuit` (仅适用于合乎逻辑的场景)。
     * **角色扮演 (Cosplay):** 作为一个可选方案，可根据具体角色服装进行描述 (e.g., `female-tailored cosplay of Diluc's default outfit`， `cosplay of Firefly's dress`)。
 
@@ -255,12 +263,12 @@
                     * `Harajuku, Takeshita Street:` (原宿-竹下通) - `vibrant youth fashion`， `kawaii culture`, `colorful storefronts`, `quirky accessories`.
                     * `Shinjuku:` (新宿) - `dazzling neon signs`， `nightlife`, `Blade Runner aesthetic`, `crowded streets of Kabukicho`, `Izakaya alleys`.
                     * `Shibuya:` (渋谷) - `iconic Shibuya Crossing`， `organized chaos`, `giant video screens`， `modern architecture`.
-                    * `Ginza:` (銀座) - `high fashion`, `luxury boutiques`, `elegant department stores`, `sophisticated atmosphere`。
+                    * `Ginza:` (銀座) - `high fashion`， `luxury boutiques`， `elegant department stores`， `sophisticated atmosphere`。
                 * **香港 (Hong Kong):**
-                    * `Mong Kok:` (旺角) - `dense vertical neon signs`, `street food stalls`, `gritty urban texture`, `organized chaos`.
-                    * `Central:` (中環) - `sleek skyscrapers`, `steep hillside streets`, `double-decker trams`, `fusion of East and West`.
+                    * `Mong Kok:` (旺角) - `dense vertical neon signs`， `street food stalls`， `gritty urban texture`, `organized chaos`.
+                    * `Central:` (中環) - `sleek skyscrapers`， `steep hillside streets`， `double-decker trams`, `fusion of East and West`.
                 * **首尔, 韩国 (Seoul, South Korea):**
-                    * `Hongdae:` (弘大) - `indie music scene`， `K-pop fashion`， `university town energy`， `artistic graffiti`.
+                    * `Hongdae:` (弘大) - `indie music scene`， `K-pop fashion`， `university town energy`， `artistic graffiti`。
                 * **台北, 台湾 (Taipei, Taiwan):**
                     * `Ximending:` (西門町) - `Taiwanese Harajuku`, `anime culture`, `street performers`, `youthful energy`.
 
@@ -275,8 +283,8 @@
 
             * **北美：多元、现代与文化熔炉 (North America: Diversity, Modernity & The Melting Pot)**
                 * **纽约, 美国 (New York City, USA):**
-                    * `SoHo:` - `cast-iron architecture`， `upscale art galleries`， `cobblestone streets`, `fashionistas on parade`.
-                    * `Times Square:` - `overwhelming neon billboards`, `a river of yellow cabs`, `theatrical energy`, `massive crowds`.
+                    * `SoHo:` - `cast-iron architecture`， `upscale art galleries`， `cobblestone streets`, `fashionistas on parade`。
+                    * `Times Square:` - `overwhelming neon billboards`， `a river of yellow cabs`, `theatrical energy`, `massive crowds`.
                 * **洛杉矶, 美国 (Los Angeles, USA):**
                     * `Melrose Avenue:` - `quirky boutiques`, `pink walls`, `influencer culture`, `LA street style`.
                     * `Venice Beach:` - `bohemian vibe`， `oceanfront skate park`, `muscle beach`, `eclectic street performers`, `canal-lined streets`.
@@ -309,7 +317,7 @@
         * 反射光 + 透射光: `(直接: sunbeam through a window) + (透射: prism-cast rainbows)`。
 * **4.3.2. 高级光学效果 (Advanced Optical Effects)**
     * **精准反射:** `Hyperrealistic reflections`， `Specular reflections`， `Reflections in puddles`， `Polished floor`， `Chrome metal`, `Wet surface`。
-    * **光线折射/焦散:** `Light refraction`, `Caustics`, `Underwater light rays`, `Through the glass`, `Prism effect`, `Crystal clear`。
+    * **光线折射/焦散:** `Light refraction`， `Caustics`, `Underwater light rays`, `Through the glass`, `Prism effect`, `Crystal clear`。
     * **体积光 (丁达尔效应):** `Volumetric lighting`， `Light beams`, `Light shafts`, `God rays`, `Crepuscular rays`, `Tyndall effect`。
     * **全局光照/色彩溢出:** `Global Illumination`, `GI`, `Indirect lighting`, `Soft bounced light`, `Color bleed`, `Lumen`。
 * **4.3.3. 动态氛围 (Dynamic Atmosphere)**
@@ -431,11 +439,11 @@
 
 * **核心任务:** 确保面部表情的丰富多样性，**避免 (AVOID)** 生成默认的、无情感的表情。
 * **情感面板 (Emotional Palettes):**
-    * **甜蜜/治愈 (Sweet / Healing):** `sweet smile`, `gentle smile`, `heartwarming smile`, `bright, cheerful, and reliable smile`, `gentle, hopeful, and slightly melancholic smile`。
-    * **诱惑/挑逗 (Seductive / Flirtatious):** `seductive smile`, `alluring smile`, `flirtatious smirk`, `glamorous, flirtatious smile`。
-    * **强大/危险 (Powerful / Dangerous):** `evil grin`, `sinister smile`, `triumphant grin`, `ecstatic and triumphant grin`, `cool, commanding, and confident expression`, `cool, confident, and overwhelmingly powerful smirk`。
+    * **甜蜜/治愈 (Sweet / Healing):** `sweet smile`， `gentle smile`， `heartwarming smile`, `bright, cheerful, and reliable smile`, `gentle, hopeful, and slightly melancholic smile`。
+    * **诱惑/挑逗 (Seductive / Flirtatious):** `seductive smile`， `alluring smile`， `flirtatious smirk`, `glamorous, flirtatious smile`。
+    * **强大/危险 (Powerful / Dangerous):** `evil grin`, `sinister smile`, `triumphant grin`, `ecstatic and triumphant grin`， `cool, commanding, 和 confident expression`， `cool, confident, 和 overwhelmingly powerful smirk`。
     * **傲慢/轻蔑 (Arrogant / Contemptuous):** `smirk of contempt`, `disdainful smile`, `powerful, serene, and slightly disdainful expression`。
-    * **专注/宁静 (Focused / Serene):** `serene, peaceful expression`, `sharp, focused expression`, `patient, hopeful expression`, `gentle, responsible leadership`。
+    * **专注/宁静 (Focused / Serene):** `serene, peaceful expression`， `sharp, focused expression`, `patient, hopeful expression`, `gentle, responsible leadership`。
 
 #### **6.3. 可选叙事策略：情感与环境的反差 (Optional Narrative Strategy: Emotion/Environment Contrast)**
 
@@ -490,5 +498,3 @@
     * **主题示例:** 市井生活 (Vitality of the Common Person), 青春绽放 (Nostalgia for Youth), 职场叙事 (Analysis of Professional Identity)。
 
 // **最终准则：** 以上所有示例均为非穷尽列举，执行者应以此框架为思想工具，主动创新。
-
-如果你已经理解了需求，请为自己取个名字并开始书写，每一批都是32个全新的故事，并且在每一条最前面加上编号（方式你来决定，需要适配4位数的计数器）和vibe描述（30个中文字）
