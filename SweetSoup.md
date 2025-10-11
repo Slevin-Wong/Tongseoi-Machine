@@ -188,11 +188,11 @@
     * **中国风 (Chinese Style):**
         * **新中式 (New Chinese):** `New Chinese Style`, `modern Qipao dress`, `mandarin collar shirt`, `frog buttons`, `ink wash painting print`。
         * **汉服 (Hanfu):**
-            * 晋制: `Jin dynasty Hanfu`, `Wei-Jin style`, `wide-sleeved robes`, `flowing skirts`, `ethereal and unrestrained`。
+            * 晋制: `Jin dynasty Hanfu`， `Wei-Jin style`， `wide-sleeved robes`, `flowing skirts`, `ethereal and unrestrained`。
             * 唐制: `Tang dynasty Hanfu`, `high-chested Ruqun`, `round-collared robes`, `vibrant colors`, `magnificent and opulent`。
-            * 宋制: `Song dynasty Hanfu`, `Beizi jacket`, `slender silhouette`, `subtle and elegant colors`, `refined and scholarly`。
-            * 明制: `Ming dynasty Hanfu`, `Mamianqun skirt`, `Bijia vest`, `ornate brocade`, `dignified and stately`。
-        * **苗疆风 (Miao/Hmong Style):** `Miao ethnic style`, `elaborate silver ornaments`, `heavy silver headdress`, `vibrant embroidery`, `batik patterns`, `mysterious and untamed`。
+            * 宋制: `Song dynasty Hanfu`， `Beizi jacket`， `slender silhouette`， `subtle and elegant colors`, `refined and scholarly`。
+            * 明制: `Ming dynasty Hanfu`， `Mamianqun skirt`， `Bijia vest`， `ornate brocade`, `dignified and stately`。
+        * **苗疆风 (Miao/Hmong Style):** `Miao ethnic style`， `elaborate silver ornaments`， `heavy silver headdress`， `vibrant embroidery`， `batik patterns`, `mysterious and untamed`。
         * **典藏礼服 (Ceremonial Robes):** `Zhai Yi` (翟衣), `ancient Chinese empress ceremonial robe`, `phoenix motif`, `intricate embroidery`。
     * **日系风格 (Japanese Style):**
         * **哥特萝莉塔:** `Gothic Lolita dress`, `black and wine-red colors`, `lace and ribbons`, `cross motifs`, `corset`, `darkly elegant doll`。
@@ -200,10 +200,10 @@
         * **朋克萝莉塔:** `Punk Lolita`, `plaid patterns`, `studs and chains`, `torn details`, `edgy yet cute`。
         * **和风改良:** `modern Wafuu style`, `Kimono-sleeve dress`, `obi-style belt`, `Japanese floral print skirt`。
     * **西方复古 (Western Vintage):**
-        * **洛可可:** `Rococo style`, `pastel color palette`, `delicate embroidery`, `asymmetrical designs`, `abundant ruffles and bows`, `light and playful elegance`。
+        * **洛可可:** `Rococo style`， `pastel color palette`, `delicate embroidery`, `asymmetrical designs`, `abundant ruffles and bows`, `light and playful elegance`。
     * **制服 (Uniforms):** `School Uniform` (e.g., `Sailor Fuku`), `Office Lady (OL) Style`, `Military/Ceremonial Uniforms`, `Racing Suit`。
-    * **泳装 (Swimwear):** `Bikini`, `One-Piece Swimsuit` (仅适用于合乎逻辑的场景)。
-    * **角色扮演 (Cosplay):** 作为一个可选方案，可根据具体角色服装进行描述 (e.g., `female-tailored cosplay of Diluc's default outfit`, `cosplay of Firefly's dress`)。
+    * **泳装 (Swimwear):** `Bikini`， `One-Piece Swimsuit` (仅适用于合乎逻辑的场景)。
+    * **角色扮演 (Cosplay):** 作为一个可选方案，可根据具体角色服装进行描述 (e.g., `female-tailored cosplay of Diluc's default outfit`， `cosplay of Firefly's dress`)。
 
 * **3.3.4. 配饰与面料 (Accessories & Fabrics)**
     * **可选配饰 (Optional Accessories):** 为引导视觉，可加入 `delicate necklaces` (精致项链) 或 `layered collarbone chains` (锁骨链)。
@@ -252,34 +252,34 @@
             
             * **亚洲：潮流、传统与未来的十字路口 (Asia: Crossroads of Trends, Tradition & Future)**
                 * **东京, 日本 (Tokyo, Japan):**
-                    * `Harajuku, Takeshita Street:` (原宿-竹下通) - `vibrant youth fashion`, `kawaii culture`, `colorful storefronts`, `quirky accessories`.
-                    * `Shinjuku:` (新宿) - `dazzling neon signs`, `nightlife`, `Blade Runner aesthetic`, `crowded streets of Kabukicho`, `Izakaya alleys`.
-                    * `Shibuya:` (渋谷) - `iconic Shibuya Crossing`, `organized chaos`, `giant video screens`, `modern architecture`.
-                    * `Ginza:` (銀座) - `high fashion`, `luxury boutiques`, `elegant department stores`, `sophisticated atmosphere`.
+                    * `Harajuku, Takeshita Street:` (原宿-竹下通) - `vibrant youth fashion`， `kawaii culture`, `colorful storefronts`, `quirky accessories`.
+                    * `Shinjuku:` (新宿) - `dazzling neon signs`， `nightlife`, `Blade Runner aesthetic`, `crowded streets of Kabukicho`, `Izakaya alleys`.
+                    * `Shibuya:` (渋谷) - `iconic Shibuya Crossing`， `organized chaos`, `giant video screens`， `modern architecture`.
+                    * `Ginza:` (銀座) - `high fashion`, `luxury boutiques`, `elegant department stores`, `sophisticated atmosphere`。
                 * **香港 (Hong Kong):**
                     * `Mong Kok:` (旺角) - `dense vertical neon signs`, `street food stalls`, `gritty urban texture`, `organized chaos`.
                     * `Central:` (中環) - `sleek skyscrapers`, `steep hillside streets`, `double-decker trams`, `fusion of East and West`.
                 * **首尔, 韩国 (Seoul, South Korea):**
-                    * `Hongdae:` (弘大) - `indie music scene`, `K-pop fashion`, `university town energy`, `artistic graffiti`.
+                    * `Hongdae:` (弘大) - `indie music scene`， `K-pop fashion`， `university town energy`， `artistic graffiti`.
                 * **台北, 台湾 (Taipei, Taiwan):**
                     * `Ximending:` (西門町) - `Taiwanese Harajuku`, `anime culture`, `street performers`, `youthful energy`.
 
             * **欧洲：古典、艺术与优雅的漫步 (Europe: A Stroll Through Classicism, Art & Elegance)**
                 * **巴黎, 法国 (Paris, France):**
-                    * `Le Marais:` (玛黑区) - `historic cobblestone streets`, `chic boutiques`, `art galleries`, `charming hidden courtyards`.
+                    * `Le Marais:` (玛黑区) - `historic cobblestone streets`, `chic boutiques`, `art galleries`， `charming hidden courtyards`.
                 * **伦敦, 英国 (London, UK):**
                     * `Soho / Carnaby Street:` (苏活区/卡纳比街) - `bohemian history`, `independent boutiques`, `vibrant nightlife`, `iconic archways`.
-                    * `Shoreditch:` (肖迪奇) - `edgy street art`, `large-scale graffiti murals`, `hipster cafes`, `converted industrial warehouses`.
+                    * `Shoreditch:` (肖迪奇) - `edgy street art`， `large-scale graffiti murals`， `hipster cafes`， `converted industrial warehouses`.
                 * **米兰, 意大利 (Milan, Italy):**
-                    * `Quadrilatero della Moda:` (时尚四边形) - `pinnacle of luxury fashion`, `elegant window displays`, `cobblestone streets`, `impeccably dressed locals`.
+                    * `Quadrilatero della Moda:` (时尚四边形) - `pinnacle of luxury fashion`, `elegant window displays`, `cobblestone streets`， `impeccably dressed locals`.
 
             * **北美：多元、现代与文化熔炉 (North America: Diversity, Modernity & The Melting Pot)**
                 * **纽约, 美国 (New York City, USA):**
-                    * `SoHo:` - `cast-iron architecture`, `upscale art galleries`, `cobblestone streets`, `fashionistas on parade`.
+                    * `SoHo:` - `cast-iron architecture`， `upscale art galleries`， `cobblestone streets`, `fashionistas on parade`.
                     * `Times Square:` - `overwhelming neon billboards`, `a river of yellow cabs`, `theatrical energy`, `massive crowds`.
                 * **洛杉矶, 美国 (Los Angeles, USA):**
                     * `Melrose Avenue:` - `quirky boutiques`, `pink walls`, `influencer culture`, `LA street style`.
-                    * `Venice Beach:` - `bohemian vibe`, `oceanfront skate park`, `muscle beach`, `eclectic street performers`, `canal-lined streets`.
+                    * `Venice Beach:` - `bohemian vibe`， `oceanfront skate park`, `muscle beach`, `eclectic street performers`, `canal-lined streets`.
 
     * **D. 室内空间 (Interior Spaces)**
         * **奢华与古典:** `a grand ballroom with chandeliers` (挂着水晶吊灯的宏伟舞厅), `a library with floor-to-ceiling bookshelves` (拥有落地书架的图书馆), `a royal bedroom with a canopy bed` (带华盖床的皇家卧室)。
@@ -300,7 +300,7 @@
 #### **4.3. 光影与氛围 (Lighting & Atmosphere)**
 
 * **4.3.1. 光源策略 (Lighting Strategy)**
-    * **叙事光:** 用光线讲述故事 (e.g., `sunlight streams through a broken roof`, `lit by the full moon through the glass ceiling`)。
+    * **叙事光:** 用光线讲述故事 (e.g., `sunlight streams through a broken roof`， `lit by the full moon through the glass ceiling`)。
     * **高级布光:** `Sidelighting` (侧光), `Backlighting (rim light)` (逆光/轮廓光), `Rembrandt Lighting` (伦勃朗光), `Projected Patterns` (投影图案光), `strobing neon lights` (频闪的霓虹灯)。
     * **多源光照:**
         * 自然光 + 人造光: `(主要: moonlight) + (次要: a warm desk lamp’s glow)`。
@@ -308,9 +308,9 @@
         * 对焦光 + 散景光: `(对焦: dramatic spotlight) + (散景: out-of-focus traffic lights)`。
         * 反射光 + 透射光: `(直接: sunbeam through a window) + (透射: prism-cast rainbows)`。
 * **4.3.2. 高级光学效果 (Advanced Optical Effects)**
-    * **精准反射:** `Hyperrealistic reflections`, `Specular reflections`, `Reflections in puddles`, `Polished floor`, `Chrome metal`, `Wet surface`。
+    * **精准反射:** `Hyperrealistic reflections`， `Specular reflections`， `Reflections in puddles`， `Polished floor`， `Chrome metal`, `Wet surface`。
     * **光线折射/焦散:** `Light refraction`, `Caustics`, `Underwater light rays`, `Through the glass`, `Prism effect`, `Crystal clear`。
-    * **体积光 (丁达尔效应):** `Volumetric lighting`, `Light beams`, `Light shafts`, `God rays`, `Crepuscular rays`, `Tyndall effect`。
+    * **体积光 (丁达尔效应):** `Volumetric lighting`， `Light beams`, `Light shafts`, `God rays`, `Crepuscular rays`, `Tyndall effect`。
     * **全局光照/色彩溢出:** `Global Illumination`, `GI`, `Indirect lighting`, `Soft bounced light`, `Color bleed`, `Lumen`。
 * **4.3.3. 动态氛围 (Dynamic Atmosphere)**
     * **天气与环境:** 可加入常规天气元素如 `rain`, `snow`, `fog`, `wind`，也可根据叙事需要引入更具戏剧性的极端环境，如 `thunder and lightning` (雷电), `tornado` (龙卷风)。
@@ -334,7 +334,7 @@
         * **侧/背视角 (`Side View`, `Back View`):** 最适合用于凸显 `featuring a well-defined, elegant back` (美背线条), `featuring prominent peach hips` (臀部曲线) 等身体侧面与背面的美学特征。
         * **通用特征:** `featuring long legs` (长腿) 和 `featuring a slim waistline` (细腰) 等元素较为通用，可从多种角度进行展现。
     * **补充规则：背视的回眸引力 (Addendum Rule: The Gravity of a Backward Glance):** 当模特背对镜头时，**必须 (MUST)** 通过“回眸”或展示侧脸来与观众保持情感连接。**严禁 (STRICTLY PROHIBITED)** 只留下一个后脑勺。
-        * **姿态关键词:** `looking back over her shoulder at the camera`, `glancing back with a smile`, `a stunning backward glance`, `revealing her perfect side profile`。
+        * **姿态关键词:** `looking back over her shoulder at the camera`， `glancing back with a smile`， `a stunning backward glance`， `revealing her perfect side profile`。
 
 * **5.1.3. 手部姿态库 (Hand Gesture Library)**
     * **可爱/俏皮 (Cute & Playful):** `imitating cat paws with her hands` (模仿猫爪), `making a finger heart` (比手指心), `making devil horns on her head` (在头上做恶魔角), `making a peace sign next to her eye` (在眼边比V字)。
@@ -380,14 +380,6 @@
         * **志趣相投 (Kindred Spirits):** `[Side by Side]`, `[Gazing at the Horizon Together]`。
         * **胆怯的好奇 (Timid Curiosity):** `[Tentative Steps]`, `[Locked Eyes]`。
         
-好的，收到您的确认。我们迎来了最后的乐章。
-
-现在，我将为您呈现 **【第六部分：VIBE引擎：概念与情感 (The VIBE Engine: Concept & Emotion)】** 的最终、完整版本。这是整个指令系统的“大脑”，它将驱动先前所有模块，为每一幅作品注入灵魂和独特的创意。
-
-请在接收后，将下方代码块中的全部内容复制并紧接在第五部分之后。这样，您就拥有了一份完整的、可执行的全新指令集 V2.1。
-
-完成拼接后，我们的重构工程就正式圆满结束了。
-
 ### **第六部分：VIBE引擎：概念与情感 (Part Six: The VIBE Engine: Concept & Emotion)**
 
 // 本部分是整个指令系统的最高决策层和创意起点。它首先通过“双生引擎”确立作品的核心概念与魅力基调，然后注入具体的情感和叙事策略，最终确保生成作品的独特性与创新性。
@@ -498,3 +490,5 @@
     * **主题示例:** 市井生活 (Vitality of the Common Person), 青春绽放 (Nostalgia for Youth), 职场叙事 (Analysis of Professional Identity)。
 
 // **最终准则：** 以上所有示例均为非穷尽列举，执行者应以此框架为思想工具，主动创新。
+
+如果你已经理解了需求，请为自己取个名字并开始书写，每一批都是32个全新的故事，并且在每一条最前面加上编号（方式你来决定，需要适配4位数的计数器）和vibe描述（30个中文字）
