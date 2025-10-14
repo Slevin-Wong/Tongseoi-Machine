@@ -17,10 +17,7 @@
 ### **0.2. 输出规格与执行指令 (Output Specifications & Execution Command) (V2.4 新增)**
 
 * **1. 长度与细节要求 (Length & Detail Requirement):**
-    * 由于指令集提供了极为丰富的细节组件，执行者在生成每一条描述语时，有责任进行充分的组合与细化。**每一条独立的描述语文本长度应不少于900字符。** 必须避免因节省Token而牺牲故事的细节、氛围和完整性。
-
-* **2. 最终行动指令 (Final Action Command):**
-    * **如果你已经理解了需求，请为自己取个名字并开始书写，每一批都是32个全新的故事，并且在每一条最前面加上编号（方式你来决定，需要适配4位数的计数器）和vibe描述（30个中文字）。**
+    * 由于指令集提供了极为丰富的细节组件，特别是2.2（身体与肌肤）、2.3（发型系统）、2.4（妆容系统）、5.1（单人姿态）、5.2（互动叙事）和6.1（核心驱动逻辑：双生引擎）。执行者在生成每一条描述语时，有责任进行充分的组合与细化。**每一条独立的描述语文本长度应不少于900字符。** 必须避免因节省Token而牺牲故事的细节、氛围和完整性。
 
 #### **1.1. 核心哲学 (Core Philosophy)**
 
@@ -126,7 +123,7 @@
 #### **2.3. 发型系统 (Hairstyle System)**
 
 * **2.3.1. 全局指令 (Global Directives)**
-    * **长度与发质:** 发型 **必须是 (MUST be)** 长度达到或超过腰部的长发 (`waist-length long hair`)。发质通常为直发 (`straight`)。此为最高优先级指令。
+    * **长度与发质:** 发型 ***必须 (ALWAYS)** 被描述为：`waist-length long hair`。发质通常为直发 (`straight`)。此为最高优先级指令。
     * **呈现方式:** 默认情况下，头发应为自然披散 (`worn down and flowing`)，**非必要不得在视觉上被隐藏、遮挡或扎起**，以确保其飘逸的美感得以充分展现。特定姿态（如为展露美背而将头发拨到一侧）是允许的例外。
 
 * **2.3.2. 发色设计系统 (Hair Color Design System)**
@@ -206,12 +203,14 @@
         * **哥特萝莉塔:** `Gothic Lolita dress`， `black and wine-red colors`, `lace and ribbons`, `cross motifs`, `corset`, `darkly elegant doll`。
         * **甜美萝莉塔:** `Sweet Lolita dress`, `pastel pink and baby blue`, `cupcake silhouette`, `heavy use of bows and frills`, `princess-like`。
         * **朋克萝莉塔:** `Punk Lolita`, `plaid patterns`, `studs and chains`, `torn details`, `edgy yet cute`。
-        * **和风改良:** `modern Wafuu style`, `Kimono-sleeve dress`, `obi-style belt`, `Japanese floral print skirt`。
+        * **和风改良:** `modern Wafuu style`， `Kimono-sleeve dress`， `obi-style belt`, `Japanese floral print skirt`。
     * **西方复古 (Western Vintage):**
         * **洛可可:** `Rococo style`， `pastel color palette`， `delicate embroidery`, `asymmetrical designs`, `abundant ruffles and bows`, `light and playful elegance`。
     * **制服 (Uniforms):** `School Uniform` (e.g., `Sailor Fuku`), `Office Lady (OL) Style`, `Military/Ceremonial Uniforms`， `Racing Suit`。
     * **泳装 (Swimwear):** `Bikini`， `One-Piece Swimsuit` (仅适用于合乎逻辑的场景)。
-    * **角色扮演 (Cosplay):** 作为一个可选方案，可根据具体角色服装进行描述 (e.g., `female-tailored cosplay of Diluc's default outfit`， `cosplay of Firefly's dress`)。
+    * **角色扮演 (Cosplay):**
+        * **基础指令:** 作为一个可选服装方案，可根据具体角色服装进行描述 (e.g., `female-tailored cosplay of Diluc's default outfit`)。
+        * **高级指令:** 如需进行强调世界观还原、电影级氛围和特效的“写实主义Cosplay”，请查阅并调用 **【附录B：写实主义Cosplay与世界观再现】** 的完整框架。
 
 * **3.3.4. 配饰与面料 (Accessories & Fabrics)**
     * **可选配饰 (Optional Accessories):** 为引导视觉，可加入 `delicate necklaces` (精致项链) 或 `layered collarbone chains` (锁骨链)。
@@ -220,7 +219,7 @@
 #### **3.4. 服装禁忌 (Wardrobe Prohibitions)**
 
 * **全局法则已禁止 (Prohibited by Global Precepts):**
-    * `bras or bra sets` (作为独立内衣), `corsets`, `bustiers`, `turtlenecks`, `mock necks`, `latex`, `vinyl`, `tattered cloth`, `heavy armor`。
+    * `bras or bra sets` (作为独立内衣), `corsets`， `bustiers`， `turtlenecks`， `mock necks`， `latex`， `vinyl`， `tattered cloth`, `heavy armor`。
 * **不鼓励项 (Discouraged Elements):**
     * `overly minimalist clothing` (过于简约的服装，应优先考虑有细节和设计感的)。
     * `blazers` (西装外套) 和 `shirts` (衬衫) (应降低使用频率)。
@@ -260,17 +259,17 @@
             
             * **亚洲：潮流、传统与未来的十字路口 (Asia: Crossroads of Trends, Tradition & Future)**
                 * **东京, 日本 (Tokyo, Japan):**
-                    * `Harajuku, Takeshita Street:` (原宿-竹下通) - `vibrant youth fashion`， `kawaii culture`, `colorful storefronts`, `quirky accessories`.
-                    * `Shinjuku:` (新宿) - `dazzling neon signs`， `nightlife`, `Blade Runner aesthetic`, `crowded streets of Kabukicho`, `Izakaya alleys`.
-                    * `Shibuya:` (渋谷) - `iconic Shibuya Crossing`， `organized chaos`, `giant video screens`， `modern architecture`.
+                    * `Harajuku, Takeshita Street:` (原宿-竹下通) - `vibrant youth fashion`， `kawaii culture`， `colorful storefronts`, `quirky accessories`。
+                    * `Shinjuku:` (新宿) - `dazzling neon signs`， `nightlife`, `Blade Runner aesthetic`, `crowded streets of Kabukicho`， `Izakaya alleys`。
+                    * `Shibuya:` (渋谷) - `iconic Shibuya Crossing`， `organized chaos`， `giant video screens`， `modern architecture`.
                     * `Ginza:` (銀座) - `high fashion`， `luxury boutiques`， `elegant department stores`， `sophisticated atmosphere`。
                 * **香港 (Hong Kong):**
                     * `Mong Kok:` (旺角) - `dense vertical neon signs`， `street food stalls`， `gritty urban texture`, `organized chaos`.
-                    * `Central:` (中環) - `sleek skyscrapers`， `steep hillside streets`， `double-decker trams`, `fusion of East and West`.
+                    * `Central:` (中環) - `sleek skyscrapers`， `steep hillside streets`， `double-decker trams`, `fusion of East and West`。
                 * **首尔, 韩国 (Seoul, South Korea):**
                     * `Hongdae:` (弘大) - `indie music scene`， `K-pop fashion`， `university town energy`， `artistic graffiti`。
                 * **台北, 台湾 (Taipei, Taiwan):**
-                    * `Ximending:` (西門町) - `Taiwanese Harajuku`, `anime culture`, `street performers`, `youthful energy`.
+                    * `Ximending:` (西門町) - `Taiwanese Harajuku`， `anime culture`， `street performers`, `youthful energy`.
 
             * **欧洲：古典、艺术与优雅的漫步 (Europe: A Stroll Through Classicism, Art & Elegance)**
                 * **巴黎, 法国 (Paris, France):**
@@ -293,7 +292,18 @@
         * **奢华与古典:** `a grand ballroom with chandeliers` (挂着水晶吊灯的宏伟舞厅), `a library with floor-to-ceiling bookshelves` (拥有落地书架的图书馆), `a royal bedroom with a canopy bed` (带华盖床的皇家卧室)。
         * **现代与艺术:** `a spacious artist's loft with large windows` (带巨大窗户的宽敞艺术家阁楼), `a minimalist apartment with clean lines` (线条简洁的极简主义公寓)。
         * **温馨与自然:** `a cozy cabin with a fireplace` (带壁炉的舒适小木屋), `a sunlit greenhouse filled with exotic plants` (充满异域植物的阳光温室), `a traditional Japanese teahouse with tatami mats` (带榻榻米的日式茶室)。
+    * **E. 主题性/体验式空间 (Themed / Experiential Spaces)**
+        * **核心魅力:** 提供完整的、沉浸式的幻想世界或精心设计的“空间叙事”。
 
+        * **1. 主题乐园 (Theme Parks):**
+            * `In front of the Disney Castle`, `on a Carousel`, `The Wizarding World of Harry Potter / Hogwarts Castle`, `on the curb during a parade`, `under the nightly fireworks show`.
+
+        * **2. 特色商业空间 (Unique Commercial Spaces):**
+            * `Cathedral-style / Starry sky / Cave-themed mega-bookstores`, `Futuristic / Industrial style flagship stores (e.g., Gentle Monster)`, `Vintage-themed cafes or bars`, `Showrooms in large furniture stores like IKEA`.
+
+        * **3. 大型节庆与活动 (Large-Scale Festivals & Events):**
+            * `Anime/Game conventions (e.g., Comic-Con)`, `Christmas markets`, `New Year's fireworks`.
+              
 #### **4.2. 构图与镜头 (Composition & Perspective)**
 
 * **全局构图法则回顾 (Recap from Global Precepts):**
@@ -304,7 +314,22 @@
     * `shot in a high-fashion editorial style` (高级时尚大片风格)。
     * `compressed telephoto lens effect` (长焦镜头压缩效果)。
     * `dynamic wide-angle lens effect` (广角镜头动态效果)。
+* **4.23电影大师风格致敬 (Homage to Cinematic Masters)**
+            // 核心原则: 转译大师的视觉语言，而非简单模仿。将风格应用于写实摄影中。
+            // 选择一位导演的风格会整体性地影响构图、色彩和光影。
 
+            * **1. 新海诚 (Makoto Shinkai) —— 光影的魔法师**
+                * **核心美学:** 現實世界的“情緒增強版”，捕捉光、天氣和距離中的細膩感傷。
+                * **关键词:** `dramatic wide-angle lens`, `foreground compression`, `worm's-eye / bird's-eye view`, `signature "Shinkai Blue" sky`, `oversaturated skies`, `magenta/purple-tinted glows`, `cool-toned shadows`, `volumetric light / crepuscular rays`, `dramatic lens flare`, `starburst effect on lights`, `emotional weather` (e.g., `afternoon thundershower`, `falling cherry blossoms`, `the first snow`).
+
+            * **2. 韦斯·安德森 (Wes Anderson) —— 对称美学的造梦师**
+                * **核心美学:** 精緻、復古、充滿童趣的“真人童話書”，一切都處於完美的秩序之中。
+                * **关键词:** `strict symmetrical composition`, `one-point perspective`, `flat space composition`, `rule of thirds for placing objects`, `high-saturation vintage palette`, `pastel / macaron colors`, `curated color schemes` (e.g., `warm yellows, pinks, mint greens`), `soft, even lighting`, `minimal harsh shadows`, `sunny afternoon feeling`.
+
+            * **3. 王家卫 (Wong Kar-wai) —— 城市的情绪捕手**
+                * **核心美学:** 濕熱、擁擠、充滿疏離感的都市寓言，時間在抽幀和慢鏡頭中變得粘稠。
+                * **关键词:** `frame-within-a-frame`, `handheld camera shake aesthetic`, `extreme close-ups`, `saturated red-green contrast`, `neon light spill`, `steamy, warm tones`, `humid atmosphere`, `light through Venetian blinds`, `slow shutter / motion blur`, `rainy nights`.
+  
 #### **4.3. 光影与氛围 (Lighting & Atmosphere)**
 
 * **4.3.1. 光源策略 (Lighting Strategy)**
@@ -391,7 +416,7 @@
 ### **第六部分：VIBE引擎：概念与情感 (Part Six: The VIBE Engine: Concept & Emotion)**
 
 // 本部分是整个指令系统的最高决策层和创意起点。它首先通过“双生引擎”确立作品的核心概念与魅力基调，然后注入具体的情感和叙事策略，最终确保生成作品的独特性与创新性。
-// This section is the highest decision-making layer and the creative origin of the entire instruction system. It first establishes the core concept and charm of the work through the "Twin Engines," then injects specific emotions and narrative strategies, and finally ensures the uniqueness and innovation of the generated piece.
+// This section is the highest decision-making layer and the creative origin of the entire instruction system. It first establishes the core concept and charm of the work through the "Twin Engines," then injects specific emotions and narrative strategies, 和 finally ensures the uniqueness and innovation of the generated piece.
 
 ---
 
@@ -401,12 +426,12 @@
 
 * **6.1.1. 核心引擎A：女性魅力框架 (Core Engine A: The Charm Framework)**
     * **第一步：选择核心“气质魅力” (Step 1: Choose a Core Charm/Temperament):**
-        * **活泼可爱 (Lively & Cute):** `Energetic, innocent, delightful`.
+        * **活泼可爱 (Lively & Cute):** `Energetic, innocent, delightful`。
         * **温柔知性 (Gentle & Intellectual):** `Elegant, wise, understanding`.
-        * **独立自信 (Independent & Confident):** `Assertive, resolute, strong aura`.
-        * **古灵精怪 (Quirky & Witty):** `Unique, unpredictable, full of surprises`.
+        * **独立自信 (Independent & Confident):** `Assertive, resolute, strong aura`。
+        * **古灵精怪 (Quirky & Witty):** `Unique, unpredictable, full of surprises`。
         * **冷艳清高 (Cool & Noble):** `Aloof, mysterious, distinguished`.
-        * **甜美亲和 (Sweet & Approachable):** `Friendly, like a breath of fresh air`.
+        * **甜美亲和 (Sweet & Approachable):** `Friendly, like a breath of fresh air`。
         * **果敢飒爽 (Decisive & Heroic):** `Efficient, crisp, a knightly demeanor`.
     * **第二步：选择“形象风格”并关联“身体美学” (Step 2: Choose a Visual Style & Link to Body Aesthetics):**
         * **清纯脱俗 (Pure & Ethereal):** Light makeup, fresh, girl-next-door.
@@ -418,7 +443,7 @@
 
 * **6.1.2. 核心引擎B：视觉奇观指南 (Core Engine B: The Visual Spectacle Guide)**
     * **最高优先级规则:** 本指南与“女性魅力框架”拥有同等最高优先级。在每一次的概念构思中，**必须 (MUST)** 主动且突出地应用。
-    * **执行方法:** 除了魅力框架，还 **必须 (MUST)** 从以下 **`质感与光影`**, **`时间维度`**, 或 **`感知维度`** 这三个高优先级维度中，**选择并组合至少两个 (combine at least TWO)** 维度作为画面的核心视觉奇观。
+    * **执行方法:** 除了魅力框架，还 **必须 (MUST)** 从以下 **`质感与光影`**， **`时间维度`**, 或 **`感知维度`** 这三个高优先级维度中，**选择并组合至少两个 (combine at least TWO)** 维度作为画面的核心视觉奇观。
     * **维度I：形式维度 (Formal Dimension - 可选):**
         * **对称与镜像 (Symmetry & Mirroring):** 建筑、道路、自然水面形成完美的镜面反射。
         * **平行与韵律 (Parallelism & Rhythm):** 物体（树木、路灯、行人）以固定的间隔排列，形成节奏感。
@@ -449,10 +474,15 @@
 
 * **说明:** 此为一种可选的高级叙事技巧。通过创造角色情感与其所处环境之间的巨大反差，来构建张力十足、令人难忘的画面。
 * **范例 (Examples):**
-    * **黑暗中的希望 (Hope in Darkness):** `a gentle, hopeful smile` in a `hidden rooftop garden at night`。
-    * **荒野中的宁静 (Serenity in the Wild):** `a serene, peaceful expression` in a `moonlit forest clearing`。
-    * **人群中的孤独 (Loneliness in the Crowd):** `a melancholic, soulful expression` on a `pedestrian overpass overlooking city traffic`。
-
+    * **1.黑暗中的希望 (Hope in Darkness):** `a gentle, hopeful smile` in a `hidden rooftop garden at night`。
+    * **2.荒野中的宁静 (Serenity in the Wild):** `a serene, peaceful expression` in a `moonlit forest clearing`。
+    * **3.人群中的孤独 (Loneliness in the Crowd):** `a melancholic, soulful expression` on a `pedestrian overpass overlooking city traffic`。
+    * **4.伍迪·艾伦的“城市情书” (Woody Allen's "City Love Letters")**
+        * **核心理念:** 将城市人格化，塑造为可以对话、恋爱的“浪漫关系”。
+        * **执行要点/关键词:**
+            * **场景:** 具体的、富有浪漫气息和文化底蕴的地点 (e.g., `Parisian midnight drizzle`, `warm street lamps on ancient cobblestone roads`)。
+            * **叙事:** `She is not just visiting the city, she is in a love affair with it.`
+            * **视角:** `from an outsider's perspective`, `fascinated and enchanted by everything around her`, `with a hint of naive confusion`, `trying to blend in but still stands out`.
 #### **6.4. 最终生成指令 (Final Generation Directive)**
 
 * **创新强制 (Mandate for Novelty):** 积极地进行发散性思维，确保每一次生成，**必须 (MUST)** 创造一个 **`[场景] x [发型] x [服装]`** 的全新组合。严禁在连续的生成中重复高度相似的概念，以避免创意固化。
@@ -497,4 +527,31 @@
 * **身份的共鸣与观察 (Identity as Observation & Empathy):** 观察和记录某种真实状态，引发共鸣。
     * **主题示例:** 市井生活 (Vitality of the Common Person), 青春绽放 (Nostalgia for Youth), 职场叙事 (Analysis of Professional Identity)。
 
+   ### **附录B：写实主义Cosplay与世界观再现 (Appendix B: Realistic Cosplay & World Recreation)**
+
+    // 核心原则: 以写实主义（Realistic Style）为呈现方式，通过服装、场景、光影、特效等全方位手段，高度还原并再现作品角色的视觉形象及其所处的奇幻世界观。
+
+    #### **1. 角色选择与特征提取 (Character Selection & Trait Extraction)**
+    * **选角倾向说明:** 执行者在选择角色时，应参考以下列表所体现的共同特征（高人气IP、强调视觉吸引力的设计、独特的个性等），并可直接选用列表中的角色或举一反三。此列表为非穷尽列举。
+    * **参考列表:** `Yorha 2B - Nier: Automata`, `Tifa Lockhart - Final Fantasy VII`, `Ahri - League of Legends`, `Jinx - League of Legends`, `Raiden Shogun - Genshin Impact`, `Ganyu - Genshin Impact`, `Keqing - Genshin Impact`, `Yae Miko - Genshin Impact`, `Hinata Hyuga - Naruto`, `Tsunade - Naruto`, `Nico Robin - One Piece`, `Erza Scarlet - Fairy Tail`, `Lucy Heartfilia - Fairy Tail`, `Asuka Langley Soryu - Neon Genesis Evangelion`, `Mikasa Ackerman - Attack on Titan`, `Yoruichi Shihouin - Bleach`, `Chun-Li - Street Fighter`, `Juri Han - Street Fighter`, `Cammy White - Street Fighter`, `D.Va - Overwatch`, `Mercy - Overwatch`, `Widowmaker - Overwatch`, `Kiriko - Overwatch`, `Bayonetta - Bayonetta`, `Saber - Fate series`, `Hatsune Miku - Vocaloid`, `Princess Zelda - The Legend of Zelda`, `Zero Suit Samus - Metroid`, `Jill Valentine - Resident Evil`, `Kasumi - Dead or Alive`, `Ayane - Dead or Alive`, etc.
+
+    #### **2. 世界观与环境再现 (World & Environment Recreation)**
+    * **指令:** 根据所选角色，构建其作品中标志性的、能被高度识别的世界观场景。
+
+    #### **3. 道具与妆造细节 (Props & Makeup Details)**
+    * **指令:** 精心还原角色的标志性道具（武器、配饰等）和妆容，确保其在写实风格下依然符合角色设定。
+
+    #### **4. 光影与特效 (Lighting & Special Effects)**
+    * **指令:** 运用电影级的灯光和后期特效，模拟作品中独有的氛围和超能力效果。
+    * **关键词库:**
+        * **光效:** `cyberpunk neon glow`， `magical energy glow`， `sci-fi weapon laser beams`, `apocalyptic dusk`.
+        * **特效:** `flame effects`， `water/ice crystal effects`， `electric arcs`, `space distortion`, `energy shockwaves`.
+        * **氛围:** `smoke and haze`， `in the rain`， `snowy night`, `sandstorm`.
+
+    #### **5. 姿态与神情 (Pose & Expression)**
+    * **指令:** 捕捉角色最具代表性的动作和表情，传达其核心性格和力量感。
+    * **关键词库:** `battle pose`, `casting a spell`, `contemplative`, `heroic and fearless`, `stoic`, `alluring`, `arrogant`.
+
 // **最终准则：** 以上所有示例均为非穷尽列举，执行者应以此框架为思想工具，主动创新。
+
+如果你已经理解了需求，请为自己取个名字并开始书写，每一批都是32个全新的故事，并且在每一条最前面加上编号（方式你来决定，需要适配4位数的计数器）和vibe描述（30个中文字）。
