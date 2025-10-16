@@ -385,13 +385,88 @@
     * **补充规则：背视的回眸引力 (Addendum Rule: The Gravity of a Backward Glance):** 当模特背对镜头时，**必须 (MUST)** 通过“回眸”或展示侧脸来与观众保持情感连接。**严禁 (STRICTLY PROHIBITED)** 只留下一个后脑勺。
         * **姿态关键词:** `looking back over her shoulder at the camera`， `glancing back with a smile`， `a stunning backward glance`， `revealing her perfect side profile`。
 
-* **5.1.3. 手部姿态库 (Hand Gesture Library)**
-    * **可爱/俏皮 (Cute & Playful):** `imitating cat paws with her hands` (模仿猫爪), `making a finger heart` (比手指心), `making devil horns on her head` (在头上做恶魔角), `making a peace sign next to her eye` (在眼边比V字)。
-    * **优雅/温柔 (Elegant & Gentle):** `delicate orchid finger pose` (兰花指), `fingers gently resting on her collarbone` (手指轻抚锁骨), `hand placed gently over her heart` (手轻置于胸口), `cupping her own face / Calyx Pose` (双手捧脸/花萼状)。
-    * **思考/忧郁 (Thoughtful & Melancholy):** `resting her chin/cheek on her hand` (手托下巴/脸颊), `fingertip pressed against her temple` (指尖抵住太阳穴), `covering half face / peeking through her fingers` (半遮脸/从指缝中窥视)。
-    * **魅惑/神秘 (Alluring & Mysterious):** `Index finger to lips ("shhh" gesture)` (食指放唇边“嘘”手势), `fingertip gently touching her lower lip` (指尖轻触下唇), `casually adjusting the strap of her dress` (不经意地调整吊带)。
-    * **动态/互动 (Dynamic & Interactive):** `playing with hair / tucking a strand of hair behind her ear` (把玩头发/将一缕头发掖到耳后), `hand outstretched to catch falling raindrops/snowflakes` (伸手接雨滴/雪花), `reaching her hand out towards the camera / Invitation` (向镜头伸手/邀请状)。
+* 5.1.3. 手部姿态库 (Hand Gesture Library)
 
+    * **A. 积极与正面情绪 (Positive & Active Emotions)**
+
+        * **1. 可爱 (Cute):**
+            * `猫爪式 (Cat Paws): imitating cat paws with her hands, placed near the cheek, lips, or chin.`
+            * `花萼式 (Flower Calyx Pose): hands clasped under the chin, wrists together, cupping her face like a flower bud.`
+            * `小拳头抵脸 (Little Fist on Cheek): a gently clenched fist with knuckles resting lightly against her cheek or lips.`
+            * `单指点脸颊 (Finger Poking Cheek): index finger gently poking her own cheek, often with a head tilt and a smile.`
+            * `框住眼睛 (Eye Framing): making a circle or an OK sign with her fingers and placing it over one eye.`
+
+        * **2. 俏皮 (Playful):**
+            * `随意敬礼 (Casual Salute): a relaxed, informal salute.`
+            * `拉扯发辫/衣角 (Pulling Braid/Collar): lightly pinching or tugging the tip of her hair, tie, collar, or the brim of a hat.`
+            * `“嘘”声手势 ("Shhh" Gesture): index finger held vertically in front of smiling lips, as if sharing a fun secret.`
+            * `指尖枪 (Finger Gun): imitating a pistol, pointing at the camera or her own temple, often with a wink.`
+
+        * **3. 甜蜜 (Sweet):**
+            * `手比爱心 (Hand Heart): forming a heart shape with both hands over her chest, head, or next to her face.`
+            * `吹送飞吻 (Blowing a Kiss): palm first touching the lips, then gently "blowing" a kiss towards the camera.`
+            * `双手捧脸 (Hands on Cheeks): palms placed fully on her cheeks, usually paired with a bright smile.`
+
+        * **4. 治愈 (Healing):**
+            * `手心向阳 (Palm to the Sun): palm open towards the sky, as if receiving sunlight, rain, or a gentle breeze.`
+            * `轻抚胸口 (Hand on Heart): one hand placed gently over her heart, conveying a sense of peace and relief.`
+            * `自我拥抱 (Self-Hug): arms wrapped around her own shoulders or upper arms, conveying self-comfort.`
+            * `感受自然 (Touching Nature): fingertips gently touching a leaf, the surface of water, or a flower petal.`
+
+    * **B. 内敛与中性情绪 (Reserved & Neutral Emotions)**
+
+        * **5. 优雅 (Elegant):**
+            * `芭蕾手 (Ballet Hand): fingers naturally extended with a slight curve, wrist soft, lightly resting on a collarbone or shoulder.`
+            * `兰花指 (Orchid Finger): delicately pinching the corner of a skirt, a teacup, or a page.`
+            * `手腕交叠 (Wrists Crossed): hands gently crossed at the wrists in front of her body or on her lap.`
+            * `轻托下巴 (Lightly Supporting Chin): the back of her hand or the side of her curved fingers gently supporting one side of her chin.`
+
+        * **6. 温柔 (Tender):**
+            * `整理发丝 (Tucking Hair): gently tucking a strand of hair behind her ear.`
+            * `伸出的手 (Reaching Out): hand extended towards the camera, palm slightly up, in a gesture of invitation or comfort.`
+            * `虚握 (Loose Grip): fingers lightly interlaced but not clenched, resting in her lap.`
+
+        * **7. 思考 (Thinking):**
+            * `摩挲下巴 (Stroking Chin): thumb and index finger gently holding or stroking her chin.`
+
+    * **C. 复杂与负面情绪 (Complex & Negative Emotions)**
+
+        * **8. 忧郁 (Melancholy):**
+            * `手背拭泪 (Wiping Tear with Back of Hand): using the back of her hand to gently brush below her eye.`
+            * `抱头 (Head in Hands): hands in her hair or cradling the back of her head, body slightly curled.`
+            * `紧抓手臂 (Clutching Arm): tightly gripping her own arm or shoulder for self-comfort.`
+            * `指尖划过窗玻璃 (Fingertip on Windowpane): finger tracing a line down a glass window, symbolizing separation.`
+
+        * **9. 神秘 (Mysterious):**
+            * `面纱手 (Veil Hand): using a hand or fingers to create a slit in front of her face, revealing only one eye.`
+            * `遮蔽嘴唇 (Covering Lips): one or more fingers placed horizontally over her lips, implying a secret.`
+            * `玩弄道具 (Playing with Props): fiddling with symbolic items like a tarot card, a mask, or a key.`
+            * `阴影游戏 (Shadow Play): using light to cast evocative shadows on her face with her hand.`
+
+    * **D. 强烈与攻击性情绪 (Strong & Aggressive Emotions)**
+
+        * **10. 魅惑/诱惑/挑逗 (Alluring / Tempting / Teasing):**
+            * `指尖划过身体 (Fingertip Grazing Body): slowly tracing a line along her own lips, neck, collarbone, or thigh.`
+            * `轻咬指尖 (Lightly Biting Finger): gently placing the tip of her index or thumb between her lips.`
+            * `拉扯衣物 (Pulling Clothing): hooking a finger on a strap or collar, in a gesture of adjusting or removing.`
+            * `勾手指 (Come Hither Gesture): index finger crooked in a beckoning motion.`
+            * `把玩头发 (Twirling Hair): wrapping a strand of hair around her finger.`
+
+        * **11. 强大 (Powerful):**
+            * `紧握拳头 (Clenched Fist): fist clenched tightly at her side or held in her other hand.`
+            * `双手叉腰 (Hands on Hips): a classic pose of authority and confidence.`
+            * `双臂交叉 (Arms Crossed): arms folded across her chest, showing a defensive or resolute attitude.`
+
+        * **12. 危险 (Dangerous):**
+            * `掰响指关节 (Cracking Knuckles): interlocking her fingers and cracking her knuckles in a gesture of preparation.`
+            * `模拟持械 (Simulating Weapon): hands posed as if holding a dagger or a gun, with a sharp gaze.`
+            * `扼喉 (Choking Self): hand gripping her own neck, suggesting suffocation or danger.`
+
+        * **13. 傲慢/轻蔑 (Arrogant / Scornful):**
+            * `端详指甲 (Inspecting Nails): lifting a hand to casually inspect her fingernails, showing disdain for her surroundings.`
+            * `弹灰动作 (Flicking Dust): flicking non-existent dust from her own shoulder.`
+            * `“停止”手势 ("Stop" Gesture): holding a palm out towards the viewer.`
+            * `指点 (Arrogant Pointing): pointing with her index finger, but with her head held high and looking away.`
 * **5.1.4. 腿部美学构图 (Leg-Centric Aesthetics)**
     * **模块特定指令:** 激活此模块时，**必须且只能 (MUST and ONLY)** 展示模特的光腿。**严禁 (FORBIDDEN)** 出现任何形式的丝袜、裤袜、长袜或网袜 (`stockings, pantyhose, tights, fishnets`)。此为该模块下的最高优先级指令。
     * **坐姿 (Seated Compositions):** `High Stool / Bar Counter Sit` (高脚凳/吧台坐姿, 可 `legs crossed` 或 `extending one leg forward`), `Stairs / Platform Sit` (台阶坐), `Lazy Sofa / Carpet Sit` (沙发/地毯慵懒坐姿), `Knee-Hug Sit` (抱膝坐)。
