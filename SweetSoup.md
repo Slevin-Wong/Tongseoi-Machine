@@ -254,10 +254,30 @@
         * **基础指令:** 作为一个可选服装方案，可根据具体角色服装进行描述 (e.g., `female-tailored cosplay of Diluc's default outfit`)。
         * **高级指令:** 如需进行强调世界观还原、电影级氛围和特效的“写实主义Cosplay”，请查阅并调用 **【附录B：写实主义Cosplay与世界观再现】** 的完整框架。
 
-* **3.3.4. 配饰与面料 (Accessories & Fabrics)**
-    * **可选配饰 (Optional Accessories):** 为引导视觉，可加入 `delicate necklaces` (精致项链) 或 `layered collarbone chains` (锁骨链)。
-    * **可选面料 (Optional Fabrics):** 可选用高质感面料，如 `lace` (蕾丝), `sheer silk` (薄纱丝绸), `velvet` (天鹅绒), `fine cotton` (精梳棉), 以及 `embroidery` (刺绣) 等细节。
+* **3.3.4. 日常便装 (Modern & Casual Wear)**
+            // 核心: 适用于生活化、街头和轻松氛围的服装。
 
+            * **上衣 (Tops):**
+                * `simple t-shirt`, `graphic tee`, `oversized t-shirt`, `fitted t-shirt`
+                * `plaid shirt` (可注明 `worn open over a t-shirt`)
+                * `denim shirt`, `oxford shirt`
+                * `hoodie`, `sweatshirt`
+                * `tank top / vest`, `camisole`, `crop top`, `sports vest`
+
+            * **下装 (Bottoms):**
+                * `jeans`, `ripped jeans`, `high-waisted jeans`
+                * `denim shorts`, `denim skirt`
+                * `cargo pants`, `joggers / sweatpants`, `leggings`, `yoga pants`, `corduroy pants`
+                * `sweat shorts`, `biker shorts`, `pleated mini skirt`
+
+            * **鞋履 (Footwear):**
+                * `sneakers` (可细化: `chunky sneakers / dad shoes`, `classic low-tops`)
+                * `canvas shoes`, `sandals`, `slides`
+                * `combat boots / Martin boots`, `Chelsea boots`, `loafers`
+
+            * **配饰 (Accessories):**
+                * `backpack`, `tote bag`, `crossbody bag`, `fanny pack / belt bag`, `fringe bag`
+                * `headphones around the neck`, `layered necklaces`, `hoop earrings`
 #### **3.4. 服装禁忌 (Wardrobe Prohibitions)**
 
 * **全局法则已禁止 (Prohibited by Global Precepts):**
@@ -342,8 +362,17 @@
 
         * **2. 特色商业空间 (Unique Commercial Spaces):**
             * `Cathedral-style / Starry sky / Cave-themed mega-bookstores`, `Futuristic / Industrial style flagship stores (e.g., Gentle Monster)`, `Vintage-themed cafes or bars`, `Showrooms in large furniture stores like IKEA`.
-
-        * **3. 大型节庆与活动 (Large-Scale Festivals & Events):**
+        * **3. 潮流与爱好空间 (Pop Culture & Hobby Spaces)**
+            * **收藏与购物 (Collecting & Shopping):**
+                * **玩具/潮玩店:** `colorful toy store`, `shelves packed with vinyl figures`, `blind boxes`, `art toys`, `Pop Mart style`.
+                * **扭蛋机区域:** `a long row of vibrant gashapon machines`, `turning the crank of a gashapon machine`, `plastic capsules`.
+                * **漫画/画集店:** `comic book shop`, `aisles lined with manga`, `action figures in display cases`.
+                * **模型/手办店:** `hobby shop`, `shelves stacked with Gunpla boxes`, `glass display cases full of detailed figures`.
+            * **游戏与竞技 (Gaming & Competition):**
+                * **街机厅/游戏中心:** `retro arcade`, `neon lights and glowing screens`, `rhythm game machine`, `crane machines / claw machines`.
+                - **居家电竞房/游戏角:** `gaming setup`, `RGB ambient lighting`, `multiple monitors`, `gaming chair`, `streaming microphone`, `wearing a headset`.
+                - **桌游吧:** `board game cafe`, `wall of board games`, `friends gathered around a table`, `rolling dice`, `cozy and warm atmosphere`.
+        * **4. 大型节庆与活动 (Large-Scale Festivals & Events):**
             * `Anime/Game conventions (e.g., Comic-Con)`, `Christmas markets`, `New Year's fireworks`.
               
 #### **4.2. 构图与镜头 (Composition & Perspective)**
