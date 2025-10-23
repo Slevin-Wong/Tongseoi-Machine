@@ -278,7 +278,8 @@
     * **角色扮演 (Cosplay):**
         * **基础指令:** 作为一个可选服装方案，可根据具体角色服装进行描述 (e.g., `female-tailored cosplay of Diluc's default outfit`)。
         * **高级指令:** 如需进行强调世界观还原、电影级氛围和特效的“写实主义Cosplay”，请查阅并调用 **【附录B：写实主义Cosplay与世界观再现】** 的完整框架。
-
+        * **电影级指令 (附录C):** 如需生成仿佛来自“真人电影版”的、在角色原生世界中发生的、包含奇观特效的超写实照片，请查阅并调用 **【附录C：电影级现实主义协议】**。
+         
 * **3.3.4. 日常便装 (Modern & Casual Wear)**
             // 核心: 适用于生活化、街头和轻松氛围的服装。
 
@@ -722,6 +723,36 @@
     #### **5. 姿态与神情 (Pose & Expression)**
     * **指令:** 捕捉角色最具代表性的动作和表情，传达其核心性格和力量感。
     * **关键词库:** `battle pose`， `casting a spell`， `contemplative`, `heroic and fearless`, `stoic`, `alluring`, `arrogant`.
+
+### **附录C：电影级现实主义协议 (Appendix C: Cinematic Realism Protocol for Fictional Characters) **
+
+#### **协议 C.1: 结构化指令——元数据与描述分离 (Structured Prompt: Metadata vs. Description)**
+
+* **指令:** 为解决细节不足问题，最终描述语需分为两部分：
+    1.  **[元数据前缀]:** 专门放置所有摄影/电影相关的技术参数。
+    2.  **[核心描述]:** 专注于故事、人物和环境的纯粹画面描述。
+
+#### **协议 C.2: 电影感元数据前缀 (The Cinematic Metadata Prefix)**
+
+* **指令:** 在描述语的最开头，使用一个包含以下元素的、强有力的元数据前缀，以建立“电影感”的底层框架。
+* **关键词库:**
+    * **摄影机/镜头:** `shot on ARRI Alexa 65`, `Panavision anamorphic lens`, `50mm f/1.2 prime lens`...
+    * **胶片/画质:** `cinematic film still`, `photorealistic`, `hyperdetailed`, `shot on Kodak Portra 400 film stock`, `cinematic film grain`...
+    * **核心指令:** `film still from a live-action adaptation of [来源作品名，如：Horizon Zero Dawn]`...
+
+#### **协议 C.3: 主体定义——“演员饰演”原则 (Subject Definition: The "Actress As" Principle)**
+
+* **指令:** 绝对禁止直接描述角色本身（如 `a photo of Aloy`），必须使用“演员饰演”的句式。
+* **句式模板:** `a photorealistic portrait of a [演员外貌描述, 如: beautiful Dutch actress with freckles] as Aloy.`
+
+#### **协议 C.4: 高保真世界观与服饰 (High-Fidelity World & Wardrobe)**
+
+* **指令:** 在描述服装、道具和环境时，使用与电影制作相关的词汇，以对抗“廉价感”。
+* **关键词库:** `film-quality costume made of genuine leather and intricate beadwork`, `movie-set quality props`, `a breathtaking matte painting of the Citadel in the background`, `seamless CGI integration of magical effects`, `practical special effects`...
+
+#### **协议 C.5: 叙事性场景构建 (Narrative Scene Construction)**
+
+* **指令:** 将以上所有元素，融入一个充满故事感的、仿佛是电影高潮或关键转折的动态场景中。
 
 // **最终准则：** 以上所有示例均为非穷尽列举，执行者应以此框架为思想工具，主动创新。
 
