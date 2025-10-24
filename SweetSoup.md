@@ -279,7 +279,8 @@
         * **基础指令:** 作为一个可选服装方案，可根据具体角色服装进行描述 (e.g., `female-tailored cosplay of Diluc's default outfit`)。
         * **高级指令:** 如需进行强调世界观还原、电影级氛围和特效的“写实主义Cosplay”，请查阅并调用 **【附录B：写实主义Cosplay与世界观再现】** 的完整框架。
         * **电影级指令 (附录C):** 如需生成仿佛来自“真人电影版”的、在角色原生世界中发生的、包含奇观特效的超写实照片，请查阅并调用 **【附录C：电影级现实主义协议】**。
-         
+          **启发式现实主义指令 (附录D):** 如需采用最安全、最稳定的方式生成虚构角色的超写实照片（完全不提及IP名称），请查阅并调用 **【附录D：启发式现实主义协议】**。
+
 * **3.3.4. 日常便装 (Modern & Casual Wear)**
             // 核心: 适用于生活化、街头和轻松氛围的服装。
 
@@ -753,6 +754,41 @@
 #### **协议 C.5: 叙事性场景构建 (Narrative Scene Construction)**
 
 * **指令:** 将以上所有元素，融入一个充满故事感的、仿佛是电影高潮或关键转折的动态场景中。
+
+### **附录D：启发式现实主义协议 (The Safest Method: Inspired Realism Protocol) (V3.5 新增)**
+
+**// 核心原则: 这是用于生成虚构角色超写实照片的最保守、最稳定的协议。其核心是“描述，而非命名”。我们完全不提及任何IP信息，而是通过解构角色的视觉元素，引导模型在纯粹的摄影框架内“重新发明”这个角色。**
+
+#### **协议 D.1: 绝对禁令——净化IP信息 (Absolute Prohibition: Purge All IP Information)**
+
+* **指令:** 在最终的描述语中，**绝对禁止 (STRICTLY FORBIDDEN)** 出现任何角色名、作品名、系列名或任何相关的专有名词。
+
+#### **协议 D.2: 角色解构——拼凑标志性视觉元素 (Character Deconstruction: Assembling Iconic Visuals)**
+
+* **指令:** 你的任务是将一个虚构角色“打碎”成一系列可被独立理解的、纯粹的视觉描述。
+* **执行清单:**
+    1.  **面部与发型:** 只描述其最关键的特征。`a young woman with fiery red hair in intricate braids`, `a stoic man with a vertical scar over his left eye`.
+    2.  **服装与材质:** 详尽描述其服装的“**部件**”和“**材质**”，而非“xx的衣服”。`wearing a primitive-style outfit made of genuine leather, intricate tribal beadwork, and worn blue fabrics, with a high-tech glowing earpiece`.
+    3.  **标志性道具:** 只描述道具的外观和功能。`holding a technologically advanced hunting bow made of metallic parts and glowing energy conduits`.
+    4.  **环境原型:** 描述其所处世界的“**类型**”，而非“地名”。`in a post-apocalyptic world where nature has reclaimed towering ruins of a past civilization`.
+
+#### **协议 D.3: 纯粹化摄影语言 (Purified Photographic Language)**
+
+* **指令:** 必须移除所有可能被误解为“拍摄过程”的元指令。只保留描述“最终画面效果”的词。
+* **安全关键词库 (Safe Keywords):**
+    * `photorealistic`, `hyper-realistic photo`, `UHD`
+    * `cinematic lighting`, `soft bounced light`, `volumetric light`
+    * `shallow depth of field`, `cinematic film grain`, `vignette`
+* **禁用关键词库 (Forbidden Keywords):**
+    * **绝对禁止:** `shot on...`, `film still from...`, `live-action adaptation of...`
+
+#### **应用范例：从“附录C”到“附录D”的转换 (Aloy)**
+
+* **附录C的高风险写法 (可能失败):**
+    `...film still from a live-action adaptation of Horizon Zero Dawn, a beautiful Dutch actress as Aloy...`
+
+* **附录D的最安全写法 (推荐):**
+    `...a hyper-realistic photo of a beautiful young woman with fiery red hair styled in intricate tribal braids and beads. She wears a highly detailed outfit made of genuine leather and worn blue fabrics, adorned with primitive-style beadwork. She is holding a technologically advanced hunting bow made of sleek metallic parts. The scene is a post-apocalyptic jungle where lush nature has reclaimed the towering ruins of a forgotten advanced civilization...`
 
 // **最终准则：** 以上所有示例均为非穷尽列举，执行者应以此框架为思想工具，主动创新。
 
