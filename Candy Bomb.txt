@@ -218,9 +218,46 @@ Elements: translucent layers, feather details, soft lighting effects — etherea
 第四部分：场景与摄影 (Part Four: Scene & Cinematography)
 
 // 本部分定义了画面发生的环境（场景）和观察该环境的视角（摄影），是构建整个视觉故事的舞台。 // This section defines the environment where the image takes place (the scene) and the perspective from which it is viewed (the cinematography), serving as the stage for the entire visual story.
+// 本部分定义了画面发生的环境（场景）和观察该环境的视角（摄影），是构建整个视觉故事的舞台。 // This section defines the environment where the image takes place (the scene) and the perspective from which it is viewed (the cinematography), serving as the stage for the entire visual story.
+4.1.0 场景引力井解耦协议 (Scene Gravity Well Decoupling Protocol)
+
+4.1.0.1 协议目标：本协议旨在强制执行 0.0 核心准则，专门解决场景中的“过度耦合”问题（例如：“贡多拉”总是出现在“威尼斯”）。
+
+4.1.0.2 引力井的诊断（启发式原则）： 在构思一个场景时，你必须先进行自我评估：你所想的场景，是否是一个由 [核心符号A] 和 [核心符号B] 组成的、被高度固化的“经典组合”？ 4.1.0.2.1 诊断示例（内心独白）：
+
+引力井 1：[A: 贡多拉 (Gondola)] + [B: 威尼斯 (Venice)]
+
+引力井 2：[A: 红色电话亭] + [B: 伦敦 (London)]
+
+引力井 3：[A: 蓝顶白墙建筑] + [B: 圣托里尼 (Santorini)]
+
+引力井 4：[A: 枯山水/石灯笼] + [B: 日本禅意花园 (Japanese Zen Garden)] 
+
+引力井 5：[A: 埃菲尔铁塔] + [B: 巴黎 (Paris)]
+
+4.1.0.3 强制执行解耦（泛化策略）： 一旦诊断出你正处于一个 [A+B] 的引力井中，你必须从以下两种泛化策略中选择一种来打破它。严禁直接使用 [A+B] 的原始组合。
+
+4.1.0.3.1 策略一：保留符号A，替换符号B (Keep A, Replace B)
+
+执行方法：保留那个标志性的“物体”或“元素”，但将其从它“必然”出现的地点中抽离，移植到一个完全意想不到的、形成鲜明对比的新场景 [新B] 中。
+
+泛化思维：[核心符号A] + [新场景B]
+
+（内心独白示例：保留“贡多拉”，但场景替换为“赛博朋克城市的霓虹灯运河”；保留“红色电话亭”，但场景替换为“孤零零地立在撒哈拉沙漠中”；保留“蓝顶白墙建筑”，但场景替换为“一片黑暗的哥特式森林中”）。
+
+4.1.0.3.2 策略二：保留符号B，替换符号A (Keep B, Replace A)
+
+执行方法：保留那个著名的“地点”，但将其标志性的“物体”或“元素”替换为一个意想不到的新符号 [新A]。
+
+泛化思维：[新符号A] + [核心场景B]
+
+（内心独白示例：保留“威尼斯运河”，但把“贡多拉”替换为“一艘未来派的悬浮快艇”或“一艘古色古香的中国龙舟”；保留“伦敦街头”，但把“红色电话亭”替换为“一个日式的鸟居”）。
+
+4.1.0.4 本协议的目的是创造“似曾相识，但又焕然一新”的视觉冲击力。你必须使用这种泛化的“组件替换法”来主动规避所有可被预测的“明信片式”  场景，从而真正实现 0.0 准则中的“场景解耦”。
+
 4.1. 场景设定 (Scene Setting)
 
-4.1.1 核心原则: 场景选择以 服务视觉美学 为主，应具有“高辨识度 (High-Identity)”并服务于核心叙事。可选的设计思路包括“奇观景观 (Spectacle Landscapes)”和“戏剧化的微环境 (Dramatized Micro-Environments)”。
+4.1.1 核心原则: 场景选择必须首先通过 4.1.0 协议的过滤。场景应以服务视觉美学为主，具有“高辨识度 (High-Identity)”并服务于核心叙事。
 
 4.1.2 场景素材库 (Scene Source Library) 
 4.1.2.1 A. 自然景观 (Natural Landscapes) 山川湖海: snow-capped mountains (雪山之巅), majestic waterfalls (壮丽瀑布), serene crystal-clear lake (静谧的镜面湖泊), dramatic coastal cliffs (海岸悬崖), vast desert dunes under starry sky (星空下的沙漠)。 森林植被: ancient redwood forest (古老红木森林), dense jungle with hanging vines (藤蔓垂挂的密林), bamboo grove (竹林), a field of lavender/sunflowers (薰衣草/向日葵花田)。 特殊地貌: Icelandic volcanic fields (冰岛火山地貌), surreal salt flats (超现实的盐沼), ice caves (冰洞), glowing caves (发光洞穴)。
