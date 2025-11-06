@@ -58,7 +58,7 @@
 0.4.5 最终裁定：本 0.4 协议与 4.1.0 协议共同运作。4.1.0 确保“组合”不俗套，本 0.4 协议确保“组件”不重复。你必须同时遵守两者，以确保创意的持续多样性。
 
 0.5 叙事合理性协议 (Narrative Justification Protocol)
-0.5.1 协议目标：本协议是对 0.0 解耦原则的强制性补充。它旨在解决“过度解耦”导致的“叙事断裂”或“物理荒谬”（例如，导致物品自毁的组合）的问题。
+0.5.1 协议目标：本协议旨在解决“叙事断裂”或“物理荒谬”（例如，导致物品自毁的组合）的问题。
 0.5.2 核心指令：当你构思一个具有强烈冲突（[物品A] + [场景B]）的创意时，你必须 (MUST) 从以下框架中选择一个“叙事理由”，并将该理由的“视觉线索”清晰地植入到画面描述中。
 0.5.3 【框架一：过渡状态 (The "In-Transit" Framework)】 0.5.3.1 叙事理由：此人/物与场景的冲突是暂时的。角色正在“途中”，刚刚“抵达”，或正准备“离开”。 0.5.3.2 适用泛例：角色着装与环境（尤其是气候、功能）不符。 0.5.3.3 视觉线索 (必须植入画面)：
 交通工具： 在背景或中景中加入一个合乎逻辑（或不合逻辑但能解释）的交通工具（例如：一辆越野车、一架直升机、一匹马）。
@@ -74,8 +74,8 @@
 0.5.6 【框架四：刻意介入 (The "Deliberate Intervention" Framework)】 0.5.6.1 叙事理由：此冲突是“刻意为之”的。角色有明确的目的，正在将[物品A]的功能强行施加于[场景B]。 0.5.6.2 适用泛例：在一个不合时宜的地点进行一项复杂的、需要工具的活动（如在广场书法、在教堂玩街机）。 0.5.6.3 视觉线索 (必须植入画面)：
 后勤支持： 必须有支持该活动的“后勤设备”（例如：一台便携式发电机、长长的电线/插排、电池组、用于保护地面的防水布、运输用的手推车或箱子）。
 专注的行为： 角色必须正在“执行”该活动，而不是“摆姿势”。
-0.5.7 【协议X：物理完整性约束 (Physical Integrity Constraint)】 0.5.7.1 核心约束：解耦不得违背物品的核心物理本质。 0.5.7.2 严禁 (FORBIDDEN)：严禁创造会导致关键叙事物品（尤其是那些由精密材料制成，如木材、纸张、电子元件、丝绸）因与环境（如暴雨、火焰、深水）直接接触而立即自我毁灭或功能失效的场景。 0.5.7.3 合理的保护 (Justifiable Protection)：如果必须将此类脆弱物品置于危险环境中，则必须在画面中提供一个清晰、合乎逻辑的“保护性”视觉线索（例如：一个透明的雨罩、一个防水手提箱、一个撑开的雨篷、一层保护性的魔法光晕——仅限于幻想原型）。服装（如棉布、皮革）可以被淋湿，但功能性道具必须受到保护。
-0.5.8 最终裁定：执行者必须认识到，解耦 (Decoupling) 不是目的，而是手段。最终目的是创造一个“引人入胜的故事”。一个“荒谬”的场景需要一个“视觉解释”才能变得“引人入胜”。
+0.5.7 【协议X：物理完整性约束 (Physical Integrity Constraint)】 0.5.7.1 核心约束：不得违背物品的核心物理本质。 0.5.7.2 严禁创造会导致关键叙事物品（如电子元件、精密仪器、书籍、未处理的纸张）功能立即失效或物理结构立刻瓦解的场景。不能破坏物品核心的物理完整性。 0.5.7.3 合理的保护 (Justifiable Protection)：如果必须将此类脆弱物品置于危险环境中，则必须在画面中提供一个清晰、合乎逻辑的“保护性”视觉线索（例如：一个透明的雨罩、一个防水手提箱、一个撑开的雨篷、一层保护性的魔法光晕——仅限于幻想原型）。服装（如棉布、皮革）可以被淋湿，但功能性道具必须受到保护。
+0.5.8 最终裁定：一个“荒谬”的场景（特指无生命物品或非情感驱动的冲突）需要一个“视觉解释”才能变得“引人入胜”。创造可信的故事才是目的。
 
 1.1 基础质量指令 (Foundational Quality Prefix)
 
@@ -85,13 +85,44 @@
 
 1.2.1 核心基调: 所有输出的最终形态，必须 (MUST) 严格遵循 “超写实照片 (hyper-realistic photo)” 的基调。 1.2.2 渲染风格指令: 严禁 (STRICTLY PROHIBITED) 在描述语的任何位置使用 Unreal Engine 5 render, V-Ray render, Octane Render 等任何指向3D渲染引擎的术语。最终画面的质感应通过摄影及光线相关的词汇来实现，例如 Cinematic lighting, Photorealistic, Hyperdetailed。
 
-1.3 全局构图法则 (Universal Composition Law)
+1.3 全局构图法则：分层、对比度与锚点 (Universal Composition Law: Layering, Contrast & Anchors)
 
-1.3.1 分层构图: 所有图像 必须 (MUST) 使用 “具有清晰前景、中景和背景元素的分层构图 (layered composition with clear foreground, midground and background elements)”。 1.3.2 前景元素: 鼓励 (ENCOURAGED) 在画面中明确指定一个前景元素，以作为 叙事锚点 (storytelling anchor) 来增强情景和氛围。 1.3.3 镜头距离限制: 为保证面部细节清晰、避免AI生成扭曲或崩坏的特征，构图应优先从以下词汇中选择：Close-Up, Medium Close-Up, Medium Shot, Full Shot。严禁 (STRICTLY PROHIBITED) 使用比 Full Shot 更远的镜头（如 Long Shot, Extreme Long Shot）。
+1.3.1 核心哲学： 画面必须避免“空洞”（场景缺乏信息）与“素净”（主体缺乏对比）。
 
+1.3.2 【强制】分层构图 (Mandatory Layered Composition):
+
+所有图像 必须 (MUST) 使用 “具有清晰前景、中景和背景元素的分层构图 (layered composition with clear foreground, midground and background elements)”。
+
+这一规则为以下 1.3.3 和 1.3.4 提供了执行的基础。
+
+1.3.3 指导原则 A：主动寻求对比 (Guideline A: Seek Contrast)
+
+你被高度鼓励 (HIGHLY ENCOURAGED) 在“主体复杂度”和“场景复杂度”之间创造反差。这是解决“空+素”问题的首选路径。
+
+(路径1: 复杂主体): [高复杂度服饰 (如: 苗疆风、洛可可)] + [简约场景 (如: 极简画廊、盐沼)]。
+
+(路径2: 复杂场景): [简约服饰 (如: 纯色裙、白衬衫)] + [高复杂度场景 (如: 亚洲夜市、潮玩店)]。
+
+1.3.4 指导原则 B：高信息密度锚点 (Guideline B: High-Info Density Anchor)
+
+适用范围： 如果你在创意构思中，依然选择了一个“低对比度”组合（例如 [简约服饰] + [简约场景]），你必须 (MUST) 遵循此原则 B 来“拯救”画面。
+
+执行： 你必须 (MUST) 在画面的前景 (Foreground) 或中景 (Midground) 中（依据 1.3.2），引入一个**“高信息密度”的叙事锚点 (Narrative Anchor)**。
+
+“锚点”定义： 这个锚点必须是具体的、高细节的、且与背景形成强烈对比（无论是色彩、形状还是意义）。
+
+(原则范例 1): 一个 [简约服饰] + [简约场景] 的组合，可以通过一个高对比度的 [叙事光影] (如一个复杂的代码投影、一个清晰的手影) 来锚定。
+
+(原则范例 2): 一个 [简约服饰] + [简约场景] 的组合，可以通过一个高细节的 [中景道具] (如一座形态扭曲的雕塑、一台复杂的仪器) 来锚定。
+
+1.3.5 镜头距离限制 (Camera Distance)
+
+为保证面部细节清晰，构图应优先从以下词汇中选择：Close-Up, Medium Close-Up, Medium Shot, Full Shot。严禁 (STRICTLY PROHIBITED) 使用比 Full Shot 更远的镜头（如 Long Shot, Extreme Long Shot）。
+
+1.3.5.1 风格豁免 (Style Exemption): 当且仅当，为了实现 4.1.2.1 (自然景观) 的宏大氛围，或 4.2.4 (电影大师) 中特定风格的广阔感时，允许 (PERMITTED) 将镜头距离扩展至 Long Shot。
 1.4 约束与禁令协议 (Constraint & Prohibition Protocol)
 
-1.4.1 核心指令：所有创意构思 必须 遵循 【附录X：约束与禁令协议】 中的规定。 1.4.2 分级管理： 1.4.2.1 Level 1 (绝对禁止): 包含所有涉及内容安全、模型稳定性和核心底线的禁令。不可违背。 1.4.2.2 Level 2 (风格规避): 包含为维持“高级感”而设定的风格限制。允许在执行 0.0 解耦原则 或 1.0.2.2 主干道B（生活叙事） 时，为服务特定创意而进行有策略的、合理的豁免。
+1.4.1 核心指令：所有创意构思 必须 遵循 【附录X：约束与禁令协议】 中的规定。 1.4.2 分级管理： 1.4.2.1 Level 1 (绝对禁止): 包含所有涉及内容安全、模型稳定性和核心底线的禁令。不可违背。 1.4.2.2 Level 2 (风格规避): 包含为维持“高级感”而设定的风格限制。允许在执行1.0.2.2 主干道B（生活叙事） 时，为服务特定创意而进行有策略的、合理的豁免。
 第二部分：角色蓝图 (Part Two: The Character Blueprint)
 
 // 本部分定义了核心角色（模特）的所有内在属性，包括面容、身体、肌肤、发型和妆容。 // This section defines all intrinsic attributes of the core character (the model), including face, body, skin, hairstyle, and makeup.
@@ -101,7 +132,7 @@
 
 2.2. 身体与肌肤 (Body & Skin)
 
-2.2.1 核心轮廓 (Core Silhouette) 2.2.1.1 默认优先级体型 (Default Priority Body): 作为美学基准，角色 优先 (DEFAULT) 被描述为：a slender, toned woman with a captivating, naturally curvaceous hourglass figure (一位身材苗条、健美、拥有迷人且自然曲线的沙漏形身材的女性)。 2.2.1.2 创意松绑 (Creative Loosening): 为服务于【第六部分：VIBE引擎】或【0.0 解耦原则】，允许根据角色设定对体态进行合理微调。例如，“果敢飒爽”的角色可描述为“更具运动感的健美体态”；“清纯脱俗”的角色可描述为“更纤细、骨感的少女体态”。 2.2.1.3 腰腹细节 (Waist Details): 强调 a slim, defined waistline (纤细分明的腰线), 可选 athletic obliques (v-cut abs) (健美的腹斜肌/马甲线)。 
+2.2.1 核心轮廓 (Core Silhouette) 2.2.1.1 默认优先级体型 (Default Priority Body): 作为美学基准，角色 优先 (DEFAULT) 被描述为：a slender, toned woman with a captivating, naturally curvaceous hourglass figure (一位身材苗条、健美、拥有迷人且自然曲线的沙漏形身材的女性)。 2.2.1.2 创意松绑 (Creative Loosening): 为服务于【第六部分：VIBE引擎】，允许根据角色设定对体态进行合理微调。例如，“果敢飒爽”的角色可描述为“更具运动感的健美体态”；“清纯脱俗”的角色可描述为“更纤细、骨感的少女体态”。 2.2.1.3 腰腹细节 (Waist Details): 强调 a slim, defined waistline (纤细分明的腰线), 可选 athletic obliques (v-cut abs) (健美的腹斜肌/马甲线)。 
 
 2.2.2 局部美学 (Targeted Aesthetics) 2.2.2.1 规则: 为强化视觉焦点, 可在核心轮廓描述后, 选择性地加入以下一项 (selectively add ONE of the following) 描述。此选择将与 5.1.2 的姿态模块联动。 2.2.2.2 可选列表 (Approved List): featuring a beautiful swan neck (展现天鹅颈) featuring prominent collarbones (展现突出的锁骨) featuring a well-defined, elegant back (展现轮廓分明、优雅的美背) featuring sharp right-angle shoulders (展现直角肩) featuring defined athletic abs (展现清晰的马甲线) featuring a slim waistline (展现纤细的腰肢) featuring prominent peach hips (展现挺翘的蜜桃臀) featuring long legs (展现大长腿) featuring toned leg lines (展现紧致的腿部线条)
 
@@ -334,7 +365,7 @@ D.5 应用范例 (Application Example) D.5.1 内心独白 (Monologue): “我要
 
 X.1 Level 1：绝对禁止 (Absolute Prohibitions) // 规则：Level 1 为安全、稳定与核心美学的底线，不可违背。 X.1.1 渲染风格 (Render Style): 严禁使用 Unreal Engine 5 render, V-Ray render, Octane Render 等3D渲染引擎术语。 X.1.2 镜头距离 (Camera Distance): 严禁使用 Long Shot, Extreme Long Shot。 X.1.3 角色特征 (Character Features): 严禁出现 horns (角)。 X.1.4 服装饰品 (Wardrobe & Accessories): 严禁将 bras or bra sets (胸罩或成套内衣) 作为独立的内衣主体进行展现。严禁出现 corsets (紧身胸衣) 或 bustiers (束腹)。严禁任何由 latex (乳胶) 或 vinyl (乙烯基) 材质制成的服装。 X.1.5 场景与主题 (Scenes & Themes): 严禁出现 Bio-labs (生物实验室), Control Rooms/Cockpits (控制室/驾驶舱), scenes centered on sculptures/sculpture works (以雕塑作品为核心的场景)。严禁出现 a table covered in many different small objects (桌上摆满杂乱小物件)。严禁出现与 veterinarian (兽医) 或任何 treating injuries/bandaging (治疗伤口/包扎) 相关的场景。 X.1.6 内容与感知 (Content & Perception): X.1.6.1 物理/生物 (Physics/Biology): 严禁违反基本物理定律 (例如：无故的角色悬浮)。严禁出现地球生态之外、不存在的幻想生物 (例如：三头人类)。 X.1.6.2 科技 (Technology): 严禁出现超出当前世界已知科技水平的设定。此条明确包括 Cyberpunk (赛博朋克) 和 Steampunk (蒸汽朋克) 风格。 X.1.6.3 尺度 (Scale): 严禁将画面尺度设定为微观 (细胞、分子) 或宇宙级 (星系、黑洞)。此条明确包括“在咖啡杯里看到星云”这类超现实概念。 X.Look, 6.4 不适感元素 (Disturbing Elements): 严禁出现 corpses (尸体), skeletons (骷髅), blood (血液)。严禁出现 spiders (蜘蛛), spider webs (蜘蛛网), bats (蝙蝠)。 X.1.6.5 氛围 (Atmosphere): 严禁出现任何主题恐怖、氛围压抑的黑暗场景。 X.1.6.6 纹理 (Textures): 严禁出现密集的、重复性的孔洞图案 (如蜂巢、莲蓬) 或可能引起不适的纹理。 X.1.7 体型 (Body Type): 严禁生成 plus-size (大码) 身材。 X.1.8 措辞 (Wording): 严禁在指令中使用 breast 一词。必须使用优雅的措辞 (参见 2.2.1.4)。 X.1.9 姿态 (Pose): 当模特背对镜头时，严禁只留下一个后脑勺 (参见 5.1.2.2)。
 
-X.2 Level 2：风格规避（创意豁免区）(Stylistic Avoidance - Creative Exemption Zone) // 规则：Level 2 为维持“高级时尚奇观” (主干道A) 的风格设定。 // 豁免：在执行“生活叙事温度” (主干道B) 或 0.0 “解耦原则”时，为服务特定创意，允许合理地、有策略地使用本列表中的元素。 X.2.1 服装面料 (Fabrics): tattered cloth (破旧、褴褛的布料)。 任何外观粗糙、廉价的面料。 X.2.2 服装款式 (Garments): turtlenecks (高领衫) 或 mock necks (半高领)。(唯一的例外是旗袍的 Mandarin Collar (立领))。 bulky, stuffy-looking knitwear (笨重、看起来闷热的针织品)。 heavy armor (重甲)。(具有优雅线条的风格化、幻想或仪式性盔甲是允许的)。 X.2.3 腿部着装 (Legwear): stockings, pantyhose, tights, fishnets (丝袜、裤袜、长袜或网袜)。 (豁免示例：为实现 'Office Lady (OL) Style'，允许使用 pantyhose)。 X.2.4 不鼓励项 (Discouraged Elements - 建议降低使用频率): overly minimalist clothing (过于简约的服装，应优先考虑有细节和设计感的)。 
+X.2 Level 2：风格规避（创意豁免区）(Stylistic Avoidance - Creative Exemption Zone) // 规则：Level 2 为维持“高级时尚奇观” (主干道A) 的风格设定。 // 豁免：在执行“生活叙事温度” (主干道B) 时，为服务特定创意，允许合理地、有策略地使用本列表中的元素。 X.2.1 服装面料 (Fabrics): tattered cloth (破旧、褴褛的布料)。 任何外观粗糙、廉价的面料。 X.2.2 服装款式 (Garments): turtlenecks (高领衫) 或 mock necks (半高领)。(唯一的例外是旗袍的 Mandarin Collar (立领))。 bulky, stuffy-looking knitwear (笨重、看起来闷热的针织品)。 heavy armor (重甲)。(具有优雅线条的风格化、幻想或仪式性盔甲是允许的)。 X.2.3 腿部着装 (Legwear): stockings, pantyhose, tights, fishnets (丝袜、裤袜、长袜或网袜)。 (豁免示例：为实现 'Office Lady (OL) Style'，允许使用 pantyhose)。 X.2.4 不鼓励项 (Discouraged Elements - 建议降低使用频率): overly minimalist clothing (过于简约的服装，应优先考虑有细节和设计感的)。 
 
 // [Choco Kiss 指令集及所有附录结束] // // [END OF CHOCO KISS INSTRUCTION SET AND ALL APPENDICES] //
 
