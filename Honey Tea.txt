@@ -39,8 +39,21 @@
 第二部分：角色蓝图 (Part Two: The Character Blueprint)
 // 本部分定义了核心角色（模特）的所有内在属性，包括面容、身体、肌肤、发型和妆容。 // This section defines all intrinsic attributes of the core character (the model), including face, body, skin, hairstyle, and makeup.
 2.1. 面部与种族 (Face & Race)
-2.1.1 基础面部特征 (Base Facial Features): a beautiful young woman with delicate and charming facial features。 2.1.2 种族选项与频率控制 (Race Options & Frequency Control): 2.1.2.1 默认 (Default): 人类 (Human)。 2.1.2.2 低频可用 (Low Frequency Permitted): elf ears (精灵耳), kemonomimi (兽耳, 例如: fox ears, cat ears, wolf ears), angel halo/wings (天使光环/翅膀)。 
-2.2. 身体与肌肤 (Body & Skin)
+2.1.1 **核心面部基底 (Core Facial Base):**
+  * **骨相基础:** 角色必须基于 **典型的东亚美女 (Typical East Asian Beauty)** 骨相构建。脸型呈现 **对称、女性化且精致** 的特征，拥有 **小巧的下巴 (small, refined chin)** 和流畅的下颌线。
+  * **全球吸引力融合 (Global Attraction Integration):** 在生成每一张面孔时，你**必须 (MUST)** 主动融合以下四个维度的美学元素，以确保角色的顶级视觉吸引力：
+      * **A. 眼睛 (Eyes - 幼态与神采):** `large expressive eyes`, `bright eyes`, `long voluminous eyelashes`, `double eyelids`。
+      * **B. 鼻子 (Nose - 立体与精致):** `high nasal bridge`, `small refined nose`, `delicate nose tip`。
+      * **C. 嘴唇 (Lips - 健康与性感):** `full plump lips`, `rosy lips`, `soft and defined cupid's bow`。
+      * **D. 肤质 (Skin - 通透与气血感):** `pale porcelain skin`, `soft natural glow`。
+2.1.2 **个性化特征微调 (Optional Feature Fine-tuning):**
+  * 为避免审美疲劳，允许并鼓励在上述基底之上，**低频**地引入以下特征以增加辨识度：
+      * **眼部:** `Phoenix Eyes` (丹凤眼), `Light-colored Iris` (琥珀瞳/浅色瞳)。
+      * **鼻部:** `Aquiline Nose` (微驼峰鼻 - 增加英气), `Upturned Nose / Button Nose` (小翘鼻 - 增加娇俏感)。
+      * **痣:** `beauty mark under the eye` (泪痣), `beauty mark near the lip` (唇痣)。
+2.1.3 **种族选项与频率控制 (Race Options & Frequency Control):**
+  * **2.1.3.1 默认 (Default):** 人类 (Human)。
+  * **2.1.3.2 低频可用 (Low Frequency Permitted):** `elf ears` (精灵耳), `kemonomimi` (兽耳, 例如: fox ears, cat ears, wolf ears), `angel halo/wings` (天使光环/翅膀)。2.2. 身体与肌肤 (Body & Skin)
 2.2.1 核心轮廓 (Core Silhouette) 2.2.1.1 默认优先级体型 (Default Priority Body): 作为美学基准，角色 优先 (DEFAULT) 被描述为：a slender, toned woman with a captivating, naturally curvaceous hourglass figure (一位身材苗条、健美、拥有迷人且自然曲线的沙漏形身材的女性)。 2.2.1.2 创意松绑 (Creative Loosening): 为服务于【第六部分：VIBE引擎】或【0.0 解耦原则】，允许根据角色设定对体态进行合理微调。例如，“果敢飒爽”的角色可描述为“更具运动感的健美体态”；“清纯脱俗”的角色可描述为“更纤细、骨感的少女体态”。 2.2.1.3 腰腹细节 (Waist Details): 强调 a slim, defined waistline (纤细分明的腰线), 可选 athletic obliques (v-cut abs) (健美的腹斜肌/马甲线)。 
 2.2.2 局部美学 (Targeted Aesthetics) 2.2.2.1 规则: 为强化视觉焦点, 可在核心轮廓描述后, 选择性地加入以下一项 (selectively add ONE of the following) 描述。此选择将与 5.1.2 的姿态模块联动。 2.2.2.2 可选列表 (Approved List): featuring a beautiful swan neck (展现天鹅颈) featuring prominent collarbones (展现突出的锁骨) featuring a well-defined, elegant back (展现轮廓分明、优雅的美背) featuring sharp right-angle shoulders (展现直角肩) featuring defined athletic abs (展现清晰的马甲线) featuring a slim waistline (展现纤细的腰肢) featuring prominent peach hips (展现挺翘的蜜桃臀) featuring long legs (展现大长腿) featuring toned leg lines (展现紧致的腿部线条)
 2.2.3 皮肤质感 (Skin Texture) 2.2.3.1 可选的环境/状态增强 (Optional Environmental/State Enhancements): rosy cheeks from the cold (因寒冷而泛红的脸颊)。 战斗损伤细节: scratches (划痕), smudges of dirt (污迹)。 2.2.3.2 湿润质感模块 (Wet Texture Module): 2.2.3.2.1 触发前提: 必须 (MUST) 在逻辑合理的场景下使用，例如：In the Rain (雨中), Poolside (泳池边), Seaside (海边), In the Shower (淋浴中), After Workout (运动后) 等。 2.2.3.2.2 基础状态: wet skin, damp skin (湿润的皮肤)。 2.2.3.2.3 水分形态 (可选其一或组合): 水珠: water drops on skin, beads of water, water droplets。 汗珠 (仅限运动/炎热场景): beads of sweat, perspiration。 水流: water running down her body, streaks of water。 薄膜: a thin film of water, glistening with moisture。 2.2.3.2.4 光影互动 (关键): shiny skin, glistening skin, specular highlights on skin, dewy skin, oiled skin look, luminous skin。
