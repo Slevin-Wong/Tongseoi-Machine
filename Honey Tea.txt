@@ -77,6 +77,63 @@
 2.4.2 主干道A：高级时尚奇观 (Pillar A: High-Fashion Spectacle) 2.4.2.1 高级皮肤质感 (Advanced Skin Finish):  “玻璃肌” (Glass Skin): Flawless, poreless, luminous, intensely hydrated look。 “湿润肌” (Wet Skin): High-shine, dewy, as if misted with water。 高光泽/油性质感 (High-Gloss/Oiled Finish): Reflective, editorial, slick finish on face and body。 2.4.2.2 面部装饰物 (Facial Embellishments):  水晶/水钻 (Crystals/Rhinestones): Placed near eyes, on cheekbones, or as freckles。 珍珠 (Pearls): Adhered to the face, often as tear-drops or along the brows。 金属箔片 (Metallic Foils): Gold or silver foil applied to lips, eyes, or brows。 亮片 (Sequins/Glitter): Large, chunky glitter or sequins for texture。 2.4.2.3 前卫眼妆 (Avant-Garde Eyes): 几何图形眼线 (Graphic Eyeliner): Bold, abstract, non-traditional liner shapes。 悬浮眼线 (Floating Crease Liner): Eyeliner drawn above the natural crease of the eye。 抽象色块 (Abstract Color Blocking): Using bright eyeshadow as a block of color on the lid。 面部彩绘幻象 (Painted Illusions): Small, artistic painted elements around the eye。 2.4.2.4 前卫唇妆 (Avant-Garde Lips): 黑胶光泽唇 (Vinyl-Inspired Gloss): Extremely high-shine, patent-leather look。 金属质感唇 (Metallic Lips): Lipstick with a chrome, gold, or silver finish。 “咬唇”效果 (Bitten Lip Stain): A diffused, just-bitten look, often in reds or berries。 2.4.2.5 亚文化风格 (Subculture Styles): 哥特妆 (Gothic Makeup): Dark lipstick, heavy dark eyeliner, pale complexion。 朋克妆 (Punk Makeup): Smudged, heavy black eyes, bold/unconventional shapes。 E-girl妆 (E-girl Makeup): Sharp winged liner, heavy blush on nose and cheeks, small hearts/dots under eyes。 
 2.4.3 主干道B：生活叙事温度 (Pillar B: Narrative Slice-of-Life) 2.4.3.1 “素净面容”妆容库 (Clean Face Library): “无妆感”妆容 ('No-Makeup' Makeup): Enhances features, looks like bare skin。 轻薄肤色调理液 (Sheer Foundation/Skin Tint): Evens skin tone, freckles visible。 自然眉 (Lightly Groomed Brows): Brushed up, slightly filled, not sculpted。 奶油腮红营造的自然红晕 (Cream Blush): A natural, flushed-from-within look。 有色润唇油/膏 (Tinted Lip Oil/Balm): Sheer color, healthy shine。 
 2.4.4 通用眼妆组件库 (General Eye Makeup Components Library) 2.4.4.1 第一层：眼线 (Layer 1: Eyeliner): 可选风格 Classic Cat-Eye, Cleopatra/Egyptian Style (粗黑眼线包围上下眼睑并在眼尾戏剧性延伸), Puppy-Dog Style (无辜下垂眼线)。 2.4.4.2 第二层：睫毛 (Layer 2: Eyelashes): 形态可组合 Voluminous Upper Lashes (浓密卷翘的上睫毛，关键词: thick, curled false eyelashes), Long Upper Lashes (纤长的上睫毛，关键词: long, wispy eyelashes), Anime-style Lower Lashes (动漫风格、强调分簇感的下睫毛)。 2.4.4.3 第三层：瞳孔与卧蚕 (Layer 3: Iris & Aegyo-sal): 可组合 Colored Contact Lenses / vivid circle lenses (彩色隐形眼镜/美瞳，可指定颜色如 ice-blue eyes， emerald green eyes), Highlighted Aegyo-sal (卧蚕提亮，关键词: shimmering aegyo-sal, highlighted tear duct)。 2.4.4.4 第四层：眼影 (Layer 4: Eyeshadow): 可选风格 Classic Smoky Eyes (经典烟熏妆), Metallic/Shimmer Texture (金属/珠光质感，关键词: metallic eyeshadow, glittering eyelids, duochrome eyeshadow)。
+2.5 纹身与身体艺术 (Tattoos & Body Art)
+// 本部分定义了角色皮肤上的永久性符号系统。这不仅是装饰，更是角色内在哲学的外化与人格的延伸。
+// This section defines the permanent semiotic system on the character's skin. It is not merely decoration, but the externalization of internal philosophy and the extension of personality.
+2.5.1 核心哲学 (Core Philosophy)
+2.5.1.1 本体论定义: 纹身严禁 (FORBIDDEN) 被视为廉价的贴纸或随机的视觉噪音。它必须被视为“角色的第二层皮肤” (Second Skin) 和“人格的锚点” (Identity Anchor)。
+2.5.1.2 叙事功能: 每一个图案都必须服务于角色的“核心创伤”、“信仰体系”或“社会面具”。在生成时，执行者应自问：这个符号是用来**“展示” (Reveal)** 还是**“防御” (Protect)**？
+2.5.2 位置规范与解剖学流向 (Placement Protocols & Anatomical Flow)
+2.5.2.1 S形曲线法则 (The S-Curve Law):
+核心指令: 所有大面积纹身必须 (MUST) 顺应肌肉和骨骼的自然起伏（S形曲线）。严禁生硬地将矩形或僵硬的图像“贴”在圆柱状的肢体上。
+动态适应: 当角色处于动态姿势时，纹身图案应随肌肉的拉伸与压缩而产生有机的形变
+2.5.2.2 痛觉仪式与区域分级 (Pain Ritual & Zonal Hierarchy):
+Level A: 公共宣言区 (Public Declaration):
+前臂 (Forearm) / 颈侧 (Neck Side): 象征无畏与社会身份的公开展示。适合“箴言”、“图腾”或“职业标识” 。
+Level B: 私密图腾区 (Private Totem):
+胸骨/下乳 (Sternum/Underboob): 极痛区 (High Pain). 象征对核心价值观的死守。适合曼陀罗 (Mandala) 或护身符，紧贴心脏 
+肋骨 (Ribs): 剧痛区. “私密日记”。适合纪念逝者或极度私人的文字，随呼吸而律动。
+Level C: 大面积叙事区 (Grand Narrative):
+脊柱 (Spine): 能量的中轴线。适合垂直书写的书法或线性图腾。
+大腿外侧 (Outer Thigh): 低痛感的大画布。适合复杂的史诗场景或写实肖像 
+2.5.3 风格库 (Style Diversity Engine)
+// 执行者必须从以下风格路线中选择其一，严禁混搭冲突的风格（如：严禁将“小清新”与“波尔卡垃圾”混杂）。
+2.5.3.1 路线A：微观与极简 (Engine A: Micro-Realism & Minimalist)
+视觉特征: 单针细线 (Fine Line), 点刺 (Dotwork), 极度克制的构图。
+哲学内核: “斯多葛式的冷静” (Stoic Calm) 或 “稍纵即逝的美” (Ephemeral Beauty)。
+技术禁令: 考虑到墨水的晕染 (Blowout) 和老化 (Aging)，严禁在极小尺寸下堆砌过多细节。文字必须留有足够的“呼吸空间” (Negative Space)。
+推荐母题:
+1-3个汉字/单词: 字体必须选用衬线体或手写体。
+几何线条例如: 极简的圆、线、三角形。
+2.5.3.2 路线B：赛博图腾 (Engine B: Cybersigilism / Neo-Tribal)
+视觉特征: 具有攻击性的锐利线条，生物机械 (Bio-mechanical) 结构，类似电路板或荆棘的尖刺状图案 
+哲学内核: “后人类身份” (Post-Human Identity)。象征个体在数字化浪潮中构建的防御性铠甲。
+适用人格: 叛逆、边缘、科技崇拜、防御性强。
+2.5.3.3 路线C：波尔卡垃圾 (Engine C: Trash Polka)
+视觉特征: 只有红与黑 (Red & Black) 双色。写实肖像 (Realism) 与 抽象涂抹 (Abstract Smears) 的暴力拼贴。类似勒索信的字体排印。
+哲学内核: “有序的混乱” (Organized Chaos)。象征过去的记忆与当下的毁灭并存。
+适用人格: 复杂、有深刻创伤、艺术气质浓厚、极具爆发力。
+2.5.3.4 路线D：东方水墨与书法 (Engine D: Eastern Brushstroke & Calligraphy)
+视觉特征: 模拟毛笔的飞白 (Flying White) 与 墨韵 (Ink Wash)。强调笔触的力度与速度感，而非完美的边缘。
+哲学内核: “气韵生动” (Rhythmic Vitality)。接受不完美与流动性。
+2.5.4 符号与图案索引 (Symbol & Motif Index)
+// 本部分提供具体的视觉组件，执行者应根据 0.4 TERP 协议进行轮换使用。
+2.5.4.1 汉字与成语：哲学锚点 (Hanzi & Chengyu: Philosophical Anchors)
+书写规范: 必须指明字体风格（楷书/行草/魏碑）。严禁使用无意义的字符堆砌。
+例如:
+斯多葛/韧性组: 忍 (Rěn) (Endure - 心上一把刀), 坚韧 (Jiān Rèn) (Resilience), 不屈 (Bù Qū) (Unyielding)
+自由/精神组: 逍遥 (Xiāo Yáo) (Free & Unfettered - 庄子哲学), 自由 (Zì Yóu) (Freedom), 心道 (Xīn Dào) (Way of the Heart) 
+生命观组: 生死有命 (Shēng Sǐ Yǒu Mìng) (Life and death are fated), 物哀 (Mono no Aware) (Pathos of things - 虽为日文概念但可用汉字表达), 空 (Kōng) (Void/Emptiness - 佛家概念) 
+2.5.4.2 花语与植物：无声的叙事 (Hanakotoba: Silent Narrative)
+例如：
+彼岸花 (Red Spider Lily): 象征死亡、分离、从未实现的爱。Vibe: 哥特、神秘、危险 
+樱花 (Sakura): 象征生命的短暂与武士精神。Vibe: 绚烂、无常、决绝 
+莲花 (Lotus): 象征出淤泥而不染，从苦难中重生。Vibe: 纯净、灵性、超越 
+2.5.4.3 神兽与原型：本能的投射 (Mythical & Archetypal Projection)
+例如：
+夫诸 (Fuzhu - The White Deer): 象征温柔与洁净的灵性生物 
+衔尾蛇 (Ouroboros): 象征永恒的循环与自我吞噬 
+凤凰 (Phoenix): 象征涅槃重生与毁灭后的复兴 
 第三部分：服装与配饰 (Part Three: Wardrobe & Accessories)
 // 本部分定义了角色的穿着，包括高级别的设计哲学、具体的搭配策略、一个庞大的服装库以及严格的禁忌项。 // This section defines the character's attire, including high-level design philosophies, specific styling strategies, an extensive wardrobe library, and strict prohibitions.
 3.1. 可选服装哲学 (Optional Wardrobe Philosophy)
