@@ -314,6 +314,245 @@
 
 ---
 
+### 3.3.5 兽系/怪兽主题服饰（Animal & Monster Theme）
+
+**📊 分类说明**：
+基于现代美少女写真实务研究，兽系/怪兽元素可分为四大应用类别，每个类别占比不同、服务不同的美学目标。
+
+---
+
+#### A. 萌系家居服（45-55%占比）
+
+**核心美学**：反差萌的叙事逻辑
+- 通过服装的臃肿、笨拙感反衬面部精致与体态轻盈
+- 视觉失调（Visual Incongruity）是产生"反差萌"的关键
+
+| 标签 | 类型 | 关键词 | 材质建议 | 心理效应 |
+|------|------|--------|----------|----------|
+| `[Monster-Kigurumi-Dino]` | 恐龙连体衣 | dinosaur kigurumi onesie, oversized, spiky back, tail | 法兰绒、羊羔绒 | 激发保护欲、强调舒适感 |
+| `[Monster-Kigurumi-Kuromi]` | 库洛米连体衣 | Kuromi kigurumi, purple-black color, devil horns, cute | 珊瑚绒、毛绒 | 品牌化符号、情感基调 |
+| `[Monster-Kigurumi-Bear]` | 熊猫/熊连体衣 | bear/panda kigurumi, round ears, soft texture | 法兰绒 | 温暖、可爱 |
+| `[Monster-Kigurumi-Wolf]` | 狼连体衣 | wolf kigurumi, pointed ears, fluffy tail | 羊羔绒 | 野性与萌感并存 |
+| `[Monster-Hoodie-Tail]` | 带尾巴卫衣 | oversized hoodie with detachable tail, animal ears on hood | 棉质、人造纤维 | 日常可穿性 + 怪兽元素 |
+
+**搭配建议**：
+- 南瓜裤（bloomers）增加蓬松度
+- 怪兽足部鞋套/巨大填充式爪子拖鞋
+- 与连体衣形成内部层次感
+
+---
+
+#### B. 次文化特定风格（25-30%占比）
+
+**核心美学**：身份认同的图腾
+
+**B1. 天使界隈（Tenshi Kaiwai）**
+
+| 标签 | 类型 | 关键词 | 色彩 | 配饰 |
+|------|------|--------|------|------|
+| `[Sub-Tenshi-Hoodie]` | 天使界隈卫衣 | oversized light blue hoodie, angel wings print, reflective strips | 淡蓝(Mizuiro)、白色 | 白色蕾丝、创可贴 |
+| `[Sub-Tenshi-Hat]` | 猫耳/兔耳针织帽 | animal ear knit hat, cat/rabbit ears, pastel colors | 淡蓝、粉白 | 天使翅膀挂件 |
+| `[Sub-Tenshi-Jacket]` | 防风夹克 | oversized windbreaker, transparent pockets, light blue | 淡蓝、银色 | 反光条、医疗元素 |
+
+**B2. 地雷系（Jirai Kei）**
+
+| 标签 | 类型 | 关键词 | 色彩 | 特征 |
+|------|------|--------|------|------|
+| `[Sub-Jirai-Devil]` | 小恶魔卫衣 | devil hoodie with small horns, black-pink contrast | 黑粉配色 | 恶魔角、尖刺 |
+| `[Sub-Jirai-Backpack]` | 怪兽尖刺背包 | backpack with monster spikes, punk elements | 黑色为主 | 强化"攻击性中的脆弱" |
+
+**B3. Y2K千禧风**
+
+| 标签 | 类型 | 关键词 | 材质 | 特征 |
+|------|------|--------|------|------|
+| `[Sub-Y2K-Crochet]` | 粗线兽耳帽 | chunky crochet animal ear beanie, bright colors | 粗线针织 | 复古未来主义 |
+| `[Sub-Y2K-Neon]` | 荧光兽元素 | neon-colored animal accessories, Y2K aesthetic | 合成纤维 | 千禧年街头叛逆感 |
+
+---
+
+#### C. 概念性角色摄影（15-20%占比）
+
+**核心美学**：属性拟人化，打破物种界限
+
+| 标签 | 概念 | 关键词 | 应用 |
+|------|------|--------|------|
+| `[Concept-Monster-Cub]` | 怪兽幼崽 | monster cub attributes, playful, soft features | 增强画面叙事深度 |
+| `[Concept-Little-Devil]` | 小恶魔 | little devil persona, horns, mischievous expression | 赋予生物属性 |
+| `[Concept-Cat-Girl]` | 猫系少女 | cat-like attributes, ears, tail, feline behavior | 野性或异质感情绪 |
+| `[Concept-Fox-Spirit]` | 狐妖拟人 | fox spirit elements, multiple tails, mystical | 东方幻想元素 |
+
+**妆造统一要求**：
+- 妆容需与属性协调（如猫系→猫眼线）
+- 动作需符合动物特征
+- 异形结构、定制化材质
+
+---
+
+#### D. 街头潮流配饰（10%占比）
+
+**核心美学**：结构主义的重塑
+
+| 标签 | 类型 | 关键词 | 功能 | 风格 |
+|------|------|--------|------|------|
+| `[Street-Structural-Hat]` | 结构化兽耳帽 | structured animal ear beanie, stiff knit, sharp angles | 重塑头型轮廓 | 前卫、高端街头 |
+| `[Street-Ear-Accent]` | 兽耳点缀 | animal ears as sole accent, minimalist outfit | 视觉破局点 | 辨识度提升 |
+| `[Street-Mixed-Hat]` | 混纺羊毛帽 | blended wool beanie with ears, architectural feel | 改变头肩比例 | 时装大片感 |
+
+**材质要求**：
+- 混纺羊毛、硬挺针织物
+- 耳尖填充定型棉或内置支撑物
+- 保持挺括感，形成尖角或圆耳
+
+---
+
+### 3.3.6 兽系单品详细清单
+
+#### 头部与颈部配饰
+
+| 标签 | 单品 | 关键词 | 技术要点 |
+|------|------|--------|----------|
+| `[Animal-Hat-Cat]` | 猫耳针织帽 | cat ear beanie, pointed ears, fluffy | 耳部挺括度、定型棉填充 |
+| `[Animal-Hat-Fox]` | 狐狸耳针织帽 | fox ear beanie, triangular ears | 尖耳支撑物 |
+| `[Animal-Hat-Bear]` | 熊耳针织帽 | bear ear beanie, round ears | 圆耳填充 |
+| `[Animal-Horns]` | 兽角头饰 | monster horns, resin or plastic, hair clip attachment | 轻质材料、稳固固定 |
+| `[Animal-Scarf-Tail]` | 怪兽尾巴围巾 | scarf with monster tail or footprint pattern | 动态延展性 |
+
+---
+
+#### 身体主线单品
+
+| 标签 | 单品 | 关键词 | 品质建议 |
+|------|------|--------|----------|
+| `[Animal-Onesie-Licensed]` | 官方授权角色装 | licensed character kigurumi (Sanrio, etc), high quality | 品牌背书、镜头表现佳 |
+| `[Animal-Hoodie-Ears]` | 带耳朵卫衣 | hoodie with ears on hood, oversized | 连帽处设计耳朵或尖刺 |
+| `[Animal-Hoodie-Spikes]` | 带尖刺卫衣 | hoodie with monster spikes on back | 背后尖刺设计 |
+| `[Animal-Cape]` | 怪兽斗篷 | monster-themed cape with hood and ears | 戏剧化、层次感 |
+
+---
+
+#### 下装与足部
+
+| 标签 | 单品 | 关键词 | 功能 |
+|------|------|--------|------|
+| `[Animal-Bloomers]` | 南瓜裤 | bloomers, puffy, layered under onesie | 增加蓬松度、内部层次 |
+| `[Animal-Paw-Slippers]` | 爪子拖鞋 | oversized stuffed paw slippers, cushioned | 平衡上身臃肿感、视觉锚点 |
+| `[Animal-Leg-Warmers]` | 兽纹腿套 | leg warmers with animal patterns | 增加小腿体积感 |
+| `[Animal-Loose-Socks]` | 泡泡袜 | loose socks, J-Fashion style | 修饰腿型、增加体积感 |
+
+---
+
+### 3.3.7 兽系穿搭法则
+
+#### 法则1：层次堆叠法（Layering Strategy）
+
+**适用风格**：天使界隈、次文化风格
+
+**公式**：超大号卫衣（主轴）+ 内搭蕾丝衬衫/高领打底 + 短裙 + 过膝袜 + 兽耳针织帽（收尾）
+
+**效果**："上重下轻"对比，突出腿部线条
+
+**示例组合**：
+```
+- 顶层：[Sub-Tenshi-Hoodie] 淡蓝色超大号卫衣
+- 中层：白色蕾丝边衬衫
+- 下装：黑色短裙
+- 腿部：白色过膝袜 + [Animal-Loose-Socks] 泡泡袜
+- 头部：[Animal-Hat-Cat] 淡蓝色猫耳针织帽
+- 配饰：天使翅膀挂件、创可贴
+```
+
+---
+
+#### 法则2：解构穿法（Deconstruction Technique）
+
+**适用风格**：萌系居家、概念摄影
+
+**公式**：连体玩偶服拉链拉至腰部 + 露出内部背心/内衣
+
+**效果**：打破玩偶服沉闷感，"怪兽质感"与"人类皮肤"直观碰撞
+
+**技术要点**：
+- 利用服装褶皱产生线条感
+- 露出一侧肩膀或锁骨
+- 创造视觉张力
+
+**示例组合**：
+```
+- 主体：[Monster-Kigurumi-Wolf] 狼连体衣
+- 解构：拉链拉至腰部，露出黑色吊带背心
+- 姿态：坐姿，一只手拉扯连体衣耳朵
+- 重点：皮肤与绒毛的质感对比
+```
+
+---
+
+#### 法则3：配饰化点缀（Accessorizing）
+
+**适用风格**：街头潮流、日常穿搭
+
+**公式**：常规服装 + 兽耳针织帽（唯一异质元素）
+
+**效果**：视觉破局点（Focal Point），提升造型辨识度
+
+**技术要点**：
+- 帽子不再是单纯头饰，而是视觉突破
+- 其他服装保持简约
+- 利用材质对比（如：光滑面料 + 毛绒兽耳）
+
+**示例组合**：
+```
+- 主体：简约白色T恤 + 黑色牛仔裤
+- 点缀：[Street-Structural-Hat] 黑色结构化猫耳帽
+- 鞋履：白色运动鞋
+- 效果：街拍风格，高辨识度
+```
+
+---
+
+### 3.3.8 兽系摄影实务建议
+
+**前景处理**：
+- 材质呼应：绒毛球、羽毛与怪兽服质感呼应
+- 符号化介入：怪兽爪子模型、树脂配件局部遮挡
+- 光效遮挡：彩色亚克力板模拟霓虹眩光
+
+**中景处理**：
+- 轮廓管理：避免正面呆板坐姿，利用S形曲线
+- 交互实务：模特拉扯耳尖、用手遮住一只耳朵
+- 对焦精度：锁定最近的眼睛，注意绒毛漫反射
+
+**背景处理**：
+- 生活化虚化：卧室场景，拉开物理距离
+- 次文化色彩：淡蓝色布幔、蓝色LED灯管（天使界隈）
+- 几何背景：简洁墙面反衬怪兽配饰复杂度
+
+---
+
+### 🎯 兽系主题使用提示
+
+**何时使用：**
+- ✅ 萌系、可爱、反差主题
+- ✅ 次文化风格（天使界隈、地雷系、Y2K）
+- ✅ 居家、休闲、日常叙事
+- ✅ 需要视觉辨识度的街拍
+
+**何时避免：**
+- ❌ 正式、职场、商务场景
+- ❌ 过于严肃的主题（如：哀悼、庄严）
+- ❌ 已经有足够视觉元素的复杂场景
+
+**禁令提醒：**
+- 🔴 严禁真实动物耳朵、尾巴（活体动物）
+- 🟡 狐狸元素是"显性元素"，避免过度使用
+- ✅ 使用人造材质、针织、毛绒等
+
+**⚠️ 频率控制（TERP）**：
+- 兽系元素建议使用频率：每20个创意中不超过5-6次
+- 优先探索"微妙"动物：鹿、鹤、水獭、兔
+- 避免固定搭配：猫耳 + 女仆装（过于刻板）
+
+---
+
 ## 3.4 材质与细节（Materials & Details）
 
 ### 3.4.1 面料质感
