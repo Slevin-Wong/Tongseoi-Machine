@@ -15,8 +15,14 @@
 ### 快速导航
 - [3.1 服装哲学](#31-服装哲学) - 核心原则、选择逻辑
 - [3.2 基础服装分类](#32-基础服装分类) - 上装、下装、连衣裙、外套
-- [3.3 主题服饰库](#33-主题服饰库) - 文化、风格、场景导向
-- [3.4 材质与细节](#34-材质与细节) - 面料、装饰、配饰
+- [3.3 主题服饰库](#33-主题服饰库) - 文化、风格、场景导向（含新增5类）
+  - 3.3.1–3.3.5 原有类别（东方/西方文化/场景/幻想/兽系）
+  - 3.3.6 职业/行业制服库（NEW）
+  - 3.3.7 现代亚文化风格（NEW）
+  - 3.3.8 全球地理民族服饰扩展（NEW）
+  - 3.3.9 西方历史时代风格扩展（NEW）
+  - 3.3.10 人生仪式场合着装（NEW）
+- [3.4 材质与细节](#34-材质与细节) - 面料、装饰、配饰（工艺细节大幅扩展）
 - [3.5 服装组合建议](#35-服装组合建议) - 避免套路、创新搭配
 
 ---
@@ -553,6 +559,187 @@
 
 ---
 
+### 3.3.6 职业/行业制服库（Professional Uniforms）
+
+**核心原则**：制服的视觉张力来自于其对身体的"异化"——通过沉重防护、精密管线或极度克制的裁剪，使个体转变为职能单元。冷门职业服饰与华丽场景/反差环境组合时效果最强。
+
+#### A. 高危/特种职业
+
+| 标签 | 制服 | 关键词 | 氛围 |
+|------|------|--------|------|
+| `[Uniform-EOD]` | 排爆专家服 | EOD bomb suit, heavy armored ballistic ensemble, Nomex fabric, gold-coated visor, modular neck guard | 压抑、极端危险、高科技护甲 |
+| `[Uniform-HV-Lineman]` | 高压线屏蔽服 | Faraday suit, stainless steel fiber mesh, conductive silver-gray fabric, metallic cold light, full coverage | 科技、能量边缘、危险 |
+| `[Uniform-Smokejumper]` | 森林烟火跳伞员 | Smokejumper jumpsuit, flame-resistant Kevlar canvas, parachute harness, tactical leg pouches, burn marks | 狂野、英勇、自然灾害 |
+| `[Uniform-Kiln-Tech]` | 窑炉测温工 | heat-reflective aluminized suit, silver proximity suit, gold visor reflecting molten orange light | 超现实、极热、液态金属感 |
+| `[Uniform-Saturation-Diver]` | 饱和潜水员 | Kirby Morgan diving helmet, heated neoprene undersuit, heavy umbilical cables, brass helmet, deep sea | 深海幽闭、孤寂、重工业 |
+
+#### B. 精密/学术职业
+
+| 标签 | 制服 | 关键词 | 氛围 |
+|------|------|--------|------|
+| `[Uniform-Surgeon]` | 外科医生术服 | surgeon sterile scrubs, teal microfiber, surgical loupes magnifier, lead apron, cold blue-white light | 冷静、精密、生命博弈 |
+| `[Uniform-Forensic]` | 法医勘查服 | forensic Tyvek suit, white disposable hazmat, blue nitrile gloves, evidence bags, clinical coldness | 冰冷、死亡线索、洁净 |
+| `[Uniform-Watchmaker]` | 钟表匠工作服 | watchmaker clean white coat, specialized magnifying eyepiece, precision tweezers, warm spotlight | 微观、永恒、耐心 |
+| `[Uniform-Academic-Robe]` | 学术袍（牛津风） | Oxford academic gown, heavy black silk, fur-trimmed hood, mortarboard, ceremonial weight, heritage | 智性、权威、古老仪式 |
+| `[Uniform-Cleanroom-Tech]` | 无尘间技术员 | Bunny suit cleanroom, anti-static micro-grid, double masking, white seamless full-body coverage | 绝对洁净、科学前沿 |
+
+#### C. 技艺/表演职业
+
+| 标签 | 制服 | 关键词 | 氛围 |
+|------|------|--------|------|
+| `[Uniform-Ballet-Practice]` | 芭蕾练功服 | ballerina practice wear, layered tulle skirt, knitted leg warmers, tattered pointe shoes, leotard | 柔韧、刻苦、轻盈 |
+| `[Uniform-Equestrian]` | 马术场地赛服 | equestrian show jumping, white breeches, scarlet hunt coat, velvet riding hat, mirror-polished boots | 贵族气、纪律、力量 |
+| `[Uniform-Fencing]` | 击剑服（重剑） | fencing uniform, white ballistic nylon, mesh mask, electric scoring vest, metallic wire mesh | 优雅竞争、冷静、利落 |
+| `[Uniform-Circus-Tamer]` | 马戏团驯兽师 | circus tamer vintage military frogged jacket, gold bullion embroidery, high-top riding boots, dramatic | 华丽、危险、复古奇幻 |
+
+#### D. 历史/怀旧职业
+
+| 标签 | 制服 | 关键词 | 氛围 |
+|------|------|--------|------|
+| `[Uniform-Fisher-PVC]` | 远洋渔船水手 | deep-sea trawler fisherman, heavy PVC oilskin, rubber boots, sea salt crust, knit fisherman sweater | 粗犷、咸涩、生存意志 |
+| `[Uniform-Stewardess-60s]` | 空乘（1960s） | 1960s Pan Am stewardess, pillbox hat, tailored skirt suit, silk scarf, jet age optimism, pristine | 优雅、喷气机时代、复古 |
+| `[Uniform-Royal-Mail]` | 复古英伦邮差 | Royal Mail vintage postman, heavy navy wool tunic, red piping, worn leather satchel, brass buckles | 怀旧、秩序、联系 |
+| `[Uniform-Court-Steno]` | 法庭速记员 | court stenographer, sharp business formal, mechanical keyboard, focused gaze, extreme precision | 严谨、律法、机械逻辑 |
+
+---
+
+### 3.3.7 现代亚文化风格（2019–2025 Digital Aesthetics）
+
+**说明**：本节为3.3.2（哥特萝莉、朋克等）的现代延伸，覆盖TikTok/Instagram时代兴起的"核"（-core）美学。每种风格由1–2件标志性单品定义。
+
+**🟡 TERP提醒**：亚文化风格是"显性元素"，避免堆砌多种核心美学于同一图像
+
+| 标签 | 风格 | 标志性单品 | 关键词 | 氛围 |
+|------|------|-----------|--------|------|
+| `[Theme-DarkAcademia]` | 暗黑学院风 | 棕色格纹羊毛西装 | dark academia, tweed blazer, moody library, vintage satchel, ink-stained fingers | 忧郁、智性、神秘 |
+| `[Theme-Cottagecore]` | 田园童话风 | 泡泡袖亚麻裙 | cottagecore, puff-sleeve linen dress, straw hat, pressed flower, bucolic pastoral | 逃离、恬静、怀旧 |
+| `[Theme-E-Girl]` | 电子女孩 | 链条颈圈 | e-girl, TikTok subculture, split-dyed hair, chain jewelry, striped long sleeve under graphic tee | 叛逆、数字化、二次元 |
+| `[Theme-QuietLuxury]` | 安静奢华 | 极简羊绒衫 | quiet luxury, stealth wealth, Loro Piana cashmere, neutral tones, no logos, understated | 低调、权势、永恒 |
+| `[Theme-Balletcore]` | 芭蕾核 | 针织护腿 | balletcore, leg warmers, wrap top, satin ribbons, dance-inspired street style | 柔美、轻盈、肢体感 |
+| `[Theme-Goblincore]` | 地精核 | 沾满泥土的旧毛衣 | goblincore, mud and moss, thrifted knits, mushroom motifs, dirty sneakers, feral charm | 混乱、野性、非正统 |
+| `[Theme-Regencycore]` | 摄政核 | 高腰线帝政裙 | regencycore, Bridgerton-inspired, empire waist gown, velvet choker, lace gloves | 华丽、浪漫、阶级感 |
+| `[Theme-MobWife]` | 暴徒之妻美学 | 夸张的人造皮草大衣 | mob wife aesthetic, oversized faux fur coat, leopard print, gold chunky jewelry, power dressing | 嚣张、权力、复古华丽 |
+| `[Theme-OfficeSiren]` | 办公妖精 | 窄框眼镜 | office siren, 90s corporate chic, Bayonetta glasses, pencil skirt, pointed heels, intellectual seduction | 锐利、知性诱惑、权力 |
+| `[Theme-Gorpcore]` | 户外机能风 | 机能冲锋衣 | gorpcore, technical hardshell jacket, Salomon sneakers, carabiners, utilitarian mountain gear | 实用主义、探索、坚毅 |
+| `[Theme-Steampunk]` | 蒸汽朋克 | 带齿轮机构的护目镜 | steampunk, gears, mechanical goggles, leather brass elements, Victorian tech, corset-style top | 工业复古、发明感、奇幻 |
+| `[Theme-Mermaidcore]` | 海妖核 | 珍珠镶嵌半透明裙 | mermaidcore, iridescent scales, pearls, wet-look fabric, sheer layers, ocean mythology | 梦幻、诱惑、海洋 |
+| `[Theme-Whimsigoth]` | 极简巫术哥特 | 星象图案天鹅绒裙 | whimsigoth, 90s witchy vibe, celestial prints, velvet textures, lace skirts, spiritual feminine | 灵性、复古奇幻、古灵精怪 |
+| `[Theme-Angelcore]` | 天使核 | 白色蕾丝薄纱裙 | angelcore, white lace, feathers, golden halo, sheer layered fabric, divine fragility | 神圣、脆弱、纯洁 |
+| `[Theme-Witchcore]` | 巫术核 | 黑色天鹅绒斗篷 | witchcore, herbs, tarot motifs, long black velvet cloak, silver crescent, natural witchery | 神秘、黑暗、自然力量 |
+| `[Theme-Cleanfit]` | 洁净感 | 廓形白背心 | cleanfit, minimalist street style, straight-leg denim, white tank top, slicked hair, high-discipline | 干练、高度自律、模型感 |
+
+---
+
+### 3.3.8 全球地理民族服饰扩展
+
+**说明**：本节为3.3.1（中日服饰）的全球扩展。覆盖原库中缺失的11个文化区。
+
+**✅ 创新组合提示**：全球民族服饰 + 反文化场景（如：纱丽 + 深海科研舱；韩服 + 火星基地）
+
+#### A. 东亚（扩展）
+
+| 标签 | 服饰 | 关键词 | 细节 |
+|------|------|--------|------|
+| `[Theme-Hanbok]` | 韩服 | hanbok, organza semi-transparent jeogori, curved collar, high-waisted chima, Obangsaek five colors | 流线廓形、高腰线、柔和鲜艳 |
+| `[Theme-Mamianqun]` | 马面裙 | mamianqun horse-face skirt, golden brocade weaving, pleated structure, auspicious cloud motifs | 平整褶皱、织金锦纹 |
+
+#### B. 东南亚
+
+| 标签 | 服饰 | 关键词 | 细节 |
+|------|------|--------|------|
+| `[Theme-AoDai]` | 奥黛（越南） | Ao Dai, flowing lightweight silk tunic, high side slits, wide-leg trousers underneath, soft aura | 丝绸流动感、高开衩 |
+| `[Theme-Barong]` | 巴隆（菲律宾） | Barong Tagalog, translucent pineapple fiber Piña fabric, intricate cutwork embroidery, formal | 菠萝纤维半透明、精细镂空 |
+| `[Theme-ChutThai]` | 查克里服（泰国） | Chut Thai, metallic silk brocade Pha Sin, one-shoulder shawl Sbai, gold filigree jewelry | 手工织锦、黄金丝线披肩 |
+
+#### C. 南亚
+
+| 标签 | 服饰 | 关键词 | 细节 |
+|------|------|--------|------|
+| `[Theme-Sari]` | 纱丽（印度） | Banarasi sari, 9-meter unstitched silk, intricate gold zari borders, vibrant draping, voluminous | 九米无缝缠绕、金丝织锦边 |
+| `[Theme-Sherwani]` | 舍瓦尼（南亚男装） | sherwani, heavy silk coat, high stand collar, intricate Zardosi metallic threadwork embroidery | 挺括重质丝绸、金属丝刺绣 |
+
+#### D. 中东/北非
+
+| 标签 | 服饰 | 关键词 | 细节 |
+|------|------|--------|------|
+| `[Theme-Caftan]` | 卡夫坦（摩洛哥） | Moroccan caftan, velvet or silk textile, Sfifa hand-woven braiding, ornate Aakad silk buttons | 丝绒或真丝、手工编织边饰 |
+| `[Theme-Abaya]` | 阿巴雅（海湾） | elegant abaya, flowing black crepe, floor-length, shimmering embellishments, extreme drapery | 顶级黑绉纱、垂坠线条 |
+
+#### E. 西非
+
+| 标签 | 服饰 | 关键词 | 细节 |
+|------|------|--------|------|
+| `[Theme-Kente]` | 肯特布（加纳） | Kente cloth, hand-woven silk strips, geometric symbolic patterns, vibrant saturated colors, prestige | 窄条手工织造拼接、高饱和几何色 |
+| `[Theme-Agbada]` | 阿格巴达（尼日利亚） | Agbada, massive wide-sleeved robe, starch cotton, circular central embroidery, voluminous silhouette | 巨大阔袖、重质浆洗棉 |
+| `[Theme-Dashiki]` | 达希基 | dashiki, V-neck ornate print, symmetrical floral-geometric patterns, oversized comfortable shirt | V领中心对称图案、绚丽印花 |
+
+#### F. 撒哈拉以南非洲
+
+| 标签 | 服饰 | 关键词 | 细节 |
+|------|------|--------|------|
+| `[Theme-Shuka]` | 马赛束卡（东非） | Maasai shuka, red-black checkered cotton, intricate beadwork collar, semi-nomadic, bold contrast | 红黑格子棉布、复杂彩色珠饰 |
+| `[Theme-Ohorokova]` | 赫雷罗裙（纳米比亚） | Herero Ohorokova, Victorian silhouette, horn-shaped hat, voluminous floor-length colorful skirt | 维多利亚廓形、牛角状头巾 |
+
+#### G. 东欧/斯拉夫
+
+| 标签 | 服饰 | 关键词 | 细节 |
+|------|------|--------|------|
+| `[Theme-Sarafan]` | 萨拉范（俄罗斯） | Russian sarafan, sleeveless folk dress, red white cross-stitch embroidery, linen texture, flower wreath | 亚麻底色、红白十字绣花纹 |
+| `[Theme-Vyshyvanka]` | 维希万卡（乌克兰） | Vyshyvanka, heavy linen shirt, intricate geometric embroidery at collar and cuffs, folk heritage | 粗重亚麻、领口袖口密集几何绣 |
+
+#### H. 中美/加勒比/南美
+
+| 标签 | 服饰 | 关键词 | 细节 |
+|------|------|--------|------|
+| `[Theme-Huipil]` | 惠皮尔（玛雅） | Huipil, hand-woven on backstrap loom, indigenous mountain and flora motifs, heavy cotton brocade | 背带织机织物、家乡地域符号 |
+| `[Theme-Poncho-Andean]` | 安第斯庞乔 | Andean poncho, heavy alpaca wool, geometric stripes, slit neck opening, rustic anti-weather texture | 粗质羊驼毛、几何条纹、防水 |
+
+#### I. 大洋洲
+
+| 标签 | 服饰 | 关键词 | 细节 |
+|------|------|--------|------|
+| `[Theme-Piupiu]` | 皮尤皮尤（毛利） | Maori Piupiu, dried flax strands, geometric waistband, rhythmic swaying texture, indigenous ceremony | 亚麻纤维长条、几何腰带 |
+
+---
+
+### 3.3.9 西方历史时代风格扩展（20世纪各十年）
+
+**说明**：本节为3.3.2（维多利亚、洛可可、文艺复兴）的20世纪延伸。原库中已有`[Theme-Vintage-50s]`和`[Theme-Vintage-90s]`，本节补全缺失年代。
+
+| 标签 | 年代 | 标志性廓形 | 关键词 | 代表面料/色调 |
+|------|------|-----------|--------|--------------|
+| `[Theme-1900s-Edwardian]` | 1900s爱德华 | S型曲线、鸽胸(Pigeon breast) | S-curve silhouette, lace tea gown, oversized feathered hat, high neck, ivory | 蕾丝、丝绸、柔和粉/象牙白 |
+| `[Theme-1920s-Flapper]` | 1920s飞来波 | 扁平管状、直筒腰身 | flapper dress, drop waist, cloche hat, beaded fringe, pearl long chains, black gold | 乔其纱、亮片、黑金/银色 |
+| `[Theme-1930s-Hollywood]` | 1930s好莱坞 | 斜裁流线型(Bias cut) | bias-cut silk evening gown, Hollywood glamour, backless elegance, fur stole, champagne | 缎面、人造丝、中性/香槟色 |
+| `[Theme-1940s-Utility]` | 1940s战时实用 | 倒三角形阔肩收腰 | padded shoulders utility suit, cinched waist, tea-length skirt, wartime practicality | 粗斜纹布、羊毛、海军蓝/军绿 |
+| `[Theme-1960s-Mod]` | 1960s摩德 | A型/直筒、迷你长度 | Mod style, miniskirt, space age, bold geometric, PVC details, Chelsea boots | 乙烯基(装饰用)、针织、高饱和撞色 |
+| `[Theme-1970s-Disco]` | 1970s迪斯科 | 喇叭轮廓、长线美学 | bell-bottoms, wrap dress, platform shoes, psychedelic print, disco ball reference | 涤纶、麂皮、大地色/荧光感 |
+| `[Theme-1980s-Power]` | 1980s权力装扮 | 宽肩夸张体量 | power dressing, huge shoulder pads, neon spandex, lace gloves, statement jewelry | 莱卡、金属织物、霓虹色调 |
+| `[Theme-2000s-Y2K]` | 2000s千禧Y2K | 低腰暴露、技术乐观 | Y2K low-rise jeans, butterfly clips, velour tracksuit, metallic sheen, cyber futurism | 丝绒、闪粉面料、糖果粉/银色 |
+
+---
+
+### 3.3.10 人生仪式场合着装（Life Ritual Garments）
+
+**核心理念**：生命礼仪服饰标志着个体在社会结构中的身份转换。视觉上往往是最庄重、最具象征密度的服装。
+
+**⚠️ 使用建议**：
+- 此类服饰具有极强的文化专属性，请注意文化语境的准确性
+- 与非对应文化的场景组合时，应作为"有意识的解耦"而非随机搭配
+
+| 标签 | 仪式 | 文化 | 关键词 | 核心视觉特征 |
+|------|------|------|--------|-------------|
+| `[Ritual-Furisode]` | 成人式振袖和服 | 日本 | furisode kimono, extremely long sleeves, full-body Yuzen dye patterns, elaborate obi belt | 超长袖子、覆盖全身的友禅染花纹 |
+| `[Ritual-Quinceanera]` | Quinceañera礼服 | 拉丁美洲 | quinceañera gown, voluminous multi-layer tulle, sequin tiara, princess silhouette, dreamlike | 极庞大多层薄纱、亮片冠冕 |
+| `[Ritual-Lehenga-Bridal]` | 婚礼勒恒加 | 印度 | Indian bridal lehenga, full hand-embroidered gold thread, heavy jewelry headpiece, red gold motifs | 全手工金线刺绣、沉重珠宝头饰 |
+| `[Ritual-Kilt-Ceremonial]` | 仪式苏格兰裙 | 苏格兰 | ceremonial kilt, family tartan pattern, leather sporran bag, sgian-dubh short sword, knee socks | 家族格子纹、皮革饰袋、腰间短剑 |
+| `[Ritual-Victorian-Mourning]` | 维多利亚式丧服 | 欧洲 | Victorian mourning dress, black long veil, black silk satin, jet jewelry, grief formalized | 黑色长面纱、黑色绸缎、克制 |
+| `[Ritual-Mourning-Chinese]` | 披麻戴孝 | 中国/儒家 | Chinese funeral sackcloth, rough undyed hemp fabric, white head cloth, absolute grief symbol | 粗糙本色麻布、白色头巾 |
+| `[Ritual-Dol-Bok]` | 韩国百日服 | 韩国 | Korean Dol-bok, vibrant rainbow-striped Saekdong sleeves, auspicious embroidered top, ceremonial | 鲜艳彩虹袖、吉祥刺绣 |
+| `[Ritual-Graduation-Gown]` | 毕业典礼袍 | 跨文化 | graduation gown ceremony, academic hood colored by discipline, mortarboard, institutional weight | 学科色帽兜、仪式的厚重感 |
+
+---
+
 ## 3.4 材质与细节（Materials & Details）
 
 ### 3.4.1 面料质感
@@ -618,6 +805,54 @@
 | `[Detail-Lace-Trim]` | 蕾丝边 | lace trim, delicate edging |
 | `[Detail-Ribbon]` | 缎带 | ribbon details, bows, tied |
 | `[Detail-Beading]` | 珠饰 | beaded, sequins, rhinestones |
+
+#### C. 边饰工艺（进阶）
+
+| 标签 | 类型 | 关键词 | 视觉效果 |
+|------|------|--------|----------|
+| `[Detail-Fringe]` | 流苏 | flowing tassel fringe, suspended fiber bundles | 悬垂的松散纤维束，随动作产生律动光影 |
+| `[Detail-Topstitch]` | 明线走线 | contrast topstitching detail, visible seam thread | 织物表面可见缝线，通常使用粗线或对比色 |
+| `[Detail-Drawstring]` | 抽绳 | adjustable drawstring casing, gathered fabric | 穿过织物管道的绳索，伴随自然褶皱 |
+| `[Detail-Piping]` | 管道包边 | piped cording trim, raised edge | 内部包裹绳索的凸起边缘，形成坚硬突出条状 |
+| `[Detail-Chain-Trim]` | 金属链边 | chunky metal chain trim, cold metallic sheen | 微型或重型金属链条缝合边缘 |
+| `[Detail-Feather-Trim]` | 羽毛饰边 | Marabou feather trim, fluffy fiber edge | 蓬松细碎羽毛堆叠，模糊服装边缘轮廓 |
+| `[Detail-Taped-Seam]` | 胶条封边 | ultrasonic welded taped edge, seamless waterproof | 无缝线热压胶条，极致平整防水感 |
+| `[Detail-Laser-Edge]` | 激光切割边 | laser-cut precision raw edge, no fraying | 极端精确无焦痕的平整切割面 |
+| `[Detail-Lettuce-Hem]` | 泡泡边 | lettuce hem ripple, stretched elastic wave | 弹性织物拉伸缝合形成的起伏剧烈波浪边 |
+
+#### D. 结构连接件
+
+**用途说明**：连接件不仅是视觉焦点，更是材质对比的核心。描述连接件时AI会自动在周围生成相应的受力褶皱。
+
+| 标签 | 类型 | 关键词 | 视觉效果 |
+|------|------|--------|----------|
+| `[Detail-Safety-Pin]` | 别针 | oversized safety pin, industrial metal bend | 极简的金属弯折，冷冽工业美感 |
+| `[Detail-Frog-Closure]` | 盘扣 | traditional frog closure, hand-woven rope knot | 手工编织绳结扣，螺旋或花卉轮廓 |
+| `[Detail-Buckle]` | 搭扣 | leather strap buckle, metal pin holes | 带有孔洞的皮革带与金属针扣 |
+| `[Detail-D-Ring]` | D形环 | matte metal D-ring, nylon webbing | 半圆形金属环，固定在厚重尼龙带上 |
+| `[Detail-Toggle]` | 牛角扣 | wooden toggle fastener, leather rope loop | 长梭形扣件配合皮革绳环，视觉焦点强 |
+| `[Detail-Grommet]` | 鸡眼扣 | brass grommet eyelet, metal reinforced hole | 金属加固的圆形穿孔，鲜明金属光圈 |
+| `[Detail-Magnetic-Clasp]` | 磁吸扣 | hidden magnetic snap, seamless closure | 互补金属圆盘，闭合后消隐在织物层间 |
+| `[Detail-Industrial-Bolt]` | 工业螺栓（先锋） | heavy hex head bolt, aggressive metallic | 六角形金属螺头，用于先锋/解构设计 |
+| `[Detail-Carabiner]` | 弹簧钩 | spring gate carabiner, climbing hardware | 带有可复位弹簧门的工业钩扣 |
+| `[Detail-Lacing]` | 系带 | cross-laced leather thong, tension lines | 交叉穿系的绳/带，具有束缚结构感 |
+
+#### E. 表面装饰技法
+
+**用途说明**：表面装饰将平面面料转化为"三维叙事空间"。描述装饰技法时AI会进行位移贴图（Displacement Mapping）计算。
+
+| 标签 | 类型 | 关键词 | 视觉效果 |
+|------|------|--------|----------|
+| `[Detail-Rhinestone]` | 烫钻 | heat-fix rhinestone motifs, faceted crystal array | 密集分布的微小刻面水晶，形成璀璨反光阵列 |
+| `[Detail-3D-Embroidery]` | 浮雕绣 | stumpwork 3D embroidery, padded raised relief | 内部填充棉花的刺绣，显著的三维高度 |
+| `[Detail-Cutout]` | 镂空 | geometric cut-out texture, negative space | 激光或手工挖空，露出下层皮肤或面料 |
+| `[Detail-Quilting]` | 绗缝 | diamond quilted padding, puffy relief pattern | 菱格状明线压纹，饱满的膨胀感 |
+| `[Detail-Emboss]` | 压花 | embossed leather relief, thermal pressed pattern | 热压形成的凹凸图案，清晰边缘阴影 |
+| `[Detail-Batik]` | 蜡染裂纹 | batik crackle texture, wax-resist random lines | 蜡防染工艺产生的随机细碎裂纹 |
+| `[Detail-3D-Print]` | 3D打印结构 | 3D printed structural mesh, parametric geometry | 在织物上打印的复杂几何网格，非人美感 |
+| `[Detail-Distressed]` | 磨损处理 | distressed abraded surface, fiber breakdown | 局部纤维断裂、褪色或起球的模拟真实效果 |
+| `[Detail-Patchwork]` | 拼接 | multimaterial splicing, contrasting textures | 不同质感面料（如皮革与丝绸）的物理对接 |
+| `[Detail-Smocking]` | 抽褶 | smocked elastic texture, honeycomb pleating | 密集弹性蜂窝状褶皱阵列，触感极强 |
 
 ---
 

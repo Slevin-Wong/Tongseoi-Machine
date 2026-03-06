@@ -13,7 +13,15 @@
 ## 🌍 第四部分：场景系统（Scene System）
 
 ### 快速导航
-- [4.1 场景环境库](#41-场景环境库) - 室内、室外、特殊场景
+- [4.1 场景环境库](#41-场景环境库) - 室内、室外、特殊场景（含新增7类）
+  - 4.1.1–4.1.5 原有场景（自然/城市/室内/废墟/幻想）
+  - 4.1.6 阈限与过渡空间（NEW）
+  - 4.1.7 劳动与生产空间（NEW）
+  - 4.1.8 地理文化特定场所（NEW）
+  - 4.1.9 机构性与权力空间（NEW）
+  - 4.1.10 极端尺度空间（NEW）
+  - 4.1.11 神圣与临时空间（NEW）
+  - 4.1.12 极端气候与时间状态（NEW）
 - [4.2 构图与镜头](#42-构图与镜头) - 景别、角度、构图法则
 - [4.3 光影系统](#43-光影系统) - 光源、色调、特殊光效
 - [4.4 氛围填充](#44-氛围填充) - 介质、粒子、细节
@@ -208,6 +216,215 @@
 | `[Scene-Float-Garden]` | 悬浮花园 | 工程可能性、大型装置 | floating platforms, suspended greenery, cables |
 | `[Scene-Water-City]` | 水城 | 海平面上升应对 | elevated walkways, buildings on stilts, canals |
 | `[Scene-Ice-Structure]` | 冰建筑 | 季节性结晶、气候利用 | ice architecture, frozen structures, temporary |
+
+---
+
+### 4.1.6 阈限与过渡空间（Liminal & Transitional Spaces）
+
+**核心概念**：阈限空间是"人短暂停留但不归属"的场域，缺乏社会关系附着感。AI生成此类场景时能产生"熟悉的陌生感"（Uncanny），视觉张力极强。
+
+**✅ 推荐使用场景**：与高级服饰组合时产生强烈反差；配合单人构图强化孤独感
+
+| 标签 | 场景 | 关键词 | 氛围 |
+|------|------|--------|------|
+| `[Scene-Liminal-Hospital-Night]` | 医院深夜候诊区 | abandoned hospital waiting room 3AM, rows of plastic chairs, greenish fluorescent flicker, linoleum floor | 忧郁、停滞、超现实 |
+| `[Scene-Liminal-Parking-Spiral]` | 停车楼旋转坡道 | spiral ramp parking garage, weathered concrete, white lane markings, dramatic shadows, harsh artificial light | 闭塞、循环、现代废土 |
+| `[Scene-Liminal-Tunnel-Corner]` | 地下通道转角 | subterranean tunnel corner, yellow tiled walls, dripping water, convex mirror, echoing footsteps | 危险、城市隔绝、隐秘 |
+| `[Scene-Liminal-Ferry-Deck]` | 轮渡甲板过道 | ferry deck passageway, white painted iron, salt spray on glass, lifebuoys, industrial rust, sea mist | 漂浮、未知、动态 |
+| `[Scene-Liminal-Escalator]` | 自动扶梯尽头 | dead end of long escalator, repetitive metallic steps, rubber handrail, industrial beige walls, singular overhead light | 机械、无尽、虚无 |
+| `[Scene-Liminal-Hotel-Elevator]` | 旅馆电梯厅 | hotel elevator lobby, outdated gold trim, thick patterned carpet, muffled lighting, symmetrical door frames | 幽闭、过时、静止 |
+| `[Scene-Liminal-Fire-Door]` | 走廊尽头防火门 | heavy steel fire door corridor end, exit sign glow, beige wallpaper, repetitive floral carpet pattern | 悬疑、死胡同、压抑 |
+| `[Scene-Liminal-Vending]` | 自动售货机死角 | vending machine corner, glowing product labels, wet dark alleyway, neon light reflection, rain streaks | 赛博朋克、孤独、市井 |
+| `[Scene-Liminal-Phone-Booth]` | 电话亭雪夜 | interior of red phone booth in blizzard, frosted glass, vintage receiver, warm light vs cold blue snow | 秘密、怀旧、孤立 |
+| `[Scene-Liminal-Locker-Room]` | 更衣室长凳区 | empty locker room, rows of numbered metal lockers, wooden benches, linoleum floor, high-window light | 竞技后的空虚、私密 |
+| `[Scene-Liminal-ATM]` | 取款机玻璃间 | ATM vestibule at night, glowing blue screen, glass reflections, dark empty street, security camera fisheye | 资本孤岛、警惕、现代 |
+| `[Scene-Liminal-Backstage]` | 影楼化妆间后台 | photography studio backstage, rows of lightbulbs, tangled cables, racks of clothes, large mirrors | 虚幻、创造、疲惫 |
+
+---
+
+### 4.1.7 劳动与生产空间（Labor & Production Spaces）
+
+**核心概念**：劳动空间充满"熵增"的痕迹——油污、锈迹、高温扭曲、粉尘漫射。视觉质感极为丰富，是AI库中严重缺失的类型。
+
+**🟢 创新组合提示**：华丽礼服 + 劳动场景（如：晚礼服 + 窑炉），产生极强反差张力
+
+| 标签 | 场景 | 关键词 | 氛围 |
+|------|------|--------|------|
+| `[Scene-Labor-Kiln]` | 陶瓷窑炉车间 | ceramic kiln workshop, glowing orange furnace, heat distortion, ash-covered floor, stacks of raw clay, backlighting | 灼热、创造、原始 |
+| `[Scene-Labor-Fishing-Port]` | 深夜渔港码头 | midnight fishing port, wet wooden planks, rusted iron bollards, tangled green nets, salt spray, scales glistening | 咸腥、勤劳、粗粝 |
+| `[Scene-Labor-Glassblowing]` | 玻璃吹制工作室 | glass blowing studio, molten orange glass, blue gas flames, graphite tools, flying sparks, protective shields | 危险、艺术、纯粹 |
+| `[Scene-Labor-Blacksmith]` | 铁匠铺锻造台 | traditional blacksmith forge, glowing red iron, dark charcoal background, sparks, sweat and soot, anvil silhouette | 原始、力量、古老 |
+| `[Scene-Labor-Dyeing]` | 印染厂晒场 | traditional fabric dyeing yard, hanging strips of indigo cloth, wooden poles, stone vats, water reflection, breeze | 民族、律动、清爽 |
+| `[Scene-Labor-Watchmaker]` | 钟表维修老铺 | watchmaker's bench, microscopic brass gears, magnifying glass, tiny tweezers, dark wood, single warm spotlight | 时间、工匠、静谧 |
+| `[Scene-Labor-Wine-Cellar]` | 葡萄园地窖 | vineyard fermentation cellar, giant oak barrels, damp stone walls, candle light, purple wine stains | 醇厚、时间、阴冷 |
+| `[Scene-Labor-Salt-Pan]` | 盐田采收区 | sea salt pans, white crystal mounds, pinkish water, wooden rakes, harsh midday sun, blinding reflection | 纯净、极简、灼热 |
+| `[Scene-Labor-Print-Shop]` | 印刷厂装订间 | offset printing plant, smears of cyan ink, stacks of fresh paper, industrial lubricant, repetitive mechanical arms | 节奏、传媒、繁忙 |
+| `[Scene-Labor-Steel-Mill]` | 炼钢厂高炉台 | steel mill blast furnace platform, river of molten iron, infrared glow, steel silhouettes, welding sparks | 震撼、毁灭、工业 |
+| `[Scene-Labor-Tannery]` | 皮革鞣制厂 | leather tannery, rows of raw hides, wooden vats, damp floor, earthy tones of tan and brown | 原始、沉重、真实 |
+| `[Scene-Labor-Cleanroom]` | 电子厂无尘间 | electronics cleanroom, bright white light, workers in blue hazmat suits, microscope glow, robotic arms, sterile | 疏离、冷漠、精确 |
+
+---
+
+### 4.1.8 地理文化特定场所（Culturally-Specific Environments）
+
+**核心概念**：破除AI对"东方符号"和"西方古典"的简化。通过特定材质（东南亚竹编、东欧混凝土）和光影逻辑（热带硬朗直射光 vs 欧陆漫射冷光）实现去同质化。
+
+#### A. 东亚
+
+| 标签 | 场景 | 关键词 | 氛围 |
+|------|------|--------|------|
+| `[Scene-Cult-Zen-Tea]` | 京都禅意茶室 | Zen tea room, tatami floor, paper shoji screens, soft garden shadow, bamboo kettle, extreme minimalism | 禅意、静谧、极简 |
+| `[Scene-Cult-Neon-Market]` | 霓虹夜市深处 | deep neon night market, steam rising, wet asphalt, crowded signs, red lanterns, extreme color saturation | 繁华、迷幻、市井 |
+
+#### B. 东南亚
+
+| 标签 | 场景 | 关键词 | 氛围 |
+|------|------|--------|------|
+| `[Scene-Cult-Stilt-House]` | 湄公河高脚屋 | Mekong stilt house, dark wood beams, floating river hyacinth, tropical haze, Palafitte architecture | 季风、潮湿、漂泊 |
+| `[Scene-Cult-Spice-Market]` | 香料集市一角 | SE Asian spice stall, mounds of colorful powders, burlap texture, warm tropical sun, wicker baskets | 热烈、感官、色彩爆炸 |
+
+#### C. 南亚
+
+| 标签 | 场景 | 关键词 | 氛围 |
+|------|------|--------|------|
+| `[Scene-Cult-Ghats]` | 恒河清晨台阶 | Varanasi Ghats dawn, steps into water, orange mist, oil lamps, marigold garlands, sacred geometry | 永恒、神圣、橙色调 |
+| `[Scene-Cult-Stepwell]` | 印度阶梯井 | Abhaneri stepwell, nested inverted pyramids, sharp shadows, deep green water, geometric abyss | 震撼、深邃、建筑奇观 |
+
+#### D. 中东/北非
+
+| 标签 | 场景 | 关键词 | 氛围 |
+|------|------|--------|------|
+| `[Scene-Cult-Riad]` | 摩洛哥传统庭院 | Moroccan Riad, zellige tile fountain, palm shadows, turquoise pool, sun shaft, Mashrabiya light | 奢华、安宁、几何美学 |
+| `[Scene-Cult-Souq]` | 苏克集市拱廊 | Souq vaulted arcade, hanging brass lamps, Tyndall effect ceiling light, spice scent, crowded aisles | 神秘、繁杂、感官叠加 |
+
+#### E. 非洲
+
+| 标签 | 场景 | 关键词 | 氛围 |
+|------|------|--------|------|
+| `[Scene-Cult-Djenne]` | 杰内泥清真寺外墙 | Great Mosque of Djenne facade, mud brick with timber stakes, desert sun, red sand, organic form | 宏大、土地、原始纹理 |
+| `[Scene-Cult-Mud-Village]` | 泥砖村庄广场 | mud village courtyard, baobab silhouette, red dust, communal hearth, woven mats, Sudano-Sahelian | 原始、社区、广阔感 |
+
+#### F. 东欧
+
+| 标签 | 场景 | 关键词 | 氛围 |
+|------|------|--------|------|
+| `[Scene-Cult-Soviet-Hall]` | 废弃苏联公寓走廊 | decaying Soviet hallway, peeling mint green paint, metal doors, dim fluorescent, Brutalist concrete | 忧郁、怀旧、压抑 |
+| `[Scene-Cult-Budapest-Bath]` | 布达佩斯温泉浴室 | Budapest thermal bath, neo-baroque arches, turquoise water, steam, marble pillars, turquoise vapor | 颓废、优雅、古典 |
+
+#### G. 拉丁美洲
+
+| 标签 | 场景 | 关键词 | 氛围 |
+|------|------|--------|------|
+| `[Scene-Cult-Favela]` | 里约彩色贫民窟街 | favela colorful stairs, vibrant murals, hanging laundry, tangled wires, steep perspective, tropical sun | 活力、混乱、生命力 |
+| `[Scene-Cult-Dia-Muertos]` | 墨西哥亡灵节祭坛 | Dia de los Muertos altar, thousands of marigolds, candles, sugar skulls, smoke, warm sacred space | 魔幻、思念、橙色海洋 |
+
+#### H. 大洋洲
+
+| 标签 | 场景 | 关键词 | 氛围 |
+|------|------|--------|------|
+| `[Scene-Cult-Wharenui]` | 毛利集会堂 | Wharenui meeting house, intricate red wood carvings, woven panels, dim warm light, Maori wood carving | 庄严、传承、封闭神圣 |
+| `[Scene-Cult-Volcanic-Reef]` | 黑色礁石潮间带 | volcanic reef pools, obsidian rock, turquoise tide, salt spray, harsh island light, extreme contrast | 孤绝、纯净、锐利 |
+
+---
+
+### 4.1.9 机构性与权力空间（Institutional & Power Spaces）
+
+**核心概念**：权力空间通过比例、对称性与材料坚固感建立威慑力。与华丽/反差服饰组合时张力极强。生成要点：强调层高（high ceilings）、冷色调大理石、严苛几何对称。
+
+| 标签 | 场景 | 关键词 | 氛围 |
+|------|------|--------|------|
+| `[Scene-Power-Courtroom]` | 法庭被告席视角 | courtroom from dock, high wooden bench, marble pillars, upward perspective, heavy silence, power asymmetry | 审判、严肃、焦虑 |
+| `[Scene-Power-Surgery-Hall]` | 手术室无菌走廊 | sterile surgical corridor, stainless steel carts, blue-white shadowless light, polished floor reflection | 冷酷、精准、无菌 |
+| `[Scene-Power-Archive]` | 绝密档案地下室 | top secret underground archive, floor-to-ceiling metal shelves, dim aisles, grey boxes, forgotten weight | 秘密、厚重、被遗忘 |
+| `[Scene-Power-Embassy]` | 大使馆国宴厅 | embassy ballroom, crystal chandeliers, gold trimmings, velvet curtains, long table, diplomatic ceremony | 虚伪、高贵、仪式感 |
+| `[Scene-Power-Vault]` | 银行金库巨型圆门 | massive steel bank vault door, gear mechanisms, cold white light, security lasers, impenetrable metal | 贪婪、封闭、冷峻 |
+| `[Scene-Power-Control-Room]` | 监控中心控制大厅 | surveillance hub, wall of monitors, blue digital glow, ergonomic chairs, data flow, omniscience | 警惕、焦虑、全知 |
+| `[Scene-Power-Border]` | 边境关卡检查站 | border checkpoint, concrete barriers, searchlights, barbed wire, glass booth, rain, legal isolation | 隔绝、法律、不安 |
+| `[Scene-Power-Parliament]` | 议会大厅空场 | empty parliament hall, circular seating, dark wood, high dome, symbolic statues, hollow grandeur | 庄严、空洞、历史感 |
+
+---
+
+### 4.1.10 极端尺度空间（Scale Extremes）
+
+#### A. 微观场景（极小、封闭、私密）
+
+**特点**：增加心理压力与亲密度，AI生成时建议指定广角（14mm ultra-wide）或鱼眼视角
+
+| 标签 | 场景 | 关键词 | 氛围 |
+|------|------|--------|------|
+| `[Scene-Micro-DressingRoom]` | 试衣间内部 | interior of dressing room, infinite mirrors, pile of clothes, overhead warm light, self-scrutiny | 焦虑、自我审视、私密 |
+| `[Scene-Micro-Confessional]` | 忏悔室 | dark oak confessional booth, fine metal mesh, singular ray of light, deep shadows, moral weight | 秘密、罪恶感、极端对比 |
+| `[Scene-Micro-Container]` | 狭窄集装箱 | interior of metal shipping container, corrugated walls, rusted floor, slit of sunlight, long perspective | 孤独、漂泊、边缘 |
+| `[Scene-Micro-Sub-Bunk]` | 潜艇床位 | submarine bunk, metal frame, heavy curtains, pipes above, extremely low ceiling, claustrophobic | 极限生存、压制、幽闭 |
+| `[Scene-Micro-Elevator-Corner]` | 电梯轿厢死角 | corner of mirrored elevator, chrome panels, floor indicator glow, infinite reflection, closed space | 现代异化、孤独 |
+
+#### B. 宏观场景（高空、辽阔、危险感）
+
+**特点**：带来释放感或渺小感，建议使用长焦（100mm+）强化纵深
+
+| 标签 | 场景 | 关键词 | 氛围 |
+|------|------|--------|------|
+| `[Scene-Macro-Window-Platform]` | 摩天楼擦窗平台 | window cleaning platform high above city, steel cables, massive scale contrast, glass wall reflection | 眩晕、现代、危险 |
+| `[Scene-Macro-Crane-Cabin]` | 起重机驾驶室 | crane operator cabin view, panoramic windows, city skyline below, morning sun, solitary control | 掌控、孤独、辽阔 |
+| `[Scene-Macro-Lighthouse-Top]` | 灯塔观景台 | top of lighthouse balcony, rotating Fresnel lens, beam cutting fog, stormy sea, circular geometry | 引导、狂暴、孤绝 |
+| `[Scene-Macro-Balloon-Basket]` | 热气球吊篮 | hot air balloon basket, high above autumn forest, roaring burner flame, ropes, unobstructed horizon | 自由、原始、浪漫 |
+| `[Scene-Macro-Container-Ship]` | 巨型货轮甲板 | deck of mega container ship, container towers, vast blue ocean, metal wind, extreme perspective | 贸易、物质、开阔 |
+
+---
+
+### 4.1.11 神圣与临时空间（Sacred & Temporary Spaces）
+
+#### A. 神圣/仪式空间
+
+**注意**：神圣空间的光线本身即是核心叙事——不是照明，而是真理的隐喻
+
+| 标签 | 场景 | 关键词 | 光线特征 | 氛围 |
+|------|------|--------|----------|------|
+| `[Scene-Sacred-Mosque]` | 多柱式清真寺内部 | hypostyle mosque hall, infinite columns, geometric light patterns, Mashrabiya windows, soft carpets | 漫射顶光、几何阴影 | 神圣、数学美、宏大 |
+| `[Scene-Sacred-Tibetan]` | 藏传佛教辩经场 | Tibetan monastery courtyard, strong Himalayan sun, prayer flags, stone floor, debate energy | 强直射高对比光 | 辩论、虔诚、高原感 |
+| `[Scene-Sacred-Shamanic]` | 萨满帐篷内部 | Shamanic tent interior, central fire hole, smoke in light shafts, hanging furs, Tyndall effect | 垂直束状丁达尔光 | 仪式、原始力量 |
+| `[Scene-Sacred-Hindu-Inner]` | 印度神庙内殿 | Garbhagriha total darkness, singular oil lamp glow, deity silhouette, polished black stone, oil stains | 极端黑暗、单点火光 | 神性、绝对虔诚 |
+| `[Scene-Sacred-Ancestral]` | 祠堂天井 | traditional Chinese ancestral hall, central courtyard light shaft, incense smoke, red lacquer wood | 天井垂直采光、烟雾 | 传承、肃穆、华夏 |
+
+#### B. 临时空间
+
+**注意**：临时空间的核心视觉语言是"脆弱性"与"搭建感"——帆布褶皱、脚手架线性结构
+
+| 标签 | 场景 | 关键词 | 氛围 |
+|------|------|--------|------|
+| `[Scene-Temp-Circus]` | 马戏团后台 | circus tent backstage, ropes, makeshift mirrors, costume racks, straw floor, dynamic chaos | 荒诞、疲惫、虚幻 |
+| `[Scene-Temp-Film-Set]` | 电影布景区背面 | film set back view, plywood supports, sandbags, gaffer tape, unfinished house facade, artifice | 虚假结构、临时加固 |
+| `[Scene-Temp-Field-Hospital]` | 野战医疗帐篷 | military field hospital, green canvas, folding cots, portable oxygen, muddy floor, urgency | 紧张、怜悯、脆弱 |
+| `[Scene-Temp-Festival-Scaffold]` | 音乐节舞台支架 | festival stage scaffolding, massive speakers, tangled cables, industrial truss, post-concert silence | 狂热后的冷寂 |
+
+---
+
+### 4.1.12 极端气候与时间状态（Climate & Temporal States）
+
+**⚠️ 重要使用说明**：
+- 本节与4.1.1～4.1.11的场景为**叠加关系**，而非独立场景
+- 任何已有场景 + 气候/时间状态修饰词 = 全新的视觉空间
+- 示例：`[Scene-City-Street]` + `[Climate-Sandstorm]` = 沙尘暴中的都市街道
+
+#### A. 气候极端状态
+
+| 标签 | 状态 | 关键词 | 核心视觉变化 | 气氛 |
+|------|------|--------|-------------|------|
+| `[Climate-Sandstorm]` | 沙尘暴 | massive dust storm, orange sky, low visibility, sand particles in air, disappearing silhouettes | 全局橙色偏移、轮廓消失 | 末日感、压抑 |
+| `[Climate-Heatwave]` | 极端热浪 | heat mirage on highway, air distortion shimmer, blinding sun, melting asphalt, heat wavering | 远景波动扭曲、光影闪烁 | 焦躁、幻觉感 |
+| `[Climate-Post-Typhoon]` | 台风后 | street after typhoon, horizontal rain marks, overturned signs, flying debris, standing water reflections | 动态破坏痕迹、积水反光 | 破坏、真实、劫后 |
+| `[Climate-Frozen-Harbor]` | 冰封港口 | frozen harbor, ice-covered ships, white frost, cracked ice surface, pale winter sun | 结晶纹理、冷蓝调性 | 凝固、永恒、寂灭 |
+| `[Climate-Dense-Fog]` | 浓雾（5米能见度） | thick fog 5m visibility, mossy giant trees, diffused green light, depth gradient vanishing | 深度梯度消失、冷色调 | 迷茫、神圣 |
+
+#### B. 时间状态修饰
+
+| 标签 | 状态 | 关键词 | 核心视觉变化 | 气氛 |
+|------|------|--------|-------------|------|
+| `[TimeState-Construction]` | 建设中 | skyscraper skeleton under construction, yellow safety net, welding sparks, exposed steel beams | 几何骨架感、通透性 | 雄心、半成品感 |
+| `[TimeState-Just-Opened]` | 刚竣工空置 | pristine empty shopping mall, no signage, reflective floor, silence, fresh paint smell | 极端洁净、无生活痕迹 | 阈限感、不安 |
+| `[TimeState-Demolition]` | 拆除中 | half-demolished house, exposed brick layers, wallpaper fragments, dust cloud, structural cross-section | 材质截面细节、结构破碎 | 记忆断裂、沧桑 |
+| `[TimeState-Post-Fire]` | 火灾后废墟 | scorched building, black charcoal texture, ash snow, skeletal furniture silhouette, smoke remnants | 黑色炭化质感、极高对比 | 毁灭、悲剧 |
+| `[TimeState-Post-Flood]` | 洪水后泥泞 | muddy street after flood, waterlines on walls, silt-covered floor, debris, damp decay | 泥浆涂层、凌乱细节 | 衰败、现实 |
 
 ---
 
