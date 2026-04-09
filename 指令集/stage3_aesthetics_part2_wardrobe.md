@@ -17,12 +17,14 @@
 - [3.2 基础服装分类](#32-基础服装分类) - 上装、下装、连衣裙、外套
 - [3.3 主题服饰库](#33-主题服饰库) - 文化、风格、场景导向（含新增5类）
   - 3.3.1–3.3.5 原有类别（东方/西方文化/场景/幻想/兽系）
-  - 3.3.6 职业/行业制服库（NEW）
-  - 3.3.7 现代亚文化风格（NEW）
-  - 3.3.8 全球地理民族服饰扩展（NEW）
-  - 3.3.9 西方历史时代风格扩展（NEW）
-  - 3.3.10 人生仪式场合着装（NEW）
-- [3.4 材质与细节](#34-材质与细节) - 面料、装饰、配饰（工艺细节大幅扩展）
+  - 3.3.6 职业/行业制服库
+  - 3.3.7 现代亚文化风格
+  - 3.3.8 全球地理民族服饰扩展
+  - 3.3.9 西方历史时代风格扩展
+  - 3.3.10 人生仪式场合着装
+- [3.4 材质与细节](#34-材质与细节) - 面料、装饰、配饰（NEW：视觉密度规则 + 配饰联动规则）
+  - 3.4.3 服装视觉密度规则（NEW）
+  - 3.4.4 配饰系统（含配饰联动写法升级）
 - [3.5 服装组合建议](#35-服装组合建议) - 避免套路、创新搭配
 
 ---
@@ -856,7 +858,50 @@
 
 ---
 
-### 3.4.3 配饰系统
+### 3.4.3 服装视觉密度规则（Visual Density Rules）
+
+#### 核心原则
+
+**大面积纯色布料是视觉浪费**。任何服装单件若存在连续的大块同色无纹理区域（典型案例：A字裙裙摆、礼服拖尾、长外套背面、宽松衬衫正面），必须引入至少一项视觉打断手段。
+
+**触发条件**：
+- 同一颜色在画面中连续铺展，无材质变化或工艺细节
+- 典型高风险单品：纯色连衣裙、素色风衣、白衬衫大身、礼服裙摆
+
+**强制打断手段（选一至多）：**
+
+| 手段 | 描述 | 关键词 |
+|------|------|--------|
+| **材质过渡** | 同件服装内光泽/哑光交界、薄厚叠加、拼接两种面料 | satin panel inset, contrast matte-sheen zones |
+| **表面工艺** | 刺绣、压褶、绗缝、暗纹、蕾丝叠层 | pleated panels, jacquard pattern, embroidered hem |
+| **配件打断** | 腰带、腰封收束、衣摆边饰（流苏/蕾丝/包边）、开衩 | cinched with wide belt, lace trim at hem, front slit |
+| **光影塑形** | 光束划过产生明暗层次、风吹产生褶皱运动感 | wind-caught fabric creating natural folds, light raking across pleats |
+| **叠穿介入** | 上层外套打断视线、腰间扎起形成层次 | jacket draped over shoulders, shirt tied at waist |
+
+**示例对比：**
+```
+❌ 低密度：
+"she wears a red dress"
+——裙子成为一片均匀的红色色块，毫无叙事价值
+
+✅ 高密度（材质工艺打断）：
+"ivory silk slip dress with delicate lace trim at hem, 
+subtle jacquard floral pattern visible under light, 
+spaghetti straps casting fine shadow lines across collarbones"
+
+✅ 高密度（配件打断）：
+"deep blue satin midi dress cinched with a wide leather belt 
+at the waist, skirt fabric pooling into soft folds below the hip"
+
+✅ 高密度（光影打断）：
+"white linen shirt, gentle wind pressing the fabric against 
+her torso on one side while billowing loose on the other, 
+creasing lines radiating from the button placket"
+```
+
+---
+
+### 3.4.4 配饰系统
 
 #### A. 头部配饰
 
@@ -1097,15 +1142,36 @@ catching light with subtle sheen"
 
 ---
 
-### 3. 配饰协调
-```
-❌ 堆砌：
-"wearing necklace, bracelet, earrings, rings, hat, scarf, belt, bag..."
+### 3. 配饰联动（重要）
 
-✅ 精选：
-"wearing a simple gold pendant necklace and small hoop earrings, 
-complementing the minimalist outfit"
+**核心问题**：配饰不得孤立列举，必须描述其与服装、人体或场景的物理互动关系。孤立列举的配饰在画面中等于不存在——AI无法决定它如何与服装连接，结果是悬浮感或渲染错误。
+
 ```
+❌ 孤立堆砌：
+"wearing necklace, bracelet, earrings, rings, hat, scarf, belt, bag"
+——AI不知道这些物件如何摆放、如何与服装产生关系
+
+✅ 联动描述（物理接触）：
+"a pearl necklace resting against the neckline of her dress, 
+catching the diffused window light"
+
+✅ 联动描述（重力与运动）：
+"a leather crossbody bag hanging loosely from her right shoulder, 
+its strap creating a diagonal line across the chest"
+
+✅ 联动描述（对比与反差）：
+"chunky gold chain necklace contrasting with the delicate chiffon 
+fabric of her top, slightly pulling the neckline forward"
+
+✅ 联动描述（功能姿态）：
+"she adjusts her beret with one hand, the other gripping 
+the bag strap, rings on three fingers catching the light"
+```
+
+**联动关系词库：**
+- 位置关系：resting against / draped over / hanging from / looped around / tucked into
+- 运动状态：swinging slightly / pressing against / catching the light / creating shadow
+- 材质互动：contrasting with / complementing / weighed down by / tangled with
 
 ---
 

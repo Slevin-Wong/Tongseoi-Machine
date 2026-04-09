@@ -13,15 +13,18 @@
 ## 🌍 第四部分：场景系统（Scene System）
 
 ### 快速导航
-- [4.1 场景环境库](#41-场景环境库) - 室内、室外、特殊场景（含新增7类）
+- [4.1 场景环境库](#41-场景环境库) - 室内、室外、特殊场景（含规则节+10类扩展场景）
+  - 4.1.0.1 场景生命力规则（NEW）
   - 4.1.1–4.1.5 原有场景（自然/城市/室内/废墟/幻想）
-  - 4.1.6 阈限与过渡空间（NEW）
-  - 4.1.7 劳动与生产空间（NEW）
-  - 4.1.8 地理文化特定场所（NEW）
-  - 4.1.9 机构性与权力空间（NEW）
-  - 4.1.10 极端尺度空间（NEW）
-  - 4.1.11 神圣与临时空间（NEW）
-  - 4.1.12 极端气候与时间状态（NEW）
+    - A1. 植物多样性规则 含龟背竹限制（NEW）
+  - 4.1.6 阈限与过渡空间
+  - 4.1.7 劳动与生产空间
+  - 4.1.8 地理文化特定场所
+  - 4.1.9 机构性与权力空间
+  - 4.1.10 极端尺度空间
+  - 4.1.11 神圣与临时空间
+  - 4.1.12 极端气候与时间状态
+  - 4.1.13 美食餐饮空间（NEW）
 - [4.2 构图与镜头](#42-构图与镜头) - 景别、角度、构图法则
 - [4.3 光影系统](#43-光影系统) - 光源、色调、特殊光效
 - [4.4 氛围填充](#44-氛围填充) - 介质、粒子、细节
@@ -47,6 +50,33 @@
 
 ---
 
+### 4.1.0.1 场景生命力规则（Scene Vitality Rules）
+
+**核心原则**：场景不是布景，是被使用的空间。除特殊叙事需要外，场景应呈现被人活动、时间流逝或自然力量所触碰的痕迹，而非空洞的舞台感外壳。
+
+**按场景类型强制执行：**
+
+| 场景类型 | 强制填充要求 |
+|---------|------------|
+| **观演/赛事空间**（斗兽场、演唱会、足球场、马戏团、剧院） | 观众席必须坐有人群，不得空场；可模糊处理但需有人物轮廓和色块 |
+| **文化展览空间**（画廊、博物馆、艺术馆、装置展） | 墙面/展台须填满展品，背景可有其他参观者；禁止只有主角+空白墙+孤立几幅画 |
+| **商业餐饮空间**（餐厅、咖啡馆、市集、夜市、酒吧） | 须有其他顾客/食客的背景存在感，以及使用中的餐具、蒸汽、灯光氛围 |
+| **宗教/仪式空间**（庙宇、清真寺、祠堂、教堂） | 须有香烛燃烧、供品摆放、信众走动痕迹或历史磨损质感 |
+| **城市街道/广场** | 须有背景人群（虚化可以，消失不行）、行驶车辆、招牌灯光、地面生活杂物 |
+| **自然户外场景** | 须有风动植物细节、季节性气候指示（光线角度/叶片状态/地面湿度）、飞鸟/虫鸣的视觉暗示 |
+| **工业/劳动场所** | 须有进行中的工序痕迹：工具摆放、材料残留、热浪/烟尘/火花，不得只有空旷厂房 |
+| **私密/居家空间** | 须有生活使用痕迹：翻开的书、半杯茶、晾晒衣物、散落物品 |
+
+**合理例外**（空旷本身即叙事）：
+- ✅ 废墟、火灾后、建设中、刚竣工空置
+- ✅ 深夜关闭的空间（凌晨便利店/最后一班地铁）
+- ✅ 禁区、边境检查站、权力空间（空旷强化威压感）
+- ✅ 极端自然环境（沙漠、冰原、荒野）
+
+**例外场景补偿要求**：即使合理为空，也须用其他细节补偿密度——破碎物件、积尘粒子、异常光线、环境声音的视觉暗示。
+
+---
+
 ### 4.1.1 自然环境
 
 #### A. 森林与植被
@@ -58,6 +88,36 @@
 | `[Scene-Forest-Bamboo]` | 竹林 | bamboo forest, tall bamboo stalks, filtered green light | 东方、禅意 |
 | `[Scene-Jungle]` | 丛林 | jungle, tropical plants, vines, humid atmosphere | 原始、野性 |
 | `[Scene-Meadow]` | 草地/花海 | wildflower meadow, rolling hills, open sky | 明快、浪漫 |
+
+---
+
+#### A1. 植物多样性规则（Plant Diversity Rules）
+
+**⚠️ 龟背竹滥用禁令（Monstera Over-Use Ban）**
+
+龟背竹（Monstera deliciosa）因其辨识度高、AI生成稳定，存在严重滥用问题。
+
+**限制规则：**
+- ❌ 同一批次创意（20条以内）龟背竹出现不得超过1次
+- ❌ 禁止在同一画面前景与背景同时出现龟背竹（即以龟背竹框住龟背竹）
+- ❌ 禁止在户外自然场景中使用龟背竹（原产地为热带雨林，不适用于通用城市/居家/日式/中式场景）
+
+**替代植物词库（按使用场景）：**
+
+| 场景语境 | 推荐植物 | 关键词 |
+|---------|---------|--------|
+| 室内现代感 | 垂吊常春藤、弦月吊兰、窗台香草盆栽 | trailing ivy, string of pearls, potted herbs on windowsill |
+| 室内复古/书房 | 蕨类植物、橡皮树、文竹 | Boston ferns, rubber plant, asparagus fern |
+| 室内东方感 | 文竹、兰花、梅枝 | bamboo grass, orchid in pot, plum branch in vase |
+| 室外热带 | 棕榈叶、芭蕉叶、旅人蕉、椰子树 | palm fronds, banana leaves, traveler's palm |
+| 室外自然/欧式 | 绣球花丛、紫藤拱廊、薰衣草、野玫瑰 | hydrangea clusters, wisteria arch, lavender field, wild roses |
+| 室外东方 | 竹林、荷花、芦苇丛、梅花 | bamboo grove, lotus pond, reed bed, plum blossoms |
+| 前景模糊填充 | 芒草、野花草甸、苔藓岩石、蕨类 | pampas grass, wildflower foreground, moss-covered stones |
+| 攀爬/覆盖 | 爬山虎、紫藤、蔷薇攀爬、铁线莲 | climbing Virginia creeper, rose-covered wall, clematis vine |
+
+**⚠️ 温室/玻璃植物园频率限制：**
+- ❌ 同一批次创意（20条以内）温室/玻璃花园场景出现不得超过1次
+- 当需要"有植物感的室内空间"时，优先调用：日式庭院/苔藓庭院、阁楼书房（窗台绿植）、老街花卉市场、咖啡馆角落盆栽、废弃暖房（已有4.1.4）
 
 ---
 
@@ -425,6 +485,126 @@
 | `[TimeState-Demolition]` | 拆除中 | half-demolished house, exposed brick layers, wallpaper fragments, dust cloud, structural cross-section | 材质截面细节、结构破碎 | 记忆断裂、沧桑 |
 | `[TimeState-Post-Fire]` | 火灾后废墟 | scorched building, black charcoal texture, ash snow, skeletal furniture silhouette, smoke remnants | 黑色炭化质感、极高对比 | 毁灭、悲剧 |
 | `[TimeState-Post-Flood]` | 洪水后泥泞 | muddy street after flood, waterlines on walls, silt-covered floor, debris, damp decay | 泥浆涂层、凌乱细节 | 衰败、现实 |
+
+### 4.1.13 美食餐饮空间（Food & Dining Environments）
+
+**使用说明**：本节适用于以餐饮体验为核心叙事背景的创意。使用时从四个维度各取一个方向组合，配合4.1.0.1场景生命力规则强制填充食物/食客/蒸汽等餐饮氛围元素。
+
+---
+
+#### 维度①：空间形态（选一）
+
+**A. 自然嵌入型**
+
+| 标签 | 场景 | 关键词 | 氛围 |
+|------|------|--------|------|
+| `[Dining-Nature-Terrace]` | 户外观景宴席台 | open-air dining terrace, panoramic landscape, linen tablecloths, gentle breeze | 开阔、精致 |
+| `[Dining-Nature-Treehouse]` | 树屋林间餐台 | treehouse dining platform, forest canopy, dappled light through leaves, wooden structure | 童话、隐秘 |
+| `[Dining-Nature-Water]` | 水上浮台/水岸 | floating dining platform on water, reflections, lily pads, wooden jetty | 灵动、浪漫 |
+| `[Dining-Nature-Cave]` | 洞穴/秘境餐厅 | cave dining, stalactite ceiling, candlelight on stone walls, subterranean atmosphere | 神秘、沉浸 |
+| `[Dining-Nature-Cliff]` | 礁石/海崖边缘台 | clifftop dining table, ocean below, salt air, crashing waves in distance | 壮阔、危险感 |
+| `[Dining-Nature-WildCamp]` | 沙漠/冰原野奢营地 | luxury desert camp dining, starlit sky, bonfire, carpets on sand, expedition aesthetic | 极境、奢华 |
+
+---
+
+**B. 城市建成型**
+
+| 标签 | 场景 | 关键词 | 氛围 |
+|------|------|--------|------|
+| `[Dining-Urban-Rooftop]` | 屋顶花园餐饮 | rooftop restaurant, city skyline backdrop, string lights, urban greenery, night view | 都市、浪漫 |
+| `[Dining-Urban-Heritage]` | 历史建筑内嵌空间 | dining inside heritage building, vaulted ceilings, original stonework, modern table setting contrast | 历史、精致 |
+| `[Dining-Urban-Industrial]` | 工业遗址改造厂房 | repurposed factory dining hall, exposed brick, iron beams, Edison bulb pendants, raw texture | 粗犷、创意 |
+| `[Dining-Urban-SkyDeck]` | 空中悬挑平台 | glass-floor suspended dining platform, city far below, vertiginous views, minimalist design | 极限感、震撼 |
+| `[Dining-Urban-PrivateChef]` | 主题私厨体验间 | intimate private dining room, chef's counter, theatrical plating, open kitchen visible | 私密、戏剧性 |
+| `[Dining-Urban-Market]` | 高端美食市集档口 | gourmet night market stall, warm light, steaming woks, artisan ingredients on display | 热闹、市井奢华 |
+
+---
+
+**C. 移动/临时型**
+
+| 标签 | 场景 | 关键词 | 氛围 |
+|------|------|--------|------|
+| `[Dining-Mobile-FoodTruck]` | 移动餐车集市 | vintage food truck, fairy lights, outdoor seating, queue of customers | 随性、温暖 |
+| `[Dining-Mobile-Cruise]` | 游轮/江船甲板餐厅 | cruise ship deck dining, open sea horizon, ocean breeze, white tablecloths swaying | 自由、远方感 |
+| `[Dining-Mobile-TrainCar]` | 专列车厢餐厅 | luxury train dining car, mahogany paneling, passing landscape through windows, silver cutlery | 旅途、怀旧 |
+| `[Dining-Mobile-Balloon]` | 热气球吊篮宴席 | hot air balloon basket dining, cloud level, sunrise horizon, intimate two-person setting | 梦幻、唯一感 |
+| `[Dining-Mobile-TentBanquet]` | 帐篷营地宴席 | marquee tent banquet, translucent fabric ceiling, garden party aesthetic, flickering lanterns | 节庆、野外精致 |
+
+---
+
+**D. 极境/特殊介质型**
+
+| 标签 | 场景 | 关键词 | 氛围 |
+|------|------|--------|------|
+| `[Dining-Extreme-Underwater]` | 水下透明舱体餐厅 | underwater dining capsule, fish swimming outside glass, ocean floor, deep blue ambient light | 超现实、极致 |
+| `[Dining-Extreme-IceCave]` | 冰窟宴会厅 | ice cave dining hall, carved ice walls, blue translucent glow, fur-covered seats, breath mist | 极境、冷艳 |
+| `[Dining-Extreme-Ruin]` | 废墟/遗址现场宴席 | dining table set amid ancient ruins, columns overgrown with vines, moonlight, archaeological site | 时空错位、史诗 |
+
+---
+
+**E. 虚构/架空型**
+
+| 标签 | 场景 | 关键词 | 氛围 |
+|------|------|--------|------|
+| `[Dining-Fantasy-Immersive]` | 幻想风格沉浸布景空间 | theatrical fantasy dining set, elaborate stage design, actors in costume, multi-sensory | 戏剧、沉浸 |
+| `[Dining-Fantasy-Court]` | 宫廷复原宴会厅 | grand palace banquet hall, long table, candelabras, tapestries, period-accurate tableware | 宏大、仪式感 |
+
+---
+
+#### 维度②：地域与文化背景（选一，完全开放）
+
+| 方向 | 典型场景关键词 |
+|------|-------------|
+| 东亚语境 | Chinese courtyard with moon gate, Japanese tatami kaiseki room, Korean traditional hanok dining hall |
+| 东南亚语境 | tropical open-air pavilion, Balinese jungle dining platform, Vietnamese river floating restaurant |
+| 南亚/中东语境 | Indian palace dining with rose petals, Moroccan riad courtyard, Persian garden with fountains |
+| 欧洲语境 | Mediterranean cliffside terrace, Scandinavian forest dining under aurora, French chateau wine cellar |
+| 美洲语境 | Latin American jungle canopy, American Southwest desert camp, New York rooftop at twilight |
+| 架空/无国籍 | multi-cultural fusion elements, deliberately ambiguous regional identity, dreamlike composite scenery |
+
+> 地域背景完全开放，以上为参考方向而非限制。
+
+---
+
+#### 维度③：主题调性（选一至二）
+
+| 调性族群 | 关键词方向 |
+|---------|----------|
+| **自然/生态系** | organic textures, moss table runner, foraged ingredients on display, wildflowers, raw wood |
+| **奢华/精致系** | white glove service aesthetic, bone china, crystal glassware, minimalist plating, Art Deco details |
+| **神秘/沉浸系** | theatrical fog, dim candles, cryptic decorations, potion-like drinks, alchemist's workshop aesthetic |
+| **历史/文化系** | period-accurate tableware, traditional dress on staff, ceremonial serving ritual, archival menu |
+| **现代/未来系** | molecular gastronomy presentation, LED ambient lighting, geometric tableware, monochrome palette |
+| **粗犷/工业系** | salvaged wood table, mismatched vintage chairs, bare concrete, communal long table, chalk menu board |
+| **节庆/仪式系** | floral installation ceiling, ceremonial toasting, confetti, cultural festival decorations, celebratory atmosphere |
+
+> 调性可单一纯粹，亦可两种叠加融合（如：奢华×神秘 = 暗黑精致宴）。
+
+---
+
+#### 维度④：规模与私密程度（选一）
+
+| 规模 | 人数参考 | 场景关键词 |
+|-----|---------|----------|
+| 极私密 | 1–4人 | secluded single table, private dining alcove, intimate lighting, unhurried pacing |
+| 小型聚会 | 6–12人 | private dining room, round table, warm group ambiance, shared dishes |
+| 中型体验 | 20–50人 | themed dining hall, semi-open seating, visible kitchen or performance |
+| 大型宴会 | 50人以上 | grand banquet hall, rows of tables, orchestral or entertainment stage, ceremonial grandeur |
+| 流动开放型 | 不定 | market-style grazing, roaming servers, multiple stations, ambient crowd movement |
+
+---
+
+#### 场景生命力强制要求（本节专属）
+
+美食场景须包含以下至少**两项**视觉填充元素，缺失视为场景空洞：
+
+```
+☐ 食物/饮品的实物质感（steam rising from bowl / glistening sauce / condensation on glass）
+☐ 餐具与桌面互动（silverware catching candlelight / wine glass stem between fingers）
+☐ 其他食客或服务人员的背景存在（blurred figures at adjacent tables / waiter in periphery）
+☐ 环境气味的视觉暗示（smoke from grill / rising steam / smoke trail from incense）
+☐ 光源与食物/器皿的互动（candle flame reflected in soup surface / neon sign color on tabletop）
+```
 
 ---
 
