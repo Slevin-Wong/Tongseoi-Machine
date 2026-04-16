@@ -24,10 +24,12 @@
   - 4.1.10 极端尺度空间
   - 4.1.11 神圣与临时空间
   - 4.1.12 极端气候与时间状态
-  - 4.1.13 美食餐饮空间（NEW）
+  - 4.1.13 美食餐饮空间
+  - 4.1.14 网红私域生活场景（NEW）
 - [4.2 构图与镜头](#42-构图与镜头) - 景别、角度、构图法则
 - [4.3 光影系统](#43-光影系统) - 光源、色调、特殊光效
 - [4.4 氛围填充](#44-氛围填充) - 介质、粒子、细节
+- [4.5 拍摄情境系统](#45-拍摄情境系统) - 拍摄行为/介质风格/叙事格式/平台构图（NEW）
 
 ---
 
@@ -605,6 +607,129 @@
 ☐ 环境气味的视觉暗示（smoke from grill / rising steam / smoke trail from incense）
 ☐ 光源与食物/器皿的互动（candle flame reflected in soup surface / neon sign color on tabletop）
 ```
+
+### 4.1.14 网红私域生活场景（Influencer Lifestyle Spaces）
+
+**使用说明**：本节聚焦于社交媒体博主/网红在私人或半私人空间内进行内容创作的典型场景。每个条目含**前景道具（沉浸感钩子）/ 中景道具（人设核心）/ 背景元素（空间定调）**三层结构，与4.1.0.1场景生命力规则配合使用。
+
+---
+
+#### A. 居家私域（高细节版）
+
+| 标签 | 场景 | 核心关键词 | 典型光源 | 人设类型 |
+|------|------|----------|---------|---------|
+| `[Scene-Lifestyle-Bedroom]` | 氛围感卧室 | aesthetic cozy bedroom, neutral linen bedsheets with natural drape, soft morning light, curated mess, fairy lights over headboard | 侧逆向自然窗光，低对比奶油色调 | 生活方式/读书博主 |
+| `[Scene-Lifestyle-Gaming]` | 电竞/二次元收藏室 | RGB gaming setup, dual curved monitors, mechanical keyboard, glass display cabinet with figures, neon LED strips, synthwave lofi vibe | RGB点光源+屏幕漫反射，暗调高饱和霓虹双色 | 游戏博主/ACG/Vtuber |
+| `[Scene-Lifestyle-Closet]` | 步入式奢华衣帽间 | luxury walk-in closet, color-coordinated clothing racks, brass full-length standing mirror, backlit handbag display shelves, fluffy rug | 高显色内嵌射灯+镜前灯，3500K暖白无死角 | 时尚/奢华生活博主 |
+| `[Scene-Lifestyle-Vanity]` | 专业美妆梳妆台 | LED vanity mirror with ring of bulbs, acrylic skincare organizer, marble countertop, scattered makeup brushes, lit candles | 正面LED镜前灯，5000K日光白消除阴影 | 美妆/护肤博主 |
+| `[Scene-Lifestyle-Kitchen]` | 美食生活感厨房 | minimalist kitchen morning routine, espresso machine steam rising, wooden cutting board with wear marks, fresh herbs on windowsill, linen dish towels | 斜后方自然窗光逆光，强化蒸汽和食材边缘 | 美食/慢生活博主 |
+| `[Scene-Lifestyle-Balcony]` | 城市绿洲阳台 | cozy apartment balcony, bistro table set, trailing vines on railing, fairy string lights, blurred city skyline, golden hour | 黄金时刻低角度暖橘光，拉长阴影 | 晨间日常/治愈系博主 |
+
+**⚠️ 4.1.14 A节使用注意**：
+- `Gaming`场景禁止使用"Cyberpunk"关键词（属于🔴禁令），使用"synthwave / neon RGB / lofi"替代
+- `Bedroom`场景背景植物禁止使用龟背竹（参见4.1.1 A1植物规则），使用trailing ivy / potted herbs / ferns替代
+
+**前中后景道具系统（居家私域）：**
+
+| 场景 | 前景（失焦沉浸） | 中景（人设核心道具） | 背景（空间定调） |
+|------|--------------|-----------------|--------------|
+| 卧室 | 半杯拿铁/翻开的杂志边缘 | 垂坠感亚麻床品、复古唱片机 | 极简艺术挂画、灯串、暖色台灯 |
+| 电竞房 | 发光机械键盘特写/能量饮料罐 | 猫耳耳机、双联屏显示器 | 玻璃展示柜（手办阵列）、LED洗墙灯带 |
+| 衣帽间 | 散落的名牌高跟鞋/香槟杯 | 全身黄铜镜、整理衣物的手部动作 | 按色彩排列的衣架阵列、包包展示墙 |
+| 梳妆台 | 亚克力收纳盒/金属首饰托盘 | LED化妆镜、水龙头锐利高光 | 大理石墙面、香薰蜡烛、藤编脏衣篓 |
+| 厨房 | 粗糙木质砧板边缘/散落香料 | 咖啡机蒸汽上升、切菜动态瞬间 | 陶瓷杯盘开放层架、窗台小盆香草 |
+| 阳台 | 栏杆边多肉植物/带水珠玻璃杯 | 铁艺咖啡桌椅、几何抱枕毛毯 | 常春藤灯串、模糊城市天际线 |
+
+---
+
+#### B. 半公共空间
+
+| 标签 | 场景 | 核心关键词 | 典型光源 | 人设类型 |
+|------|------|----------|---------|---------|
+| `[Scene-Lifestyle-Gym]` | 硬核工业风健身房 | industrial gym aesthetic, wall-sized mirror, dumbbell rack, chalk particles floating, neon exit sign bokeh, sweat sheen on skin | 顶部硬聚光+侧面勾边轮廓光，强化肌肉阴影 | 健身/运动博主 |
+| `[Scene-Lifestyle-Cafe]` | 精品咖啡馆创作角 | specialty coffee shop, latte art close-up, laptop on wooden table, window seat with diffused light, ceramic mug with steam | 窗边侧光+暖色吊灯，食物/饮品侧逆光 | 数字游民/生活博主 |
+| `[Scene-Lifestyle-Hotel]` | 奢华酒店度假视角 | luxury hotel room, white fluffy robe, room service breakfast tray with fresh flowers, panoramic city view, intentionally messy premium bed | 窗外逆光+室内暖调台灯补光，昂贵通透质感 | 高净值/奢华旅行博主 |
+| `[Scene-Lifestyle-Studio-Music]` | 专业音乐/播客工作室 | home music studio, mixing console with knobs, MIDI keyboard, acoustic treatment panels, dual vertical monitors, lo-fi beats vibe | 局部屏幕光+低亮主光+彩色RGB洗墙背景 | 音乐制作人/播客主 |
+| `[Scene-Lifestyle-Studio-Photo]` | 摄影棚化妆后台 | photo studio backstage, Hollywood vanity mirror with bulb lights, clothing racks, messy makeup tray, softbox in frame | 高亮无影环境光（5500K）+设备金属反光 | 职业模特/头部博主 |
+
+**前中后景道具系统（半公共空间）：**
+
+| 场景 | 前景（失焦沉浸） | 中景（人设核心道具） | 背景（空间定调） |
+|------|--------------|-----------------|--------------|
+| 健身房 | 白色镁粉杠铃/深色哑铃 | 落地镜反射运动姿态/铺展瑜伽垫 | 工业风深色墙+器械矩阵+模糊霓虹标语 |
+| 咖啡馆 | 拉花咖啡杯边缘/散落的笔记本页 | 正在打字的手+陶瓷杯蒸汽 | 点心展示柜暖黄灯光/窗外街景 |
+| 酒店 | 高档餐具托盘/香槟杯 | 白色床品+穿浴袍博主 | 落地窗城市天际线/丝绒躺椅 |
+| 音乐工作室 | 调音台推子/专业麦克风防喷网 | 双屏DAW界面+监听耳机 | 几何吸音板+黑胶唱片上墙/吉他挂件 |
+| 摄影棚后台 | 散落眼影盘/化妆刷 | 好莱坞镜前灯+C型灯架 | 服装龙门架+八角柔光箱 |
+
+---
+
+#### C. 特定内容格式场景（内容行为触发）
+
+以下场景由**拍摄行为本身**定义，而非固定物理地点，可叠加到任意室内/半公共空间使用。
+
+| 格式名称 | 核心视觉范式 | 必须包含的元素 | AI生成控制词 |
+|---------|-----------|-------------|------------|
+| **GRWM** | 镜面互动+素颜到全妆过程感 | 无痕刘海夹、前景护肤瓶罐、正面柔光 | getting ready with me, vanity mirror, skincare products scattered, soft front lighting, candid process |
+| **开箱Unboxing** | 第一人称俯拍/内部仰拍 | 品牌牛皮纸箱、包装雪梨纸、剪刀 | unboxing video, first-person overhead angle, branded packaging, tissue paper, product reveal |
+| **Fitness Check** | 锻炼后即时，充血状态 | 健身房镜背景，顶光勾线，汗水高光 | post-workout fitness check, pump state, mirror selfie, overhead hard light, sweat gloss on skin |
+| **Outfit Check** | 出门前穿搭验证，服装是主体 | 白墙/车库/玄关，动态走步/手插口袋 | outfit check, white wall background, dynamic walking pose, full body, clothing as visual center |
+
+---
+
+## 4.5 拍摄情境系统（Shooting Context System）
+
+**核心定位**：与场景内容正交的独立叙事维度——**谁在拍、怎么拍、设备带来什么光学特征**。可与任意场景叠加，用于消除AI默认的"全知完美视角"，赋予画面真实的物理质感与时代标记。
+
+**使用方式**：在场景标签之后附加拍摄情境标签
+例：`[Scene-Lifestyle-Gym]` + `[Shoot-Mirror-Selfie]` = 健身房对镜自拍
+
+---
+
+### 4.5.1 拍摄主体行为（Who Is Shooting）
+
+| 标签 | 情境 | 核心关键词 | 关键视觉特征 | 适配场景 |
+|------|------|----------|-----------|---------|
+| `[Shoot-Mirror-Selfie]` | 对镜自拍 | mirror selfie, phone visible in hand, flash reflection on mirror, dual spatial perspective | 设备必然入画，镜面反射双层景深，可见镜面水渍/反光 | 健身房/衣帽间/卫生间/电梯 |
+| `[Shoot-Timer-Tripod]` | 倒计时三脚架自拍 | shot on tripod with self-timer, candid mid-action pose, hands free, natural movement | 构图较稳但人物处于动态"未完成"状态，服饰发丝可有运动模糊 | 海滩/街头/居家 |
+| `[Shoot-Friend-POV]` | 亲密他拍（朋友/伴侣视角） | boyfriend POV, intimate shooting distance, eye-level, candid smiling at camera, natural window light | 极强视线交流，构图随性，色调柔和温暖 | 咖啡馆/公园/居家 |
+| `[Shoot-Paparazzi]` | 狗仔偷拍风 | paparazzi style, telephoto lens compression, harsh on-camera flash, foreground obstruction | 长焦空间压缩，机顶直闪硬阴影，前景随机遮挡物 | 夜间街头/夜店门口 |
+| `[Shoot-Mugshot]` | 翻拍板/案底照风格 | mugshot style, height chart on wall, direct flat lighting, neutral cold expression | 刻度线背景，光线扁平无戏剧性，表情冷漠/麻木 | 水泥墙/简陋背景 |
+
+---
+
+### 4.5.2 介质与设备风格（Medium & Device Aesthetics）
+
+| 标签 | 介质 | 核心关键词 | 关键光学特征 | 时代归属 |
+|------|------|----------|-----------|---------|
+| `[Medium-Disposable]` | 一次性傻瓜相机 | shot on Kodak FunSaver, disposable camera flash, soft focus edges, color shift, light leaks | 中心硬直闪，边缘焦点崩散，随机漏光，色彩偏暖黄或青绿 | 复古青春/地下派对 |
+| `[Medium-Polaroid]` | 拍立得即时成像 | Polaroid style, thick white frame, faded colors, yellowed tint, chemical dark vignette | 白色物理边框，降饱和泛黄，四角暗角 | 复古文艺/手帐风 |
+| `[Medium-GoPro]` | 运动相机鱼眼 | shot on GoPro, ultra-wide fisheye, extreme barrel distortion, curved horizon, deep depth of field | 鱼眼极度桶形畸变，地平线弯曲，全画面大景深 | 极限运动/音乐节 |
+| `[Medium-CCD-2000s]` | 早期数码机CCD风 | 2000s digicam aesthetic, CCD sensor, low megapixel, harsh digital flash, blooming highlights | 低像素颗粒感，色彩过饱和，强光高光溢出 | Y2K千禧复古 |
+| `[Medium-VHS]` | 显像管录像机VHS | VHS camcorder footage, tracking lines, color bleed, low fidelity, 1990s home video, flickering | 横向磁带干扰纹，色彩溢出，极低解析度，噪点闪烁 | 90s复古/模拟美学 |
+| `[Medium-Film-Kodak]` | 柯达胶片色调 | shot on Kodak Portra 400, film grain, warm yellow-magenta shift, halation on highlights, vignetting | 银盐颗粒，高光边缘红色光晕，四角暗角，暖黄洋红偏色 | 胶片复古/文艺人像 |
+
+---
+
+### 4.5.3 内容叙事格式（Narrative Format Contexts）
+
+| 标签 | 格式 | 核心关键词 | 视觉语言特征 |
+|------|------|----------|-----------|
+| `[Format-Editorial]` | 杂志大片风 | high fashion editorial photography, professional multi-source studio lighting, sculpted facial shadows, dramatic pose | 复杂多光源（轮廓光+发丝光），面部雕塑感阴影，强戏剧性肢体 |
+| `[Format-Street-Snap]` | 街头抓拍Candid | candid street snap, 85mm telephoto, shallow depth of field, walking pose, blurred background, not looking at camera | 中长焦奶油虚化，人物行进动态，不直视镜头 |
+| `[Format-BTS]` | 后台幕后美学 | behind the scenes photography, lighting equipment visible in frame, crew in background, relaxed off-camera moment | 拍摄设备穿帮入画，工作人员背景走动，主体呈松弛间隙状态 |
+| `[Format-CCTV-Art]` | 监控视角（艺术叙事用途） | CCTV aesthetic, high corner angle, grainy monochrome, fisheye distortion, timestamp overlay | 高角俯拍，黑白/冷绿色调，高ISO噪点，数字时间戳 |
+
+---
+
+### 4.5.4 社交平台构图规范（Platform Composition）
+
+| 标签 | 平台格式 | 核心关键词 | 构图规则 |
+|------|---------|----------|---------|
+| `[Platform-RED-3x4]` | 小红书3:4竖版 | 3:4 aspect ratio, bright clean lighting, high detail, negative space for text overlay | 极亮通透，保留大面积干净负空间供后期加文字，色调柔和 |
+| `[Platform-TIKTOK-9x16]` | TikTok 9:16满屏 | 9:16 aspect ratio, centered vertical composition, high contrast, dynamic subject | 极度纵向，视觉焦点锁定中轴，横向环境牺牲，强动势 |
+| `[Platform-IG-4x5]` | Instagram 4:5氛围感 | 4:5 aspect ratio, editorial moody lighting, cohesive color palette, artistic composition | 微竖版，高艺术性构图，容忍暗调情绪化曝光，考究留白 |
+| `[Platform-FlatLay]` | 俯拍平铺静物 | flat lay, top-down birds-eye view, C-shape prop arrangement, shadowless even lighting | 镜头平行地面，消除立体透视，C型道具排列，均匀无影光 |
 
 ---
 
