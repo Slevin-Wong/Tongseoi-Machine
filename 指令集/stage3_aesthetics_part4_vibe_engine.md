@@ -570,319 +570,326 @@ windowsill. Warm, intimate morning atmosphere."
 ### 6.5.0 引擎定位
 
 **作用**：构思"宏大叙事"和"建构奇观"
-**核心原则**："可推演的奇观"（Explicable Spectacle）
-**禁令**：严禁使用"魔法"或"纯粹超自然"
+**核心原则**："可推演的奇观"（Explicable Spectacle）——所有幻想必须锚定在可解释的物理/工程/自然依据上
+**禁令**：严禁使用"魔法"或"纯粹超自然"；严禁Cyberpunk/Steampunk/全息/生物发光
 
 ---
 
-### 6.5.1 核心哲学
+### 6.5.0.1 激活路径（低门槛入口）
 
-#### A. 目标
-- 构思"新奇有趣"且"美观/壮观"的幻想画面
-- 严格规避"怪异"或"令人不安"元素
+引擎E不需要用户提出宏观社会命题才能触发。以下任何一种信号都应激活引擎E：
 
-#### B. 核心原则
-- 所有"幻想"必须锚定在"可解释的依据"上
-- 使其在哲学上是"可信的"
+| 信号类型 | 示例 | 激活的策略 |
+|---------|------|-----------|
+| 用户提到日常物件 | "我想要有创意的场景" / "来点不一样的" | 优先考虑策略4（尺度操纵）|
+| 用户提到自然环境+极端状态 | "被淹没的城市" / "沙漠中的都市" | 策略2（环境状态重构）|
+| 用户提到大型建筑/工程 | "未来的城市" / "废弃的工厂" | 策略1或策略5 |
+| 用户提到奇特的组合 | "植物和建筑融合" | 策略1（生态融合）|
+| 用户提到结构性反常 | "颠倒的/不合理的空间" | 策略3（宏观物理重构）|
 
-#### C. 可信锚点（Explicable Anchors）
-
-**依据可源自：**
-1. **科学推演**（气候变化应对方案）
-2. **工程可能性**（巨型建筑、新型城市规划）
-3. **社会学实验**（应对未来问题的新生活方式）
-4. **可构建的人造景观**（文旅项目、沉浸式艺术装置）
+**生成频率要求**：在每批20-30条创意中，引擎E应至少出现2-3次，不得因"不确定如何执行"而跳过。
 
 ---
 
-#### D. 推演美学
+### 6.5.1 核心原则
 
-**核心**：
-不是"装饰"，而是"过程的可视化"
+#### A. 可信锚点（Explicable Anchors）
+所有奇观依据可源自：
+1. **物理属性直接命中**（策略4专属）：物件放大后的视觉属性直接就是某种景观
+2. **科学推演**：气候变化应对方案、工程可能性
+3. **工程可能性**：巨型建筑、新型城市规划
+4. **社会/文化实验**：生活方式重构、沉浸式艺术装置
 
-**真正的震撼来自：**
-- 对自然规律的驾驭（重力、流体动力学、光合作用、熵）
-- 对自然规律的重组
-
-**建筑不再是**：静止的盒子
-**建筑成为**：能量、物质或时间流动的容器
-
----
-
-### 6.5.2 创意矩阵（强制执行）
-
-**组合公式**：
-```
-创意 = [现实锚点] + [视觉策略]
-```
+#### B. 积极美学强制要求
+产出**必须**导向：美观、壮观、令人向往
+**禁止**：令人不安、怪异、惊悚、负面反乌托邦美学
 
 ---
 
-### 6.5.3 A. 现实锚点（选择其一）
-
-#### 锚点1：生态/气候推演
-
-**聚焦**：人与自然关系的宏观重构
-
-**触发词：**
-- 气候应对方案
-- 海平面变化
-- 热岛效应
-- 生物多样性恢复
-- 垂直农场
-- 生态城市
-
-**示例场景：**
-```
-垂直森林大楼：skyscraper covered in lush vegetation, trees growing 
-from every balcony, green walls, birds nesting in urban forest
-```
+### 6.5.2 五策略操作手册
 
 ---
 
-#### 锚点2：技术/工程革新
+#### 策略1：生态融合（Ecological Integration）
 
-**聚焦**：人造物的形态与功能的未来演变
+**定义**：将有组织的生态元素（植物、水流）与人造结构大规模和谐融合
 
-**触发词：**
-- 新材料
-- 自动化物流
-- 未来交通枢纽
-- 大型模块化建筑
-- 巨型工程奇迹
+**操作步骤：**
 
-**示例场景：**
+**Step 1 — 选择植被/自然元素类型**
+
+| 类型 | 关键词 | 视觉特征 |
+|------|--------|---------|
+| 垂直农业 | terraced rice paddies, crop walls, wheat balconies | 绿色分层，有规律的农业纹理 |
+| 热带雨林化 | tropical canopy, aerial roots, strangler fig vines | 浓密、有机、湿润感 |
+| 苔藓覆盖 | moss-covered surfaces, soft green carpet | 柔软质感、历史感 |
+| 水体整合 | integrated waterways, rooftop ponds, canal streets | 反光、流动、宁静 |
+| 开花景观 | flowering meadows on rooftops, cherry blossom corridors | 季节性、浪漫感 |
+
+**Step 2 — 选择承载结构类型**
+
+| 结构 | 关键词 | 融合效果 |
+|------|--------|---------|
+| 摩天楼 | skyscraper with green terraces, vertical forest tower | 震撼的高度对比 |
+| 桥梁/高架 | bridge covered in vines, elevated garden walkway | 通道即花园 |
+| 废弃建筑 | nature reclaiming ruins, ivy-covered factory | 生命力×历史感 |
+| 城市街道 | canals replacing roads, wildflower-paved streets | 整体城市形态重构 |
+
+**Step 3 — 确定融合程度**
+- **轻度融合**：自然元素装饰性附着，建筑结构清晰可见
+- **中度融合**：自然与人造各占一半，边界模糊
+- **极度融合**：人造结构几乎被自然淹没，仅剩结构轮廓
+
+**⚠️ 避免平庸融合**：不是"建筑上种了植物"，而是植被与结构在功能和视觉上形成共生关系——植物的根系成为建筑支撑，水道成为交通动线，农业阳台成为每层楼的立面语言。
+
+**关键词库：**
 ```
-模块化城市：massive modular buildings that can be reconfigured, 
-crane systems moving entire sections, adaptable urban landscape
+vertical gardens, rooftop forests, integrated waterways,
+symbiotic architecture, nature-technology harmony,
+living walls, agricultural skyscraper, canal city
 ```
 
 ---
 
-#### 锚点3：社会/文化实验
+#### 策略2：环境状态重构（Environmental State Reconstruction）
 
-**聚焦**：生活方式的重构或体验的创造
+**定义**：将熟悉场景的"物理状态"进行根本性改变
 
-**触发词：**
-- 新社会结构
-- 问题导向型社区
-- 历史重构景观（Alternative History）
-- 大型沉浸式艺术装置
+**状态选择逻辑：**
 
-**示例场景：**
+| 状态 | 触发条件 | 视觉签名 | 情绪基调 |
+|------|---------|---------|---------|
+| **洪水淹没** | 场景是城市/建筑群 | 建筑上半部分露出水面，水面反光，船只代替车辆 | 宁静、末世后的美丽 |
+| **沙漠化/沙埋** | 场景是城市/室内 | 沙丘覆盖至窗台，风沙模糊远景，沙纹在地面 | 荒凉、时间流逝感 |
+| **雪埋/冰封** | 任何场景+极寒 | 积雪至屋顶，冰柱垂挂，雪色统一整体 | 纯净、凝固的时间 |
+| **自然侵占** | 废弃/长时间无人的场景 | 树木破墙而出，根系包裹结构，动物栖居 | 生命力、历史重叠 |
+| **雾化/消失** | 需要神秘感/空灵感 | 下半部分清晰，上半部分渐隐入云雾，轮廓消失 | 梦幻、超然 |
+
+**操作要求：**
+- 状态改变须100%贯彻——不能"一半淹没一半正常"（除非这是刻意的叙事）
+- 女孩的存在须在该状态下合理——她如何在被淹没的城市里移动？她站在什么上面？
+- 环境细节须支持物理真实性：洪水城市须有水面涟漪、漂浮杂物；沙化场景须有积沙在台阶凹陷处
+
+**关键词库：**
 ```
-沉浸式艺术城市：entire district transformed into interactive art 
-installation, buildings painted with murals, projection mapping, 
-communal art spaces
-```
-
----
-
-#### 锚点4：文旅/体验开发
-
-**聚焦**：人造的、以体验为目的的宏大景观
-
-**触发词：**
-- 主题乐园设计
-- 文化原型复刻
-- 地景艺术（Land Art）
-
-**示例场景：**
-```
-文化复刻园区：life-size recreation of ancient Chinese palace complex 
-as cultural heritage park, traditional architecture, costume actors, 
-immersive historical experience
+city partially flooded, urban ruins reclaimed by nature,
+sand dunes covering streets, snow-buried metropolis,
+entire district submerged, nature reclaiming abandoned city
 ```
 
 ---
 
-#### 锚点5：工业/基础设施遗存
+#### 策略3：宏观物理重构（Macro Physical Reconstruction）
 
-**聚焦**：后碳时代的巨型基础设施改造
+**定义**：对建筑或城市的"结构本身"进行非常规重组
 
-**触发词：**
-- 垂直聚落
-- 外骨架悬挂
-- 机器景观
-- 动线复刻（煤炭传送带→人类动线）
+**⚠️ 核心约束：美感优先于奇特**
+物理重构的目的不是"看起来奇怪"，而是创造一种**有内在逻辑的视觉壮观**。每个重构必须能回答"为什么会这样"——即使是虚构的答案也需要自洽。
 
-**示例场景：**
+**合法重构 vs. 禁止方向：**
+
+| 合法重构 | 关键词 | 内在逻辑 |
+|---------|--------|---------|
+| 屋顶连廊城市 | connected rooftops, elevated walkways between buildings, rooftop city | 地面已成危险区，人类迁移至高空 |
+| 悬挂建筑 | buildings suspended from giant structure above, hanging city | 地面资源稀缺，向上建设 |
+| 倒置建筑（局部） | inverted tower reflected in lake, mirror architecture | 建筑故意设计为镜像，成为地标 |
+| 巨型单体结构 | mega-structure containing entire city inside, arcology | 极端气候下的庇护所 |
+| 螺旋/环形城市 | spiral urban layout, ring-shaped city around central void | 资源分配的几何优化 |
+
+| 禁止方向 | 原因 |
+|---------|------|
+| 随意漂浮的建筑（无支撑） | 违反物理，触发"怪异"感 |
+| 熔融/变形的建筑（无目的） | 超现实主义，触发不安 |
+| 生物化建筑（类器官形态） | 令人不适 |
+
+**操作要求：**
+- 必须为重构提供一个可信的存在理由（即便是简短的叙事背景）
+- 女孩在这个空间里须有合理的位置和行为
+- 光线须配合结构逻辑（如悬挂城市的光来自上方的巨型结构缝隙）
+
+**关键词库：**
 ```
-改造钻井平台：abandoned offshore oil rig transformed into vertical 
-village, gardens on multiple levels, rope bridges, communal spaces, 
-industrial heritage meets eco-living
-```
-
----
-
-#### 锚点6：熵与时间的工程化
-
-**聚焦**：对抗或利用衰变、季节性、地质时间
-
-**触发词：**
-- 废墟稳定化
-- 幽灵补全（Ghost Completion）
-- 季节性结晶建筑（Ice Stupa）
-- 地层切片美学
-
-**示例场景：**
-```
-冰建筑：temporary structures built from ice and snow, ice stupa storing 
-water for dry season, translucent ice walls, seasonal architecture that 
-melts and reforms
-```
-
----
-
-### 6.5.4 B. 视觉策略（选择其一）
-
-#### 策略1：生态融合
-
-**描述**：
-将有组织的生态元素（植物、水流、动物）与人造结构（城市、建筑）大规模和谐融合
-
-**关键词：**
-```
-vertical gardens, rooftop forests, integrated waterways, 
-symbiotic architecture, nature-technology harmony
+connected rooftops above abandoned streets, elevated city walkways,
+buildings suspended from mega-structure, spiral city layout,
+arcology structure, ring city, rooftop civilization
 ```
 
 ---
 
-#### 策略2：环境状态重构
+#### 策略4：尺度操纵——田中达也算法（Scale Manipulation）
 
-**描述**：
-将熟悉场景的"物理状态"进行根本性改变
+**定义**：将日常物件放大为地形/景观尺度，构建一个可居住的微缩世界
 
-**关键词：**
+**⚠️ 此策略已获得stage2 D3禁令豁免。** 这不是超现实主义，不是"星云在杯中"，而是物理属性的直接视觉命中。
+
+---
+
+**Step 1 — 视觉属性锚点**
+
+从一个日常物件出发，识别其**一个具体的物理属性**。
+
+**判断标准**：放大之后，在视觉上直接就是某种景观元素，无需任何文字解释即可被识别。
+
+**可用的物理属性类型：**
+
+| 属性类型 | 物件示例 | 景观命中 |
+|---------|---------|---------|
+| **表面纹理** | 肉类大理石纹 / 面包横截面气孔 / 饼干波浪压纹 | 农田地貌 / 岩壁截面 / 沙丘地形 |
+| **液体边界** | 酱油深色液面边界 / 蜂蜜粘稠流动 / 果冻透明边缘 | 河岸线 / 温泉瀑布 / 湖岸线 |
+| **弯曲弧面** | 汤勺弧面 / 香蕉弧度 / 贝壳内壁 | 水滑梯滑道 / 悬索桥桥面 / 圆形剧场看台 |
+| **直立密集阵列** | 意面直立 / 铅笔竖排 / 蜡烛阵 | 竹林 / 城市高楼群 / 灯塔群 |
+| **透明/半透明质感** | 果冻体 / 玻璃碗倒扣 / 气泡糖 | 冰山截面 / 温室穹顶 / 彩色岩洞 |
+| **折叠/褶皱形态** | 口罩折叠面 / 丝绸堆叠 / 牛皮纸褶皱 | 河道走向 / 丘陵地貌 / 峡谷 |
+| **容器形态** | 碗的内凹 / 锅的圆形边缘 / 杯子截面 | 火山口湖 / 环形山 / 悬崖瀑布 |
+
+**禁止使用的物件**（缺乏景观化潜力）：
+
+| 物件 | 原因 |
+|------|------|
+| 梳齿 / 叉子齿列 / 百叶窗截面 | 密集平行线阵列，触发不适感 |
+| 蘑菇菌褶（仰视） / 莲蓬截面 / 海绵截面 | 密集孔洞阵列，触发密集恐惧 |
+| 仙人掌刺面 / 松果刺（正面特写） / 海胆刺面 | 尖刺阵列，触发防御性不适 |
+| 冰块 | 放大后仍是冰块，缺乏地形误读的视觉锚点 |
+| 回形针 / 订书针 | 重复后构成机械阵列而非自然景观 |
+| 任何齿轮形态 | 🔴绝对禁止，任何形式 |
+
+---
+
+**Step 2 — 同源物件生态系统**
+
+单一物件不构成世界。须从**同一日常语境**中召唤**至少3种物件**，各自承担不同景观角色。
+
+**"同一日常语境"定义**：这些物件在现实中会同时出现在同一张桌子、同一个包、同一个房间角落。
+
+**生态构建矩阵示例**（仅作算法示范，不作限定）：
+
+| 日常语境 | 物件A（地形主体） | 物件B（水体/通道） | 物件C（建筑/构造） | 物件D（氛围/天空） |
+|---------|----------------|-----------------|-----------------|-----------------|
+| 早餐桌 | 吐司切面气孔 = 岩壁 | 流动蜂蜜 = 瀑布/温泉 | 方糖堆叠 = 台阶/城墙 | 黄油融化蒸汽 = 晨雾 |
+| 文具盒 | 计算器竖立 = 摩天楼群 | 透明胶带卷内圈 = 圆形水池 | 便利贴叠层 = 梯田 | 笔记本翻页弧度 = 山丘轮廓 |
+| 针线包 | 线轴柱体 = 灯塔/水塔 | 顶针圆环 = 圆形港湾 | 纽扣平铺 = 卵石海滩 | 丝线飘散 = 晨雾/光晕 |
+| 护肤桌 | 粉底液哑光圆饼截面 = 盐湖 | 精华液流动轨迹 = 河道 | 化妆刷倒立 = 棕榈树林 | 散粉飞散 = 金色光尘 |
+| 药盒/急救包 | 创可贴米色底布 = 沙漠地面 | 酒精棉片湿润表面 = 浅滩 | 药片圆形/椭圆形 = 卵石/浮岛 | 棉签白色棉头 = 云朵 |
+| 烘焙台 | 切开的柠檬截面 = 螺旋剧场 | 流淌糖浆 = 琥珀色河流 | 饼干切模 = 城市地块 | 面粉飞扬 = 金色雪尘 |
+| 文房四宝 | 砚台磨墨后的墨面 = 黑色湖泊 | 毛笔笔尖水迹 = 河道 | 印章侧面纹理 = 城墙雉堞 | 宣纸晕染边缘 = 云雾 |
+
+**以上仅为算法示范，生成时须自行发现新的同源生态，不得重复使用上表。**
+
+---
+
+**Step 3 — 女孩的"居民行为"**
+
+女孩是这个世界的**真实居民**，不是被放置进来的模型。她的行为须在该世界的物理逻辑下完全说得通。
+
+**行为类型：**
+
+| 互动类型 | 示例 |
+|---------|------|
+| **地形互动** | 坐在面包气孔岩壁的突出岩台上 / 踩着方糖台阶向上走 |
+| **水体互动** | 蹲在蜂蜜瀑布的潭边 / 站在酱油河岸眺望 |
+| **道具互动** | 用牙签当钓竿在精华液河道里垂钓 / 撑棉签当船桨 |
+| **场景融入** | 服装色调与场景整体色彩主动呼应（蜂蜜世界穿暖黄色系/墨池世界穿水墨黑白）|
+
+---
+
+**Step 4 — 三层叙事空间填充规范**
+
+| 层位 | 填充内容 | 技术要求 |
+|------|---------|---------|
+| **前景层** | 同源物件截面的bokeh边缘特写，暴露内部材质肌理（建立双重认知：我在看一个日常物件 + 这是真实地形）| 近光源投影、液体反射光斑、粉末/颗粒散落细节 |
+| **中景层** | 女孩主体；场景内置光源须有世界观内部的可解释来源（蜡烛焰心/液体折射/透明物件透射光）| 飘浮粒子（面粉/糖粉/散粉）在人物周身形成氛围晕染；volumetric light光柱穿透间隙 |
+| **后景层** | bokeh虚化的远景，大气透视处理；须呈现"同源物件生态延伸至无限远处"的消失点 | 吐司岩壁群消失在早晨雾气里 / 计算器高楼群延伸至蓝色"海面"地平线 |
+
+---
+
+**完整示例：**
 ```
-city partially flooded, urban desert (sand covering streets), 
-snow-buried metropolis, overgrown ruins (nature reclaiming)
+日常语境：护肤桌
+物件A：粉底液哑光圆饼横截面 = 白色盐湖地面（龟裂纹理）
+物件B：精华液倒出的流动轨迹 = 蜿蜒的琥珀色河道
+物件C：化妆刷倒立 = 一片棕榈树林（笔刷毛 = 棕榈叶冠）
+物件D：散粉飞扬 = 空气中的金色光尘
+
+女孩：穿着象牙白轻薄长裙（呼应盐湖色调），坐在盐湖边缘（粉底液圆饼的凸起边框），
+手持一支迷你眉笔当钓竿，垂在精华液河道里，神情专注而平静。
+
+前景：粉底液瓶身玻璃边缘的bokeh光圈，散粉颗粒近端特写
+中景：女孩+盐湖地面+棕榈刷林，空气中漂浮金色散粉尘
+后景：化妆刷树林消失在散粉形成的金色雾气里
+
+光源：透过精华液瓶身折射的琥珀色光斑，打在女孩侧脸
 ```
 
 ---
 
-#### 策略3：宏观物理重构
+#### 策略5：功能性嫁接（Functional Grafting）
 
-**描述**：
-对城市或建筑的"结构"进行重组
+**定义**：将一种居住/生产功能，嫁接到本来不承担该功能的巨型工业/基础设施宿主上
 
-**关键词：**
+**操作步骤：**
+
+**Step 1 — 选择宿主结构**
+
+| 宿主类型 | 关键词 | 视觉特征 |
+|---------|--------|---------|
+| 废弃海上钻井平台 | abandoned offshore oil rig, multi-level industrial structure | 海上孤立感、垂直层叠、锈蚀质感 |
+| 高压输电塔 | electricity transmission tower, steel lattice structure | 几何骨架、超高垂直感 |
+| 废弃矿坑/采石场 | open-pit mine converted, quarry walls as cliff dwellings | 天然分层、大尺度下沉感 |
+| 废弃货轮/超级油轮 | decommissioned container ship, massive deck surface | 甲板广场、锈蚀历史感 |
+| 铁路高架桥下 | elevated railway viaduct, long linear structure | 拱形连续空间、城市穿越感 |
+| 巨型水坝 | concrete dam face, vertical cliff-like structure | 极端人造地形、水位反差 |
+| 废弃摩天轮/大型游乐设施 | decommissioned ferris wheel as scaffold structure | 圆形骨架、旧梦感 |
+| 地下防空洞/人防工程 | cold war bunker repurposed, underground city | 封闭感、历史厚度 |
+
+**Step 2 — 选择嫁接功能**
+
+| 嫁接功能 | 视觉转变 |
+|---------|---------|
+| 垂直聚落/居住 | 每层工业结构变成居住阳台，晾晒衣物、盆栽、炊烟 |
+| 农业生产 | 工业骨架上种满作物，灌溉水管复用原有管道 |
+| 艺术/文化空间 | 仓储空间变成画廊/剧场，工业设备变成装置艺术 |
+| 自然保护区 | 工业结构被改造为动植物栖息地，生态走廊 |
+| 市集/商业 | 甲板/平台成为露天市集，攀爬通道成为购物动线 |
+
+**Step 3 — 确定嫁接痕迹的可见度**
+- **新旧共存**（推荐）：工业原始结构清晰可见，嫁接功能叠加其上，形成视觉张力
+- 避免：完全覆盖原始结构，失去对比感
+
+**关键词库：**
 ```
-connected rooftops (bridges between buildings), restructured traffic 
-(elevated walkways), unconventional construction (upside-down buildings)
-```
-
----
-
-#### 策略4：尺度与透视操纵
-
-**描述**：
-构建"功能性"空间，使人产生变大/变小错觉
-
-**关键词：**
-```
-miniature landscape (person appears giant), giant object space 
-(person appears tiny), forced perspective architecture
-```
-
----
-
-#### 策略5：功能性嫁接
-
-**描述**：
-将一种生态或居住功能，嫁接到工业/基础设施巨型结构上
-
-**关键词：**
-```
-living spaces inside crane structure, gardens on transmission towers, 
-residential units in abandoned factory, industrial heritage adaptive reuse
-```
-
----
-
-### 6.5.5 豁免与约束
-
-#### 豁免（Exemption）
-
-**仅在执行引擎E时：**
-- ✅ 附录X中的特定禁令被豁免（详见附录X.3）
-- ✅ 例如：可以使用更大胆的建筑概念
-
-#### 禁令（Prohibition）
-
-**仍然绝对禁止：**
-- ❌ Cyberpunk, Steampunk
-- ❌ Holograms, Bio-luminescence
-- ❌ Space Colonization
-- ❌ 所有科幻风格禁令依然生效
-
-#### 积极美学SOP（强制）
-
-**产出必须导向**：
-- ✅ "美观"或"壮观"
-
-**必须抛弃**：
-- ❌ "令人不安"
-- ❌ "怪异"
-- ❌ "惊悚"
-- ❌ "负面反乌托邦"美学
-
----
-
-### 6.5.6 完整创意示例
-
-**组合1：生态推演 + 生态融合**
-```
-现实锚点：垂直农场（气候应对）
-视觉策略：生态融合
-
-描述：
-"A woman in simple linen clothing stands on a balcony of a massive 
-vertical farm skyscraper. Every level is covered in lush crops—rice 
-paddies, wheat fields, vegetable gardens growing from terraced balconies. 
-Automated irrigation systems create gentle water mist. Birds fly between 
-floors. The city skyline visible in background, but this building is a 
-green oasis. She tends to tomato plants, surrounded by productive 
-agriculture in the sky. Sunlight filters through leaves. Beautiful, 
-hopeful vision of future food production."
+abandoned offshore oil rig transformed into vertical village,
+living spaces inside crane structure, gardens on transmission towers,
+residential units in abandoned factory hull, industrial heritage adaptive reuse,
+rope bridges between converted levels, communal spaces in former machinery halls
 ```
 
 ---
 
-**组合2：工业遗存 + 功能性嫁接**
-```
-现实锚点：废弃钻井平台改造
-视觉策略：功能性嫁接
+### 6.5.3 现实锚点参考库（辅助选材）
 
-描述：
-"A young woman in casual clothing walks across a rope bridge connecting 
-different levels of a repurposed offshore oil rig. The industrial structure 
-has been transformed into a vertical eco-village. Gardens grow in former 
-equipment spaces. Solar panels on top levels. Communal areas in old control 
-rooms. Rust meets greenery. Ocean far below. She carries a basket of 
-vegetables. Industrial heritage adaptive reuse—beauty in transformation, 
-not decay."
-```
+当使用策略1/2/3/5时，可从以下锚点选取世界观背景：
+
+| 锚点 | 触发词 | 适配策略 |
+|------|--------|---------|
+| 生态/气候推演 | 垂直农场、海平面变化、生物多样性恢复、生态城市 | 策略1、策略2 |
+| 技术/工程革新 | 新材料、模块化建筑、巨型工程奇迹 | 策略3、策略5 |
+| 社会/文化实验 | 问题导向型社区、大型沉浸式艺术装置 | 策略1、策略5 |
+| 文旅/体验开发 | 地景艺术、文化原型复刻、主题景观 | 策略4、策略5 |
+| 熵与时间工程化 | 废墟稳定化、季节性冰建筑、地层切片美学 | 策略2、策略5 |
 
 ---
 
-**组合3：时间工程化 + 环境状态重构**
-```
-现实锚点：季节性冰建筑（Ice Stupa）
-视觉策略：环境状态重构
+### 6.5.4 引擎E通用写作规范
 
-描述：
-"A woman in warm layered clothing stands inside a massive ice stupa—a 
-temporary structure built from frozen water to store resources for dry 
-season. Translucent ice walls glow with soft blue light. Intricate ice 
-formations. Her breath visible in cold air. Traditional alpine village 
-visible through ice. This seasonal architecture will melt and reform 
-annually. Beautiful engineering of entropy—working with nature's cycles, 
-not against them."
-```
+无论使用哪个策略，以下规范强制执行：
 
----
+```
+1. 女孩的存在须符合该世界物理逻辑（她站在哪里、如何到达那里）
+2. 光源须在世界观内部有可解释来源
+3. 必须构建前景/中景/后景三层空间
+4. 产出导向：美观/壮观/令人向往——不令人不安、不怪异
+5. 科幻禁令仍然生效：无Cyberpunk/Steampunk/全息/生物发光
+```
 
 ## 📊 VIBE引擎组合速查表
 
@@ -929,12 +936,23 @@ not against them."
 
 #### 模板4：建构幻想（A+E）
 ```
-适用场景：宏大叙事、未来愿景
+适用场景：宏大叙事、尺度奇观、未来愿景
 引擎组合：A（魅力框架）+ E（建构幻想）+ C（可选）
 
-示例：
+策略4（尺度操纵）示例：
+- 引擎A：古灵精怪 + 清纯脱俗
+- 引擎E：策略4——护肤桌语境
+  物件A：粉底液截面 = 盐湖地面
+  物件B：精华液流动 = 琥珀色河道
+  物件C：化妆刷倒立 = 棕榈树林
+  女孩行为：坐在盐湖边，用眉笔当钓竿垂钓
+- 输出：精致微缩世界，双重认知趣味，女孩作为世界居民
+
+策略1（生态融合）示例：
 - 引擎A：独立自信 + 简约大气
-- 引擎E：生态推演 + 生态融合
+- 引擎E：策略1——热带雨林化×摩天楼
+  融合程度：极度融合，仅剩建筑轮廓
+  光源：从树冠间隙透入的体积光
 - 输出：壮观、有根据、积极美学
 ```
 
@@ -970,10 +988,13 @@ not against them."
 ### 4. 引擎E的特殊规则
 ```
 使用引擎E时：
-☐ 必须有现实锚点
-☐ 必须选择视觉策略
-☐ 必须导向积极美学
-☐ 不违反科幻风格禁令
+☐ 必须选择策略1-5中的一个
+☐ 策略4须完成三步：视觉属性锚点→同源物件生态→女孩居民行为
+☐ 策略1-3-5须有现实锚点（可信的存在理由）
+☐ 必须构建前景/中景/后景三层空间
+☐ 必须导向积极美学（美观/壮观/令人向往）
+☐ 科幻禁令仍然生效（无Cyberpunk/全息/生物发光）
+☐ 每批20-30条创意中引擎E应出现2-3次
 ```
 
 ---
