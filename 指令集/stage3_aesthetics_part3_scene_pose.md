@@ -49,6 +49,19 @@
 - ✅ 文化服饰 + 现代场景（如：汉服 + 地铁站）
 - ✅ 华丽服饰 + 简陋场景（如：礼服 + 便利店）
 - ✅ 休闲服装 + 宏大场景（如：T恤 + 宫殿）
+- ✅ **市井职业人设 + 精致形象**（高反差叙事）：将高颜值/精致博主气质嫁接在真实的市井职业身份上，制造强烈反差叙事温度
+
+**市井职业反差词库**（引擎B+D联动，不限于此）：
+
+| 职业身份 | 标志性道具/着装 | 推荐场景 |
+|---------|--------------|---------|
+| 外卖/骑手送餐员 | 品牌保温箱背包、电动摩托、黄色/蓝色品牌服、透明餐袋 | 南方骑楼街、清晨市集、夜间便利店门口 |
+| 花市摊主 | 鲜花/盆栽环绕、湿润地面、水桶、围裙 | 清晨花市、湿漉漉菜场边 |
+| 路边摊小贩 | 煤气灶、冒烟锅具、塑料凳、价格牌 | 夜市、老街人行道 |
+| 修车摊/修鞋摊 | 满是油污的工作台、工具散落、旧布帘 | 老社区巷口 |
+| 邮差/快递员 | 大号包裹、单车/三轮、签收单 | 老式居民楼门口、胡同 |
+
+**⚠️ 此类反差的写作要领**：职业身份的真实性道具必须出现在画面中（不能只穿制服），人物的精致形象须与职业场景形成视觉张力而非违和感——这是叙事成功与失败的分水岭。
 
 ---
 
@@ -204,6 +217,20 @@
 | `[Scene-Cinema]` | 电影院 | cinema, screen, seats, dark | 怀旧、静谧 |
 | `[Scene-Arcade]` | 游戏厅 | arcade, neon games, retro atmosphere | 怀旧、青春 |
 
+#### E. 老城肌理与市井场景（新增）
+
+| 标签 | 场景 | 关键词 | 氛围 |
+|------|------|--------|------|
+| `[Scene-City-Qilou]` | 南方骑楼街 | arcade street, colonnade shophouses, old Chinese commercial architecture, arched walkway, peeling paint, vintage signboards in Chinese | 热带城市历史感、南洋气息 |
+| `[Scene-City-Hutong]` | 胡同/老四合院 | Beijing-style hutong, grey brick walls, wooden gate with red door studs, courtyard glimpse, old bicycle by wall | 北方市井、历史感 |
+| `[Scene-City-Courtyard]` | 中式庭院+内院水景 | Chinese courtyard with inner stream or stone basin, lush bougainvillea/jasmine climbing walls, banyan tree canopy, mottled stone pavement, summer heat haze | 私家庭院温润感、夏日静谧 |
+| `[Scene-City-Oldtown-Window]` | 老城区窗台 | weathered double-hung wooden window, rain droplets on glass, inside warm lamp glow reflected outward, climbing vines on wall, old earthenware pots on sill | 雨天治愈、内外叙事层次 |
+| `[Scene-City-SignBoard]` | 中文招牌/标志牌入画 | Chinese language signage visible in background, traffic sign in simplified Chinese, shop name boards, adds authentic urban documentary quality | 纪实感、真实城市质感 |
+
+**⚠️ 老城场景使用要点**：
+- 骑楼、四合院等场景自带真实城市质感，背景可保留中文字符（招牌/路牌/门牌），这是叙事真实感的组成部分，不是错误
+- 庭院+溪水/水景组合时，前景优先使用薄软雾气和水面反光散焦，而非过大的植物遮挡
+
 ---
 
 ### 4.1.3 室内环境
@@ -239,6 +266,21 @@
 | `[Scene-Museum]` | 博物馆 | museum, exhibits, marble floors, art | 文化、静谧 |
 | `[Scene-Ballroom]` | 舞厅/宫殿 | grand ballroom, chandeliers, marble, luxurious | 奢华、盛大 |
 | `[Scene-Greenhouse]` | 温室 | greenhouse, glass panels, plants, humid | 生机、梦幻 |
+
+#### D. 窗台/廊道叙事空间（新增）
+
+此类场景的核心是**内外空间的叙事分层**——人物处于室内与室外的交界处，画面同时包含两种光线、两种质感、两种世界。
+
+| 标签 | 场景 | 关键词 | 典型光线 | 氛围 |
+|------|------|--------|---------|------|
+| `[Scene-Window-Rain]` | 雨天窗台（内外叙事） | weathered window frame with rain droplets trickling down glass, interior warm lamp glow reflected in glass, exterior wet street or wall visible through rain, leaning on windowsill pose | 室内暖黄×室外冷蓝雨光对撞 | 治愈、静谧、慵懒雨天 |
+| `[Scene-Engawa-Garden]` | 日式门廊/木走廊+庭院 | Japanese wooden engawa corridor, stone steps leading to moss garden, shallow pond with fallen leaves, shoji screen door partially open, morning light filtering through bamboo | 斜侧晨光+冷青环境漫反射 | 禅意、静思、东方美学 |
+| `[Scene-Arch-Doorway]` | 古典拱门/门洞框景 | stone or wooden archway as natural frame, figure standing in threshold, foreground arch in partial shadow, background bright exterior scene | 门洞内外强烈明暗对比 | 史诗感、诗意过渡 |
+
+**窗台内外叙事写作要点**：
+- 必须同时描述两侧：室内元素（灯光/陈设/织物）+ 室外元素（天气/建筑/植物）
+- 玻璃作为叙事媒介，须描述：雨滴/水痕/反光/折射——这是这类场景的视觉签名
+- 人物倚靠姿态：`leaning on windowsill, elbows resting on sill, gazing outward / gazing inward`
 
 ---
 
@@ -789,9 +831,9 @@
 
 ```
 前景（Foreground）：
-- 失焦的花瓣、叶子
-- 模糊的栏杆、窗框
-- 景深虚化的物体
+- 失焦的花瓣、叶子、细枝
+- 模糊的栏杆局部、窗框边缘
+- 景深虚化的植物/道具边缘
 
 中景（Midground）：
 - 主体人物
@@ -804,11 +846,53 @@
 - 氛围渲染
 ```
 
+---
+
+#### B1. 前景比例控制规则（重要）
+
+**核心原则**：前景元素服务于"层次感与呼吸感"，不得喧宾夺主或占据过多画面空间。
+
+**两种高风险情况及处理方式：**
+
+**情况①：前景物件体积过大**
+> 典型案例：一整个灯笼、一整块水泥墩、一个完整花盆
+
+处理方式（按优先级）：
+1. **只取局部入画**：用灯笼的流苏/穗子替代整个灯笼；用花盆边缘和溢出枝叶替代整个花盆
+2. **推至画面极角**：将物件推至画面角落（左下/右下），只露出一小角
+3. **替换为无形元素**：用浮动尘埃粒子（floating dust particles）、流光散焦（bokeh light spots）、薄软雾气（soft atmospheric haze）制造等效层次感
+
+**情况②：前景物件离镜头太近（几乎充满整个前景）**
+> 典型案例：一个水杯几乎整个挡在镜头前、一朵花占据前景三分之一以上
+
+处理方式（按优先级）：
+1. **拉开物件与镜头距离**：明确描述"slightly in front of the lens, partially visible"而非"directly in front"
+2. **使其高度虚化**：`heavily blurred foreground element, extreme bokeh, barely visible`——虚化程度越深，占比感越弱
+3. **替换为无形元素**（同上）
+
+**前景无形元素词库（随时可用，零风险）：**
+
+| 元素 | 关键词 | 情绪适配 |
+|------|--------|---------|
+| 大气尘埃粒子 | floating dust particles, suspended motes of light | 通用，增加呼吸感 |
+| 流光散焦光斑 | bokeh light spots, soft out-of-focus light orbs | 温暖/浪漫/梦幻 |
+| 薄软雾气 | soft foreground haze, wispy atmospheric mist | 清晨/神秘/古风 |
+| 飘落花瓣 | drifting petals at lens edge, soft and defocused | 春季/浪漫/东方 |
+| 飘扬织物边缘 | blurred fabric edge, wind-caught cloth corner | 服装联动/动态 |
+| 水汽/蒸汽边缘 | steam wisps near lens, moisture diffusion | 餐饮/温泉/清晨厨房 |
+| 草叶/细枝局部 | one or two blurred blades of grass at frame edge | 户外/自然/田园 |
+
+**⚠️ 前景元素画面占比警戒线**：任何有形前景元素不应遮挡中景人物超过10%面积。超出则立刻采用处理方式①②③。
+
 **示例描述：**
 ```
-In the foreground, out-of-focus purple lupines. In the midground, 
-the model stands centered. In the background, a distant birch forest 
-fades into soft focus.
+✅ 正确（细枝局部+散焦）：
+A few blurred cherry blossom branches at the very edge of the frame,
+soft bokeh light spots floating in the air. In the midground, the model
+stands centered. In the background, the temple fades into soft focus.
+
+❌ 错误（大灯笼直接挡前景）：
+A large red lantern filling the foreground, the model visible behind it.
 ```
 
 ---
@@ -978,6 +1062,45 @@ fades into soft focus.
 
 ---
 
+### 4.4.2.1 前景元素体量规则（Foreground Scale Rules）
+
+**核心问题**：前景元素过大或距镜头过近，会挤占中景主体的叙事空间，形成视觉喧宾夺主。
+
+**触发判断**：
+- ❌ 有形前景物占画面宽度超过1/4（如一整个灯笼居中、一个水泥墩挡住下半画面）
+- ❌ 前景物体距镜头极近，几乎充满整个前景层（如一只水杯占满前景）
+
+**修正策略（二选一或叠加）：**
+
+**策略A — 调整体量**：将前景物替换为体量更小、更线性的元素
+
+| 过大的前景 | 替代方案 |
+|-----------|---------|
+| 整个灯笼 | 灯笼的绳索或穗子一角 |
+| 水泥墩 | 水泥墩边缘的青苔纹理虚化 |
+| 整个水杯 | 水杯玻璃边缘的一道反光 |
+| 大型花盆 | 从花盆伸出的几根枝条/叶片边缘 |
+| 整束花 | 单片花瓣或花蕊特写 |
+
+**策略B — 调整距离**：将有形物体推远，用**无形元素**接管近端前景
+
+无形前景优先级（由高到低）：
+1. **流光散焦** — bokeh light orbs, warm golden bokeh, out-of-focus light spots
+2. **大气尘埃** — floating dust particles, suspended micro particles in light beam
+3. **有机线性** — a few strands of hair, thin branch, single blade of grass drifting in
+4. **轻质碎片** — drifting petals, falling leaves（单片，非整束）
+
+**组合使用（推荐）**：有形前景元素推到中等距离+边缘入画，近端由流光/尘埃粒子填充
+```
+✅ 正确："a single wisteria tendril drifts in from the lower left edge, 
+bokeh golden light orbs filling the near foreground, 
+floating dust particles catching the afternoon light"
+
+❌ 错误："a large lantern hangs in the foreground, centered"
+```
+
+---
+
 ### 4.4.3 动态环境元素
 
 #### A. 天气效果
@@ -1097,7 +1220,7 @@ visible in light beams"
 ## 🤸 第五部分：姿态系统（Pose & Interaction System）
 
 ### 快速导航
-- [5.1 单人姿态](#51-单人姿态) - 手部、腿部、视角
+- [5.1 单人姿态](#51-单人姿态) - 重心接触/视线叙事/动态系统/手部/腿部
 - [5.2 互动叙事](#52-互动叙事) - 人物互动、动物互动
 
 ---
@@ -1150,7 +1273,127 @@ revealing her perfect side profile
 
 ---
 
-### 5.1.3 手部姿态库（Hand Gesture Library）
+### 5.1.3 身体重心与场景接触系统（Body Stance & Physical Contact）
+
+**核心哲学**：姿态不是摆拍，而是人物与场景发生的物理关系。身体重心的方向、与场景物件的接触方式，共同决定了人物是"被放置在场景里"还是"真正活在场景里"。
+
+---
+
+#### A. 身体重心类型
+
+| 重心类型 | 关键词 | 叙事含义 | 典型搭配场景 |
+|---------|--------|---------|------------|
+| **倚靠** | leaning against, resting against, back pressed to | 放松/等待/慵懒 | 墙面/窗台/树干/栏杆 |
+| **弯腰/俯身** | bending over, leaning down towards, crouching to | 专注/互动/探索 | 溪流/花朵/桌面/地面 |
+| **前倾** | leaning forward, body angled toward camera, weight on toes | 自信/挑衅/靠近 | 任意场景的近镜头 |
+| **盘坐/端坐** | sitting cross-legged, seated upright, knees drawn up | 沉静/禅意/私密 | 石阶/榻榻米/草地/门廊 |
+| **慵懒交叠** | lounging, legs casually crossed, weight on one side | 随性/慵懒/自在 | 椅子/平台/栏杆/岩台 |
+| **站立仰视** | standing tall, chin slightly lifted, gaze upward | 期待/宏大感/孤独 | 天空/建筑/机甲 |
+
+---
+
+#### B. 与场景的物理接触（高优先级）
+
+**核心原则**：人物须与场景中的某个具体物件发生直接的物理接触，不能只是"站在场景里"。
+
+| 接触类型 | 关键词 | 配合重心类型 |
+|---------|--------|------------|
+| **手触水面/液体** | hand trailing in water, fingers touching stream surface, dipping hand in | 弯腰/蹲踞 |
+| **赤脚/鞋踩踏材质** | bare feet on stone steps, standing barefoot on wet sand, soles on grass | 任意站姿 |
+| **手扶/握持建筑构件** | hand resting on railing, gripping balcony edge, fingers on door frame | 倚靠/站立 |
+| **倚靠质感表面** | back against mossy wall, shoulder pressed to weathered wood, leaning on cold iron | 倚靠 |
+| **手持道具互动** | holding lantern aloft, bamboo basket on back, fingers trailing rope | 任意（见5.1.5道具系统）|
+| **与植物接触** | fingertips brushing flower petals, hair catching on branches, walking through grass | 站立/行走 |
+
+**示例：**
+```
+✅ 高接触密度：
+"bending slightly toward the stream, her right hand trailing 
+through the clear water, bare feet on mossy stone steps"
+
+❌ 低接触密度：
+"standing near the stream"
+```
+
+---
+
+#### C. 视线方向叙事（Gaze Direction as Narrative）
+
+视线方向是独立于手部动作、与场景深度强相关的叙事维度。
+
+| 视线类型 | 关键词 | 叙事意义 |
+|---------|--------|---------|
+| **直视镜头** | direct eye contact with camera, looking straight into lens | 自信/挑衅/亲密感 |
+| **回眸** | glancing back over shoulder, turning head to look back | 神秘/邀请/即将离去 |
+| **望向远方（出画）** | gaze fixed on distant horizon, looking off into the distance | 思念/期待/孤独/宏大 |
+| **低头凝视** | looking down thoughtfully, eyes cast downward | 沉思/忧郁/专注于手中物 |
+| **仰视（视线向上）** | looking up with wide eyes, gaze tilted skyward | 惊奇/渺小感/仰望 |
+| **半闭眼/享受** | eyes softly closed, head tilted back slightly | 沉浸/享受/感受风/感受光 |
+
+---
+
+### 5.1.4 动态叙事系统（Dynamic Narrative System）
+
+**核心哲学**：静止的画面须通过"凝固中的运动"制造时间感——观者看到的是一个正在发生的瞬间，而非摆拍。风是最重要的自然动力工具。
+
+---
+
+#### A. 风的叙事工具箱
+
+**风不只是"刮风"，风有来源、强度、方向，三者共同决定画面的动感层次。**
+
+| 风源类型 | 典型场景 | 动态强度 | 关键词 |
+|---------|---------|---------|--------|
+| **海风/湖风** | 海边/水岸 | 中强，持续 | ocean breeze, sea wind catching fabric, coastal wind |
+| **山风** | 山顶/高处 | 强，阵性 | mountain gust, highland wind lifting hair, sudden burst of wind |
+| **晨风/微风** | 庭院/草地/室内窗边 | 弱，温柔 | gentle morning breeze, soft breeze stirring, light wind |
+| **人造风/过道风** | 地铁/楼道/车速 | 定向强 | draft from passing train, wind tunnel, velocity wind |
+
+**风的动态层次（须至少描述两层）：**
+
+| 层次 | 元素 | 关键词 |
+|------|------|--------|
+| 发丝层 | 最轻，最先响应 | hair lifted by breeze, strands flying across face, wisps of hair |
+| 服装层 | 中等，面料决定幅度 | skirt caught by wind, fabric billowing, hem fluttering |
+| 环境层 | 背景确认风的存在 | leaves rustling, petals blown, grass swaying |
+
+**光+风的联合效果（高级）**：
+```
+"afternoon sunlight catching the windswept strands of hair, 
+each strand lit into a fine golden thread against the dark background"
+→ 发丝被风扬起 × 逆光 = 发光金边效果（发金边）
+```
+
+---
+
+#### B. 动作进行时（Action-in-Progress）
+
+人物须处于某个**未完成的动作**中，而非动作完成后的静态结果。
+
+| 动作状态 | 错误写法（结果态） | 正确写法（进行时） |
+|---------|---------------|---------------|
+| 弯腰净手 | bending down, hand in water | mid-motion of bending toward stream, fingertips just touching the surface |
+| 比手势 | making a rock sign | fingers forming a rock sign, wrist still in motion |
+| 回眸 | looking back | caught mid-turn, hair still sweeping from the movement |
+| 转身 | turning around | mid-turn, fabric swirling, one foot pivoting |
+| 走动 | walking | mid-stride, weight shifting from one foot, opposite arm swinging |
+
+---
+
+#### C. 材质的动态质感（Texture Dynamics）
+
+服装/头发的材质决定了它们在动态下的视觉语言。
+
+| 材质 | 动态关键词 |
+|------|----------|
+| 轻薄棉麻/雪纺 | natural creases catching the light, fabric pressing against body on windward side while billowing loose on the other |
+| 真丝/缎面 | fluid movement, silk catching light as it moves, liquid-like flow |
+| 羽毛/毛绒 | each feather slightly displaced by air movement, soft light diffusion |
+| 发丝 | individual strands with separate momentum, hair with a life of its own |
+
+---
+
+### 5.1.5 手部姿态库（Hand Gesture Library）
 
 #### 分类A：积极与正面情绪
 
@@ -1163,6 +1406,17 @@ revealing her perfect side profile
 | `[Hand-Fist-Cheek]` | 小拳头抵脸 | gently clenched fist, knuckles resting on cheek/lips |
 | `[Hand-Poke-Cheek]` | 单指点脸颊 | index finger gently poking own cheek, head tilt |
 | `[Hand-Eye-Frame]` | 框住眼睛 | making circle/OK sign, placing over one eye |
+
+---
+
+**A2. 活力与街头（Energetic / Street）**
+
+| 标签 | 姿态 | 关键词 |
+|------|------|--------|
+| `[Hand-Rock-On]` | 摇滚手势 | rock on / devil horns hand sign, index and pinky extended, thumb optional, one or both hands, raised or at side |
+| `[Hand-Peace]` | 剪刀手/V字 | peace sign / victory V, one or both hands near face |
+| `[Hand-Point-Sky]` | 单指点天 | single index finger pointing straight upward toward sky, dramatic upward gesture, arm extended |
+| `[Hand-Thumbs-Up]` | 大拇指向上 | thumbs up, confident approval gesture |
 
 ---
 
@@ -1313,7 +1567,7 @@ revealing her perfect side profile
 
 ---
 
-### 5.1.4 腿部姿态与构图
+### 5.1.6 腿部姿态与构图
 
 #### A. 通用构图
 
@@ -1390,6 +1644,19 @@ revealing her perfect side profile
 | `[Leg-Slouch-Couch]` | 窝在沙发 | slouching on couch, relaxed |
 | `[Leg-Cross-Floor]` | 盘腿坐地 | cross-legged on floor, informal |
 | `[Leg-Sit-Desk]` | 坐书桌边缘 | sitting on edge of desk |
+| `[Leg-Cross-Stone]` | 盘腿坐石阶/木廊 | cross-legged seated on stone steps or wooden platform, serene and composed, traditional East Asian meditative posture |
+| `[Leg-Lean-Windowsill]` | 倚靠窗台 | elbows resting on windowsill, upper body leaning forward, chin near hands or head resting in hands, gazing outward |
+
+---
+
+**环境互动姿态（新增）**
+
+| 标签 | 姿态 | 关键词 |
+|------|------|--------|
+| `[Pose-Hands-In-Water]` | 水边净手/拨水 | bending forward slightly, hands submerged in stream or basin, fingers splayed in water, hair falling forward, gentle motion blur on fingertips |
+| `[Pose-Lean-Railing]` | 倚靠石栏/铁栏 | leaning against stone or iron railing, one or both arms resting on top, looking outward at landscape |
+| `[Pose-Carry-Basket]` | 背竹筐/肩挑 | wearing bamboo basket on back or shoulder, traditional rural labor aesthetic, natural posture with weight |
+| `[Pose-Low-Head-Pensive]` | 低头沉思 | head slightly bowed, eyes downcast or half-closed, pensive introspective mood, stillness |
 
 ---
 
@@ -1650,13 +1917,18 @@ playing with a tiger cub
 ┌─────────────────────┬─────────────────────┐
 │   单人姿态           │   互动叙事           │
 ├─────────────────────┼─────────────────────┤
-│ 1. 选择手部姿态     │ 1. 选择互动类型     │
-│    （情绪匹配）     │    （人物/动物）    │
-│ 2. 选择腿部姿态     │ 2. 定义关系         │
-│    （站/坐/蹲）     │ 3. 定义互动模式     │
-│ 3. 确定视角         │ 4. 可选：互补人设   │
-│    （正面/侧面）    │                     │
-│ 4. 背视回眸（如需） │                     │
+│ 1. 确定身体重心     │ 1. 选择互动类型     │
+│    （5.1.3 A）      │    （人物/动物）    │
+│ 2. 场景物理接触点   │ 2. 定义关系         │
+│    （5.1.3 B）      │ 3. 定义互动模式     │
+│ 3. 视线方向         │ 4. 可选：互补人设   │
+│    （5.1.3 C）      │                     │
+│ 4. 动态状态         │                     │
+│    （5.1.4 A/B/C）  │                     │
+│ 5. 手部姿态         │                     │
+│    （5.1.5）        │                     │
+│ 6. 腿部姿态         │                     │
+│    （5.1.6）        │                     │
 └─────────────────────┴─────────────────────┘
     ↓
 与局部美学焦点联动

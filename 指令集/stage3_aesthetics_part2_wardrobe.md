@@ -25,7 +25,8 @@
 - [3.4 材质与细节](#34-材质与细节) - 面料、装饰、配饰（NEW：视觉密度规则 + 配饰联动规则）
   - 3.4.3 服装视觉密度规则（NEW）
   - 3.4.4 配饰系统（含配饰联动写法升级）
-- [3.5 服装组合建议](#35-服装组合建议) - 避免套路、创新搭配
+- [3.5 道具叙事分工系统](#35-道具叙事分工系统) - 光源型/人设型/反差型/世界观锚定型（NEW）
+- [3.6 服装组合建议](#36-服装组合建议) - 避免套路、创新搭配
 
 ---
 
@@ -959,9 +960,123 @@ creasing lines radiating from the button placket"
 
 ---
 
-## 3.5 服装组合建议（Combination Strategies）
+## 3.5 道具叙事分工系统（Prop Narrative Role System）
 
-### 3.5.1 高频组合（需主动避开）
+**核心哲学**：道具不是装饰，是叙事的主动参与者。每件道具在画面中承担特定的叙事功能，选取道具时先确定它的功能角色，再选具体物件。
+
+**使用方式**：每个创意选取1-2件道具，每件须明确其功能角色，并在提示语中描述其与人物/场景的物理关系（参见3.4.4配饰联动规则）。
+
+---
+
+### 3.5.1 四种道具功能角色
+
+---
+
+#### 角色A：光源型道具（Prop-as-Light-Source）
+
+**定义**：道具本身就是画面的主光源或重要补光源，光影系统因道具而建立。
+
+**为什么重要**：道具即光源时，光的来源在画面内有明确解释，物理可信度最高，且光线角度自然包裹人物。
+
+| 道具 | 光质 | 关键词 |
+|------|------|--------|
+| 油灯/蜡烛/烛台 | 暖黄，柔和，近距离包裹 | warm candlelight emanating from lantern, illuminating from below, soft amber glow |
+| 手持荧光棒/灯条 | 彩色，强饱和，轮廓光 | neon glow stick casting colored light on skin, LED strip held in hand |
+| 燃烧的火把/线香 | 橙红，跳动，戏剧性 | torch flame catching updraft, flickering light on face |
+| 发光的手机/平板屏幕 | 冷蓝，均匀，现代感 | screen glow reflecting on face in dark room, blue-white light from device |
+| 玻璃灯罩/纸灯笼 | 透射扩散，温暖 | light diffused through paper lantern, warm glow through frosted glass |
+
+**⚠️ 使用规范**：
+- 道具即主光源时，须在提示语中明确描述光从道具发出并照射人物的方向与质感
+- 其他光源（顶光/自然光）降级为辅助/环境光，不得与道具光源冲突
+
+```
+✅ 正确：
+"the only light source is the copper-framed oil lamp she holds in her left hand, 
+warm amber light spilling upward across her jaw and cheekbones, 
+casting a soft shadow behind her on the stone railing"
+```
+
+---
+
+#### 角色B：人设定义型道具（Prop-as-Identity）
+
+**定义**：道具替代文字说明人物的身份、职业、生活状态，无需任何解释，观者一眼即知。
+
+| 人设 | 道具 | 关键词 |
+|------|------|--------|
+| 采莲/归农 | 竹筐（装荷花/莲蓬/蔬果） | bamboo basket overflowing with lotus flowers, rattan gathering basket |
+| 外卖员/速递 | 外卖保温箱/电动摩托 | insulated delivery box on back, food delivery scooter |
+| 旅行者/流浪者 | 做旧帆布包/行李卷 | weathered canvas backpack, bedroll tied to pack |
+| 音乐人 | 乐器（提琴/吉他/扬琴） | violin case tucked under arm, guitar strap over shoulder |
+| 书生/学者 | 线装书/毛笔/竹简 | ink-stained fingertips, scroll tucked in sleeve, worn leather-bound book |
+| 游医/草药师 | 药箱/草药束 | wooden medicine chest, bundles of dried herbs hanging from pack |
+| 钓者/渔人 | 鱼竿/斗笠/鱼篓 | bamboo fishing rod, woven creel basket at hip |
+
+**⚠️ 使用规范**：
+- 人设道具须与服装系统保持内在一致（竹筐配古风服，外卖箱配运动服）
+- 道具须处于"使用中"或"刚用完"的状态，不是静态摆放（basket worn on back vs. basket placed on ground）
+
+---
+
+#### 角色C：反差制造型道具（Prop-as-Contrast）
+
+**定义**：道具与人物气质、服装、或场景形成刻意的张力和矛盾，是引擎B解耦逻辑在道具层面的执行。
+
+**反差公式**：精致人物 × 粗粝道具 / 高级服装 × 日常廉价道具 / 古典人物 × 现代道具
+
+| 反差类型 | 道具示例 | 效果 |
+|---------|---------|------|
+| 精致×粗粝 | 礼服×沾泥工具 / 华服×渔网/渔篓 | 身份错位的叙事张力 |
+| 高级×廉价 | 精致妆容×便利店塑料袋 / 名牌×外卖纸袋 | 都市生活的真实反差 |
+| 古典×现代 | 汉服×无线耳机 / 旗袍×手机自拍 | 时代错位的幽默感 |
+| 强悍×柔软 | 机甲/战甲×毛绒玩具 / 制服×气球 | 反差萌 |
+| 严肃×荒诞 | 西装×荧光兔耳头盔 / 正装×儿童玩具枪 | 解构严肃的游戏感 |
+
+**⚠️ 使用规范**：
+- 反差道具须在提示语中被"看见"——描述道具与人物的物理关系，让反差成为视觉事件而非文字标注
+- 与引擎B解耦逻辑联动使用效果最佳
+
+---
+
+#### 角色D：世界观锚定型道具（Prop-as-World-Anchor）
+
+**定义**：道具通过极其具体的当代细节，将画面钉死在某个真实的时代/地点/文化语境，使其区别于泛泛的"中国风"或"都市感"。
+
+**核心原则**：一件有具体信息的道具，胜过十句背景描述。
+
+| 锚定目标 | 道具 | 关键词 |
+|---------|------|--------|
+| 当代中国街头 | 交通标志牌（含中文文字）/ 共享单车 / 外卖平台贴纸 | traffic sign reading "前方路口减速慢行", shared bicycle with platform logo |
+| 特定城市氛围 | 地方特色小食包装 / 地铁线路图 / 本地报纸 | local dialect signage, metro line map poster |
+| 当代年轻人文化 | 特定IP盲盒包装 / 演唱会手环 / 限定联名周边 | blind box packaging, concert wristband, collab merch tag |
+| 二次元/ACG圈层 | 痛包贴纸（特定作品角色）/ 应援荧光棒 / 角色手幅 | itabag with character merch, character light stick, fan banner |
+| 职人文化 | 工具的特定磨损状态 / 手上的职业痕迹（茧/墨迹/烫痕）| ink-stained fingertips, callused hands from years of work |
+
+**⚠️ 使用规范**：
+- 锚定型道具须包含可被识别的具体信息（文字/图案/品牌），不能只写"一个标志牌"
+- 锚定精度越高，画面的"在场感"越强，但须确保AI能生成该细节
+
+---
+
+### 3.5.2 道具组合原则
+
+```
+每个创意建议选取1-2件道具，各承担不同角色：
+
+✅ 高效组合：光源型 + 人设型（一件照亮场景，一件说明身份）
+✅ 高效组合：人设型 + 反差型（一件建立身份，一件打破预期）
+✅ 高效组合：世界观锚定型 + 任意（用具体细节固定时空）
+
+❌ 低效组合：多件同类道具（三件都是人设型，信息冗余）
+❌ 低效组合：道具与服装/场景逻辑矛盾且无意为之
+```
+
+---
+
+## 3.6 服装组合建议（Combination Strategies）
+
+### 3.6.1 高频组合（需主动避开）
 
 **套路组合示例：**
 - ❌ 哥特萝莉裙 + 废墟场景 + 冷色调
@@ -973,7 +1088,7 @@ creasing lines radiating from the button placket"
 
 ---
 
-### 3.5.2 创新组合公式
+### 3.6.2 创新组合公式
 
 #### 公式1：文化错位
 ```
@@ -1026,7 +1141,7 @@ creasing lines radiating from the button placket"
 
 ---
 
-### 3.5.3 完整服装组合示例
+### 3.6.3 完整服装组合示例
 
 #### 组合1：清新学生（主干道B）
 ```
