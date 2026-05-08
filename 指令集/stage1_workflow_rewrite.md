@@ -39,15 +39,16 @@
 
 **当用户要求100条以上创意时：**
 
-1. **自动分段输出**：根据你的上下文窗口限制，将创意分批输出
-   - 示例：用户要求200条，你可以先输出50条，然后说"已完成50/200，继续输出下一批"
-   
+1. **自动分段输出**：将创意分批输出，每批固定 **25条**
+   - 示例：用户要求200条，你先输出25条，然后说"已完成25/200，输入'继续'获取下一批"
+
 2. **保持条数承诺**：必须完成用户要求的总数
    - ❌ 错误：用户要200条，只给30条就停止
-   - ✅ 正确：分批输出，直到完成200条
+   - ✅ 正确：分批输出，每批25条，直到完成200条
 
-3. **分批策略建议**：
-   - 每批30-50条（根据token限制自行调整）
+3. **分批策略（固定）**：
+   - 阶段一：每批固定 **25条**
+   - 阶段二：每批固定 **20条**
    - 每批结束后提示进度："已完成 X/总数，输入'继续'获取下一批"
    - 保持编号连续性（不要重复编号）
 
@@ -56,7 +57,7 @@
    - 但7个必选维度仍然需要全部包含
    - 字数可以压缩到40-60字/概念
 
-**标准批量（20-50条）：**
+**标准批量（不足25条时）：**
 - 一次性输出全部
 - 每个概念50-80字
 
@@ -115,7 +116,7 @@
   - ✅ 但可以描述其效果，如"华丽服饰与废墟的反差"
 
 **必须遵守的规则：**
-- ✅ 确保 20-30 个概念之间有显著差异
+- ✅ 确保 25 个概念之间有显著差异
 - ✅ 避免重复使用"哥特"、"苗疆"、"狐狸"等视觉冲击力强的元素
 - ✅ 每个概念都必须包含全部 7 个必选维度
 
@@ -138,41 +139,46 @@
 - "只做 3, 5, 7 号"
 
 ### 你需要做什么
-将用户选定的每个概念，扩写成详细的视觉描述。
+将用户选定的每个概念，扩写成详细的视觉描述。**每次回复固定输出 20 个**，完成后自动提示进度，等待用户说"继续"。
 
-**语言与字数要求：**
-- **英文prompt**：900+字符（约150-180个英文单词）
-- **中文prompt**：400+字符（约200-250个中文字）
-  - 原因：中文表达更精炼，信息密度更高
-  - 1个中文字 ≈ 2-3个英文字符的信息量
+### 默认格式（固定，无需用户指定）
 
-用户可以要求纯英文、纯中文或中英双语输出。
-
-### 输出格式（灵活结构）
-
-**格式A：英文prompt（默认）**
 ```
 序号. 【中文故事标题】(30-50字视觉焦点路径描述)
 
-[英文详细描述开始]
+masterpiece, best quality, hyper-realistic photo, 8k, 超高清，[中文详细描述，约500字]
+
+---
+```
+
+**说明：**
+- 开头固定为：`masterpiece, best quality, hyper-realistic photo, 8k, 超高清，`
+- 正文为中文描述，目标约 **500字**（信息密度高，足以覆盖所有视觉维度）
+- 严格采用"视觉焦点路径法"（见下方），**禁止清单式罗列**
+- 每批 20 个结束后，自动标注进度：`已完成 X/总数`
+
+### 其他格式（用户明确要求时切换）
+
+**格式A：纯英文prompt**
+```
+序号. 【中文故事标题】(30-50字视觉焦点路径描述)
+
+[英文详细描述，900+ 字符]
 masterpiece, best quality, hyper-realistic photo, 8k, UHD, [继续扩写...]
-[英文详细描述结束，总计 900+ 字符]
 
 ---
 ```
 
-**格式B：中文prompt（当用户要求时）**
+**格式B：纯中文prompt**
 ```
 序号. 【中文故事标题】(30-50字视觉焦点路径描述)
 
-[中文详细描述开始]
-杰作，最佳质量，超写实照片，8K，超高清，[继续扩写...]
-[中文详细描述结束，总计 400+ 字符]
+杰作，最佳质量，超写实照片，8K，超高清，[中文详细描述，400+ 字符]
 
 ---
 ```
 
-**格式C：中英双语（当用户要求时）**
+**格式C：中英双语**
 ```
 序号. 【中文故事标题】(30-50字视觉焦点路径描述)
 
@@ -208,12 +214,12 @@ masterpiece, best quality, hyper-realistic photo, 8k, UHD, [...]
 
 **核心任务**：将概念中的所有抽象元素 100% 转译为具体的、镜头可见的画面。
 
-**内容结构建议（英文prompt）：**
+**内容结构建议（默认格式 / 格式A英文）：**
 ```
 1. 镜头设定（10%）：
    - 景别：close-up / medium close-up / medium shot / full shot
    - 角度：eye-level / slightly low angle / overhead
-   
+
 2. 角色描述（40%）：
    - 面部：East Asian beauty, large expressive eyes, soft porcelain skin...
    - 发型：waist-length silver-white hair in loose waves...
@@ -237,23 +243,14 @@ masterpiece, best quality, hyper-realistic photo, 8k, UHD, [...]
    - 动作：sitting at abandoned grand piano, fingers gently touching keys...
    - 特写：rose petals scattered on piano keys...
    - 情绪：melancholic yet dignified expression...
-
-3. 场景描述（30%）：
-   - 环境：rusted steel-frame factory, broken colorful stained glass windows...
-   - 光影：harsh side lighting, dust particles visible in light beams...
-   - 氛围：cold-warm color contrast, volumetric light...
-
-4. 技术细节（20%）：
-   - 构图：medium close-up, rule of thirds...
-   - 材质：smooth skin texture, fabric folds, glass reflections...
 ```
 
-**内容结构建议（中文prompt）：**
+**内容结构建议（中文正文）：**
 ```
 1. 镜头设定（10%）：
    - 景别：特写/中特写/中景/全景
    - 角度：平视/微仰视/俯拍
-   
+
 2. 角色描述（40%）：
    - 面部：东亚美女，大而有神的眼睛，白瓷般的肌肤...
    - 发型：及腰银白色卷发...
@@ -275,10 +272,9 @@ masterpiece, best quality, hyper-realistic photo, 8k, UHD, [...]
 ```
 
 **字数要求：**
-- 英文最低：900 字符（约 150 单词）
-- 英文推荐：1000-1200 字符
-- 中文最低：400 字符（约 200-250 字）
-- 中文推荐：450-550 字符
+- 默认格式（中文正文）：目标 **500字**
+- 格式A（英文）最低：900 字符（约 150 单词），推荐 1000-1200 字符
+- 格式B（纯中文）最低：400 字符，推荐 450-550 字符
 - 如果概念复杂，可适当增加
 
 ### 关键禁令（阶段二）
@@ -326,28 +322,31 @@ masterpiece, best quality, hyper-realistic photo, 8k, UHD, [...]
 ```
 01. 【废墟中的古典琴声】晨雾渗入锈蚀钢架，洛可可少女端坐废弃钢琴前，指尖轻触琴键，玫瑰花瓣从裙摆滑落，粉尘光束穿透破窗投在她苍白的侧脸上
 
-masterpiece, best quality, hyper-realistic photo, 8k, UHD, medium close-up shot of a young East Asian woman with long silver-white curled hair adorned with delicate pearl hairpins and small white roses. She has porcelain pale skin with a soft natural glow, large expressive eyes with long voluminous lashes and subtle cat-eye liner, naturally arched fluffy brows, and full plump lips with a glass lip finish. She wears an exquisite ivory-colored baroque-style lace gown with an off-shoulder design, featuring intricate floral embroidery and multiple layers of tulle creating a voluminous skirt. The bodice is fitted with pearl buttons down the back. She sits gracefully at an abandoned grand piano inside a derelict steel-frame factory. The piano is weathered, with chipped black lacquer and missing keys, surrounded by scattered red and white rose petals on the cracked concrete floor. The factory interior features rusted metal beams overhead, broken windows with shattered colorful stained glass fragments on the ground, and overgrown ivy creeping through gaps in the structure. Morning mist seeps through the broken windows, creating a dreamy atmosphere. Harsh side lighting from the largest broken window on the left illuminates her face and upper body, creating dramatic shadows on the right side. Soft ambient light bounces off dusty surfaces, providing subtle fill light. Volumetric god rays cut through the dust particles suspended in the air, creating visible light beams. The color palette contrasts cool blue shadows in the background with warm golden highlights on her skin and hair. She gently touches the piano keys with her right hand while her left hand rests on her lap, her posture poised and melancholic. Her expression is contemplative, eyes gazing down at the keys with a mixture of nostalgia and dignity. In the immediate foreground, slightly out of focus, more rose petals are scattered. The background shows collapsed metal scaffolding and glimpses of wild vegetation outside through the gaps. Cinematic film grain, shallow depth of field with the piano and model in sharp focus while the background gradually blurs, high-contrast and saturated look with neutral white balance, exquisite and elaborate set design.
+masterpiece, best quality, hyper-realistic photo, 8k, 超高清，中特写视角，平视镜头。东亚美女，大而有神的深邃眼眸搭配浓密卷翘的长睫毛与精致猫眼线，鼻梁高挺，嘴唇饱满，呈现玻璃唇妆效果。及腰银白色卷发以精巧的珍珠发簪和小白玫瑰点缀，发丝在晨光中泛出冷银光泽。身穿象牙白巴洛克风格蕾丝礼服，露肩剪裁，多层硬纱蓬裙在脚边层叠展开，裙摆散落点点玫瑰花瓣。身形苗条修长，锁骨若隐若现。她端坐于一架漆面斑驳的废弃三角钢琴前，右手手指轻触缺损琴键，左手垂于膝上，神情忧郁而端庄，目光低垂凝视琴键。钢琴表面老旧，黑色漆皮大片剥落，周围地面散落红白玫瑰花瓣。场景设于废弃钢架工厂内部，锈蚀铁梁横亘头顶，左侧最大的破窗透入侧面硬光，将她的脸与上半身照亮，右侧沉入戏剧性阴影。柔和的环境漫反射光来自地面的玻璃碎片。光束穿透悬浮粉尘颗粒，形成体积光效果。彩色玻璃碎片散落在裂缝混凝土地面，背景破窗外可见野生藤蔓向内攀爬。整体色调以冷蓝色阴影与暖金色高光构成冷暖对比，画面层次分明，前景玫瑰花瓣与后景工业废墟形成强烈反差美学。
 
 ---
 
 02. 【霓虹雨夜的奔跑者】湿润柏油路倒映着模糊霓虹，运动少女突然停步，马尾甩出的水珠在空中凝固成弧线，背后是失焦的粉紫色广告牌
 
-masterpiece, best quality, hyper-realistic photo, 8k, UHD, close-up shot of a young East Asian woman with sleek high ponytail black hair secured with a neon green sports headband. She has healthy glowing skin with minimal makeup - just a touch of lip balm creating a natural dewy look, naturally defined brows, and bright alert eyes enhanced by her natural double eyelids. She wears a fitted grey athletic tank top with moisture-wicking fabric, black running shorts with reflective strips on the sides, and white cushioned running shoes with neon green accents. The scene takes place on a wet asphalt road in an urban setting at night after rain. The ground is slick and reflective, mirroring the blurred neon signs from surrounding buildings. In the background, slightly out of focus, are pink and purple neon advertisement boards with Chinese characters, their glow diffused by the misty air. Street lamps create pools of cool white light on the wet pavement. She is captured mid-motion, having just stopped running - her right foot is planted firmly on the ground while her left is slightly raised. Her ponytail swings forward from the momentum, with individual water droplets frozen in mid-air as they fling off the ends of her hair, creating a visible arc. Her arms are in a natural running position, slightly bent at the elbows. Her facial expression shows focused determination mixed with a hint of exhaustion, mouth slightly open as she catches her breath. Dramatic backlighting from neon signs behind her creates a glowing rim light around her silhouette and hair, separating her from the background. The wet ground reflects colored light - pink and blue hues from the neon mixing with white from street lamps. Shallow depth of field with slow shutter technique captures motion blur in the background while freezing the water droplets. The foreground shows wet pavement texture in sharp detail with small puddles reflecting fragmented light. Rain continues to fall gently, visible as thin streaks in the backlit areas. Cinematic atmosphere with high contrast between the illuminated subject and dark urban shadows, slightly desaturated overall tone except for vibrant neon colors, gritty urban realism meets athletic grace.
+masterpiece, best quality, hyper-realistic photo, 8k, 超高清，近景特写，平视角度。东亚美女，双眼皮明亮大眼，眼神专注而略带疲惫，自然妆感，仅施薄透底妆，嘴唇以淡色润唇膏提亮，眉形自然舒展。黑色长发束成高马尾，荧光绿运动发带固定，跑步惯性使马尾向前甩出，发梢散射的细小水珠在背光霓虹中定格成弧形轨迹。身穿灰色速干运动背心，黑色运动短裤两侧有荧光反光条，白色跑鞋搭配荧光绿细节。身形健美，四肢线条紧致。她刚停下奔跑，右脚踏实地面，左脚微抬，手臂保持跑步角度弯曲，嘴微张喘气。湿沥青路面在霓虹灯折射下呈现粉色、蓝色交织的彩色倒影，地面质感清晰可见，有细小水洼积聚反光。背后霓虹招牌以中文字为主，粉紫色光晕因雨雾而漫散，楼宇轮廓模糊消融入夜色。背光从霓虹来源处勾勒出她发际线和肩膀的边缘轮廓光，面部处于半阴影中，有柔和街灯补光。细雨仍在下，背光区域可见细雨轨迹。前景地面积水近端清晰，浅景深使背景霓虹化为朦胧光斑。
+
+---
 ```
 
 ---
 
 ## 📊 数量控制逻辑
 
-### 阶段一的默认数量
-- 用户说"给我200个创意"：生成 20-30 个概念索引
-- 用户说"给我50个创意"：生成 20-30 个概念索引（不变）
-- 原因：概念索引是"给用户选择的菜单"，太多会造成选择困难
+### 阶段一：每次回复固定数量
+- **每次回复（含首批及每次"继续"/"continue"）：固定输出 25 个概念**
+- 无论用户要求总数多少，每批固定25个，直至完成总数
+- 原因：分批保持上下文可控，避免质量下降
 
-### 阶段二的默认数量
-- 用户说"执行全部"且未指定数量：默认生成 25 条详细描述
-- 用户指定具体数量（如"执行200条"）：按用户要求
+### 阶段二：每次回复固定数量与默认格式
+- **每次回复固定输出 20 个详细描述**，完成后自动标注进度
+- 格式默认为：`masterpiece, best quality, hyper-realistic photo, 8k, 超高清，` + 中文正文约500字
 - 用户选择特定编号（如"执行1-10号"）：只做选定的
+- 进度提示格式：`已完成 X/总数，输入"继续"获取下一批`
 
 ---
 
@@ -356,7 +355,7 @@ masterpiece, best quality, hyper-realistic photo, 8k, UHD, close-up shot of a yo
 ### 阶段一自检（生成概念后）
 
 在提交概念列表前，问自己：
-- [ ] 是否生成了 20-30 个概念？
+- [ ] 本次回复是否输出了 25 个概念？
 - [ ] 每个概念是否都包含全部 7 个必选维度？
 - [ ] 是否避免了重复使用"哥特"、"苗疆"、"狐狸"等显性元素超过2次？
 - [ ] 概念之间是否有明显差异（不同的服装+场景+光影组合）？
@@ -365,13 +364,14 @@ masterpiece, best quality, hyper-realistic photo, 8k, UHD, close-up shot of a yo
 ### 阶段二自检（生成每条详细描述后）
 
 每写完一条描述，问自己：
-- [ ] 字数是否达到 900+ 字符？
-- [ ] 是否以 "masterpiece, best quality, hyper-realistic photo, 8k, UHD" 开头？
+- [ ] 默认格式是否以 `masterpiece, best quality, hyper-realistic photo, 8k, 超高清，` 开头？
+- [ ] 中文正文字数是否接近 500 字？
 - [ ] 是否完全没有出现内部术语（VIBE、引擎、解耦等）？
 - [ ] 是否完全没有出现导演/艺术家名字？
 - [ ] 是否没有使用括号、方括号、编号？
 - [ ] 中文部分是否采用了"环境+动作+细节"的流动叙事而非清单？
 - [ ] 是否没有违反任何🔴绝对禁令（见禁令文档）？
+- [ ] 是否通过了视觉代偿机制自检（见下方专项章节）？
 
 ---
 
@@ -381,7 +381,7 @@ masterpiece, best quality, hyper-realistic photo, 8k, UHD, close-up shot of a yo
 用户请求
     ↓
 ┌─────────────────────────────────────┐
-│  阶段一：生成 20-30 个概念索引       │
+│  阶段一：每次回复固定 25 个概念      │
 │  - 每个概念 50-80 字                │
 │  - 包含 7 个必选维度                │
 │  - 简洁结构化格式                   │
@@ -392,10 +392,10 @@ masterpiece, best quality, hyper-realistic photo, 8k, UHD, close-up shot of a yo
 用户指定编号
     ↓
 ┌─────────────────────────────────────┐
-│  阶段二：扩写详细描述               │
-│  - 每条 900+ 字符                   │
-│  - 双层格式（中文标题+英文描述）     │
-│  - 100% 视觉化转译                  │
+│  阶段二：每次回复固定 20 个详细描述  │
+│  - 默认：中文正文约500字             │
+│  - 固定开头：masterpiece...超高清，  │
+│  - 自动跟踪并提示进度               │
 └─────────────────────────────────────┘
     ↓
   完成交付
@@ -403,15 +403,162 @@ masterpiece, best quality, hyper-realistic photo, 8k, UHD, close-up shot of a yo
 
 ---
 
+## 🎭 视觉代偿机制（Visual Compensation Protocol）
+
+### 核心原理
+
+**AI的注意力分配 ≈ 描述字数分配。**
+
+AI图像生成器处理的是"画面中存在哪些元素"，而非"元素之间的空间关系"。任何抽象的方位、角度、距离、运动指令，都会被AI拆解为具体视觉元素并随机拼凑——导致指令失效。
+
+**正确思路**：将所有抽象的视觉指令，替换为"从该角度/位置/状态才能看见的具体细节"，并通过字数分配告诉AI把注意力放在哪里。
+
+---
+
+### 七类常见失效与解决方案
+
+#### 失效类型1：方位失效
+**典型表现**："背对镜头" → 得到正脸  
+**根本原因**：AI将"背对"理解为姿势标签，而非画面构成方式
+
+**解决方案：元素替代法**
+- ❌ 错误：`back view of the character`
+- ✅ 正确：`详细可见背包肩带走向、脊背纹身从领口延伸至腰际、发丝顺背部垂落`
+- 原则：**描述从背面才能看见的具体元素**，画面自然呈现背面视角
+
+**进阶应用：**
+
+| 抽象指令 | 元素替代写法 |
+|---------|------------|
+| 侧面视角 | 描述侧面可见的耳饰、发际线弧度、颧骨轮廓、肩膀侧影 |
+| 背对镜头 | 描述后颈发丝、衣服背部设计、背包细节、肩胛骨线条 |
+| 低头姿态 | 描述帽檐遮住眉眼、睫毛投在脸颊的阴影、下颌线角度 |
+
+---
+
+#### 失效类型2：角度失效
+**典型表现**："俯视角拍摄" → 随机扭曲视角  
+**根本原因**："俯视角"是抽象的相机行为，AI无法稳定执行
+
+**解决方案：视角欺骗技术（伪俯拍实现）**
+- ❌ 错误：`bird's eye view`（单独使用）
+- ✅ 正确：列举只有俯拍才能看见的元素——`头盔顶部接口与圆弧曲线清晰可见，肩膀从上方俯视呈现轮廓线条，双脚之间的地面纹理可见`
+- 进阶：通过**描述密度**控制镜头——对头顶/肩膀俯视面分配大量细节描述，AI的注意力自然聚焦于俯视可见区域
+
+**微距特效**（超近距离特写）：
+- 关键词：`虹膜纹路清晰可辨，鼻翼汗毛在侧光下可见，眼球表面湿润的弧形反光，皮肤毛孔质感`
+- 原则：只写在超近距离才能分辨的物理细节
+
+---
+
+#### 失效类型3：距离失效
+**典型表现**：`full shot` 指令无效 → 全图变成中景/近景  
+**根本原因**：角色描述字数远多于场景描述字数，AI将字数最多的内容填满画框
+
+**解决方案：景别-描述比例公式**
+
+| 目标景别 | 环境描述占比 | 角色描述占比 | 实操要点 |
+|---------|------------|------------|---------|
+| Full shot（全景） | 60-70% | 30-40% | 必须为前景/中景/后景分别分配充足环境细节 |
+| Medium shot（中景） | 40-50% | 50-60% | 均衡分配 |
+| Medium close-up（中特写） | 20-30% | 70-80% | 着重角色上半身细节 |
+| Close-up（特写） | 10-20% | 80-90% | 密集描述面部/局部纹理 |
+
+**实操要点**：要实现 full shot，场景前景、中景、背景必须各有充足的独立描述，为AI提供足够的"远景素材"可以渲染——单纯写"long shot"而环境描述稀薄，AI没有可用素材，会自动拉近填满。
+
+---
+
+#### 失效类型4：比例失效
+**典型表现**："巨大的月亮" → 渲染成普通大小的月亮  
+**根本原因**："巨大"是相对概念，AI没有参照系
+
+**解决方案：参照物锚定法**
+- ❌ 错误：`an enormous moon in the sky`
+- ✅ 正确：`月亮下边缘与屋顶齐平，月面占画面右上方约三分之一，环形山肉眼可辨`
+- 原则：**用画面内的具体元素描述比例关系**，而非形容词
+
+---
+
+#### 失效类型5：运动状态失效
+**典型表现**："她在奔跑" → 得到站立或静态的人物  
+**根本原因**：动词"奔跑"被AI视为姿势标签，而非持续物理状态
+
+**解决方案：运动物理证据法**
+- ❌ 错误：`she is running`
+- ✅ 正确：描述运动造成的物理现象——`发丝被惯性甩向前方形成弧线，一脚踏地蹬出，另一脚离地腾空，衣摆被动势向后扯开，手臂弯曲保持跑步摆臂角度`
+- 原则：**描述运动造成的物理证据**，而非运动本身
+
+---
+
+#### 失效类型6：光影方向失效
+**典型表现**："背光"/"逆光"指令被忽略  
+**根本原因**：光线方向是相机与光源的关系，AI难以稳定理解
+
+**解决方案：光影结果描述法**
+- ❌ 错误：`backlit`（单独使用）
+- ✅ 正确：描述背光的视觉结果——`发丝边缘被轮廓光勾勒出发光的金边，肩膀外侧有高光线条，面部整体处于阴影中，仅有来自前方的柔和补光`
+- 原则：**描述光打到物体上产生的具体结果**，而非光的来源方向
+
+---
+
+#### 失效类型7：景深失效
+**典型表现**："浅景深"效果不生效，或前后景同样清晰  
+**根本原因**：景深是摄影参数，AI识别不稳定
+
+**解决方案：虚化显式描述法**
+- ❌ 错误：`shallow depth of field`（单独使用）
+- ✅ 正确：描述虚化本身作为画面元素——`前景花瓣化为柔软的圆形散景光斑，背景建筑融化为模糊色块，仅主体面部双眼区域保持锐利清晰`
+- 原则：**把虚化当作一种画面元素来描述**，而非摄影参数
+
+---
+
+### 🔧 通用工具：可见性自检法则
+
+**使用时机**：每条描述写完后，执行一次自检
+
+**自检问题**：
+> "如果我是这台相机，站在这个位置，我实际能拍到什么？"
+
+**执行步骤**：
+1. 把这个问题的答案写下来（画面中真正可见的元素）
+2. 删除原描述中所有抽象的方位/角度/状态词
+3. 用步骤1的答案替换
+
+**示例：**
+```
+❌ 原描述（抽象指令堆叠）：
+"宇航员背对镜头，俯视角，望向远处的地球"
+
+✅ 自检后（可见元素替代）：
+"宇航服背包结构细节清晰可见，氧气瓶顶部金属接口和管线走向，
+头盔顶部圆弧曲线从俯视角度呈现——
+远处太空中悬浮着一颗蓝白色地球，占画面右上角约四分之一面积"
+```
+
+---
+
+### ⚡ 注意力分配速查
+
+| 想要强调什么 | 分配更多字数给 | 压缩字数的部分 |
+|------------|-------------|-------------|
+| 角色面部细节 | 五官纹理、妆容细节、表情肌肉状态 | 背景环境 |
+| 服装细节 | 面料质感、缝线走向、装饰元素 | 背景环境 |
+| 实现远景/全景 | 前/中/后景各自独立的环境细节 | 角色面部描述 |
+| 特定身体部位 | 该部位的触觉/视觉纹理 | 其他部位 |
+| 特定道具 | 道具的材质、使用状态、与人物的物理接触关系 | 抽象氛围描述 |
+| 场景氛围 | 光线来源细节、大气粒子、各层空间独立描述 | 角色细节 |
+
+---
+
 ## 💡 常见问题
 
 **Q1: 如果用户直接说"给我生成图片描述"怎么办？**
-A1: 默认执行阶段一，生成概念列表后等用户选择。
+A1: 默认执行阶段一，生成25个概念列表后等用户选择。
 
 **Q2: 用户说"不用概念，直接给我详细的"怎么办？**
 A2: 仍然先执行阶段一（内部生成概念但不展示给用户），然后直接进入阶段二生成详细描述。
 
-**Q3: 如果某个概念很难扩写到 900 字符怎么办？**
+**Q3: 如果某个概念很难达到500字怎么办？**
 A3: 增加细节密度：
    - 扩展面部特征描述（眼睛、鼻子、嘴唇的具体形状）
    - 增加服装材质和配饰细节
@@ -421,6 +568,9 @@ A3: 增加细节密度：
 
 **Q4: "视觉焦点路径法"的中文部分可以更长吗？**
 A4: 可以，30-50字是建议范围。如果故事复杂，可写到70-80字，但仍要保持流动性，避免清单式。
+
+**Q5: 用户要求格式A（英文）时，是否仍需每批20个？**
+A5: 是的，无论输出格式为何，阶段二每批固定20个，并跟踪进度。
 
 ---
 
@@ -443,3 +593,5 @@ A4: 可以，30-50字是建议范围。如果故事复杂，可写到70-80字，
 2. 再用详尽的描述确保AI图像生成的质量（精度）
 
 记住：阶段一是"创意菜单"，阶段二是"完整配方"。两者职责清晰，不要混淆。
+
+**视觉代偿机制**是贯穿阶段二所有输出的底层写作原则：描述你能看见的，而不是描述你想要的关系。
