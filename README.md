@@ -1029,3 +1029,15 @@ docker compose up
 🍬 **Tongseoi Machine**
 
 *Simmer sweet soup.*
+
+## 📜 License
+
+Tongseoi Machine is released under the [MIT License](LICENSE).
+
+You are free to use, modify, distribute, sublicense, and use this project
+for commercial or private purposes, provided that the original copyright
+notice and license text are preserved.
+
+In short:
+
+**Take it. Remix it. Build on it. Ship it. 🍬**
