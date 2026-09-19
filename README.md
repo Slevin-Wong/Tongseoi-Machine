@@ -728,20 +728,6 @@ B 的叙事环境
 
 ---
 
-# 📁 Repository
-
-目前仓库结构保持非常简单：
-
-```text
-Tongseoi-Machine/
-├── Tongseoi Machine.md   # Sugar Water Machine 完整 Skill
-└── Archived/              # 历史内容
-```
-
-核心 Skill 是一个**单文件、可直接加载的完整规格文档**，当前版本标题为 `SUGAR WATER MACHINE (糖水机) — AI Image Prompt Engineering System v2.0`。
-
----
-
 # 🛠️ 如何使用这个 Skill？
 
 把：
@@ -1005,9 +991,11 @@ docker compose up
 
 # 📜 License
 
-请以仓库实际 LICENSE 文件为准。
+Tongseoi Machine is released under the [MIT License](LICENSE).
 
-如果你准备将 Tongseoi Machine 用于商业项目、二次分发或集成进其他 Skill / Agent，也建议先确认当前仓库的授权条款。
+You are free to use, modify, distribute, sublicense, and use this project
+for commercial or private purposes, provided that the original copyright
+notice and license text are preserved.
 
 ---
 
@@ -1034,14 +1022,6 @@ docker compose up
 🍬 **Tongseoi Machine**
 
 *Simmer sweet soup.*
-
-## 📜 License
-
-Tongseoi Machine is released under the [MIT License](LICENSE).
-
-You are free to use, modify, distribute, sublicense, and use this project
-for commercial or private purposes, provided that the original copyright
-notice and license text are preserved.
 
 In short:
 
