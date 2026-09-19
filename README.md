@@ -1,3 +1,4 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 # 🍬 Tongseoi Machine
 
 ### Sugar Water Machine · 糖水机
