@@ -1,4 +1,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![AI](https://img.shields.io/badge/AI-Image%20Generation-purple)](README.md)
+[![Prompt Engineering](https://img.shields.io/badge/Prompt-Engineering-blue)](README.md)
+[![Skill](https://img.shields.io/badge/Type-AI%20Skill-orange)](README.md)
+[![Markdown](https://img.shields.io/badge/Built%20with-Markdown-black)](README.md)
 # 🍬 Tongseoi Machine
 
 ### Sugar Water Machine · 糖水机
