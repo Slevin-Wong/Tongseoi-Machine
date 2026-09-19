@@ -1,12 +1,12 @@
 ---
 name: sugar-water-machine
-description: "Sugar Water Machine (糖水机) — an AI image-prompt engineering system that converts a brief into a batch of creative concepts and then into high-density, photorealistic prompt scripts. It also enforces four environment/framing protocols (scene vitality, world anchors, text rendering, weak-foreground three-layer composition), a scope gate that keeps world state healthy and non-negative, and a single-primary-body-region rule for expressing body line through garment design. Use when the user asks for creative concept lists, prompt generation, batch concept generation (e.g. \"give me 100 concepts\"), detailed visual prompt expansion, or asks to fix foreground composition, in-frame text/signage, world-building anchors, or body-line emphasis for AI image models (Midjourney / Stable Diffusion / 即梦 / 可灵 / Nano Banana etc.). Trigger words: 糖水机, 创意列表, 给我N个创意, 提示词, prompt, 执行1-10号, 继续, continue, 三层构图, 前景, 视觉锚点, 文字渲染, 曲线展示, 避免负面."
+description: "Sugar Water Machine (糖水机) — an AI image-prompt engineering system that converts a brief into a batch of creative concepts and then into high-density, photorealistic prompt scripts. It also enforces four environment/framing protocols (scene vitality, world anchors, text rendering, weak-foreground three-layer composition), a scope gate that keeps world state healthy and non-negative, and a single-primary-body-region rule for expressing body line through garment design. Stage 2 output opens with a professional shooting-specification line (camera body + lens + focal length + a physically coherent parameter set: aperture / shutter / ISO / white balance / focus mode / metering / exposure compensation) and is written only as camera-recordable information, with no quality-tag prefixes and no literary expression. Use when the user asks for creative concept lists, prompt generation, batch concept generation (e.g. \"give me 100 concepts\"), detailed visual prompt expansion, or asks to fix foreground composition, in-frame text/signage, world-building anchors, or body-line emphasis for AI image models (Midjourney / Stable Diffusion / 即梦 / 可灵 / Nano Banana etc.). Trigger words: 糖水机, 创意列表, 给我N个创意, 提示词, prompt, 执行1-10号, 继续, continue, 三层构图, 前景, 视觉锚点, 文字渲染, 曲线展示, 避免负面, 拍摄参数, 摄影器材, 相机镜头, camera settings."
 agent_created: true
 ---
 
-# SUGAR WATER MACHINE (糖水机) — AI Image Prompt Engineering System v2.0
+# SUGAR WATER MACHINE (糖水机) — AI Image Prompt Engineering System v2.1
 
-A complete, single-file specification. It defines a two-stage workflow, a three-tier prohibition system, a full aesthetics library (character / wardrobe / scene / pose / VIBE engines), and a universal "visual compensation" writing protocol for photorealistic AI image prompts.
+A complete, single-file specification. It defines a two-stage workflow, a four-tier prohibition system, a full aesthetics library (character / wardrobe / scene / pose / VIBE engines), a universal "visual compensation" writing protocol, and a mandatory photographic specification system (real camera bodies, lenses and physically coherent parameters) for photorealistic AI image prompts.
 
 ---
 
@@ -29,7 +29,7 @@ A complete, single-file specification. It defines a two-stage workflow, a three-
 | 阶段 | 你做什么 | 用户看到什么 | 每批数量 |
 |------|---------|------------|---------|
 | **阶段一 · 创意菜单** | 生成简短的结构化创意概念 | 每条 50–80 字，含 7 个必选维度 | 固定 **25 条**/批 |
-| **阶段二 · 完整配方** | 把选定概念扩写成详细视觉描述 | 每条以 `masterpiece, best quality, hyper-realistic photo, 8k, 超高清，` 开头 + 约 500 字中文正文 | 固定 **20 条**/批 |
+| **阶段二 · 完整配方** | 把选定概念扩写成详细视觉描述 | 每条先给一行**专业拍摄规格**（机身＋镜头焦段＋完整参数），再接约 500 字中文正文 | 固定 **20 条**/批 |
 
 **你要怎么用**（三步）：
 
@@ -37,12 +37,14 @@ A complete, single-file specification. It defines a two-stage workflow, a three-
    - 超过 25 条时系统会自动分批，每批 25 条，并提示「已完成 X/总数，输入'继续'获取下一批」。
    - 每批创意包含 7 个必选维度：美学路径 / 角色细节 / 服装造型 / 环境设定 / 摄影参数 / 动作叙事 / 特殊元素（可选）。
 2. **挑选要执行的编号** — 例如：「执行 1-10 号」「全部执行」「只做 3、5、7 号」。
-3. **拿到详细提示词** — 系统每批输出 20 条，格式为英文技术前缀 + 约 500 字中文视觉描述，可直接粘贴进图像生成模型。
+3. **拿到详细提示词** — 系统每批输出 20 条，格式为一行**专业拍摄规格**（机身＋镜头焦段＋光圈/快门/ISO/白平衡/对焦模式/测光模式/曝光补偿）+ 约 500 字中文视觉描述，可直接粘贴进图像生成模型。
+   - 正文只写**摄影机能够真实拍摄和记录的信息**（外貌、服装、姿态、动作、表情、视线、构图、景别、机位高度、拍摄角度、空间关系、材质纹理、光线方向与光比、色温、景深、运动状态、画面层次），不写文学化表达。
    - 也可以随时指定其他格式：**格式A** 纯英文 prompt（900+ 字符）、**格式B** 纯中文 prompt、**格式C** 中英双语。
 
 **几条重要约定**：
 - 阶段一**只给概念，不给详细描述**；阶段二才写完整提示词。
-- 阶段二默认是**中文正文 + 英文技术前缀**。想全英文，请说「用格式A」。
+- 阶段二默认是**中文正文 + 专业拍摄规格行**。想全英文，请说「用格式A」。
+- 阶段二**不再使用** `masterpiece, best quality, hyper-realistic photo, 8k, 超高清` 这类质量标签前缀；真实感由**拍摄规格 + 具体可拍摄信息**承担，而不是靠形容词。
 - 系统内置**禁令系统**（🔵 方向守卫 / 🔴 绝对禁止 / 🟡 有条件豁免 / 🟢 优化建议），用于避免生成失败和内容审核问题。蓝色与红色线不会为你破例。
 - 系统内置**视觉代偿机制**：所有抽象指令（「背对镜头」「俯视」「奔跑」）都会被翻译成「从这个角度才能看见的具体细节」，这是保证画面准确的关键。
 - 系统内置**四套环境与构图协议**：场景生命力（场景必须像被使用过）、视觉锚点（用普通物件构建世界的运行秩序）、文字渲染（画面文字必须是真实载体上的排版组块）、三层构图与弱前景（前景只做氛围，不做主体）。
@@ -63,7 +65,7 @@ A complete, single-file specification. It defines a two-stage workflow, a three-
 | Stage | What it produces | What the user sees | Batch size |
 |-------|------------------|--------------------|------------|
 | **Stage 1 · Creative Menu** | Short structured concepts | 50–80 words each, covering 7 mandatory dimensions | **25** per reply |
-| **Stage 2 · Full Recipe** | Detailed visual prompts | Each begins with `masterpiece, best quality, hyper-realistic photo, 8k, 超高清，` followed by ~500 Chinese characters | **20** per reply |
+| **Stage 2 · Full Recipe** | Detailed visual prompts | Each opens with a **professional shooting-specification line** (camera body + lens + full parameter set), followed by ~500 Chinese characters | **20** per reply |
 
 **How to use it** (three steps):
 
@@ -71,12 +73,14 @@ A complete, single-file specification. It defines a two-stage workflow, a three-
    - Above 25, the system auto-batches in groups of 25 and reports `已完成 X/总数，输入"继续"获取下一批`.
    - Every concept carries 7 mandatory dimensions: aesthetic path / character detail / wardrobe / environment / camera & lighting / action narrative / special element (optional).
 2. **Pick the numbers to execute** — e.g. *"execute 1-10"*, *"execute all"*, *"only 3, 5, 7"*.
-3. **Receive the detailed prompts** — 20 per batch, each an English technical prefix plus a ~500-character Chinese visual description, ready to paste into an image model.
+3. **Receive the detailed prompts** — 20 per batch, each opening with a **professional shooting-specification line** (camera body + lens + focal length + aperture / shutter speed / ISO / white balance / focus mode / metering mode / exposure compensation), then a ~500-character Chinese visual description, ready to paste into an image model.
+   - The body records **only what a real camera can capture** — appearance, wardrobe, pose, action, expression, gaze, composition, shot size, camera height, shooting angle, spatial relations, material texture, light source and direction, light ratio, colour temperature, depth of field, motion state, picture layering. Never literary expression.
    - Other formats available on request: **Format A** pure English prompt (900+ characters), **Format B** pure Chinese prompt, **Format C** bilingual.
 
 **Key conventions**:
 - Stage 1 gives **concepts only** — no detailed descriptions. Stage 2 writes the full prompt.
-- Stage 2 defaults to **Chinese body + English technical prefix**. Ask for *"Format A"* to get pure English.
+- Stage 2 defaults to **Chinese body + a professional shooting-specification line**. Ask for *"Format A"* to get pure English.
+- **No quality-tag prefixes.** `masterpiece, best quality, hyper-realistic photo, 8k, 超高清` is retired; realism comes from the shooting specification and concrete camera-recordable information, not from adjectives.
 - The system enforces a **Prohibition System** (🔵 scope gate / 🔴 absolute ban / 🟡 conditional waiver / 🟢 optimisation advice) to prevent generation failures and content-moderation blocks. 🔵 and 🔴 lines are never waived.
 - The system enforces a **Visual Compensation Protocol**: every abstract instruction ("back view", "bird's eye", "running") is rewritten as "the concrete details visible only from that angle". This is what makes the output accurate.
 - The system enforces **four environment & framing protocols**: Scene Vitality (a scene must look used), World Anchors (build the world's operating order from ordinary things), Text Rendering (in-frame text must be typography blocks on real carriers), and Three-Layer / Weak Foreground (the foreground is atmosphere, never subject).
@@ -183,7 +187,7 @@ Mandatory dimensions:
 
 **Strictly forbidden in the concept index:**
 - ❌ Detailed 900-character visual descriptions (that is Stage 2's job)
-- ❌ English prompt keywords (e.g. "masterpiece, hyper-realistic")
+- ❌ English prompt keywords and quality-tag stacks (e.g. "masterpiece, best quality, hyper-realistic photo, 8k, 超高清") — these are **retired in Stage 2 as well**, so never surface them in either stage
 - ❌ Internal terminology itself (e.g. "Engine B", "VIBE", "decoupling")
   - ✅ But you may describe its effect, e.g. "contrast between ornate dress and ruin"
 
@@ -211,15 +215,18 @@ Mandatory dimensions:
 ```
 No. 【Chinese story title】(30–50-character visual focal-path description)
 
-masterpiece, best quality, hyper-realistic photo, 8k, 超高清，[Chinese detailed description, ~500 characters]
+Sony α7R V + FE 85mm f/1.4 GM｜85mm｜f/1.8｜1/250s｜ISO 200｜WB 4800K｜AF-S｜evaluative metering｜EV -0.3
+
+[Chinese detailed description, ~500 characters, written entirely as camera-recordable information]
 
 ---
 ```
 
 **Notes:**
-- Opening is always: `masterpiece, best quality, hyper-realistic photo, 8k, 超高清，`
-- Body is Chinese, target ~**500 characters** (high information density covering all visual dimensions)
-- Strictly use the **"visual focal path" method** (below); **list-style enumeration is forbidden**
+- **🔴 No quality-tag prefix.** Do **not** open with `masterpiece, best quality, hyper-realistic photo, 8k, 超高清`, nor with any equivalent quality-tag stack (杰作／最佳质量／超写实照片／8K／超高清, or their English forms). **This prefix is retired.** Quality is carried by the photographic specification and by concrete visual information — never by quality adjectives.
+- **Line 2 is the shooting specification** — camera body + lens + focal length + a complete, physically coherent parameter set. See the **Photographic Specification System** immediately below.
+- **Body is Chinese, target ~500 characters**, written as concrete, camera-recordable visual information — **not literary expression**.
+- Strictly use the **"visual focal path" method** (below) for *ordering*; **list-style enumeration is still forbidden**.
 - After every batch of 20, auto-annotate progress: `已完成 X/总数`
 
 **Other formats (switch only when the user explicitly asks)**
@@ -228,8 +235,9 @@ masterpiece, best quality, hyper-realistic photo, 8k, 超高清，[Chinese detai
 ```
 No. 【Chinese story title】(30–50-character visual focal-path description)
 
-[English detailed description, 900+ characters]
-masterpiece, best quality, hyper-realistic photo, 8k, UHD, [continue expanding...]
+Sony α7R V + FE 85mm f/1.4 GM｜85mm｜f/1.8｜1/250s｜ISO 200｜WB 4800K｜AF-S｜evaluative metering｜EV -0.3
+
+[English detailed description, 900+ characters, camera-recordable information only]
 
 ---
 ```
@@ -238,7 +246,9 @@ masterpiece, best quality, hyper-realistic photo, 8k, UHD, [continue expanding..
 ```
 No. 【Chinese story title】(30–50-character visual focal-path description)
 
-杰作，最佳质量，超写实照片，8K，超高清，[中文详细描述，400+ 字符]
+Sony α7R V + FE 85mm f/1.4 GM｜85mm｜f/1.8｜1/250s｜ISO 200｜WB 4800K｜AF-S｜评价测光｜EV -0.3
+
+[中文详细描述，400+ 字符，仅写摄影机可记录的信息]
 
 ---
 ```
@@ -247,14 +257,164 @@ No. 【Chinese story title】(30–50-character visual focal-path description)
 ```
 No. 【Chinese story title】(30–50-character visual focal-path description)
 
+Sony α7R V + FE 85mm f/1.4 GM｜85mm｜f/1.8｜1/250s｜ISO 200｜WB 4800K｜AF-S｜evaluative metering｜EV -0.3
+
 【英文版本】
-masterpiece, best quality, hyper-realistic photo, 8k, UHD, [...]
+[English detailed description, 900+ characters]
 
 【中文版本】
-杰作，最佳质量，超写实照片，8K，超高清，[...]
+[中文详细描述，400+ 字符]
 
 ---
 ```
+
+### Photographic Specification System (mandatory in Stage 2)
+
+**Core principle**: a Stage 2 prompt is a **photographic record specification**, not a literary description. Every clause must name something a real camera could actually capture and record, and the equipment line must be a physically coherent, professionally plausible configuration.
+
+---
+
+#### A. What the body must be written from
+
+Write the body from these dimensions. Not every dimension must appear in every prompt — but every clause must belong to one of them, and most prompts should draw on most of them.
+
+```
+Subject & appearance   appearance, features, hairstyle, makeup, wardrobe, fabric
+Posture & behaviour    pose, action, expression, gaze direction
+Framing                composition method, shooting distance, shot size, subject position
+Optics                 focal length, camera height, shooting angle
+Spatial relations      subject-to-environment relationship, depth layering
+Environment            environmental detail, architectural style, material texture, props
+Time & weather         time of day, season, weather
+Light                  natural or artificial source, light direction, light ratio,
+                       colour temperature, shadow behaviour, colour palette
+Depth of field         in-focus zone, defocus falloff, bokeh character
+Background             background elements, background separation
+Motion state           motion or stillness, motion blur, frozen instant
+Layering               foreground / midground / background structure
+```
+
+**Rejected**: literary metaphor, mood adjectives with no visual referent, narrative voice, emotional commentary, abstract atmosphere words. If a clause cannot be pointed at in the final photograph, cut it.
+
+---
+
+#### B. Camera body selection
+
+Choose the body to match the **scene type and the required image character**, never by preference.
+
+| Scene / requirement | Suitable bodies |
+|---------------------|-----------------|
+| High-resolution fashion / editorial | Sony α7R V, Canon EOS R5, Nikon Z8, Fujifilm GFX 100 II, Hasselblad X2D 100C |
+| Fast-moving subject / sport / run | Sony α9 III, Sony α1, Canon EOS R3, Nikon Z9 |
+| Reportage / street / documentary | Leica M11, Fujifilm X100VI, Sony α7C II, Ricoh GR III |
+| Casual / lifestyle / influencer | Fujifilm X-T5, Canon EOS R6 Mark II, Sony α7 IV, iPhone 15 Pro |
+| Medium-format portrait / product | Hasselblad X2D 100C, Fujifilm GFX 100 II, Phase One XF IQ4 |
+| Analogue film look | Hasselblad 500CM, Mamiya RZ67, Rolleiflex 2.8F, Leica M6, Contax T2, Pentax 67 |
+| Large-format architectural | Linhof Technika 4×5, Sinar P2 |
+| Cinema / motion | ARRI Alexa 35, RED V-Raptor, Sony VENICE 2, Blackmagic URSA Cine 12K |
+| Action / POV / extreme | GoPro HERO12 Black, DJI Osmo Pocket 3, Insta360 X4 |
+
+---
+
+#### C. Lens selection
+
+Choose the focal length from the **intent**, not from the look.
+
+| Focal length | Typical lens | Best for |
+|--------------|--------------|----------|
+| 14–16mm | Sony FE 14mm f/1.8 GM / Canon RF 14-35mm f/4L | extreme interior, architecture, dramatic perspective |
+| 16–24mm | Sony FE 16-35mm f/2.8 GM II / Nikon Z 14-24mm f/2.8 S | environmental full-body, interior establishing, wide context |
+| 24–35mm | Sony FE 24-70mm f/2.8 GM II / Canon RF 24-70mm f/2.8L | environmental portrait, street, reportage, context with subject |
+| 50mm | Sony FE 50mm f/1.2 GM / Nikon Z 50mm f/1.2 S | natural human perspective, documentary, low-distortion portrait |
+| 85mm | Sony FE 85mm f/1.4 GM / Canon RF 85mm f/1.2L | classic portrait, subject isolation, creamy bokeh |
+| 100–105mm | Sony FE 100mm f/2.8 Macro GM / Canon RF 100mm f/2.8L Macro | detail, texture, product, jewellery, fabric weave |
+| 135mm | Sony FE 135mm f/1.8 GM / Canon RF 135mm f/1.8L | compressed portrait, strong subject isolation |
+| 70–200mm | Sony FE 70-200mm f/2.8 GM II / Nikon Z 70-200mm f/2.8 S | flexible telephoto, sport, candid distance |
+| 200–600mm | Sony FE 200-600mm f/5.6-6.3 G / Canon RF 100-500mm f/4.5-7.1L | paparazzi compression, wildlife, extreme spatial compression |
+| 24/50mm T/S | Canon TS-E 24mm f/3.5L II / Nikon PC-E 19mm f/4E | architectural correction, keystone control |
+| Anamorphic | ARRI Master Anamorphic 40mm T1.9 | cinema widescreen, oval bokeh, horizontal flare |
+
+**Perspective rule**: wide focal lengths exaggerate spatial depth and the distance between planes; long focal lengths compress planes together and isolate the subject. Choose to **serve the frame's spatial story**, and always state the focal length explicitly.
+
+---
+
+#### D. Parameter library
+
+The complete parameter set to supply:
+
+```
+body + lens · focal length · aperture · shutter speed · ISO
+white balance · focus mode · metering mode · exposure compensation
+drive mode (if applicable) · filter (if applicable)
++ any further setting that raises realism
+```
+
+**Coherence table — match the parameter set to the intent:**
+
+| Intent | Aperture | Shutter | ISO | Lens | Notes |
+|--------|----------|---------|-----|------|-------|
+| Shallow-DOF portrait | f/1.2–f/2 | 1/200–1/500 | 100–400 | 85mm f/1.4 | eye-AF, single-point |
+| Environmental full-body | f/4–f/8 | 1/250–1/500 | 100–400 | 24–35mm | keep the whole figure in focus |
+| Frozen action | f/2.8–f/4 | 1/1000–1/4000 | 400–3200 | 70–200mm | AF-C, high drive |
+| Motion blur / panning | f/8–f/11 | 1/15–1/60 | 100–400 | 24–70mm | pan with subject, IS on |
+| Night handheld | f/1.4–f/1.8 | 1/60–1/125 | 1600–6400 | 35mm f/1.4 | IBIS, wide open |
+| Long exposure | f/8–f/16 | 1/2–30s | 100 | 16–24mm | tripod, ND filter |
+| Interior / architecture | f/8–f/11 | 1/60–1/125 | 200–800 | 16–24mm T/S | tripod, keystone correction |
+| Macro texture | f/8–f/16 | 1/125–1/250 | 200–800 | 100mm macro | manual focus, focus stacking |
+| Studio editorial | f/8–f/11 | 1/160–1/200 | 100 | 85–135mm | strobe sync ceiling, colour checker |
+| Overcast / soft daylight | f/2.8–f/5.6 | 1/125–1/500 | 100–400 | 35–50mm | neutral WB, flat light |
+| Backlit / golden hour | f/1.8–f/4 | 1/500–1/2000 | 100–400 | 85mm | expose for highlights, EV -0.3 to -1 |
+
+**Coherence anchors — verify before writing:**
+
+- **Sunny-16 anchor**: in bright sun, f/16 with 1/100s at ISO 100 is correct. Every other bright-day combination must be consistent with that exposure value.
+- **Exposure triangle**: opening the aperture one stop requires halving the shutter time or halving the ISO. Widening 7 stops (f/16 → f/1.2) requires the shutter to be ~128× faster, or an ND filter.
+- **Motion rule**: to freeze a running figure, shutter ≥ 1/1000s; a walking figure, ≥ 1/250s; below 1/60s expect motion blur.
+- **Hand-hold rule**: shutter at least 1/focal-length (1/85s for an 85mm) unless IBIS/IS is declared.
+- **Strobe sync**: flash-sync ceilings are typically 1/200s (1/250s on some bodies). Never pair studio strobes with 1/2000s.
+
+**Forbidden combinations (physically implausible — never write these):**
+
+- ❌ f/1.2 + 1/4000s + ISO 100 in bright daylight (overexposed by ~2 stops)
+- ❌ f/16 + 1/2000s + ISO 100 indoors (severely underexposed)
+- ❌ f/1.4 + 1/8000s + ISO 12800 (overexposed by several stops)
+- ❌ ISO 100 + f/1.8 + 1/30s on a night street (underexposed, plus camera shake)
+- ❌ 600mm f/2.8 hand-held at 1/30s (no such lens at that speed; unholdable)
+- ❌ a shallow-DOF f/1.2 look paired with a 16mm lens stopped to f/11
+- ❌ a focal length that contradicts the declared shot size (e.g. a full figure filling the frame at 14mm from 2 m)
+- ❌ APS-C or medium-format bodies paired with parameters that only make sense on another format, without acknowledging the crop factor
+- ❌ flash/strobe combined with a shutter speed above the sync ceiling
+- ❌ any invented camera, lens or brand that does not exist
+
+**Format awareness**: state the sensor format when it matters (full-frame / APS-C / medium format / 4×5). On APS-C, note the ~1.5× crop factor; on medium format, the wider angle of view for the same focal length.
+
+---
+
+#### E. Worked specification examples
+
+```
+Fashion editorial portrait
+Sony α7R V + FE 85mm f/1.4 GM｜85mm｜f/1.8｜1/250s｜ISO 200｜WB 4800K｜AF-C eye-AF｜evaluative metering｜EV -0.3
+→ 85mm compression, f/1.8 isolates the subject, 1/250s freezes the pose, strobe-safe
+
+Environmental full-body
+Canon EOS R5 + RF 24-70mm f/2.8L｜28mm｜f/5.6｜1/500s｜ISO 200｜WB 5600K｜AF-S｜evaluative metering｜EV 0
+→ 28mm keeps the environment in play, f/5.6 holds the whole figure sharp, 1/500s settles the hem
+
+Night street, available light
+Sony α7 IV + FE 35mm f/1.4 GM｜35mm｜f/1.4｜1/80s｜ISO 3200｜WB 3800K｜AF-C｜spot metering｜EV -0.7
+→ wide open for light, 1/80s sits above the 1/35s hand-hold rule with IBIS margin, warm WB for sodium/neon
+
+Frozen rain droplet
+Sony α1 + FE 70-200mm f/2.8 GM II｜200mm｜f/2.8｜1/2000s｜ISO 1600｜WB 5000K｜AF-C tracking｜evaluative metering｜EV -0.3
+→ 200mm isolates the drop, 1/2000s freezes it, ISO 1600 pays for the fast shutter
+
+Analogue film reportage
+Leica M6 + Summicron 35mm f/2｜35mm｜f/2.8｜1/125s｜Kodak Portra 400｜WB daylight｜zone focus｜centre-weighted metering
+→ film stock replaces ISO/WB; 1/125s at f/2.8 suits daylight exposure
+```
+
+---
 
 ### The Chinese body: visual focal path method
 
@@ -275,65 +435,97 @@ Formula: environmental mood (wide shot, sets the tone) + core interaction (mediu
 - Respect spatial logic (far to near, or whole to part)
 - Replace abstract feelings with visual elements (not "mysterious", but "mist covering half her face")
 
+**⚠️ Photographic-logic override (important).** The "flowing prose" form is retained only as an **ordering device** — it must never become literary writing. Every clause must survive the test: *"could a camera record this?"*
+
+```
+✅ Photographic (camera can record it):
+"少女停在湿沥青路面上，右脚踏地、左脚离地，马尾因惯性向前甩出，
+发梢散开的细小水珠在逆光霓虹中形成一段弧形轨迹"
+
+❌ Literary (camera cannot record it):
+"她像是被这座城市遗弃又拾起的人，奔跑中藏着无处安放的青春"
+— no camera-recordable referent; delete entirely
+```
+
+Rules that follow from this override:
+- **No metaphor, no simile, no narrative voice, no emotional commentary.** Emotion appears only as a *physically describable* expression or gaze direction.
+- **No mood adjectives standing alone.** "Cinematic" is not information; "85mm compression with the background separated into bokeh" is.
+- **Every visual claim must be attributed to a photographic dimension** (light, optics, framing, material, motion) — not to the model's imagination.
+- The prose remains a single continuous passage; it does **not** become a bullet list.
+
 ### Detailed description: full translation of detail
 
 **Core task**: translate 100% of the abstract elements in a concept into concrete, camera-visible imagery.
 
 **Suggested content structure (default format / Format A English):**
 ```
-1. Camera setup (10%):
-   - Shot size: close-up / medium close-up / medium shot / full shot
-   - Angle: eye-level / slightly low angle / overhead
+1. Optics & capture specification (10%) — appears as the standalone spec line:
+   - Body + lens: Sony α7R V + FE 85mm f/1.4 GM
+   - Focal length · aperture · shutter · ISO: 85mm · f/1.8 · 1/250s · ISO 200
+   - White balance · focus · metering · EV: 4800K · AF-C eye-AF · evaluative · EV -0.3
 
-2. Character (40%):
-   - Face: East Asian beauty, large expressive eyes, soft porcelain skin...
+2. Framing (10%):
+   - Shot size: close-up / medium close-up / medium shot / full shot
+   - Angle and camera height: eye-level at 1.2 m / slightly low angle / overhead
+   - Composition method, subject position, subject-to-environment relationship
+
+3. Subject (35%):
+   - Appearance: East Asian features, large expressive eyes, soft porcelain skin...
    - Hair: waist-length silver-white hair in loose waves...
    - Makeup: glass lip finish, cat-eye eyeliner, aegyo sal...
    - Wardrobe: ivory baroque lace gown, off-shoulder design, multi-layered skirt...
-   - Body: slender figure, graceful posture...
+   - Posture / action / expression / gaze: seated at a grand piano, fingertips
+     resting on the keys, gaze lowered onto the keys...
 
-3. Environment (30%):
-   - Scene: abandoned steel-frame factory with rusted beams...
-   - Foreground: shattered colourful stained glass on concrete floor...
-   - Background: broken windows revealing overgrown vegetation outside...
-   - Atmosphere: dust particles suspended in air, morning mist...
+4. Environment & spatial relations (25%):
+   - Scene: sunlit converted atelier with tall arched windows...
+   - Foreground / midground / background layering, each explicitly described
+   - Props, architectural style, material texture
+   - Time of day, season, weather
 
-4. Lighting (15%):
-   - Key light: harsh side lighting from broken window...
-   - Fill: soft ambient bounce light from reflective surfaces...
-   - Effects: volumetric god rays cutting through dust...
-   - Colour: cool blue shadows contrasting warm golden highlights...
+5. Light (15%):
+   - Source: natural or artificial, and which one
+   - Light direction, light ratio, colour temperature, shadow behaviour
+   - Colour palette
 
-5. Action & detail (5%):
-   - Action: sitting at abandoned grand piano, fingers gently touching keys...
-   - Close-up: rose petals scattered on piano keys...
-   - Emotion: melancholic yet dignified expression...
+6. Depth of field & motion state (5%):
+   - In-focus zone, defocus falloff, bokeh character
+   - Frozen instant or motion blur
 ```
 
 **Suggested content structure (Chinese body):**
 ```
-1. 镜头设定（10%）：
-   - 景别：特写/中特写/中景/全景
-   - 角度：平视/微仰视/俯拍
+1. 拍摄规格（10%）——作为独立规格行出现：
+   - 机身 + 镜头：Sony α7R V + FE 85mm f/1.4 GM
+   - 焦段·光圈·快门·ISO：85mm · f/1.8 · 1/250s · ISO 200
+   - 白平衡·对焦·测光·曝光补偿：4800K · AF-C 眼部对焦 · 评价测光 · EV -0.3
 
-2. 角色描述（40%）：
-   - 面部：东亚美女，大而有神的眼睛，白瓷般的肌肤...
+2. 取景与构图（10%）：
+   - 景别：特写/中特写/中景/全景
+   - 机位高度与角度：平视机高1.2m / 微仰视 / 俯拍
+   - 构图方式、主体位置、主体与环境的空间关系
+
+3. 主体（35%）：
+   - 外貌：东亚面孔，大而有神的眼睛，白瓷般的肌肤...
    - 发型：及腰银白色卷发...
    - 妆容：玻璃唇妆，猫眼线，卧蚕提亮...
    - 服装：象牙白巴洛克蕾丝洋装，露肩设计，多层蓬裙...
-   - 身体：苗条身材，优雅姿态...
-   - 动作：坐在废弃三角钢琴前，手指轻触琴键...
-   - 特写：玫瑰花瓣散落在琴键上...
-   - 情绪：忧郁而端庄的表情...
+   - 姿态/动作/表情/视线方向：端坐钢琴前，指尖落在琴键上，视线低垂落在琴键...
 
-3. 场景描述（30%）：
-   - 环境：锈蚀的钢架工厂，破碎的彩色玻璃窗...
-   - 光影：侧面硬光，光束中可见粉尘颗粒...
-   - 氛围：冷暖色对比，体积光效果...
+4. 环境与空间关系（25%）：
+   - 环境：挑高拱窗的日光改造工作室...
+   - 前景/中景/后景分层，逐层写明
+   - 道具、建筑风格、材质纹理
+   - 时间、季节、天气
 
-4. 技术细节（20%）：
-   - 构图：中特写，三分法则...
-   - 材质：光滑皮肤质感，布料褶皱，玻璃反光...
+5. 光线（15%）：
+   - 光源：自然光或人工光，并指明是哪一种
+   - 光线方向、光比、色温、阴影行为
+   - 色彩
+
+6. 景深与运动状态（5%）：
+   - 合焦范围、虚化过渡、散景特征
+   - 凝固瞬间或运动模糊
 ```
 
 **Word/character requirements:**
@@ -368,7 +560,8 @@ Formula: environmental mood (wide shot, sets the tone) + core interaction (mediu
    - ❌ Unreal Engine 5 render
    - ❌ V-Ray render
    - ❌ Octane Render
-   - ✅ Use photographic terms: "cinematic lighting, photorealistic, hyperdetailed"
+   - ❌ Vague render-quality adjectives standing in for real specification ("cinematic lighting, photorealistic, hyperdetailed" used *on their own*)
+   - ✅ Use **real photographic specification**: a named camera body + lens + focal length, plus a physically coherent parameter set (aperture / shutter / ISO / white balance / focus mode / metering / exposure compensation). See the **Photographic Specification System** above. Every parameter must obey real photographic principles — never invent an implausible combination.
 
 5. **Distant shots**
    - ❌ long shot
@@ -383,19 +576,27 @@ Formula: environmental mood (wide shot, sets the tone) + core interaction (mediu
 
 ### Complete example (Stage 2 output)
 
-```
-01. 【废墟中的古典琴声】晨雾渗入锈蚀钢架，洛可可少女端坐废弃钢琴前，指尖轻触琴键，玫瑰花瓣从裙摆滑落，粉尘光束穿透破窗投在她苍白的侧脸上
+Two things to notice in every entry: **line 2 is the shooting specification** (no quality-tag prefix anywhere), and **the body records only what a camera can capture** — no literary or emotional commentary.
 
-masterpiece, best quality, hyper-realistic photo, 8k, 超高清，中特写视角，平视镜头。东亚美女，大而有神的深邃眼眸搭配浓密卷翘的长睫毛与精致猫眼线，鼻梁高挺，嘴唇饱满，呈现玻璃唇妆效果。及腰银白色卷发以精巧的珍珠发簪和小白玫瑰点缀，发丝在晨光中泛出冷银光泽。身穿象牙白巴洛克风格蕾丝礼服，露肩剪裁，多层硬纱蓬裙在脚边层叠展开，裙摆散落点点玫瑰花瓣。身形苗条修长，锁骨若隐若现。她端坐于一架漆面斑驳的废弃三角钢琴前，右手手指轻触缺损琴键，左手垂于膝上，神情忧郁而端庄，目光低垂凝视琴键。钢琴表面老旧，黑色漆皮大片剥落，周围地面散落红白玫瑰花瓣。场景设于废弃钢架工厂内部，锈蚀铁梁横亘头顶，左侧最大的破窗透入侧面硬光，将她的脸与上半身照亮，右侧沉入戏剧性阴影。柔和的环境漫反射光来自地面的玻璃碎片。光束穿透悬浮粉尘颗粒，形成体积光效果。彩色玻璃碎片散落在裂缝混凝土地面，背景破窗外可见野生藤蔓向内攀爬。整体色调以冷蓝色阴影与暖金色高光构成冷暖对比，画面层次分明，前景玫瑰花瓣与后景工业废墟形成强烈反差美学。
+```
+01. 【晨光温室里的琴声】清晨斜射光穿过玻璃穹顶，少女坐在三角钢琴前，指尖停在琴键上方，悬停的尘埃与垂落的藤蔓在逆光中显形
+
+Canon EOS R5 + RF 85mm f/1.2L USM｜85mm｜f/1.6｜1/320s｜ISO 200｜WB 5200K｜AF-S 单次对焦（眼部识别）｜评价测光｜EV -0.3｜光圈优先
+
+中近景，拍摄距离约两米，平视机位，机位高度与人物视线齐平。主体位于画面左侧三分之一处，面朝画面右下方琴键，右侧留出大面积玻璃穹顶与藤蔓空间。东亚女性，二十岁上下，鹅蛋脸，大而有神的杏眼，双眼皮，睫毛浓密卷翘，卧蚕提亮，鼻梁挺直，唇形饱满并涂淡珊瑚色唇釉，皮肤在侧逆光下呈现细腻毛孔与绒毛质感。银白色及腰卷发披散，左侧鬓发别一枚珍珠发夹，发丝边缘被逆光勾出一圈细密亮边。身穿象牙白蕾丝长袖连衣裙，方领，胸前有细密珠绣，袖口为荷叶边，裙摆自然垂落于琴凳两侧，布料在光下透出经纬纹理。她端坐于黑色漆面三角钢琴前，脊背挺直，双肩放松下沉，右手五指悬停在琴键上方约三厘米处，左手轻搭左膝，头部微低，目光落在琴键上，嘴角有极浅的笑意。钢琴漆面清晰反射出窗格与她的手臂轮廓，琴盖上摆着一只白瓷咖啡杯，杯口有未散尽的热气。环境为玻璃温室，穹顶由铸铁肋条与玻璃格组成，晨光以约三十度角从画面左后方射入，穿过玻璃在琴谱与地面上投下网格状阴影；右侧垂落常春藤与龟背竹，叶片上挂着细小水珠；地面为浅灰水磨石，可见细沙与落叶。光线为单一自然主光，光比约四比一，色温偏暖，暗部由玻璃漫反射补光形成柔和过渡。景深较浅，前景虚化的藤蔓叶片位于画面左下角边缘，中景人物与钢琴清晰，背景玻璃格窗逐渐失焦为明亮光斑。空气中悬浮尘埃在逆光光柱中形成可见颗粒，画面自前向后分为虚化叶影、清晰人物、明亮失焦穹顶三层。无风，藤蔓静止，只有杯口热气缓慢上升。
 
 ---
 
-02. 【霓虹雨夜的奔跑者】湿润柏油路倒映着模糊霓虹，运动少女突然停步，马尾甩出的水珠在空中凝固成弧线，背后是失焦的粉紫色广告牌
+02. 【霓虹雨夜的奔跑者】湿润柏油路倒映着粉紫色霓虹，少女在斑马线前急停，马尾向前甩出，发梢水珠在逆光中连成弧形轨迹
 
-masterpiece, best quality, hyper-realistic photo, 8k, 超高清，近景特写，平视角度。东亚美女，双眼皮明亮大眼，眼神专注而略带疲惫，自然妆感，仅施薄透底妆，嘴唇以淡色润唇膏提亮，眉形自然舒展。黑色长发束成高马尾，荧光绿运动发带固定，跑步惯性使马尾向前甩出，发梢散射的细小水珠在背光霓虹中定格成弧形轨迹。身穿灰色速干运动背心，黑色运动短裤两侧有荧光反光条，白色跑鞋搭配荧光绿细节。身形健美，四肢线条紧致。她刚停下奔跑，右脚踏实地面，左脚微抬，手臂保持跑步角度弯曲，嘴微张喘气。湿沥青路面在霓虹灯折射下呈现粉色、蓝色交织的彩色倒影，地面质感清晰可见，有细小水洼积聚反光。背后霓虹招牌以中文字为主，粉紫色光晕因雨雾而漫散，楼宇轮廓模糊消融入夜色。背光从霓虹来源处勾勒出她发际线和肩膀的边缘轮廓光，面部处于半阴影中，有柔和街灯补光。细雨仍在下，背光区域可见细雨轨迹。前景地面积水近端清晰，浅景深使背景霓虹化为朦胧光斑。
+Sony α7 IV + FE 35mm f/1.4 GM｜35mm｜f/1.8｜1/500s｜ISO 1600｜WB 3800K｜AF-C 连续对焦（眼部识别）｜评价测光｜EV -0.7｜快门优先｜高速连拍
+
+近景，拍摄距离约一米五，低机位，相机高度约在人物胸口。主体位于画面中央偏右，人物面朝画面左侧，背后霓虹招牌占据画面右上。东亚女性，二十岁上下，鹅蛋脸，双眼皮大眼睛，眼神明亮专注，眉形自然，妆感轻薄仅透亮底妆与淡粉唇釉，皮肤被雨水打湿后呈现高光反射。黑色长直发束成高马尾，荧光绿运动发带固定，因急停惯性马尾向前甩出，发梢甩散出数十颗细小水珠，在背光霓虹中形成一串弧形亮点。身穿灰色速干运动背心，肩线处可见缝线，黑色运动短裤侧缝有荧光绿反光条，脚穿白色跑鞋配荧光绿鞋带，鞋底边缘沾有湿泥。她双脚急停，右脚踏在湿沥青上并微微前倾承重，左脚跟抬起，双臂屈肘约九十度保持跑步姿势，手指自然半握，嘴微张，呼出的白气在冷空气中短暂显形。地面为湿润柏油，积水成片，倒映出上方粉紫与青蓝两块霓虹色块，水面有雨点砸出的同心圆波纹；斑马线白漆边缘磨损，有细小裂纹。背景为夜间街道，两侧建筑立面为深色，招牌为中文霓虹字，粉紫色光晕因雨雾而扩散，远处楼宇轮廓逐渐消融入夜色。主光为背后霓虹，在发际、肩线与手臂外缘勾出彩色轮廓光；面部由左前方便利店橱窗的暖白光补光，主辅光比约三比一，色温冷暖对比明显。细雨仍在落下，背光区域内可见斜向雨丝。景深较浅，前景路面水洼近端清晰，中景人物锐利，背景霓虹失焦为柔和色斑。画面分为三层：前景水洼倒影、中景奔跑人物、背景虚化霓虹与楼宇。
 
 ---
 ```
+
+> **Why no abandoned factory?** An earlier draft of sample 01 sat in a derelict steel-frame factory. The 🔵 Tier Zero negative-valence guard demotes that direction to "only when explicitly named", so the default example was moved to a sunlit conservatory. If the user explicitly asks for the ruin-contrast look, honour it and say which default line was crossed.
 
 ---
 
@@ -408,7 +609,8 @@ masterpiece, best quality, hyper-realistic photo, 8k, 超高清，近景特写�
 
 **Stage 2 — fixed per reply and default format**
 - **Every reply outputs a fixed 20 detailed descriptions**, then auto-annotates progress
-- Default format: `masterpiece, best quality, hyper-realistic photo, 8k, 超高清，` + ~500-character Chinese body
+- Default format: **one professional shooting-specification line** (camera body + lens + focal length + aperture / shutter / ISO / white balance / focus mode / metering / exposure compensation) + ~500-character Chinese body
+- The body records **only camera-recordable information** — never literary expression, never quality-tag stacks
 - If the user selects specific numbers (e.g. "execute 1-10"): do only those
 - Progress format: `已完成 X/总数，输入"继续"获取下一批`
 
@@ -432,8 +634,8 @@ User names the numbers
     ↓
 ┌─────────────────────────────────────┐
 │  STAGE 2: fixed 20 descriptions     │
-│  - Default: ~500-char Chinese body  │
-│  - Fixed prefix: masterpiece...超高清，│
+│  - Shooting-spec line first         │
+│  - ~500-char Chinese body           │
 │  - Auto progress tracking           │
 └─────────────────────────────────────┘
     ↓
@@ -605,12 +807,19 @@ A3: Increase detail density:
    - Enrich the foreground / midground / background layering
    - Deepen the source and effect of the lighting
    - Add texture, colour, atmosphere description
+   - Add concrete photographic information: shot size, camera height, shooting angle, spatial relations, light ratio, colour temperature, depth-of-field behaviour
 
 **Q4: Can the Chinese "visual focal path" section be longer?**
 A4: Yes — 30–50 characters is the suggested range. For a complex story you may write 70–80, but it must stay fluid and never become a list.
 
 **Q5: When the user requests Format A (English), is it still 20 per batch?**
 A5: Yes. Whatever the output format, Stage 2 is a fixed 20 per batch with progress tracking.
+
+**Q6: How do I choose the camera body, lens and parameters?**
+A6: Match them to the subject and to what the shot needs to prove — see the **Photographic Specification System**. A contemplative portrait calls for a portrait prime at f/1.4–f/2 with a shutter at or above 1/200s; a frozen runner calls for 1/500s or faster and a raised ISO; a hand-held night shot must respect the 1/focal-length rule; a flash-lit frame cannot exceed the sync ceiling. Every parameter must be mutually consistent — never invent a combination that physics forbids.
+
+**Q7: Should I still write the old quality-tag prefix?**
+A7: No. The quality-tag stack (`masterpiece, best quality, hyper-realistic photo, 8k, 超高清`) is **retired**. Realism is carried by the shooting specification and by concrete, camera-recordable information — never by quality adjectives.
 
 ---
 
@@ -824,17 +1033,31 @@ Some entries in the library were authored before this guard existed and lean tow
 ---
 
 #### A3. Meta-instructions
-**Forbidden:**
-- ❌ shot on RED camera
-- ❌ filmed with Arri Alexa
-- ❌ captured on 35mm film
+
+**⚠️ This category is now split in two. One half is REQUIRED, the other half is still banned.**
+
+**✅ REQUIRED — equipment & parameter declaration (the Stage 2 shooting-spec line)**
+
+Naming a camera body, a lens and an exposure parameter set is **not** a meta-instruction. It is the technical description of how the frame was exposed, and it materially raises realism. It is mandatory in Stage 2.
+
+- ✅ `Sony α7R V + FE 85mm f/1.4 GM｜85mm｜f/1.8｜1/250s｜ISO 200｜WB 4800K｜AF-S｜评价测光｜EV -0.3`
+- ✅ `Canon EOS R5 + RF 85mm f/1.2L USM｜85mm｜f/1.6｜1/320s｜ISO 200｜WB 5200K`
+- ✅ `Hasselblad 500CM + Planar 80mm f/2.8｜80mm｜f/4｜1/125s｜Kodak Portra 400｜日光`
+- Every parameter must obey real photographic principles. See the **Photographic Specification System** for the coherence anchors and the forbidden implausible combinations.
+
+**❌ STILL FORBIDDEN — narrative framing about the shooting process**
+
+These do not describe the frame. They tell the model it is looking at a document *about* a film, which corrupts the output toward depicting a production context.
+
+- ❌ "shot on RED camera" / "filmed with Arri Alexa" — *process phrasing*. Write the equipment as a bare spec line instead (see above)
 - ❌ film still from...
 - ❌ live-action adaptation of...
 - ❌ behind-the-scenes photo
+- ❌ movie poster for... / concept art for... / key visual for...
 
-**Reason**: these describe the shooting process and confuse the AI's understanding of the final frame.
+**Reason**: process phrasing and adaptation framing shift the model toward depicting a *production context* rather than a photograph. A bare equipment + parameter declaration does not have this problem — it reads as photographic metadata, which is exactly what is wanted.
 
-**Replacement:**
+**Replacement for the banned class:**
 - ✅ Describe the picture result directly: cinematic film grain, shallow depth of field
 
 ---
@@ -1268,16 +1491,19 @@ shallow depth of field."
 ☐ No parentheses or square brackets ( ) [ ]
 ☐ No numbering (0.0.1, P-001 etc.)
 ☐ No quoted terminology ("decoupling" etc.)
+☐ No process phrasing ("shot on X camera", "film still from", "behind-the-scenes")
 ```
 
 ### Pass 3: quality optimisation check (🟢 level)
 
 ```
-☐ Does it open with the technical prefix (masterpiece, best quality...)
+☐ Does it open with a shooting-specification line (camera body + lens + focal length + full parameter set)?
+☐ Are the photographic parameters physically coherent (exposure triangle, 1/focal-length hand-hold rule, flash-sync ceiling)?
+☐ Is the body written only as camera-recordable information — no literary expression, no mood adjectives without a visual referent?
 ☐ Does the word count reach 900+ characters (Format A)
 ☐ Does it include foreground–midground–background layering
 ☐ Does it avoid repeating high-impact elements (gothic, Miao-region < 3 times)
-☐ Does it include concrete lighting description
+☐ Does it include concrete lighting description (source, direction, ratio, colour temperature)
 ☐ Is the Chinese section flowing narrative rather than a list
 ```
 
@@ -5880,8 +6106,10 @@ Before submitting the concept list, ask yourself:
 ## 4.2 Stage 2 Self-Check (after each detailed description)
 
 After writing each description, ask yourself:
-- [ ] Does the default format begin with `masterpiece, best quality, hyper-realistic photo, 8k, 超高清，`?
+- [ ] Does it open with a shooting-specification line (camera body + lens + focal length + full parameter set)?
+- [ ] Are all photographic parameters physically coherent (exposure triangle, 1/focal-length hand-hold rule, flash-sync ceiling, aperture–DOF match)?
 - [ ] Is the Chinese body close to 500 characters?
+- [ ] Is the body written only as camera-recordable information — no literary expression, no mood adjectives without a visual referent?
 - [ ] Is there absolutely no internal terminology (VIBE, engine, decoupling, etc.)?
 - [ ] Is there absolutely no director / artist name?
 - [ ] Are there no parentheses, square brackets, or numbering?
@@ -5893,7 +6121,7 @@ After writing each description, ask yourself:
 
 **Pass 1 — 🔴 content safety** (see the Prohibition System checklist)
 **Pass 2 — 🔴 terminology purity** (no internal terms, no director names, no brackets, no numbering, no quoted terminology)
-**Pass 3 — 🟢 quality optimisation** (technical prefix, word count, foreground-midground-background layering, element repetition, concrete lighting, flowing Chinese narrative)
+**Pass 3 — 🟢 quality optimisation** (shooting-spec line present and physically coherent, word count, camera-recordable information only, foreground-midground-background layering, element repetition, concrete lighting, flowing Chinese narrative)
 
 ---
 
@@ -5907,8 +6135,8 @@ After writing each description, ask yourself:
 | Output | structured concepts | detailed visual prompts |
 | Length | 50–80 characters each | ~500-character Chinese body / 900+ char English |
 | Batch | 25 | 20 |
-| Forbidden | detailed descriptions, English keywords, internal terms | internal terms, director names, brackets, 3D terms, distant shots |
-| Default prefix | — | `masterpiece, best quality, hyper-realistic photo, 8k, 超高清，` |
+| Forbidden | detailed descriptions, English keywords, internal terms | internal terms, director names, brackets, 3D terms, distant shots, quality-tag stacks, process phrasing |
+| Opening line | — | **Shooting-specification line**: camera body + lens + focal length + aperture / shutter / ISO / WB / focus / metering / EV |
 
 ## 5.2 The 7 Mandatory Concept Dimensions
 
@@ -5977,9 +6205,11 @@ After writing each description, ask yourself:
 13. **Never manufacture skin exposure.** Express body line through garment design, not by removing fabric.
 14. **Build the world from ordinary things.** Few strong anchors, many weak ones, high real-world frequency.
 15. **Text is a Typography Block on a real carrier, in the region's real language.** No placeholders, no "SECTOR 7", and no text at all is a valid choice.
-16. **Keep the world healthy, tidy, safe, open and alive.** Negative valence is a scope problem, not a style preference.
+16. **Open with a real shooting specification.** Camera body + lens + focal length + a physically coherent parameter set. Never a quality-tag stack.
+17. **Write only what a camera can record.** Appearance, wardrobe, pose, action, expression, gaze, composition, shot size, angle, spatial relations, texture, light source and direction, light ratio, colour temperature, depth of field, motion state, layering. If a camera cannot record it, it does not belong in the prompt.
+18. **Keep the world healthy, tidy, safe, open and alive.** Negative valence is a scope problem, not a style preference.
 
 ---
 
-**End of specification — Sugar Water Machine v2.0**
+**End of specification — Sugar Water Machine v2.1**
 
