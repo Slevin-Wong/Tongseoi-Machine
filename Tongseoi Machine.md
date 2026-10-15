@@ -1,10 +1,10 @@
 ---
 name: sugar-water-machine
-description: "Sugar Water Machine (糖水机) — an AI image-prompt engineering system that converts a brief into a batch of creative concepts and then into high-density, photorealistic prompt scripts. It also enforces four environment/framing protocols (scene vitality, world anchors, text rendering, weak-foreground three-layer composition), a scope gate that keeps world state healthy and non-negative, and a single-primary-body-region rule for expressing body line through garment design. Stage 2 output is a 900–1,400-character Chinese body (detail density calibrated against a 294-entry reference corpus, with a mandatory three-layer foreground/midground/background beat), written only as camera-recordable information, and closes with an equipment & parameters line (camera body + lens + focal length + a physically coherent parameter set: aperture / shutter / ISO / white balance / focus mode / metering / exposure compensation). No quality-tag prefixes, no literary expression. Use when the user asks for creative concept lists, prompt generation, batch concept generation (e.g. \"give me 100 concepts\"), detailed visual prompt expansion, or asks to fix foreground composition, in-frame text/signage, world-building anchors, or body-line emphasis for AI image models (Midjourney / Stable Diffusion / 即梦 / 可灵 / Nano Banana etc.). Trigger words: 糖水机, 创意列表, 给我N个创意, 提示词, prompt, 执行1-10号, 继续, continue, 三层构图, 前景, 视觉锚点, 文字渲染, 曲线展示, 避免负面, 拍摄参数, 摄影器材, 相机镜头, camera settings."
+description: "Sugar Water Machine (糖水机) — an AI image-prompt engineering system that converts a brief into a batch of creative concepts and then into high-density, photorealistic prompt scripts. It also enforces four environment/framing protocols (scene vitality, world anchors, text rendering, weak-foreground three-layer composition), a scope gate that keeps world state healthy and non-negative, and a single-primary-body-region rule for expressing body line through garment design. Stage 2 output is a 900–1,400-character Chinese body (detail density calibrated against a 294-entry reference corpus, with a mandatory three-layer foreground/midground/background space carried by distance, occlusion and focus falloff rather than by a fixed sentence formula), written only as camera-recordable information, and closes with an equipment & parameters line (camera body + lens + focal length + a physically coherent parameter set: aperture / shutter / ISO / white balance / focus mode / metering / exposure compensation). Hair colour is designed by default through a ten-stage pipeline (visual role, base colour, region, coverage, colour relationship, gradient, pattern, light adaptation, complexity budget, batch diversity check). Numbers are split into three classes: exact equipment parameters, verifiable visual relations, and pseudo-measurements (metres / degrees / light ratios) which are deleted. Light origins are likewise split three ways: natural and architectural light may be named, in-scene lamps are props, and photographic equipment (softbox / reflector / ring light / light stand) is never named — only the light it throws — except when the scene is explicitly a studio, a shooting set or a photo booth. No quality-tag prefixes, no literary expression. Use when the user asks for creative concept lists, prompt generation, batch concept generation (e.g. \"give me 100 concepts\"), detailed visual prompt expansion, or asks to fix foreground composition, in-frame text/signage, world-building anchors, or body-line emphasis for AI image models (Midjourney / Stable Diffusion / 即梦 / 可灵 / Nano Banana etc.). Trigger words: 糖水机, 创意列表, 给我N个创意, 提示词, prompt, 执行1-10号, 继续, continue, 三层构图, 前景, 视觉锚点, 文字渲染, 曲线展示, 避免负面, 拍摄参数, 摄影器材, 相机镜头, camera settings."
 agent_created: true
 ---
 
-# SUGAR WATER MACHINE (糖水机) — AI Image Prompt Engineering System v2.2
+# SUGAR WATER MACHINE (糖水机) — AI Image Prompt Engineering System v2.7
 
 A complete, single-file specification. It defines a two-stage workflow, a four-tier prohibition system, a full aesthetics library (character / wardrobe / scene / pose / VIBE engines), a universal "visual compensation" writing protocol, a detail-density standard calibrated against a 294-entry reference corpus, and a mandatory photographic specification system (real camera bodies, lenses and physically coherent parameters) for photorealistic AI image prompts.
 
@@ -215,21 +215,46 @@ Mandatory dimensions:
 ```
 No. 【Chinese story title】(30–50-character visual focal-path description)
 
-[Chinese body — 900–1,400 characters, written entirely as camera-recordable information. See the Detail Density Standard below.]
-
-【器材与参数】Canon EOS R5 + RF 85mm f/1.2L USM，平视机位，f/1.6，1/320秒，ISO 200，白平衡 5200K，评价测光，眼部识别 AF，曝光补偿 -0.3EV，黑柔 1/8 滤镜，手持。
+[Chinese body — 900–1,400 characters, written entirely as camera-recordable information. The body runs straight into the equipment specification, which is the **closing clause of the same paragraph** — no label, no blank line, no line break: ……Canon EOS R5配RF 85mm f/1.2L USM，平视机位，f/1.6，1/320秒，ISO 200，白平衡5200K，评价测光，眼部识别AF，曝光补偿-0.3EV，黑柔1/8滤镜，手持。]
 
 ---
 ```
 
 **Notes:**
 - **🔴 No quality-tag prefix.** Do **not** open with `masterpiece, best quality, hyper-realistic photo, 8k, 超高清`, nor with any equivalent quality-tag stack. **This prefix is retired.** Realism is carried by the equipment specification and by concrete visual information — never by quality adjectives.
-- **The equipment line goes LAST, never first.** Every entry closes with `【器材与参数】`. Placing it before the visual description interrupts the image before it has been built. This matches the reference corpus, where the specification always closes the entry.
+- **The equipment specification is the closing clause of the body paragraph.** Not a separate line, not a separate block, and **never labelled**. Write it directly onto the end of the paragraph: `……黑柔1/8滤镜，手持。` Do **not** write `【器材与参数】` or `Equipment & parameters` — the label states the obvious and every label character is a character not spent on the image.
 - **Body length is 900–1,400 characters by default.** A 500-character entry is a **failure**, not a stylistic choice. See the **Detail Density Standard** below for the length ladder, the seven mandatory beats and the anti-padding rule.
 - **Body is Chinese**, written as concrete, camera-recordable visual information — **not literary expression**.
-- **The three-layer beat is mandatory.** Write **前景是……；中景是……；后景是……** explicitly. It appears in 99% of the reference corpus.
+- **Name the light, not the fixture.** Natural and architectural light may be named freely; in-scene lamps are props and belong in the frame; photographic equipment (softbox, reflector, ring light, light stand) must **never** be named — describe what the light lands on instead. See §3.3.17 E. The one exception is a scene that is explicitly a studio / shooting set / photo booth.
+- **The three-layer space is mandatory; the formula is not.** Foreground, midground and background must all exist — but they must be carried by **distance, occlusion, focus falloff and light**, not by three parallel 「……是……」 sentences. Do **not** run three consecutive clauses beginning 前景是／中景是／后景是. In the reference corpus the layers are named organically in 48% / 32% / 18% of entries and the triple formula in only **7%**; writing it into every entry is a failure, not a compliance. See **Opening & closing: no fixed sentences** below.
+- **Hair colour is designed by default.** Unless the user says 「不要染色 / no hair dye」, every entry runs the **ten-stage hair-colour pipeline** in §3.1.3 — visual role → base colour → region → coverage → colour relationship → gradient → pattern → light adaptation → complexity budget → batch diversity check. An undesigned single-tone head of hair is a failure.
 - Strictly use the **"visual focal path" method** (below) for *ordering*; **list-style enumeration is still forbidden**.
 - After every batch of 20, auto-annotate progress: `已完成 X/总数`
+
+### Opening & closing: no fixed sentences
+
+**The two template sentences are retired.** Do **not** open every entry with 「一张以【地点】为舞台的……摄影作品，采用【景别】构图与【机位】」, and do **not** close the description with the fixed triple 「光源是……作主光，……提供……补光，主辅光比……，画面以……为主调」. In the reference corpus the first form appears in **0%** of entries and the second in **0%**. When they appear in ~100% of a batch, the batch reads as one machine — and together they spend about 80 characters per entry on zero image content.
+
+**Opening — the rule that replaces it**
+
+- **The subject must be on stage by character 30.** Not the "stage", not the camera — the person. 「一张以清晨卧室为舞台的……作品，采用中近景构图与距地面约一米一的平视机位」 spends 60+ characters before the reader learns there is a girl in the picture. In the reference corpus the person appears at character 29 on average; a batch that pushes this to 71 has lost the first two clauses of every entry.
+- **Rotate the opening.** Keep a tally across the batch and use a different one each time — never the same form twice in a row:
+  - **Person first** — 「少女跪坐在窗台的旧棉垫上，睡裙下摆被晨光晒出一层暖白。」
+  - **Light first** — 「斜射的晨光先落在她的锁骨上，再顺着睡裙的褶裥滑到地面。」
+  - **Object first** — 「一只还冒着热气的白瓷杯被两只手圈着，杯壁映出她的睫毛。」
+  - **Action first** — 「她刚把窗推开一条缝，风把额前的碎发全部吹向同一侧。」
+  - **Place-and-time first** — 「上午九点的日式木屋，纸门把阳光切成一格一格的。」
+  - **Material first** — 「粗麻窗帘的经纬在逆光里根根分明，光被筛成一层薄雾落在她肩上。」
+- **Shot size, camera position and angle still have to be stated** — but they go **where the eye needs them**, not into a formulaic first clause. State each once, in the clause where it does work.
+
+**Closing — the rule that replaces it**
+
+- **Light ratio and dominant palette must still be written.** They are content, not decoration. What is retired is the fixed triple and its fixed sentence shape.
+- **Do not treat a numeric ratio as required.** 「主光明显压过补光，阴影侧只剩一层薄薄的暗部细节」 says the same thing and is what the eye can actually verify.
+- **Vary the closer.** Close on whichever of these carries the most information for this entry: the light's behaviour on a named material; the dominant palette plus its single counter-colour; the motion state of the air, the fabric or the hair; the furthest readable plane of the background; or the next instant of the action.
+- **The equipment clause still follows immediately**, in the same paragraph — unlabelled, no line break.
+
+---
 
 **Other formats (switch only when the user explicitly asks)**
 
@@ -237,9 +262,7 @@ No. 【Chinese story title】(30–50-character visual focal-path description)
 ```
 No. 【Chinese story title】(30–50-character visual focal-path description)
 
-[English body — 1,600+ characters, camera-recordable information only]
-
-【Equipment & parameters】Canon EOS R5 + RF 85mm f/1.2L USM, eye-level, f/1.6, 1/320s, ISO 200, WB 5200K, evaluative metering, eye-AF, EV -0.3, 1/8 black mist filter, hand-held.
+[English body — 1,600+ characters, camera-recordable information only, running straight into the equipment specification as the closing clause of the same paragraph: … Canon EOS R5 + RF 85mm f/1.2L USM, eye-level, f/1.6, 1/320s, ISO 200, WB 5200K, evaluative metering, eye-AF, EV -0.3, 1/8 black mist filter, hand-held.]
 
 ---
 ```
@@ -248,9 +271,7 @@ No. 【Chinese story title】(30–50-character visual focal-path description)
 ```
 No. 【Chinese story title】(30–50-character visual focal-path description)
 
-[中文正文，900–1400 字符，仅写摄影机可记录的信息]
-
-【器材与参数】Canon EOS R5 + RF 85mm f/1.2L USM，平视机位，f/1.6，1/320秒，ISO 200，白平衡 5200K，评价测光，眼部识别 AF，曝光补偿 -0.3EV，黑柔 1/8 滤镜，手持。
+[中文正文，900–1400 字符，仅写摄影机可记录的信息，末尾直接接上器材与参数作为同一段的收尾从句：……Canon EOS R5配RF 85mm f/1.2L USM，平视机位，f/1.6，1/320秒，ISO 200，白平衡5200K，评价测光，眼部识别AF，曝光补偿-0.3EV，黑柔1/8滤镜，手持。]
 
 ---
 ```
@@ -260,17 +281,15 @@ No. 【Chinese story title】(30–50-character visual focal-path description)
 No. 【Chinese story title】(30–50-character visual focal-path description)
 
 【English】
-[English body — 1,600+ characters]
+[English body — 1,600+ characters, ending with the equipment specification in the same paragraph]
 
 【中文】
-[中文正文，900–1400 字符]
-
-【器材与参数】Canon EOS R5 + RF 85mm f/1.2L USM，平视机位，f/1.6，1/320秒，ISO 200，白平衡 5200K，评价测光，眼部识别 AF，曝光补偿 -0.3EV，黑柔 1/8 滤镜，手持。
+[中文正文，900–1400 字符，末尾直接接上器材与参数]
 
 ---
 ```
 
-**Compressed template (450–600 characters)** — only for genuinely simple single-subject scenes. See the fill-in skeleton in the **Detail Density Standard**.
+**Compressed template (450–600 characters)** — only for genuinely simple single-subject scenes. See the fill-in skeleton in the **Detail Density Standard**. The equipment clause is already built into the end of the skeleton — never split it onto its own line.
 
 ### Photographic Specification System (mandatory in Stage 2)
 
@@ -422,16 +441,18 @@ Leica M6 + Summicron 35mm f/2｜35mm｜f/2.8｜1/125s｜Kodak Portra 400｜WB da
 
 #### F. How the specification is written into the entry
 
-**The equipment specification always closes the entry.** It is never placed before the visual description — putting it first interrupts the image before it has been built.
+**The equipment specification is the closing clause of the body paragraph.** It is not a separate line, not a separate block, and not labelled. It runs straight on from the last visual detail, inside the same paragraph:
 
-Two accepted written forms:
+> ……雨水顺着伞骨滴落，在肩头洇开一小片深色。Canon EOS R5配RF 50mm f/1.2L USM，50mm端微仰视机位，f/1.8，1/250秒，ISO 800，白平衡4200K，评价测光，眼部识别AF-S，曝光补偿-0.3EV，黑柔1/8滤镜，手持。
 
-- **Tail line** (default, for entries up to ~1,400 characters) — one dense line:
-  `佳能EOS R6 Mark II配RF 16mm f/2.8 STM，倾斜低机位超广角，f/2.8，1/60秒，ISO 1000，白平衡4600K，评价测光，眼部识别AF，曝光补偿+0.3EV，黑柔1/8滤镜，手持。`
-- **Labelled block** (for extended narrative entries) — one field per line:
-  相机 / 镜头 / 焦段 / 光圈 / 快门速度 / ISO / 白平衡 / 对焦模式 / 测光模式 / 曝光补偿 / 滤镜 / 支撑
+**Never write:**
+- ❌ a blank line before the equipment list
+- ❌ a `【器材与参数】` or `Equipment & parameters` label — it states the obvious and burns characters that should be spent on the image
+- ❌ a multi-line field-per-line block (相机：… 镜头：… 光圈：…) — it fragments the prompt into pieces that image models read poorly
 
-Either form must carry: body + lens, camera position and angle, aperture, shutter, ISO, white balance, metering mode, focus mode and exposure compensation — plus filter and support where applicable. See section D for the coherence rules.
+**Do write:** one continuous closing clause carrying body + lens, camera position and angle, aperture, shutter, ISO, white balance, metering mode, focus mode and exposure compensation — plus filter and support where applicable. See section D for the coherence rules.
+
+**Never move the equipment specification to the top of the entry.** Putting it first interrupts the image before it has been built.
 
 ---
 
@@ -473,7 +494,7 @@ Either form must carry: body + lens, camera position and angle, aperture, shutte
 4. **Pose + action + expression** — what the hands are doing, where the gaze goes.
 5. **Three-layer space** — written out: **前景是……；中景是……；后景是……** This is the single strongest signature of the reference corpus.
 6. **Light + colour** — source, direction, ratio, colour temperature, and one counter-colour.
-7. **Equipment + parameters** — always **last**.
+7. **Equipment + parameters** — the closing clause of the body paragraph: no label, no line break, never on its own line.
 
 **Density techniques — how the reference corpus reaches 1,000+ characters without padding:**
 
@@ -483,7 +504,7 @@ Either form must carry: body + lens, camera position and angle, aperture, shutte
 - **The light's behaviour, not its name.** Not "rim light" but 「光束切过她的面庞，在右侧榻榻米和木质拉门上投射出锐利而沉静的强对比阴影」。
 - **Feet and hands are always accounted for.** 87% of the corpus describes bare feet or footwear; 93% describes the hands.
 - **One counter-colour.** Name the dominant palette and exactly one contrasting accent — 「绿是主调，礼服上一线紫色挑染是画面里唯一的对冲色」。
-- **Explicit measurements where they matter.** 约六米、约 45 度、胸口高度、地平线压在画面下三分之一.
+- **Anchors instead of measurements.** Not 「距地面约一米一」 but 「与坐姿视线齐平」; not 「俯角约十五度」 but 「略高于人物视线的微俯视」; not 「主辅光比约二比一」 but 「主光明显压过补光，阴影侧只留一层薄薄的暗部细节」. 胸口高度、齐腰、画面下三分之一、居中偏左 are relations the eye can verify — use them, and do not replace them with numbers. See **Numbers: measure nothing, anchor everything** below.
 - **Depth layering by distance, not by listing.** 人物保持高解析度，商业街、人群、车辆、建筑灯光按照实际距离逐级虚化。
 
 **Anti-padding rule**: extra length must come from **more real information**, never from re-describing the same fact in different words. If you cannot name a new observable fact, stop — but you are not finished at 500 characters. Go back and look harder at the fabric weave, the floor, the light's falloff and the far background.
@@ -492,13 +513,13 @@ Either form must carry: body + lens, camera position and angle, aperture, shutte
 
 #### The compressed template (450–600 characters)
 
-For genuinely simple scenes only. Every field is filled; nothing is narrated. This is the skeleton behind the shortest entries in the reference corpus:
+For genuinely simple scenes only. Every field is filled; nothing is narrated. This is the skeleton behind the shortest entries in the reference corpus — note that the three layers are present as **distance and focus**, and that the light is described by its result rather than by a ratio:
 
 ```
-【地点／场景】，（人物）以【景别】在画面中【位置与朝向】，齐刘海是【具体状态】，扩散美瞳是【颜色】、瞳面反着【反射的光源】，精致妆容的唇色是【质感与颜色】、【颊部／眼部状态】，披散及腰长发是【颜色与发型】、垂到腰下、【发面反光状态】。她穿【服装】，【材质与构造】，【赤脚／鞋履】踩在【地面材质】上，脚背【状态】。她【手部动作】，【另一处动作】，正【神态与视线】。前景是【具体物件与其状态】；中景是【她与身边的物件】；后景是【纵深与远处，逐级虚化】。光源是【主光来源与方向】作主光，【补光来源】提供【色温倾向】的补光，画面以【主调色】为主、带一点【对冲色】。【相机型号】配【镜头型号】，【机位与角度】，f/【光圈】，【快门】，ISO【数值】，白平衡【色温K】，【测光模式】，【对焦模式】，曝光补偿【EV】，【滤镜】，【支撑方式】。
+【地点／场景】加时间或天气，（人物）以【景别】在画面中【位置与朝向】。齐刘海是【具体状态】，扩散美瞳是【颜色】、瞳面反着【反射的光源】，唇色是【质感与颜色】、【颊部／眼部状态】，披散及腰长发是【颜色与发型】、垂到腰下、【发面反光状态】。她穿【服装】，【材质与构造】，【赤脚／鞋履】踩在【地面材质】上，脚背【状态】。她【手部动作】，【另一处动作】，正【神态与视线】。空间分三层：近处【具体物件与其状态】在焦外，中段是【她与身边的物件】并保持锐利，远处【纵深与远景】逐级虚化——三层必须写全，但不要用三个同构的「……是……」句。主光是【主光来源与方向】，【补光来源】在暗部留下【可见的结果】，主调是【主调色】、对冲色是【一点对冲色】。【相机型号】配【镜头型号】，【机位与角度】，f/【光圈】，【快门】，ISO【数值】，白平衡【色温K】，【测光模式】，【对焦模式】，曝光补偿【EV】，【滤镜】，【支撑方式】。
 ```
 
-> Filled reference (corpus line, 480 characters): 「夜间的海边礁石平台，成年东亚美少女以高机位俯拍的中近景坐在画面中央偏左，齐刘海被海风吹得散开，扩散美瞳是浅蓝灰、瞳面反着月光，精致妆容的唇色偏冷，披散及腰长发是乌黑、编入细辫后整体仍松散垂到腰下…… 哈苏X2D 100C配XCD 55mm f/2.5，高机位俯拍约45度，f/3.2，1/60秒，ISO 400，白平衡4600K，点测光对灯面，面部识别AF，曝光补偿-0.3EV，黑柔1/8滤镜，三脚架」。
+> Filled reference (corpus line, 480 characters): 「夜间的海边礁石平台，成年东亚美少女以高机位俯拍的中近景坐在画面中央偏左，齐刘海被海风吹得散开，扩散美瞳是浅蓝灰、瞳面反着月光，精致妆容的唇色偏冷，披散及腰长发是乌黑、编入细辫后整体仍松散垂到腰下…… 哈苏X2D 100C配XCD 55mm f/2.5，高机位俯拍，f/3.2，1/60秒，ISO 400，白平衡4600K，点测光对灯面，面部识别AF，曝光补偿-0.3EV，黑柔1/8滤镜，三脚架」。
 
 ---
 
@@ -507,27 +528,43 @@ For genuinely simple scenes only. Every field is filled; nothing is narrated. Th
 For two-person scenes, constructed spectacle, or architecture worth describing. The seven beats stay the same, but each expands:
 
 - **Scene beat** gains the building's real structure, its materials, and its state of use.
-- **Space beat** gains explicit distances (「镜头距离人物约六米」) and named sub-zones inside each layer.
+- **Space beat** gains named sub-zones inside each layer, and distances written as relations (「隔着两张桌子的距离」) — never as metres.
 - **Light beat** gains the falloff behaviour and what the light does to each material.
-- **A material/quality beat** is added before the equipment line, describing how each surface renders.
-- **Equipment** may switch from a tail line to a labelled block:
+- **A material/quality beat** is added just before the equipment clause, describing how each surface renders.
+- **Equipment** stays where it always is — the closing clause of the same paragraph. The extended form lengthens the body; it never changes where the specification goes, and it never earns a label or its own line.
 
-```
-相机：Fujifilm GFX 100 II
-镜头：Fujinon GF 110mm f/2 R LM WR
-焦段：110mm（等效全画幅约 87mm）
-光圈：f/2.8
-快门速度：1/15s
-ISO：100
-白平衡：5200K
-对焦模式：单点自动对焦（S-AF）
-测光模式：点测光
-曝光补偿：-0.3 EV
-滤镜：NiSi 1/8 黑柔滤镜
-支撑：三脚架
-```
+---
 
-Both tail forms are correct. **Never move the equipment line to the top of the entry.**
+### Numbers: measure nothing, anchor everything
+
+**The test**: *would a photographer say this out loud on set, or would they stop and measure it?* A number that only exists because someone measured it is a number the image model cannot execute — it reads the digits as decoration and moves on. Numbers fall into three classes, and only one of them is wrong.
+
+| Class | What it is | Rule |
+|-------|-----------|------|
+| **A — equipment parameters** | focal length, aperture, shutter, ISO, white balance | **Keep, and keep them exact.** A real camera carries these and the model does act on them. `85mm · f/1.6 · 1/320秒 · ISO 200 · 5200K` |
+| **B — relations the eye can verify** | framing proportions, body anchors, counts, relative distance | **Keep, and prefer them over numbers.** 画面下三分之一、居中偏左、齐腰、及胸、与视线齐平、胸口高度、两盏烛台、拳头大小、隔着半张桌子 |
+| **C — pseudo-measurements** | distances in metres, angles in degrees, numeric light ratios | **Delete. Rewrite as B.** |
+
+**C → B substitutions — use these**
+
+| ❌ pseudo-measurement | ✅ relation |
+|----------------------|-------------|
+| 距地面约一米一的平视机位 | 与坐姿视线齐平的平视机位 |
+| 俯角约十五度 / 仰角约八度 | 略高于人物视线的微俯视 / 略低于胸口的微仰视 |
+| 主辅光比约二比一 | 主光明显压过补光，阴影侧只留一层薄薄的暗部细节 |
+| 镜头距离人物约一米二 | 隔着半张桌子的距离，近到能看清睫毛 |
+| 直径约十五厘米的毛球 | 一掌可握、拳头大小的毛球 |
+| 脑袋歪斜约十五度 | 脑袋几乎贴上右肩 |
+| 右手悬在琴键上方约三厘米 | 右手悬在琴键上方，将落未落 |
+| 与人物保持约四米距离 | 隔着两张桌子的距离 |
+| 光源以约三十度角射入 | 光从左后方斜切进来，在她的肩头切出一道硬边 |
+| 约五厘米的鞋跟 | 细高跟，走路时脚跟先着地 |
+
+**What must not change — the equipment clause.** `85mm`, `f/1.8`, `1/250秒`, `ISO 800`, `5200K` are **not** pseudo-measurements; they are the specification, and removing them destroys the prompt's executability. This rule applies to the **picture description**, never to the **equipment parameters**.
+
+**Length is preserved, not reduced.** Every deleted number is replaced by an anchor of comparable length — 「距地面约一米一」(7 characters) becomes 「与坐姿视线齐平」(7 characters). If a rewrite shortens the entry, the rewrite is wrong: go back and add the observable detail the number was standing in for.
+
+**The 「约」tell.** A description dense with 「约」 is a description that is guessing. After this rewrite 「约」 should appear mainly in the equipment clause (曝光补偿、色温容差), not in the picture description.
 
 ---
 
@@ -604,7 +641,7 @@ Rules that follow from this override:
    - Light direction, light ratio, colour temperature, shadow behaviour
    - Dominant palette + exactly one counter-colour
 
-7. Equipment & parameters (10%) — always LAST, as the closing line:
+7. Equipment & parameters (10%) — appended to the end of the body paragraph as its closing clause, no label:
    - Body + lens: Canon EOS R5 + RF 85mm f/1.2L USM
    - Focal length · aperture · shutter · ISO: 85mm · f/1.6 · 1/320s · ISO 200
    - White balance · focus · metering · EV: 5200K · eye-AF · evaluative · EV -0.3
@@ -642,7 +679,7 @@ Rules that follow from this override:
    - 光线方向、光比、色温、阴影行为
    - 主调色 + 恰好一个对冲色
 
-7. 器材与参数（10%）——始终在最后，作为收尾行：
+7. 器材与参数（10%）——直接接在正文段落末尾，作为该段的收尾从句，不加标签：
    - 机身 + 镜头：Canon EOS R5 + RF 85mm f/1.2L USM
    - 焦段·光圈·快门·ISO：85mm · f/1.6 · 1/320s · ISO 200
    - 白平衡·对焦·测光·曝光补偿：5200K · 眼部对焦 · 评价测光 · EV -0.3
@@ -698,18 +735,18 @@ Rules that follow from this override:
 
 ### Complete example (Stage 2 output)
 
-Two things to notice: **each body runs ~1,100 characters** (not ~500), and **the equipment line closes the entry** — it is never placed at the top. Both entries walk the seven beats in order, with the three-layer beat written out explicitly.
+Four things to notice: **each body runs ~1,100 characters** (not ~500); **the three layers are present but never written as three parallel 「……是……」 sentences**; **the two entries open differently from each other** — light first, then person first — **and close differently too**; and **the equipment specification is the closing clause of the body paragraph** — no label, no blank line, never at the top.
 
 ```
 01. 【晨光温室里的琴声】清晨斜射光穿过玻璃穹顶，少女坐在三角钢琴前，指尖停在琴键上方，悬停的尘埃与垂落的藤蔓在逆光中显形
 
-一张以清晨玻璃温室为舞台的电影感室内人像摄影作品，拍摄机位采用中景偏低的角度，透视线沿琴凳与地面接缝向后方玻璃穹顶延伸。画面主体是一名银白色及腰卷发少女，前额留着修剪整齐的齐刘海，几缕近乎透明的浅紫挑染混杂在银白发丝之间，发梢被逆光折射出细腻的边缘发丝光，靠近耳后的一缕发丝被玻璃的漫反射照得几乎透明。她佩戴扩散型浅灰美瞳，妆容精致清透，珊瑚色唇釙覆着一层薄薄的湿润高光，皮肤在侧逆光下透出细密的绒毛质感，下颌与颈侧的阴影边缘柔和。她端坐于一架黑色漆面三角钢琴前，脊背挺直，双肩自然下沉，右手五指悬停在琴键上方约三厘米处，指腹微微向下，左手轻搭左膝，指节放松，头部微低，目光落在琴键上，嘴角有极浅的笑意。她身穿象牙白蕾丝长袖连衣裙，方领，胸前有细密珠绣，袖口为荷叶边，裙摆自然垂落于琴凳两侧，薄纱在强光下透出经纬交织的纹理，面料边缘起着一圈极细的绒毛，侧逆光穿过袖管在里侧留下一层半透明的暖色透光；她赤脚踩在浅灰水磨石地面上，脚背被地面反射的晨光照亮，脚趾微微蹻起。她所在的玻璃温室正在使用中：穹顶由铸铁肋条与玻璃格组成，肋条接缝处留有细微的氧化痕迹与旧漆剥落的白点，玻璃内侧凝着一层未干的水雾，几处水雾被阳光烘出透明的空洞，地面沿墙根摆着几只大小不一的陶盆，盆沿积着干燥的白色水碱。前景是画面左下角一片被虚化的常春藤叶与一只翻倒的陶土浇水壶边缘，叶面挂着细小水珠，水珠里折射出窗外的一小格天光，壶口还淌着半干的水渍；中景是她、三角钢琴与琴凳，钢琴漆面清晰反射出窗格与她的手臂轮廓，漆面在琴盖转折处有一道浅细划痕，琴盖半开，内部琴弦在暗处泛着细窄的铜光，琴凳上的丝绒坐垫被压出浅浅的凹陷，琴盖上摆着一只白瓷咖啡杯，杯口有未散尽的热气，杯壁外侧留着一圈淡褐色咖啡渍，琴腿边的地板上散落着两三片卷曲的枯叶；后景是层层向后退去的玻璃格窗、垂落的龟背竹与远处被晨雾柔化的花园轮廓，叶片上的水珠随距离逐渐失焦成一片细小的光点，越远越虚，最深处只剩明亮的雾状白。光源是单一自然主光，以约三十度角从左后方穿过玻璃射入，在琴谱与地面上投下网格状阴影，主辅光比约四比一，色温偏暖；暗部由玻璃漫反射补光形成柔和过渡，琴键的象牙面与地面磨石各自呈现不同的高光形状。画面以象牙白与浅灰绿为主调，琴键的黑与唇釙的珊瑚色是仅有的两处对冲。空气中悬浮的尘埃在逆光光柱中形成可见颗粒。无风，藤蔓静止，只有杯口的热气在缓慢上升。Canon EOS R5配RF 85mm f/1.2L USM，平视机位、与人物视线齐平，f/1.6，1/320秒，ISO 200，白平衡5200K，评价测光，眼部识别AF，曝光补偿-0.3EV，黑柔1/8滤镜，三脚架。
+斜射的晨光从玻璃穹顶切下来，先落在她的锁骨上，再顺着睡裙的褶裥滑到水磨石地面。中景偏低的角度，透视线沿琴凳与地面接缝向后方玻璃穹顶延伸。画面主体是一名银白色及腰卷发少女，前额留着修剪整齐的齐刘海，几缕近乎透明的浅紫挑染混杂在银白发丝之间，发梢被逆光折射出细腻的边缘发丝光，靠近耳后的一缕发丝被玻璃的漫反射照得几乎透明。她佩戴扩散型浅灰美瞳，妆容精致清透，珊瑚色唇釉覆着一层薄薄的湿润高光，皮肤在侧逆光下透出细密的绒毛质感，下颌与颈侧的阴影边缘柔和。她端坐于一架黑色漆面三角钢琴前，脊背挺直，双肩自然下沉，右手五指悬在琴键上方，将落未落，指腹微微向下，左手轻搭左膝，指节放松，头部微低，目光落在琴键上，嘴角有极浅的笑意。她身穿象牙白蕾丝长袖连衣裙，方领，胸前有细密珠绣，袖口为荷叶边，裙摆自然垂落于琴凳两侧，薄纱在强光下透出经纬交织的纹理，面料边缘起着一圈极细的绒毛，侧逆光穿过袖管在里侧留下一层半透明的暖色透光；她赤脚踩在浅灰水磨石地面上，脚背被地面反射的晨光照亮，脚趾微微踮起。她所在的玻璃温室正在使用中：穹顶由铸铁肋条与玻璃格组成，肋条接缝处留有细微的氧化痕迹与旧漆剥落的白点，玻璃内侧凝着一层未干的水雾，几处水雾被阳光烘出透明的空洞，地面沿墙根摆着几只大小不一的陶盆，盆沿积着干燥的白色水碱。前景是画面左下角一片被虚化的常春藤叶与一只翻倒的陶土浇水壶边缘，叶面挂着细小水珠，水珠里折射出窗外的一小格天光，壶口还淌着半干的水渍；中景是她、三角钢琴与琴凳，钢琴漆面清晰反射出窗格与她的手臂轮廓，漆面在琴盖转折处有一道浅细划痕，琴盖半开，内部琴弦在暗处泛着细窄的铜光，琴凳上的丝绒坐垫被压出浅浅的凹陷，琴盖上摆着一只白瓷咖啡杯，杯口有未散尽的热气，杯壁外侧留着一圈淡褐色咖啡渍，琴腿边的地板上散落着两三片卷曲的枯叶；后景是层层向后退去的玻璃格窗、垂落的龟背竹与远处被晨雾柔化的花园轮廓，叶片上的水珠随距离逐渐失焦成一片细小的光点，越远越虚，最深处只剩明亮的雾状白。单一自然主光从左后方穿过玻璃射入，在琴谱与地面上投下网格状的窗格阴影，色温偏暖；暗部由玻璃的漫反射托起，琴键的象牙面与地面磨石各自呈现不同形状的高光，阴影一侧仍能读出木纹。主调是象牙白与浅灰绿，琴键的黑与唇釉里的珊瑚是画面里仅有的两处对冲。逆光光柱里悬着可见的尘埃颗粒。无风，藤蔓静止，只有杯口的热气在缓慢上升。Canon EOS R5配RF 85mm f/1.2L USM，平视机位、与人物视线齐平，f/1.6，1/320秒，ISO 200，白平衡5200K，评价测光，眼部识别AF，曝光补偿-0.3EV，黑柔1/8滤镜，三脚架。
 
 ---
 
 02. 【霓虹雨夜的奔跑者】湿润柏油路倒映着粉紫色霓虹，少女在斑马线前急停，马尾向前甩出，发梢水珠在逆光中连成弧形轨迹
 
-一张以雨夜都市街口为舞台的电影感纪实摄影作品，采用近景构图与略低于人物胸口高度的机位，镜头贴近湿润路面向上带出街道纵深。画面主体是一名东亚美少女，齐刘海被雨水打湿后贴在额前，几缕荧光绿挑染藏在黑发之间，发梢甩散出数十颗细小水珠，在背光霓虹中连成一串弧形亮点，靠近颈侧的一束发丝被雨水黏成几缕。她佩戴扩散型浅棕美瞳，妆感轻薄，仅透亮底妆与淡粉唇釙，皮肤被雨水打湿后呈现高光反射，鼻尖与颜骨上的水膜被霓虹染出细小的彩色光点，睫毛尖端挂着未落的水珠。她刚在斑马线前急停，右脚踏在湿沥青上并微微前倾承重，左脚跟抬起，双臂屈肘约九十度保持跑步姿势，手指自然半握，指节泛白，小臂内侧能看见浅淡的静脉，嘴微张，呼出的白气在冷空气中短暂显形。她身穿灰色速干运动背心，肩线处可见缝线，腋下布料因汗湿颜色加深，背心下摆被风揀起一角，黑色运动短裤侧缝缝有荧光绿反光条，裤脚边缘有一道细窄的磨白，脚穿白色跑鞋配荧光绿鞋带，鞋底边缘沾着湿泥与几粒细砂。前景是画面下缘一片积水的柏油路面，水面有雨点砸出的同心圆波纹，倒映出上方粉紫与青蓝两块霓虹色块，一片被踩扁的传单贴在近端路缘，水洼边缘凝着一圈细小的泡沫；中景是她与身后的斑马线，白漆边缘磨损、留有细小裂纹，路面缝隙里嵌着深色积水，旁边一只铸铁排水格栅正往外冒水；后景是两侧深色建筑立面与中文霓虹招牌，招牌灯管边缘有水汽晕开的光晕，卷帘门与空调外机在暗部留下深色轮廓，一间便利店的门开着，暖光从门缝里漏到人行道上，粉紫色光晕因雨雾而扩散，远处楼宇轮廓逐级虚化消融入夜色。光源是背后的霓虹招牌，在发际、肩线与手臂外缘勾出彩色轮廓光；面部由左前方便利店厨窗的暖白光补光，主辅光比约三比一，冷暖对比明显。画面以粉紫与青蓝为主调，荧光绿的反光条与鞋带是唯一的对冲色。细雨仍在落下，背光区域内可见斜向雨丝，雨丝越远越密、越近越疏。Sony α7 IV配FE 35mm f/1.4 GM，低机位、相机高度约在人物胸口，f/1.8，1/500秒，ISO 1600，白平衡3800K，评价测光，AF-C连续对焦（眼部识别），曝光补偿-0.7EV，快门优先，高速连拍，手持。
+她刚在斑马线前急停，右脚踏在湿沥青上，马尾因惯性向前甩出。近景，机位略低于她的胸口，镜头贴近湿润路面向上带出街道纵深。画面主体是一名东亚美少女，齐刘海被雨水打湿后贴在额前，几缕荧光绿挑染藏在黑发之间，发梢甩散出数十颗细小水珠，在背光霓虹中连成一串弧形亮点，靠近颈侧的一束发丝被雨水黏成几缕。她佩戴扩散型浅棕美瞳，妆感轻薄，仅透亮底妆与淡粉唇釉，皮肤被雨水打湿后呈现高光反射，鼻尖与颧骨上的水膜被霓虹染出细小的彩色光点，睫毛尖端挂着未落的水珠。她的重心压在前脚，右脚踏在湿沥青上并微微前倾承重，左脚跟抬起，双臂屈肘保持跑步姿势，手指自然半握，指节泛白，小臂内侧能看见浅淡的静脉，嘴微张，呼出的白气在冷空气中短暂显形。她身穿灰色速干运动背心，肩线处可见缝线，腋下布料因汗湿颜色加深，背心下摆被风掀起一角，黑色运动短裤侧缝缝有荧光绿反光条，裤脚边缘有一道细窄的磨白，脚穿白色跑鞋配荧光绿鞋带，鞋底边缘沾着湿泥与几粒细砂。前景是画面下缘一片积水的柏油路面，水面有雨点砸出的同心圆波纹，倒映出上方粉紫与青蓝两块霓虹色块，一片被踩扁的传单贴在近端路缘，水洼边缘凝着一圈细小的泡沫；中景是她与身后的斑马线，白漆边缘磨损、留有细小裂纹，路面缝隙里嵌着深色积水，旁边一只铸铁排水格栅正往外冒水；后景是两侧深色建筑立面与中文霓虹招牌，招牌灯管边缘有水汽晕开的光晕，卷帘门与空调外机在暗部留下深色轮廓，一间便利店的门开着，暖光从门缝里漏到人行道上，粉紫色光晕因雨雾而扩散，远处楼宇轮廓逐级虚化消融入夜色。背后的霓虹招牌在发际、肩线与手臂外缘勾出彩色轮廓光，左前方便利店橱窗的暖白光从暗部托起面部，冷暖对比明显，阴影一侧仍能看清颧骨的转折。主调是粉紫与青蓝，荧光绿的反光条与鞋带是唯一的对冲色。细雨仍在落下，背光区域内可见斜向雨丝，越远越密、越近越疏。Sony α7 IV配FE 35mm f/1.4 GM，低机位、相机高度约在人物胸口，f/1.8，1/500秒，ISO 1600，白平衡3800K，评价测光，AF-C连续对焦（眼部识别），曝光补偿-0.7EV，快门优先，高速连拍，手持。
 
 ---
 ```
@@ -729,7 +766,7 @@ Two things to notice: **each body runs ~1,100 characters** (not ~500), and **the
 - **Every reply outputs a fixed 20 detailed descriptions**, then auto-annotates progress
 - Default format: **900–1,400-character Chinese body** + a closing **equipment & parameters line** (camera body + lens + focal length + aperture / shutter / ISO / white balance / focus mode / metering / exposure compensation)
 - The body records **only camera-recordable information** — never literary expression, never quality-tag stacks
-- The **three-layer beat** (前景 / 中景 / 后景) is mandatory in every entry
+- The **three-layer space** (前景 / 中景 / 后景) is mandatory in every entry, but never as three parallel 「……是……」 sentences
 - If the user selects specific numbers (e.g. "execute 1-10"): do only those
 - Progress format: `已完成 X/总数，输入"继续"获取下一批`
 
@@ -754,7 +791,7 @@ User names the numbers
 ┌─────────────────────────────────────┐
 │  STAGE 2: fixed 20 descriptions     │
 │  - 900–1400-char Chinese body       │
-│  - Three-layer beat mandatory       │
+│  - Three-layer space mandatory      │
 │  - Equipment line LAST              │
 └─────────────────────────────────────┘
     ↓
@@ -1624,7 +1661,7 @@ shallow depth of field."
 ☐ Is the body written only as camera-recordable information — no literary expression, no mood adjectives without a visual referent?
 ☐ Does the Chinese body reach 900–1,400 characters (median 1,174)?
 ☐ Are all three layers written out explicitly (前景 / 中景 / 后景)?
-☐ Is the equipment line at the END of the entry, not the top?
+☐ Is the equipment specification the closing clause of the body paragraph — no label, no blank line, no separate block?
 ☐ Does Format A reach 1,600+ characters?
 ☐ Does it include foreground–midground–background layering
 ☐ Does it avoid repeating high-impact elements (gothic, Miao-region < 3 times)
@@ -2128,66 +2165,188 @@ the diffused light through rain clouds.
 | `[Hair-State-Wind]` | windblown | windblown, messy, tousled, strands flying, full of motion | outdoors, dynamic |
 | `[Hair-State-Sweat]` | sweaty | sweaty, matted, damp at roots and neck, clinging to skin | after workout |
 
-#### Hair-colour design system (three-step)
+#### Hair-colour design system (ten-stage) — **ON by default**
 
-**Flow**: base colour + dye technique + accent colour.
+**Status: ON by default.** Unless the user explicitly opts out — 「不要染色」「保持自然发色」「no hair dye」「natural hair only」— **every Stage 2 entry must run this pipeline and give the hair a designed colour scheme.** A plain single-tone "black waist-length straight hair" with no designed colour is a **failure** in default mode, not a neutral choice.
 
-**Step 1 — choose the base colour**
+**Governing principle — character first (人物优先原则).** Hair colour serves the character and the VIBE engine; it is never decoration applied for its own sake. Before anything else, check three things:
 
-*Natural palette:*
+1. **Does it still read at this shot size?** A micro-accent is invisible in a full shot. Below "Local area" coverage, the design will not survive anything wider than a medium close-up.
+2. **Does it fight the skin tone or the wardrobe?** Hair is the largest single colour mass next to the face — it sets the image's colour temperature whether you intend it to or not.
+3. **Does it belong to this character?** A subcultural character and a domestic-narrative character must not receive the same treatment.
 
-| Tag | Colour | Keywords |
-|-----|--------|----------|
-| `[Hair-Base-Black]` | ink black | jet black, ink black |
-| `[Hair-Base-Brown]` | dark brown | dark brown, chocolate |
-| `[Hair-Base-Ash]` | ash brown | ash brown, honey blonde |
-| `[Hair-Base-Burgundy]` | burgundy | burgundy, auburn |
+**The one prohibition that defines this system:** do **not** pick randomly from a colour list and a technique list and staple the two together. Random combination is exactly what produces the same "silver base + pink highlights" for the twentieth time. **First decide what job the hair colour is doing in this image, then choose colour, region, coverage and pattern to do that job.**
 
-*Fantasy / light palette:*
+---
 
-| Tag | Colour | Keywords |
-|-----|--------|----------|
-| `[Hair-Base-Platinum]` | platinum | platinum blonde |
-| `[Hair-Base-Silver]` | silver white | silver white, ash grey |
-| `[Hair-Base-Pink]` | sakura pink | sakura pink, pastel pink |
-| `[Hair-Base-Blue]` | sky blue | sky blue, powder blue |
-| `[Hair-Base-Lavender]` | lavender | lavender, lilac |
+**Step 1 — visual role (视觉角色): what is this colour for?**
 
-**Step 2 — choose a dye technique (optional)**
+Answer in one clause before choosing any colour. Pick one **primary** role (a second may support it):
 
-| Tag | Technique | Keywords |
-|-----|-----------|----------|
-| `[Hair-Dye-Highlight]` | classic highlights | classic highlights |
-| `[Hair-Dye-Streak]` | streaks / block dye | streaks, block dye, chunky highlights |
-| `[Hair-Dye-Ombre]` | ombré | ombré, balayage, gradient color |
-| `[Hair-Dye-Under]` | under-dye | under-dye, hidden layer dye, peek-a-boo highlights |
+| Role | What it does | Usual solution |
+|------|--------------|----------------|
+| **Subject separation** 提亮主体 | separates the head from a busy or same-value background | light base, or a light zone placed at the head's edge |
+| **Mood setting** 情绪定调 | sets the image's emotional temperature | warm base for warmth; ash / cool base for distance and stillness |
+| **Colour echo** 色彩呼应 | answers a colour already in the scene (curtain, neon, prop, foliage) | accent drawn directly from that scene colour |
+| **Attention anchor** 视觉焦点 | makes the hair the image's second subject | large-coverage or high-contrast design |
+| **Character marker** 角色标记 | marks the character as fantasy / idol / subcultural | fantasy palette, two or more colours |
+| **Structure** 层次解构 | makes a plain hairstyle readable as a shape | low-contrast two-tone, or a gradient that shows the cut |
 
-**Step 3 — choose an accent colour (optional)**
+If you cannot name the role, you do not have a design yet — go back to the concept.
 
-*High-contrast palette:*
-- platinum blonde, silver grey, fiery red, sapphire blue
+**Step 2 — base colour (基础底色)**
 
-*Candy fantasy palette (strongly recommended):*
-- cotton candy pink, mint green, baby blue, pastel lilac, lemon yellow, coral peach
+Choose **one** base. It is the largest colour mass and it is never optional.
 
-*Rainbow effect (multi-colour):*
-```
-Example: silver-white base + under-dye + (pink + blue + purple) candy colours
-"silver-white hair with hidden layer dye in cotton candy pink,
-baby blue, and pastel lilac on the lower sections"
-```
+| Class | Tag | Colours |
+|-------|-----|---------|
+| **Natural dark** 自然深色 | `[Hair-Base-NatDark]` | jet black 墨黑, blue-black 蓝黑, dark chocolate 深巧克力棕, chestnut 栗棕, cool brown 冷棕 |
+| **Natural mid-light** 自然中浅色 | `[Hair-Base-NatLight]` | flaxen 亚麻棕, honey blonde 蜂蜜金, caramel 焦糖棕, milk-tea brown 奶茶棕, misty ash brown 雾感灰棕 |
+| **High-value cool** 高明度冷色 | `[Hair-Base-HiCool]` | platinum 铂金, silver grey 银灰, misty blue 雾蓝, ice blue 冰蓝, lavender 薰衣草紫, pale teal 薄雾青 |
+| **High-value warm** 高明度暖色 | `[Hair-Base-HiWarm]` | sakura pink 樱花粉, peach pink 蜜桃粉, champagne 香槟金, pale coral 浅珊瑚, apricot 杏橘 |
+| **Fantasy** 幻想色 | `[Hair-Base-Fantasy]` | cotton-candy pink 棉花糖粉, mint 薄荷绿, baby blue 婴儿蓝, lemon 柠檬黄, coral orange 珊瑚橘, fluorescent 荧光色 |
 
-#### Combination advice (avoid monotony)
+> The **class** matters more than the individual colour: it decides the hair's **value** (dark / mid / light) and its **temperature**, and those are what the rest of the image has to agree with.
+
+**Step 3 — spatial layout (空间布局): where does the colour sit?**
+
+Thirteen regions. **Name the region explicitly in the prompt** — "highlights" with no region is unreadable to an image model.
+
+| # | Region | English | Note |
+|---|--------|---------|------|
+| 1 | 刘海区 | bangs zone | the most visible zone in close-ups |
+| 2 | 面部框区 | face-frame zone | strands falling along the cheek — **not the default** |
+| 3 | 鬓角区 | temple / sideburn zone | short fibres in front of the ear |
+| 4 | 耳前区 | pre-auricular zone | reads as an "ear-ring" of colour when the hair is tied back |
+| 5 | 顶部区 | crown zone | where the light hits first |
+| 6 | 分线区 | parting-line zone | a thin line of colour along the part |
+| 7 | 左右侧区 | left / right side zones | may be **asymmetric** |
+| 8 | 后脑区 | occiput zone | only reads in back or three-quarter views |
+| 9 | 后颈区 | nape zone | reads when the hair is up |
+| 10 | 内层区 | inner layer | hidden until the hair moves |
+| 11 | 外层区 | outer layer | the surface the light actually strikes |
+| 12 | 中段区 | mid-shaft zone | between root and tip |
+| 13 | 发尾区 | tip zone | the classic dip-dye location |
+
+**Symmetry rules**
+
+- Default is **asymmetric or partial**. Perfect left-right symmetry reads as a printed graphic, not hair.
+- Symmetry is allowed only when the character concept demands formality (idol, ceremonial, fantasy archetype).
+- If both sides carry colour, they must **not** carry the same coverage — e.g. left 20% / right 8%.
+
+**Step 4 — coverage area (覆盖面积): how much?**
+
+| Level | Share of hair mass | Reads at |
+|-------|--------------------|----------|
+| **Micro accent** 极微点缀 | under 5% | close-up only |
+| **Small area** 小面积 | 5–15% | medium close-up and closer |
+| **Local area** 局部区域 | 15–30% | medium shot and closer |
+| **Medium coverage** 中覆盖 | 30–50% | any shot size |
+| **Large coverage** 大覆盖 | 50–75% | any shot size; it becomes a subject |
+| **Dominant colour** 主导色 | 75–100% | the hair is now the image's colour theme |
+
+Coverage must match the shot size named in the entry. This is the single most common design error: a 5% accent written into a full shot is invisible, and the design silently disappears.
+
+**Step 5 — colour relationship (色彩关系)**
+
+| Scheme | Structure | Rule |
+|--------|-----------|------|
+| **Single** 单色 | base only | rely on gradient and light for variation, not on a second colour |
+| **Dual** 双色 | primary + secondary | the primary must occupy the larger area; the secondary must not sit where it competes with the face |
+| **Triple** 三色 | primary + secondary + transition or point | three colours is the ceiling; the third is a **transition** or a **point**, never a third field |
+
+**Step 6 — gradient relationship (渐变关系)** — decided **independently of the technique**
+
+The technique says *how the colour got there*; the gradient says *how the colour changes*. They are two separate decisions and must be chosen separately.
+
+| Gradient | Description |
+|----------|-------------|
+| **None** 无渐变 | hard boundary — a clean edge between two colours |
+| **Soft** 柔和过渡 | the boundary is blurred over a short distance |
+| **Long** 长渐变 | the boundary is stretched over a third of the hair length or more |
+| **Multi-stage** 多阶渐变 | three or more steps, e.g. root → mid → tip |
+| **Reverse** 反向渐变 | dark tips on a light base, or light roots on a dark base |
+
+Also state the **direction**: root→tip, tip→root, crown→down, inner→outer, or side-to-side. A gradient with no stated direction is read by the model as a random blur.
+
+**Step 7 — dye technique (染色技术): seventeen patterns**
+
+Pick **one** pattern (two only in the "artistic" complexity band).
+
+| # | Pattern | English | What it is |
+|---|---------|---------|------------|
+| 1 | 全头单色 | full single colour | one colour, whole head |
+| 2 | 发尾染 | tip dye / dip dye | colour confined to the ends |
+| 3 | 裙摆染 | lower-third dye | colour over the bottom third, straight boundary |
+| 4 | 内层染 | inner-layer dye | a hidden layer revealed by movement |
+| 5 | 隐藏染 | peek-a-boo dye | underlayer visible only from certain angles |
+| 6 | 耳圈染 | ear-ring dye | colour wrapped around the ear |
+| 7 | 挂耳染 | ear-hook dye | a single coloured section hooked behind the ear |
+| 8 | 发带染 | headband / halo dye | a horizontal band across the crown |
+| 9 | 顶部染 | root / top dye | colour at the crown only |
+| 10 | 分线染 | parting-line dye | a thin coloured line along the part |
+| 11 | 挑染 | highlights | fine separated strands |
+| 12 | 线条染 | line / streak dye | thin continuous lines of colour |
+| 13 | 区块染 | block / panel dye | one solid panel of colour |
+| 14 | 轮廓染 | contour dye | colour tracing the outline of the head |
+| 15 | 渐变染 | gradient / ombré | colour that changes along the length |
+| 16 | 巴黎画染 | balayage | hand-painted, uneven, natural-looking transitions |
+| 17 | 双色分区染 | bicolour split | the head divided into two colour fields |
+
+> Patterns 6, 7, 10, 11 and 13 are the ones that go wrong most often: they get written as a colour word with no region, and the model spreads them over the whole head. **Always pair a pattern with its region from Step 3.**
+
+**Step 8 — light adaptation (光影适配)**
+
+The colour must be checked against the light already specified in the entry, not chosen in isolation.
+
+- **Value check**: if the base colour's value is close to the background's value at the specified aperture and DOF, the head will merge into the background. Fix by changing the base, by adding a rim light, or by placing a lighter zone at the head's edge.
+- **Temperature check**: a cool base under a warm source turns muddy; a warm base under a cool source turns grey. Either accept that as a deliberate effect, or pick a base that agrees with the source.
+- **Survival check**: a saturated accent survives at low ISO and moderate exposure; at high ISO with heavy noise reduction it desaturates. Do not build the design on a colour the exposure will destroy.
+- **Specular check**: light-coloured hair must be described with what it does to the light — 「发面反着窗光形成一道细窄的高光带」— otherwise it reads as flat.
+
+**Step 9 — visual balance and complexity budget (视觉平衡)**
+
+Choose a budget and do not exceed it.
+
+| Band | Design | Use when |
+|------|--------|----------|
+| **Low** 低 | single colour, or base + micro accent | the wardrobe or the scene is already ornate |
+| **Medium** 中 | base + one patterned region | the default for most entries |
+| **High** 高 | base + two regions + a gradient | the hair is a stated part of the concept |
+| **Artistic** 艺术 | three colours, large coverage, or full fantasy | only when the character concept calls for it |
+
+**Rule:** the hair's complexity must not exceed the complexity of the rest of the image. When the wardrobe, the scene and the hair are all at "high", the image has no hierarchy and the eye has nowhere to land.
+
+**Step 10 — diversity check (差异化校验)**
+
+Run this **across the batch**, not per entry.
+
+- Within one batch of 20, no two entries may repeat the same combination of **(coverage level + region + pattern)**.
+- Within one batch of 20, at least **12 entries** must differ from one another in **coverage level**.
+- The **face-frame zone (Region 2) must not be the default** — it may appear in at most a third of a batch, and never in two consecutive entries.
+- Keep a running tally while you write the batch. If you have written "light base + pink accent" three times, the third one is a failure even if it looks good on its own.
+
+---
+
+#### Hair combination advice (avoid monotony)
+
+Hair colour is only one of four variables. **Vary at least two per entry: texture × length/style × colour design × hair state.**
 
 **High-frequency combinations (actively avoid):**
-- ❌ black long straight hair + naturally loose (too common)
-- ❌ twin-tails + pink hair (anime cliché)
 
-**Innovative combinations:**
-- ✅ ash brown + fishtail braid + air bangs
-- ✅ silver-white + low ponytail + under-dye (lavender)
-- ✅ burgundy + hime cut + wavy texture
-- ✅ sky blue + claw-clip updo + loose face-framing strands
+- ❌ black waist-length straight hair + naturally loose, no designed colour — the default failure
+- ❌ twin-tails + flat all-over pink — anime cliché
+- ❌ silver base + pink face-frame highlights — the single most over-used combination in the corpus
+
+**Worked combinations — each names its role, region, coverage and pattern:**
+
+| Role | Design | Written as |
+|------|--------|-----------|
+| Structure 层次解构 | natural dark base + 内层染 (Region 10) + soft gradient, medium coverage | 「墨黑长发内层染入雾感灰棕，柔软过渡，只在转身时从发缝里透出来」 |
+| Colour echo 色彩呼应 | natural mid-light base + 耳圈染 (Region 6), small area | 「焦糖棕长发在耳前绕一圈染入窗外银杏的暖黄，只绕耳一圈」 |
+| Attention anchor 视觉焦点 | high-value cool base + 发带染 (Region 5) + long gradient, large coverage | 「银灰长发从顶部区向下拉出长渐变，越到发尾越冷，成为画面里最亮的一块颜色」 |
+| Character marker 角色标记 | fantasy base + 双色分区染 (Region 7, asymmetric) + hard boundary | 「棉花糖粉与婴儿蓝沿中线两侧分区，左粉右蓝，边界干净，左右覆盖约二比一」 |
+| Subject separation 提亮主体 | high-value warm base + 发尾染 (Region 13) + reverse gradient | 「奶茶棕基底，发尾反向染入浅珊瑚，逆光下发尾透出一层暖色边光」 |
 
 ---
 
@@ -4608,6 +4767,47 @@ A large red lantern filling the foreground, the model visible behind it.
 | `[Tone-Saturated]` | saturated | saturated colors, vibrant, vivid | bright, energetic |
 | `[Tone-Desaturated]` | desaturated | desaturated, muted colors, soft | retro, melancholic |
 
+**E. The fixture rule — write the light, not the fixture**
+
+An image model reads a prompt as a **list of things to draw**. Name a softbox, a reflector or a ring light as the origin of the light, and the model draws the softbox, the reflector and the ring light — they land in the frame even though nobody asked for them. This is the most common way a lighting note contaminates a picture.
+
+**Three classes of light origin — only the third is a problem**
+
+| Class | Examples | Rule |
+|-------|----------|------|
+| **Natural / architectural opening** | 窗光、门缝、天窗、树影、云层、水面反弹、雪地反弹、月光 | **Write it freely.** It is already part of the scene, and naming it makes the light more precise. |
+| **In-scene fixture (a prop)** | 台灯、落地灯、吊灯、壁灯、路灯、霓虹招牌、车灯、炉火、烛火、灯串、屏幕光 | **A prop.** It belongs in the frame, so naming it is correct — but name it only when it is plausible that this composition shows it. |
+| **Photographic lighting equipment** | 柔光箱、反光板、补光灯、摄影灯、灯架、束光筒、雷达罩、旗板、柔光布、环形灯、影棚灯、LED 平板灯 | **Never name the equipment. Describe the light it produces.** |
+
+**The rewrite move**: turn 「**who the light comes from**」 into 「**where the light lands and what shape it makes**」. The model draws the result, not the device.
+
+| ❌ the fixture as source | ✅ only the light it throws |
+|--------------------------|------------------------------|
+| 光源由左上方一盏八角柔光箱提供的4800K暖光作主光 | 左上方落下一大片4800K的暖白柔光，从头顶侧后方包住她的发顶 |
+| 正前方左侧一盏3200K落地柔光箱作主光 | 正前方偏左一片3200K的暖光正面铺开，照亮鼻梁与颧骨 |
+| 两盏八角柔光箱提供5000K均匀漫射光 | 5000K的均匀漫射光从正上方与左前方同时落下，几乎不留硬阴影 |
+| 在环形补光灯照耀下 | 一圈均匀无影的白光贴着面部铺开，瞳孔里各有一个完整的环形反光 |
+| 骨瓷内壁如同环形反光板提供暗部补光 | 骨瓷内壁把光反弹回下颌，暗部透出一层极淡的暖白 |
+| 云海宛如天然的巨型柔光箱 | 云海把光整片反弹回来，从下方托起她的脸 |
+
+**Two techniques worth keeping**
+
+- **Name the catchlight, not the lamp.** 「瞳孔里各有一个完整的环形反光」 carries all the information of a ring light and draws no equipment. The same trick works for a softbox — 「瞳孔里是一整块方形的柔光反光」.
+- **Turn a figurative use into a physical one.** 「宛如天然的巨型柔光箱」 puts the word 柔光箱 into the prompt. 「云海把光整片反弹回来」 does not.
+
+**The exception — when the scene IS the set**
+
+When the concept explicitly places the character **in a working studio, on a shooting set, in a photo booth, in a livestream room or in a photography studio**, the equipment **is allowed in frame** — that is the point of the scene.
+
+**Scene triggers**: 影棚、摄影棚、拍摄现场、片场、大头贴店、照相馆、直播间、录影棚、工作室拍摄、studio, on set, shooting set, photo booth, livestream room, photography studio. The trigger must come from the **scene itself**, not from the fact that the light happens to be controlled.
+
+In that case:
+
+- **Treat the fixtures as props.** Give them a position, a size, a material and a state, exactly as you would a chair or a table lamp. 「左前方立着一只及胸高的大号八角柔光箱，白布罩面绷得很紧，边缘有一道折痕」
+- **Name only the fixtures the composition actually shows.** A studio scene is not a licence to list the whole rig — an entry that enumerates four light stands and a boom arm has spent its budget on hardware instead of on the subject.
+- **Establish the scene as a set first**, so the model reads the equipment as intentional. A single unexplained softbox in a bedroom reads as a mistake; the same softbox in a studio reads as the set.
+- **Every entry whose scene is not a set** follows the three-class table above, with no exception.
+
 ---
 
 ### 3.3.18 Atmospheric Filling
@@ -6234,9 +6434,13 @@ After writing each description, ask yourself:
 - [ ] Does it open with a shooting-specification line (camera body + lens + focal length + full parameter set)?
 - [ ] Are all photographic parameters physically coherent (exposure triangle, 1/focal-length hand-hold rule, flash-sync ceiling, aperture–DOF match)?
 - [ ] Is the Chinese body 900–1,400 characters (not ~500)?
-- [ ] Are the three layers written out explicitly (前景是…；中景是…；后景是…)?
-- [ ] Does the entry close with the equipment line, not open with it?
+- [ ] Has the hair colour been designed (base + region + coverage + pattern), and does its coverage match the shot size?
+- [ ] Are all three layers present, carried by distance / occlusion / focus falloff — and **not** written as three parallel 「……是……」 sentences?
+- [ ] Does the entry open with a different sentence shape from the previous entry, with the subject on stage by character 30?
+- [ ] Is the equipment specification appended to the end of the body paragraph, with no `【器材与参数】` label and no line break?
 - [ ] Is the body written only as camera-recordable information — no literary expression, no mood adjectives without a visual referent?
+- [ ] Are there no pseudo-measurements in the picture description (distances in metres, angles in degrees, numeric light ratios) — while the equipment parameters stay exact?
+- [ ] Is every light origin either natural / architectural or an in-scene prop — with no photographic equipment named (softbox, reflector, ring light, light stand) unless the scene is explicitly a studio or a shooting set?
 - [ ] Is there absolutely no internal terminology (VIBE, engine, decoupling, etc.)?
 - [ ] Is there absolutely no director / artist name?
 - [ ] Are there no parentheses, square brackets, or numbering?
@@ -6263,7 +6467,7 @@ After writing each description, ask yourself:
 | Length | 50–80 characters each | 900–1,400-character Chinese body (median 1,174) / 1,600+ char English |
 | Batch | 25 | 20 |
 | Forbidden | detailed descriptions, English keywords, internal terms | internal terms, director names, brackets, 3D terms, distant shots, quality-tag stacks, process phrasing |
-| Closing line | — | **Equipment & parameters**: camera body + lens + focal length + aperture / shutter / ISO / WB / focus / metering / EV |
+| Closing clause | — | Equipment specification run onto the end of the body paragraph, unlabelled: camera body + lens + focal length + aperture / shutter / ISO / WB / focus / metering / EV |
 
 ## 5.2 The 7 Mandatory Concept Dimensions
 
@@ -6322,7 +6526,7 @@ Measured from the 294-entry reference corpus.
 | Dimension | Target |
 |-----------|--------|
 | Body length | **900–1,400 characters** (median 1,174); 450–600 for compressed template; 1,400–2,000 for extended narrative |
-| Three-layer beat | **mandatory** — 前景是…；中景是…；后景是… (99% of the corpus) |
+| Three-layer space | **mandatory** — but carried by distance / occlusion / focus falloff; the 「前景是…；中景是…；后景是…」 triple appears in only **7%** of the corpus and must not become a formula |
 | Shot size | **mandatory** (97%) |
 | Camera position / angle | **mandatory** (82%) |
 | Focal length + ISO | **mandatory** (100%) |
@@ -6332,8 +6536,13 @@ Measured from the 294-entry reference corpus.
 | Feet and hands described | required (87% / 93%) |
 | Rim or edge light | required when the light is behind or beside the subject (50%) |
 | Equipment line | always **last**, never first |
+| Hair colour | **designed by default** — ten-stage pipeline in §3.1.3; coverage must match the shot size |
+| Numbers | **A** equipment parameters exact · **B** verifiable relations preferred · **C** pseudo-measurements (metres / degrees / light ratios) deleted |
+| Light origin | natural / architectural → name freely · in-scene lamp → a prop, name it · photographic equipment → **never named**, write the light instead (§3.3.17 E) |
 
 **The seven beats**: scene + shot size + camera position → face + hair → wardrobe + body → pose + action + expression → three-layer space → light + colour → equipment + parameters.
+
+**Opening rotation**: never open two entries in a row with the same sentence shape; the subject must be on stage by character 30. See §1.1 **Opening & closing: no fixed sentences**.
 
 **Anti-padding rule**: extra length must come from more real information, never from re-describing the same fact. But you are not finished at 500 characters.
 
@@ -6356,12 +6565,16 @@ Measured from the 294-entry reference corpus.
 13. **Never manufacture skin exposure.** Express body line through garment design, not by removing fabric.
 14. **Build the world from ordinary things.** Few strong anchors, many weak ones, high real-world frequency.
 15. **Text is a Typography Block on a real carrier, in the region's real language.** No placeholders, no "SECTOR 7", and no text at all is a valid choice.
-16. **Open with a real shooting specification.** Camera body + lens + focal length + a physically coherent parameter set. Never a quality-tag stack.
+16. **Close with a real shooting specification.** Camera body + lens + focal length + a physically coherent parameter set, written as the last clause of the body paragraph — never a labelled line, never a separate block, never a quality-tag stack.
 17. **Write only what a camera can record.** Appearance, wardrobe, pose, action, expression, gaze, composition, shot size, angle, spatial relations, texture, light source and direction, light ratio, colour temperature, depth of field, motion state, layering. If a camera cannot record it, it does not belong in the prompt.
 18. **Keep the world healthy, tidy, safe, open and alive.** Negative valence is a scope problem, not a style preference.
 19. **Density is the deliverable.** A 900–1,400-character body with an explicit 前景 / 中景 / 后景 beat is the floor, not the ceiling. A short entry is under-specified, never elegant.
+20. **Design the hair colour; never pick it at random.** Decide what the colour is doing first, then choose base, region, coverage, relationship, gradient and pattern. Coverage must match the shot size, and the face-frame zone is not the default. On by default unless the user opts out.
+21. **No two entries may share an opening shape.** The subject is on stage by character 30. The three layers are carried by distance, occlusion and focus — never by three parallel 「……是……」 sentences. The light and the palette are stated as what the eye sees, not as a fixed formula.
+22. **Measure nothing, anchor everything.** Focal length, aperture, shutter, ISO and white balance stay exact; distances in metres, angles in degrees and numeric light ratios are deleted and rewritten as relations the eye can verify. Length is preserved, never reduced.
+23. **Name the light, not the fixture.** Anything you name, the model draws. Softboxes, reflectors, ring lights and light stands never go into the prompt — only what the light lands on. Exception: when the scene is explicitly a studio, a shooting set or a photo booth, the equipment is the set and may be written as props.
 
 ---
 
-**End of specification — Sugar Water Machine v2.2**
+**End of specification — Sugar Water Machine v2.7**
 
