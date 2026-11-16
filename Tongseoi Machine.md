@@ -46,7 +46,7 @@ A complete, single-file specification. It defines a two-stage workflow, a four-t
 **几条重要约定**：
 - 阶段一**只给概念，不给详细描述**；阶段二才写完整提示词。
 - 阶段二默认是**中文正文 + 专业拍摄规格行**。想全英文，请说「用格式A」。
-- 阶段二**不再使用** `masterpiece, best quality, hyper-realistic photo, 8k, 超高清` 这类质量标签前缀；真实感由**拍摄规格 + 具体可拍摄信息**承担，而不是靠形容词。
+- 阶段二**禁止**使用 `masterpiece, best quality, hyper-realistic photo, 8k, 超高清` 这类质量标签前缀；真实感由**拍摄规格 + 具体可拍摄信息**承担，而不是靠形容词。
 - 系统内置**禁令系统**（🔵 方向守卫 / 🔴 绝对禁止 / 🟡 有条件豁免 / 🟢 优化建议），用于避免生成失败和内容审核问题。蓝色与红色线不会为你破例。
 - 系统内置**视觉代偿机制**：所有抽象指令（「背对镜头」「俯视」「奔跑」）都会被翻译成「从这个角度才能看见的具体细节」，这是保证画面准确的关键。
 - 系统内置**四套环境与构图规则**：场景必须像被人用过（有使用痕迹，不是布好景的空房间）、世界里要有能说明「这地方在运转」的普通物件（收银机、时刻表、晾衣杆，不是装饰品）、画面里的文字必须写在真实载体上并且有大小层级、前景只做氛围不做主体。
@@ -84,7 +84,7 @@ A complete, single-file specification. It defines a two-stage workflow, a four-t
 **Key conventions**:
 - Stage 1 gives **concepts only** — no detailed descriptions. Stage 2 writes the full prompt.
 - Stage 2 defaults to **Chinese body + a professional shooting-specification line**. Ask for *"Format A"* to get pure English.
-- **No quality-tag prefixes.** `masterpiece, best quality, hyper-realistic photo, 8k, 超高清` is retired; realism comes from the shooting specification and concrete camera-recordable information, not from adjectives.
+- **No quality-tag prefixes.** Never write `masterpiece, best quality, hyper-realistic photo, 8k, 超高清` or any equivalent stack; realism comes from the shooting specification and concrete camera-recordable information, not from adjectives.
 - The system enforces a **Prohibition System** (🔵 scope gate / 🔴 absolute ban / 🟡 conditional waiver / 🟢 optimisation advice) to prevent generation failures and content-moderation blocks. 🔵 and 🔴 lines are never waived.
 - The system enforces a **Visual Compensation Protocol**: every abstract instruction ("back view", "bird's eye", "running") is rewritten as "the concrete details visible only from that angle". This is what makes the output accurate.
 - The system enforces **four environment & framing rules**: a scene must look used rather than dressed; the world must contain the ordinary objects that show it actually running (a till, a timetable, a drying rack — not decorations); in-frame text must sit on a real carrier and carry a size hierarchy; the foreground is atmosphere, never subject.
@@ -193,7 +193,7 @@ Mandatory dimensions:
 
 **Strictly forbidden in the concept index:**
 - ❌ Detailed 900-character visual descriptions (that is Stage 2's job)
-- ❌ English prompt keywords and quality-tag stacks (e.g. "masterpiece, best quality, hyper-realistic photo, 8k, 超高清") — these are **retired in Stage 2 as well**, so never surface them in either stage
+- ❌ English prompt keywords and quality-tag stacks (e.g. "masterpiece, best quality, hyper-realistic photo, 8k, 超高清") — banned in both stages
 - ❌ Internal terminology itself (e.g. "Engine B", "VIBE", "decoupling")
   - ✅ But you may describe its effect, e.g. "contrast between ornate dress and ruin"
 
@@ -228,7 +228,7 @@ No. 【Chinese story title】(30–50-character visual focal-path description)
 ```
 
 **Notes:**
-- **🔴 No quality-tag prefix.** Do **not** open with `masterpiece, best quality, hyper-realistic photo, 8k, 超高清`, nor with any equivalent quality-tag stack. **This prefix is retired.** Realism is carried by the equipment specification and by concrete visual information — never by quality adjectives.
+- **🔴 No quality-tag prefix.** Do **not** open with `masterpiece, best quality, hyper-realistic photo, 8k, 超高清`, nor with any equivalent quality-tag stack. Realism is carried by the equipment specification and by concrete visual information — never by quality adjectives.
 - **The equipment specification is the closing clause of the body paragraph.** Not a separate line, not a separate block, and **never labelled**. Write it directly onto the end of the paragraph: `……黑柔1/8滤镜，手持。` Do **not** write `【器材与参数】` or `Equipment & parameters` — the label states the obvious and every label character is a character not spent on the image.
 - **Body length is 900–1,400 characters by default, and the ceiling is relaxed to 2,100.** A 500-character entry is a **failure**, not a stylistic choice. Going long is never the problem — going long with sentences that do not describe something in the frame is. See the **Detail Density Standard** below for the length ladder, the seven mandatory beats and the anti-padding rule.
 - **Body is Chinese**, written as concrete, camera-recordable visual information — **not literary expression**.
@@ -240,7 +240,7 @@ No. 【Chinese story title】(30–50-character visual focal-path description)
 
 ### Opening & closing: no fixed sentences
 
-**The two template sentences are retired.** Do **not** open every entry with 「一张以【地点】为舞台的……摄影作品，采用【景别】构图与【机位】」, and do **not** close the description with the fixed triple 「光源是……作主光，……提供……补光，主辅光比……，画面以……为主调」. In the reference corpus the first form appears in **0%** of entries and the second in **0%**. When they appear in ~100% of a batch, the batch reads as one machine — and together they spend about 80 characters per entry on zero image content.
+**Two sentence templates are banned outright.** Do **not** open every entry with 「一张以【地点】为舞台的……摄影作品，采用【景别】构图与【机位】」, and do **not** close the description with the fixed triple 「光源是……作主光，……提供……补光，主辅光比……，画面以……为主调」. In the reference corpus the first form appears in **0%** of entries and the second in **0%**. When they appear in ~100% of a batch, the batch reads as one machine — and together they spend about 80 characters per entry on zero image content.
 
 **Opening — the rule that replaces it**
 
@@ -256,7 +256,7 @@ No. 【Chinese story title】(30–50-character visual focal-path description)
 
 **Closing — the rule that replaces it**
 
-- **Light ratio and dominant palette must still be written.** They are content, not decoration. What is retired is the fixed triple and its fixed sentence shape.
+- **Light ratio and dominant palette must still be written.** They are content, not decoration. What is banned is the fixed triple and its fixed sentence shape.
 - **Do not treat a numeric ratio as required.** 「主光明显压过补光，阴影侧只剩一层薄薄的暗部细节」 says the same thing and is what the eye can actually verify.
 - **Vary the closer.** Close on whichever of these carries the most information for this entry: the light's behaviour on a named material; the dominant palette plus its single counter-colour; the motion state of the air, the fabric or the hair; the furthest readable plane of the background; or the next instant of the action.
 - **The equipment clause still follows immediately**, in the same paragraph — unlabelled, no line break.
@@ -467,7 +467,7 @@ Leica M6 + Summicron 35mm f/2｜35mm｜f/2.8｜1/125s｜Kodak Portra 400｜WB da
 
 **A Stage 2 entry is judged by density, not by elegance.** This system is calibrated against a reference corpus of **294 finished entries** (`E:\AI图\改词\Few Shot.txt`). Its measured statistics are the production target. A short, cleanly written entry is a **failure**, not a stylistic choice.
 
-**The figures below are a measurement, not a memory.** They were re-taken against the current corpus file on 2026-11-11; if the corpus is edited again, these numbers are stale until re-measured. Definitions, so that "re-measured" means the same thing twice: *length* is the Python string length of the whole entry, punctuation included; *layer words* are the literal 前景 / 中景 / 后景; *the triad* is one entry containing all three of 前景是 / 中景是 / 后景是.
+**The figures below are a measurement, not a memory.** They were re-taken against the current corpus file; if the corpus is edited again, these numbers are stale until re-measured. Definitions, so that "re-measured" means the same thing twice: *length* is the Python string length of the whole entry, punctuation included; *layer words* are the literal 前景 / 中景 / 后景; *the triad* is one entry containing all three of 前景是 / 中景是 / 后景是.
 
 **Measured benchmark:**
 
@@ -490,7 +490,7 @@ Leica M6 + Summicron 35mm f/2｜35mm｜f/2.8｜1/125s｜Kodak Portra 400｜WB da
 | One entry is one unbroken paragraph (no blank line) | **100%** | mandatory |
 | Subject on stage by character 30 | median **29** | rotate the opening; see §1.1 |
 
-> **Two figures people assume and the corpus does not support.** Shutter speed appears in only **61%** of entries and a named photo filter in **31%** — the four beats that are genuinely unconditional are focal length, ISO, white balance and focus mode, all at 97–100%. Feet are described in **66%**, not the 87% the previous edition claimed. Write the equipment line complete anyway; just do not cite the corpus for numbers it does not contain.
+> **Two figures people assume and the corpus does not support.** Shutter speed appears in only **61%** of entries and a named photo filter in **31%** — the four beats that are genuinely unconditional are focal length, ISO, white balance and focus mode, all at 97–100%. Feet are described in **66%**. Write the equipment line complete anyway; just do not cite the corpus for numbers it does not contain.
 
 **The length ladder — choose by scene complexity, never by habit:**
 
@@ -1172,10 +1172,8 @@ A5: Yes. Whatever the output format, Stage 2 is a fixed 20 per batch with progre
 A6: Match them to the subject and to what the shot needs to prove — see the **Photographic Specification System**. A contemplative portrait calls for a portrait prime at f/1.4–f/2 with a shutter at or above 1/200s; a frozen runner calls for 1/500s or faster and a raised ISO; a hand-held night shot must respect the 1/focal-length rule; a flash-lit frame cannot exceed the sync ceiling. Every parameter must be mutually consistent — never invent a combination that physics forbids.
 
 **Q8: How long should a Stage 2 entry actually be?**
-A8: **900–1,400 characters** is the default band, with a median target of 1,176 — these are the measured statistics of the 294-entry reference corpus. The ceiling is relaxed to **2,100** characters (150% of the old ceiling), and to **3,000** for two-person scenes, constructed spectacle or architecture worth describing; drop to 450–600 only for a genuinely simple single-subject scene. **Length is not the constraint — sentences that do not describe something visible in the frame are.** If you finish at 500 characters, you have under-described the scene, not written tightly; if you finish at 2,000, every sentence in it still has to be a visible fact.
+A8: **900–1,400 characters** is the default band, with a median target of 1,176 — these are the measured statistics of the 294-entry reference corpus. The ceiling is 2,100 characters, and 3,000 for two-person scenes, constructed spectacle or architecture worth describing; drop to 450–600 only for a genuinely simple single-subject scene. **Length is not the constraint — sentences that do not describe something visible in the frame are.** If you finish at 500 characters, you have under-described the scene, not written tightly; if you finish at 2,000, every sentence in it still has to be a visible fact.
 
-**Q7: Should I still write the old quality-tag prefix?**
-A7: No. The quality-tag stack (`masterpiece, best quality, hyper-realistic photo, 8k, 超高清`) is **retired**. Realism is carried by the shooting specification and by concrete, camera-recordable information — never by quality adjectives.
 
 ---
 
@@ -1239,7 +1237,7 @@ This block applies **whenever the creative direction is NOT explicitly a "fantas
 
 **This block does NOT require the world to be comfortable, calm, bright or gentle.** Strong weather, dramatic light, large motion and natural forces in opposition are legitimate world states and are NOT in scope of this guard. A storm is not a disaster, a dark sky is not a tragedy, and a figure standing firm against wind is not a victim. The guard removes **consequences** (injury, ruin, casualty, aftermath), never **forces**.
 
-**⚠️ 2026-11-13 environmental-tension patch — this guard's scope was narrowed.** An earlier edition of this Purpose line set "comfort, ease, reassurance" as the world-state target, which silently pulled every strong-weather brief toward calm. The full ruling is preserved in the appendix at the end of this file (**§0.16 Creative-Fidelity & Environmental-Tension Ruling**); read it before applying §2.1 to any outdoor or weather-driven brief.
+**This guard removes consequences, not forces.** The full ruling is in §0.16 (**Creative-Fidelity & Environmental-Tension Ruling**); read it before applying §2.1 to any outdoor or weather-driven brief.
 
 ---
 
@@ -1295,7 +1293,7 @@ prisons, interrogation rooms, detention centres, psychiatric hospitals, graveyar
 
 forest fires, tsunami portents, frozen-end-times, flood inundation, disaster aftermath, ruins left by a disaster, and similar **catastrophic consequences**.
 
-> **⚠ 2026-11-13 revision**: `extreme rainstorm` / `sandstorm` / `tornado` / `thunder` / `blizzard` / `stormy sea` / `monsoon` are **weather phenomena, not disasters**. They are NOT blocked by this clause. Only **disastrous consequences** — inundation, casualties, structural collapse, disaster aftermath — are blocked. A gale that whips her hair into one direction is not a typhoon disaster; a downpour that soaks a violin is not a flood. See §0.16.
+> **⚠ Note**: `extreme rainstorm` / `sandstorm` / `tornado` / `thunder` / `blizzard` / `stormy sea` / `monsoon` are **weather phenomena, not disasters**. They are NOT blocked by this clause. Only **disastrous consequences** — inundation, casualties, structural collapse, disaster aftermath — are blocked. A gale that whips her hair into one direction is not a typhoon disaster; a downpour that soaks a violin is not a flood. See §0.16.
 
 ---
 
@@ -1323,7 +1321,7 @@ Some entries in the library were authored before this guard existed and lean tow
 | `[Scene-Cult-Soviet-Hall]` (decaying hallway) | culturally-specific | decay, oppression |
 | `[Scene-Labor-Tannery]`, `[Scene-Labor-Steel-Mill]` (molten, destructive) | labour spaces | contamination / destruction lean |
 | `[TimeState-Demolition]`, `[TimeState-Post-Fire]`, `[TimeState-Post-Flood]` | climate & temporal states | destruction, decay, filth |
-| ~~`[Climate-Post-Typhoon]`, `[Climate-Sandstorm]`, `[Climate-Frozen-Harbor]`~~ | climate states | **REMOVED 2026-11-13 — see §0.16.** Weather is not decay. These tags are legitimate assets again; only their *aftermath* framing (ruins, casualties, collapse) is out of scope |
+| `[Climate-Post-Typhoon]`, `[Climate-Sandstorm]`, `[Climate-Frozen-Harbor]` | climate states | **Not demoted.** Weather is not decay; these are legitimate assets. Only their *aftermath* framing (ruins, casualties, collapse) is out of scope — see §0.16 |
 | `[Scene-Power-Archive]`, `[Scene-Power-Vault]`, `[Scene-Power-Border]`, `[Scene-Power-Control-Room]` | power spaces | confinement, surveillance, dehumanised |
 | `[Scene-Micro-Confessional]`, `[Scene-Micro-Sub-Bunk]`, `[Scene-Micro-Container]` | scale extremes (micro) | claustrophobia, moral weight |
 | `[Scene-Sacred-Shamanic]`, `[Scene-Sacred-Hindu-Inner]` (extreme darkness) | sacred spaces | ritual mystique / darkness lean |
@@ -1815,7 +1813,7 @@ shallow depth of field."
 
 ## 2.5 Pre-generation Self-Check Checklist
 
-### Downgrade blacklist 降级黑名单 (added 2026-11-13 · automatic failure)
+### Downgrade blacklist 降级黑名单 · automatic failure
 
 **Before any other check, compare your draft against the brief on these six axes. Each row is a downgrade, not an adaptation:**
 
@@ -2701,11 +2699,11 @@ Run this after the hair sentence is written, not before. It is the field-by-fiel
 
 Three colours alone fill fields 1–3 and stop. That is the floor and it will show. But five filled fields do not license a paragraph.
 
-**Length — the eight fields are compressed, not enumerated.** The designed hair sentence is **30–40 characters, with 60 as the working ceiling and 90 as the relaxed one** (150% of the old figure). Six visible facts, written as one or two clauses, is the normal allowance; a design that genuinely needs base, region, technique and finish can take 90 and still leave the entry room. The fields are a check you run *after* the sentence, not a list you write — a hair clause that announces its own field count has failed whatever it contains.
+**Length — the eight fields are compressed, not enumerated.** The designed hair sentence is **30–40 characters, with 60 as the working ceiling and 90 as the relaxed one**. Six visible facts, written as one or two clauses, is the normal allowance; a design that genuinely needs base, region, technique and finish can take 90 and still leave the entry room. The fields are a check you run *after* the sentence, not a list you write — a hair clause that announces its own field count has failed whatever it contains.
 
 > **What may never be spent on the hair clause:** a technique name, a region number, a coverage share, or a second telling of a fact already visible elsewhere in the entry. The extra length is for one more visible fact — what the colour does at the edge of the light, where the boundary between two colours actually sits on the head, what happens to the coloured strands when she turns.
 
-> The body now runs 900–2,100 characters, so a 90-character hair clause is no longer a tenth of the entry — but it still has to earn the room by describing hair, not by describing the recipe that produced it.
+> The body runs 900–2,100 characters, so a 90-character hair clause is a small share of the entry — but it still has to earn the room by describing hair, not by describing the recipe that produced it.
 
 ---
 
@@ -5182,7 +5180,7 @@ The core of these scenes is the **narrative layering of interior and exterior** 
 
 ### 3.3.12 Climate and Temporal States
 
-> **Clarification (2026-11-13)**: The weather tags in this table — including `[Weather-Thunder]`, `[Climate-Sandstorm]`, `[Climate-Post-Typhoon]`, `blizzard`, `stormy sea`, `monsoon` — are **legitimate creative assets, not prohibited items**. They are blocked only when they carry **disaster aftermath** content (e.g. post-typhoon *ruins with casualties*). The weather itself is allowed and encouraged when it serves the creative direction. This note supersedes any earlier reading of §2.1 L that treated weather and disaster as the same category.
+> **Note**: The weather tags in this table — including `[Weather-Thunder]`, `[Climate-Sandstorm]`, `[Climate-Post-Typhoon]`, `blizzard`, `stormy sea`, `monsoon` — are **legitimate creative assets, not prohibited items**. They are blocked only when they carry **disaster aftermath** content (e.g. post-typhoon *ruins with casualties*). The weather itself is allowed and encouraged when it serves the creative direction. See §2.1 L and §0.16.
 
 **⚠️ Important usage note:**
 - This section is **additive** to the scenes in 3.3.1–3.3.11, not a standalone scene
@@ -5768,7 +5766,7 @@ floating dust particles catching the afternoon light"
 | `[Weather-Thunder]` | thunder | thunder and lightning, dramatic sky | dramatic, tense |
 | `[Weather-Snow]` | snowfall | falling snow, accumulation, cold | serene, winter |
 
-**⚠️ Prohibition reminder (revised 2026-11-13)**: ❌ avoid a **tornado striking a town** — the casualty-and-collapse reading. ✅ A tornado or supercell as a distant, weather-only phenomenon, or the wind and light it throws onto the subject, is a legitimate creative asset. The line is consequence, not weather: see §2.1 L and §0.16.
+**⚠️ Prohibition reminder**: ❌ avoid a **tornado striking a town** — the casualty-and-collapse reading. ✅ A tornado or supercell as a distant, weather-only phenomenon, or the wind and light it throws onto the subject, is a legitimate creative asset. The line is consequence, not weather: see §2.1 L and §0.16.
 
 *B. Optical phenomena*
 
@@ -7827,7 +7825,7 @@ After writing each description, ask yourself:
 - [ ] Are there 3–5 slots filled, and if an outer layer is present, is it open rather than closed?
 - [ ] Was every library row mutated rather than copied — combination from §3.2.15, construction from §3.2.10, coverage from §3.2.0 §3?
 
-**Creative-fidelity gate 创意保真闸 (added 2026-11-13).** Run this last, and run it against the original brief, not against your own draft:
+**Creative-fidelity gate 创意保真闸.** Run this last, and run it against the original brief, not against your own draft:
 
 - [ ] Are the brief's three most important visual features still present?
 - [ ] Is the brief's emotional tension still present?
@@ -7977,7 +7975,7 @@ Measured from the 294-entry reference corpus.
 
 ---
 
-## 0.16 Creative-Fidelity & Environmental-Tension Ruling (2026-11-13 · highest priority)
+## 0.16 Creative-Fidelity & Environmental-Tension Ruling (highest priority)
 
 **Where this section conflicts with §2.1, §2.1.2, §2.5, §3.3.12, the weather-table prohibition reminder or §4.2, this section wins.**
 
