@@ -51,8 +51,8 @@ A complete, single-file specification. It defines a two-stage workflow, a four-t
 - 系统内置**视觉代偿机制**：所有抽象指令（「背对镜头」「俯视」「奔跑」）都会被翻译成「从这个角度才能看见的具体细节」，这是保证画面准确的关键。
 - 系统内置**四套环境与构图规则**：场景必须像被人用过（有使用痕迹，不是布好景的空房间）、世界里要有能说明「这地方在运转」的普通物件（收银机、时刻表、晾衣杆，不是装饰品）、画面里的文字必须写在真实载体上并且有大小层级、前景只做氛围不做主体。
 - 系统内置**元素量自检**：每条创意的元素量、系统覆盖与层级厚度不是固定的，而是由故事背景 / 空间尺度 / 时间环境 / 文化语境 / 镜头范围 / 观察距离 / 主体目标 / 叙事功能八项推出来，并守住实测区间（8–14 个具名元素、≥3 类锚点系统、后景 ≥ 前景+中景、单一系统 ≤4 个），既不过度设计也不单薄。
-- 系统内置**身体线条规则**：一张画面只讲一条线，且只能从肩颈锁骨 / 腰部曲线 / 腿部比例 / 背部轮廓中选一个，靠服装设计自然表达，不允许剪布料造露肤。
-- 系统内置**穿搭语法与穿搭库**：一条穿搭 3–5 个槽位（主体 / 外套 / 鞋 / 附件 / 腿袜），彩色最多一种，外套默认敞开；**腿袜默认不存在**——除非你点名要丝袜或点名了本身就含腿袜的装束（芭蕾、JK、护士…），需要保暖时改下装、改鞋、加大衣，不加腿袜。
+- 系统内置**身体线条规则**：一张画面只讲一条线，从肩颈锁骨 / 腰部曲线 / 腿部比例 / 背部轮廓 / 胸部曲线中选一个，靠服装设计自然表达，不允许剪布料造露肤。多位女性出场时不鼓励选同一区域，除非用户要求。
+- 系统内置**穿搭语法与 1,407 套真实穿搭参照**：一条穿搭 3–5 个槽位（主体 / 外套 / 鞋 / 附件 / 腿袜），彩色最多一种，外套默认敞开；**腿袜默认不存在**——除非你点名要丝袜或点名了本身就含腿袜的装束（芭蕾、JK、护士…），需要保暖时改下装、改鞋、加大衣，不加腿袜。
 
 **几条重要约定 · 关于新规则**：如果你只是想要常规创意，不需要额外做什么——这些规则已自动生效。如果你**明确想要**被默认规避的方向（例如「就要废弃工厂的反差感」），直接说出来即可，系统会照做并告知你它越过了哪条默认线。
 
@@ -89,7 +89,7 @@ A complete, single-file specification. It defines a two-stage workflow, a four-t
 - The system enforces a **Visual Compensation Protocol**: every abstract instruction ("back view", "bird's eye", "running") is rewritten as "the concrete details visible only from that angle". This is what makes the output accurate.
 - The system enforces **four environment & framing rules**: a scene must look used rather than dressed; the world must contain the ordinary objects that show it actually running (a till, a timetable, a drying rack — not decorations); in-frame text must sit on a real carrier and carry a size hierarchy; the foreground is atmosphere, never subject.
 - The system enforces an **element-count check**: how many elements, systems and layers a frame carries is derived from eight inputs (story background, spatial scale, time, culture, framing, viewing distance, subject goal, narrative function) and then held to a measured range — 8–14 named elements, ≥3 anchor systems, 后景 ≥ 前景 + 中景, ≤4 elements per system — so the frame is neither over-designed nor thin.
-- The system enforces a **wardrobe grammar and a built-in outfit library**: 3–5 slots per outfit, one chromatic colour maximum, outer layers worn open, and **legwear off by default** — stockings and tights appear only when you name them or name a uniform that contains them.
+- The system enforces a **wardrobe grammar and a 1,407-outfit reference**: 3–5 slots per outfit, one chromatic colour maximum, outer layers worn open, and **legwear off by default** — stockings and tights appear only when you name them or name a uniform that contains them.
 - The system enforces a **Body-Line Story rule**: one frame tells one body-line story, choosing exactly one of shoulder–neck–collarbone / waist curve / leg proportion / back contour, expressed through garment design — never by cutting away fabric.
 
 **On the new rules**: if you just want ordinary concepts, you need do nothing — they apply automatically. If you **explicitly want** a direction the system avoids by default (e.g. *"I want the contrast of an abandoned factory"*), just say so: it will comply and tell you which default line it crossed.
@@ -1524,7 +1524,62 @@ These do not describe the frame. They tell the model it is looking at a document
 #### C3. Body-description norms
 **Absolutely forbidden:**
 - ❌ plus-size body type
-- ❌ using the word "breast"
+- ❌ the words **breast / breasts / boob / boobs** — never written, in any form, in any language
+
+**This is a terminology system, not a word swap.** The region is written in the language of fashion photography, garment construction and anatomical silhouette — three layers, used in this priority order.
+
+#### Layer 1 — Garment construction (use first)
+
+This layer carries the most information and the least ambiguity. Prefer it whenever the sentence can be built from it.
+
+| Term | What it names |
+|---|---|
+| **Décolletage** | the neckline and upper-chest area — **the preferred term for this region** |
+| **Bodice structure** | the construction of the upper garment |
+| **Bustline** | the chest line as the garment cuts it |
+| Structured bodice · sculpted bust seams · tailored bust shaping | how the garment is built over the curve |
+| Contoured / sweetheart / plunging V / wrap-front neckline | the neckline type |
+| Natural fabric tension · soft draping across the décolletage | what the cloth does |
+
+#### Layer 2 — Anatomical silhouette (use second)
+
+When the body itself has to be named, name its contour, not its parts.
+
+| Term | What it names |
+|---|---|
+| **Bust silhouette** | the overall natural contour — **the preferred term for the whole region** |
+| Bust contour · natural bust projection | the three-dimensional read |
+| **Side bust contour** | the lateral silhouette |
+| **Lower bust contour** | the lower silhouette |
+| Upper torso · anatomical proportions | the surrounding structure |
+
+#### Layer 3 — Photographic rendering (use third)
+
+Editorial lighting · three-quarter angle · contour definition · fabric texture · tonal falloff. This layer makes the context unmistakably a photograph rather than a description of a body.
+
+#### Banned outright
+
+`breast` / `breasts` / `boob` / `boobs` — **never written, in any form, in any language.**
+
+#### The retired terms and their replacements
+
+| Retired | Replacement |
+|---|---|
+| cleavage | **décolletage definition** · natural décolletage line |
+| sideboob | **side bust contour** |
+| underboob | **lower bust contour** |
+| breast shape | **natural bust silhouette** |
+| breast volume | **bust projection** · bust dimension |
+| breast support | **bust support structure** |
+
+#### Exemptions — these are not the banned words
+
+1. **`double-breasted`**, **`single-breasted`** — tailoring terms for a jacket's button arrangement.
+2. **`pigeon breast`** — the 1900s Edwardian S-curve silhouette; a historical costume term.
+
+**The rule is about the bare noun, not the substring.** Ban the word used to name the body part; never touch a garment or era term that happens to contain the same letters.
+
+> **Why the whole system and not just the words.** No single English term is guaranteed to pass any given content filter, and chasing one is a losing game. What actually reduces misclassification is **the sentence carrying an unmistakable fashion-photography context** — garment construction named precisely, silhouette described as contour, light described as editorial. A clause built from Layers 1–3 reads as a photograph of a garment on a body; a clause built from substituted nouns still reads as a description of a body.
 
 **Mandatory elegant phrasing:**
 - ✅ slender figure
@@ -1859,7 +1914,7 @@ shallow depth of field."
 ☐ No sci-fi elements (cyberpunk, space, holographic etc.)
 ☐ No bioluminescence (glowing mushrooms, glowing plants etc.)
 ☐ No violation of physics (levitation, anti-gravity etc.)
-☐ The word "breast" is not used
+☐ No bare "breast(s)" / "boob(s)", and no "cleavage" / "sideboob" / "underboob" — the region is written as décolletage / bust silhouette / side bust contour / lower bust contour (`double-breasted`, `pigeon breast` exempt)
 ```
 
 ### Pass 2: terminology purity check (🔴 level)
@@ -1944,7 +1999,7 @@ Need an element from the 🟡 tier?
 | bio-luminescence | 🔴 | No |
 | blood | 🔴 | No |
 | bras / bra sets | 🔴 | No |
-| breast (word) | 🔴 | No |
+| breast(s) / boob(s) / cleavage / sideboob / underboob | 🔴 | No — write **décolletage**, **bust silhouette**, **side bust contour**, **lower bust contour**. `double-breasted` / `pigeon breast` exempt |
 | bustiers | 🔴 | No |
 | corsets | 🔴 | No |
 | corpses | 🔴 | No |
@@ -2177,10 +2232,13 @@ a slender, toned woman with a captivating, naturally curvaceous hourglass figure
 | `[Body-Collarbone]` | prominent collarbones | off-shoulder garments, leaning-forward pose |
 | `[Body-Back]` | well-defined elegant back | back view, looking-back pose |
 | `[Body-Shoulder]` | sharp right-angle shoulders | camisole, sleeveless garments |
+| `[Body-Bust]` | natural bust silhouette / defined décolletage | V-neck, sweetheart or wrap-front bodice, three-quarter or side-turned pose, side light |
 | `[Body-Abs]` | defined athletic abs | sporty style, crop tops |
 | `[Body-Waist]` | slim waistline | cinched garments, side-turned pose |
 | `[Body-Hips]` | prominent peach hips | fitted bottoms, back-facing pose |
 | `[Body-Legs]` | long legs, toned leg lines | short skirts/shorts, full-body shot |
+
+> **`[Body-Bust]` keyword note.** Its keywords are written in the Layer 1–2 vocabulary of §2.2 C3 — *bust silhouette*, *décolletage*, *bodice* — never as a bare anatomical noun. `[Body-Chest]` is accepted as an alias and folds into the same region.
 
 **Usage example:**
 ```
@@ -2212,7 +2270,7 @@ Without altering the character's original action logic, without reconstructing t
 
 **Step 3 — Select exactly ONE primary visual region**
 
-Only four regions are eligible. **Exactly one may be chosen — strengthening multiple regions simultaneously is forbidden.**
+Five regions are eligible. **Exactly one may be chosen — strengthening multiple regions simultaneously is forbidden.** When more than one woman appears, do not assign the same region to several of them unless the user asks for it.
 
 | # | Primary region | Eligible when | Express through |
 |---|----------------|---------------|-----------------|
@@ -2220,6 +2278,7 @@ Only four regions are eligible. **Exactly one may be chosen — strengthening mu
 | 2 | **Waist curve** | standing, twisting, arm-raised, wind-caught hem, high-waisted pairing — states that naturally form a waist line | continuous natural waist contour, sensible narrowing, garment-body coordination |
 | 3 | **Leg proportion** | full-body shot, seated, stairs, walking, outdoor environment — scenes that naturally show leg extension | continuous leg line, natural proportion, no occlusion |
 | 4 | **Back contour** | **all three** must hold: character faces away from camera, the back holds the largest visual area, and the current action naturally supports back expression | shoulder-blade structure, spine line, lower-back relationship, overall back contour |
+| 5 | **Chest curve** | upper body, half-body, close shot, side-turned, slight twist, natural seated pose, walking — anything that naturally shows the chest-to-torso relationship | natural chest contour, the chest line, chest-to-shoulder and chest-to-waist structure, fabric tension / support / drape over the curve |
 
 **Selection criteria, in order:** natural visibility → pose compatibility → wardrobe-design plausibility → overall visual expressiveness.
 
@@ -2261,6 +2320,32 @@ Wardrobe may use short skirts, slit skirts, shorts or long slim-cut bottoms.
 Focus on shoulder-blade structure, spine line, lower-back relationship and overall back contour — **not** simply increasing exposed area.
 Wardrobe must follow the back-revealing logic that **already exists** in the design: open-back structure, natural slipping effect, or designed back cut-outs.
 
+**Region 5 — Bust & décolletage**
+
+Write this region in **fashion photography, garment construction and anatomical silhouette** terms — never as an exposure budget. The full terminology system is in §2.2 C3; the working vocabulary for this region is:
+
+`décolletage` · `bust silhouette` · `bust contour` · `bustline` · `upper torso` · `side bust contour` · `lower bust contour` · `natural bust projection` · `bodice structure`
+
+**Five legitimate expressions**, each decided by the original pose, the garment's own construction, the fabric, the camera angle and the light — never by altering the body or the clothes to obtain one:
+
+| Expression | What it is | Requires |
+|---|---|---|
+| **Décolletage definition** | the natural upper-chest contour and the neckline's presentation | an existing V, sweetheart, wrap-front or other real neckline; a natural pose — **not** pressing or reshaping |
+| **Bust silhouette** | the natural three-dimensional contour, and how the bodice shapes and holds it | wrap tops, fine knits, fitted dresses, structured bodices — fabric tension, natural folds, support structure |
+| **Side bust contour** | the lateral silhouette and its transition into the torso | a side-turned body, a naturally positioned arm, or a garment that already carries side-oriented construction; side composition and side light |
+| **Lower bust contour** | the lower contour, where the garment's hem meets it | **only** where the original garment already has that design — a structured crop, a designed hem placement |
+| **Bodice shaping** | tailored seams, contoured panels, sculpted bust seams, soft draping — the construction that defines the upper-body silhouette | the garment's own pattern-making |
+
+**Garment vocabulary for this region:** structured bodice · contoured neckline · sweetheart neckline · plunging V-neckline · wrap-front construction · sculpted bust seams · tailored bust shaping · natural fabric tension · soft draping across the décolletage.
+
+**Composition and light:** the natural three-quarter angle, side light, soft tonal transitions, fabric texture, sensible depth of field — so the contour reads in three dimensions and the construction stays legible. Editorial in feel, not clinical. Avoid over-sharpening, local exaggeration, mechanical pressing, and anything that breaks real anatomy.
+
+**This region is a fashion-photography decision.** Décolletage, bust silhouette, side and lower bust contour are ordinary parts of garment design and editorial photography. What is available in a given frame is fixed by the pose, the construction and the lens — never manufactured by changing the action or the clothing.
+
+If this region is chosen it carries clear visual weight — composition position, legible construction detail, natural light shaping, deliberate visual leading. It is **not** combined with a deliberately strengthened waist, leg, shoulder or back.
+
+**Forbidden here specifically**: converting an ordinary garment into underwear or swimwear; cutting fabric short to manufacture a lower bust contour; widening a side opening or repositioning an arm to manufacture a side contour; compressing or reshaping the bust; exaggerating projection over real proportions; reconstructing the original pose or the garment solely to expose more skin.
+
 ---
 
 **Absolute prohibitions**
@@ -2268,11 +2353,12 @@ Wardrobe must follow the back-revealing logic that **already exists** in the des
 - ❌ Never manufacture skin exposure by cutting away clothing, deleting fabric, forcing holes, or converting the garment into swimwear structure
 - ❌ Never change the neckline structure to force the shoulder into prominence
 - ❌ Never shorten the garment to force the waist into prominence
+- ❌ Never rebuild an ordinary garment into underwear or swimwear to expose the chest
 - ❌ Never select more than one primary region in a single frame
 
 **Core sequence to follow**: analyse the character → analyse the wardrobe → analyse the camera. Then fix the single most suitable expression region for the current frame, and realise it naturally through wardrobe design, composition and visual language.
 
-**Reconciliation with the tag list above:** `[Body-Neck]`, `[Body-Collarbone]` and `[Body-Shoulder]` all fold into Region 1 (choose only one of them); `[Body-Waist]` is Region 2; `[Body-Legs]` is Region 3; `[Body-Back]` is Region 4. `[Body-Hips]` and `[Body-Abs]` are **no longer eligible as primary regions** — they may still appear as incidental scene detail, but they must not become the frame's visual focus.
+**Reconciliation with the tag list above:** `[Body-Neck]`, `[Body-Collarbone]` and `[Body-Shoulder]` all fold into Region 1 (choose only one of them); `[Body-Waist]` is Region 2; `[Body-Legs]` is Region 3; `[Body-Back]` is Region 4; `[Body-Chest]` / `[Body-Bust]` fold into Region 5. `[Body-Hips]` and `[Body-Abs]` are **no longer eligible as primary regions** — they may still appear as incidental scene detail, but they must not become the frame's visual focus.
 
 ---
 
@@ -2906,7 +2992,7 @@ Hair colour is only one of four variables. **Vary at least two per entry: textur
 
 | Tag | Placement | Keywords | Narrative function |
 |-----|-----------|----------|--------------------|
-| `[Tattoo-Sternum]` | sternum / underbust | sternum/underboob tattoo | core values, mandala, talisman |
+| `[Tattoo-Sternum]` | sternum / lower bust | sternum / lower bust contour tattoo | core values, mandala, talisman |
 | `[Tattoo-Ribs]` | ribs | rib tattoo | private diary, memorial text |
 
 *Level C — large-scale narrative zones*
@@ -3050,6 +3136,7 @@ Body-Line Story (§3.1.2) picks **exactly one** primary region. The wardrobe's j
 | **腰** | 高腰下装、腰带、收腰剪裁、短上衣＋高腰、裹身系带 | 直筒长上衣盖过胯、宽松卫衣、低腰、外套系死 |
 | **腿** | 短下装、开衩、贴身长裤、微喇、高跟、及踝以上 | 阔腿长裤盖住脚踝、及踝长裙、**任何腿袜**、过膝长靴 |
 | **背** | 露背、细带、开背剪裁、交叉背带 | 外套、披肩、厚针织、连帽 |
+| **胸** | V领 / 方领 / 心形领 / 交叠领 / 裹身 / 吊带 / 结构型胸衣 / 合体针织 / 原有侧边或下胸线设计 | 高领、厚针织、宽松卫衣、双排扣扣死、大翻领、硬挺箱型上装 |
 
 **Hard rule**: the primary region must never fall in the right-hand column. If the scene and the pose have already fixed the region, **change the clothes — never change the region.**
 
@@ -3069,7 +3156,7 @@ Body-Line Story (§3.1.2) picks **exactly one** primary region. The wardrobe's j
 
 1. The primary region must be **exposed or traced**. Never erased.
    ── 露出 = the skin shows; 贴出 = the line reads through the cloth; 遮死 = the garment deletes the line.
-2. Of the other three regions, **at most one** may be 遮死. Four erased regions means there is no body in the frame — only a coat hanger.
+2. Of the other four regions, **at most one** may be 遮死. Five erased regions means there is no body in the frame — only a coat hanger.
 3. **Tracing beats exposing.** Exposure is the obvious move and the model executes it reliably but cheaply; tracing is the harder, better-looking one. A bias-cut satin skirt over a hip reads as a line; a bare hip reads as a fact.
 
 **Written out — the difference is one clause, not one adjective:**
@@ -3138,7 +3225,7 @@ The 1,407 source outfits were written by two machine processes — a captioner a
 | 真实的配色（哪些颜色真的会被搭） | 服装与身体的接触关系 |
 | 真实的槽位分布（几件、填哪几槽） | 光打上去是什么样 |
 
-**Every row is a skeleton, not a sentence.** Take the combination from §3.2.15, the material and craft from §3.2.10, the coverage state from §3.2.0 §3, and the primary region from §3.1.2. Only those four together produce the one sentence that goes into the body.
+**Every row is a skeleton, not a sentence.** Take the combination from the outfit reference (§3.2.15), the material and craft from §3.2.10, the coverage state from §3.2.0 §3, and the primary region from §3.1.2. Only those four together produce the one sentence that goes into the body.
 
 ---
 
@@ -4231,322 +4318,161 @@ Checklist:
 ```
 
 ---
-### 3.2.15 The built-in outfit library — 1,407 outfits, reduced to 185
+### 3.2.15 The outfit reference — 1,407 real combinations
 
-**Source**: 1,407 ghost-mannequin outfit flats (no face, no scene, no lighting style — the garment set alone, on a form that shows bust, waist and hip). Captions machine-written. **Built in, text only: no external files, no image access at generation time.** The images were opened once, during construction, to verify that the captions were not lying.
+**This is a reference, not a section.** The grammar above (§3.2.0) tells you how an outfit is built. This tells you **which real combinations exist** when the grammar alone leaves you guessing.
 
----
+The full dataset lives beside this file:
 
-#### How 1,407 became 185
+```
+Tongseoi Machine.reference.outfits.md
+```
 
-| Pass | What it removed | Left |
+**1,407 outfits, every one complete**: 7,447 garment records, 28,189 construction details, organised into eight families.
+
+| Family | Count | What it is |
 |---|---|---|
-| 1 · exact duplicates | 157 identical strings | 1,250 |
-| 2 · colour-only variants | 251 rows that are the same template with one colour word swapped | 999 |
-| 3 · silhouette × palette representative | 814 rows that repeat a cell already covered | **185** |
+| 春 spring (SPR) | 215 | seasonal everyday |
+| 夏 summer (SUM) | 254 | seasonal everyday |
+| 秋 autumn (AUT) | 244 | seasonal everyday |
+| 冬 winter (WIN) | 253 | seasonal everyday |
+| 派对 party (PTY) | 48 | occasion |
+| 泳装 swim (SWM) | 54 | swimwear |
+| 性感 sensual (SXY) | 140 | body-forward |
+| 内衣 lingerie (LNG) | 199 | underlayer |
 
-**Pass 2 is where the source is weakest, and the split is not even.** Measured after stripping colour words:
-
-| Family | Rows | Distinct templates | Verdict |
-|---|---|---|---|
-| 春 spring | 215 | 211 (98%) | genuinely diverse |
-| 夏 summer | 254 | 248 (98%) | genuinely diverse |
-| 秋 autumn | 244 | 231 (95%) | genuinely diverse |
-| 冬 winter | 253 | 219 (87%) | diverse |
-| 泳装 swim | 54 | **8** (15%) | colour variants of 8 templates |
-| 派对 party | 48 | **9** (19%) | colour variants of 9 templates |
-| 性感 sensual | 140 | **18** (13%) | colour variants of 18 templates |
-| 内衣 lingerie | 199 | **57** (29%) | colour variants of 57 templates |
-
-The four seasonal families are real outfits. The other four are **templates with a colour slider** — `ivory corset mini dress frill skirt gloves stockings boots hat` appears twelve times with only the first word changed. They are listed below as templates, and the colour is left to you.
+**Nothing was removed from the source.** Legwear and lingerie are in there — see §4 below for why.
 
 ---
 
-#### Three filters applied before anything was listed
+#### 1. When to read it — and when not to
 
-1. **腿袜闸门（§3.2.0 §4）** — 46% of the source carries tights or stockings. **All of it was removed.** Every row below is already legwear-free. If a winter row looks bare-legged, that is deliberate, not an oversight.
-2. **C1 内衣禁令（§2.2）** — `bra` / `briefs` as the subject is 🔴 forbidden. 95 of the 199 lingerie rows were dropped on this ground alone; the 104 that remain are 吊带＋短裤＋睡袍 (homewear), which is legal. The lingerie family below is that subset only.
-3. **`corset` → 胸衣式** — 44 of the 140 sensual rows say `corset`. Per §3.2.2 they are written as **胸衣式**（corset-style outer garment）, never as a real corset.
+**Do not read it by default.** Most entries never need it: the grammar plus §3.2.10 materials plus the scene beat already produce the outfit. Opening a 1.5-million-character file to confirm "blouse + skirt + boots" wastes the context you need for the picture.
+
+**Read it when one of these is true:**
+
+| Trigger | Why the grammar is not enough |
+|---|---|
+| **The brief names a garment you cannot place** — "dress her in a pinafore", "a cowl-neck" | you need to see how that piece actually sits in a full combination |
+| **You are asked for a specific occasion or season and the wardrobe feels generic** | the file shows what real outfits for that occasion look like |
+| **The outfit keeps collapsing to two slots** (top + bottom, nothing else) | you need to see what the other slots realistically carry |
+| **You need a colour or material pairing you have not used** | 3,499 unique garment fingerprints, 87 colours, 66 materials |
+| **The user asks what goes with something** | direct lookup |
+
+**Read one family, not the whole file.** Each family is a section. `春` is 215 rows; you almost never need more than one.
+
+**Read a slice, not a family.** The rows are ordered by ID, not by anything meaningful. Search the family for the slot or garment type you need (`grep "skirt"` inside the 秋 section), read three to five rows, close it.
 
 ---
 
-#### Reading a row
+#### 2. How a row is written
 
-`ID | 组合 | 露`
+```
+ID [family] slot:type/material/color[pattern](detail; detail; detail) · slot:... · ...
+```
 
-- **ID** — the row in `E:\穿搭\index.csv`, kept for traceability only. It never appears in a prompt.
-- **露** — the region the outfit actually exposes: `肩颈` / `腰` / `腿` / `背`; `贴` means the line reads through the cloth without exposure; `—` means the outfit is neutral and carries no line.
-- Separator `·` = one garment. Slot order follows §3.2.0 §1: 主体 → 覆盖层 → 足 → 附件.
+| Part | Meaning |
+|---|---|
+| `ID` | traceability only — **never enters a prompt** |
+| `slot` | top / bottom / dress / outerwear / footwear / bag / accessories / hosiery / bodice / bra / panties / swimwear / garter |
+| `type` | the garment (blouse / skirt / jeans / pumps / ankle boots …) |
+| `material` | fibre and hand |
+| `color` | colour with its value and temperature already in it |
+| `[pattern]` | present only when there is one |
+| `( … )` | construction: collar, sleeve, placket, hardware, hem, how it is worn |
+
+A real row:
+
+```
+AUT-0001 [秋] top:bustier/semi-sheer crepe/deep oxblood burgundy(sharply pointed spread collar;
+oversized self-fabric pussy-bow tied at the throat with two wide tails; long sleeves with puffed
+upper arms gathered into flared ruffle cuffs at the wrist; fine vertical pintucks on a
+bustier-seamed bodice; nipped waist; small gold shank buttons; tucked in at the natural waist.)
+· bottom:jeans/stretch denim/espresso black-brown(very high rise; gold shank button above a metal
+zip fly; belt loops; scoop front pockets with coin pocket and copper rivets; painted-on through
+hip and thigh then flaring from the knee to a wide bootcut hem; dark wash with faint seat fading;
+ankle length.) · bag:shoulder bag/tweed/cream[houndstooth](slim gold chain strap; front flap with
+a gold turn-lock; three ivory pearls dangling at the front; carried at the hip.) …
+```
 
 ---
 
-#### A. 春 spring（215 → 32）
+#### 3. Three rules for using a row
 
-| ID | 组合 | 露 |
+**① Never lift a row into the body.** A row is a skeleton. It says *which garments*; it does not say how they read under this light, at this angle, on this body. Those come from §3.2.10 (material and craft) and §3.2.0 §3 (how the garment sits on the region). Three inputs, one sentence.
+
+**② Mutate exactly one axis at a time.** Change the colour, or the material, or the length, or the outer layer, or the accessory — never two at once. If you change two, you can no longer tell which change made the picture work.
+
+| Axis | What to swap | What the corpus does |
 |---|---|---|
-| SPR-0001 | 米白露肩罗纹针织（荷叶边领口）· 鲑鱼粉牛仔迷你裙 · 米色长风衣敞开 · 白球鞋 · 草编帽 · 草篮包 | 肩颈·腿 |
-| SPR-0002 | 象牙白泡泡袖露肩 · 浅黄蕾丝吊带 · 粉百褶迷你裙 · 米色长外套 · 白球鞋 · 小粉包 | 肩颈·腿 |
-| SPR-0003 | 粉粗花呢短外套 · 白泡泡袖连体短裤（肩带蝴蝶结）· 粉高跟 · 粉肩包 | 腿 |
-| SPR-0004 | 腮红粉泡泡袖迷你裙（缎带肩带·蕾丝边）· 同色开衫褪到肩外 · 白球鞋 | 肩颈·腿 |
-| SPR-0005 | 米色碎花棉中长裙（抽褶胸衣·荷叶下摆）· 米色包 · 米色高跟 | 肩颈 |
-| SPR-0007 | 白露肩上衣（浅蓝薄纱泡泡袖）· 粉缎面鱼尾中长裙 · 米色高跟凉鞋 | 肩颈·腰 |
-| SPR-0008 | 鼠尾草绿裹身中长裙（腰侧系带·长袖）· 米色单肩包 · 米色高跟 | 腰 |
-| SPR-0009 | 白阔腿裤 · 米色蕾丝边吊带 · 薄纱碎花开衫 · 白高跟 | 肩颈 |
-| SPR-0018 | 蜜桃色泡泡袖迷你裙（心形领·腰封）· 白高跟 · 小包 | 肩颈·腰 |
-| SPR-0026 | 鼠尾草绿贴身短袖针织迷你裙 · 草编帽 · 白球鞋 · 小包 | 腰·腿 |
-| SPR-0029 | 薄荷绿抽褶包身短袖连衣裙 · 浅绿开衫褪到肩外 · 米色高跟凉鞋 · 米色包 | 肩颈·腿 |
-| SPR-0040 | 薰衣草泡泡袖短上衣 · 浅黄层叠中长裙 · 紫包 · 丁香紫高跟 | 腰 |
-| SPR-0046 | 粉抽褶胸衣式迷你裙（泡泡袖）· 草编帽 · 米色高跟 | 腰·腿 |
-| SPR-0057 | 丁香紫 Polo 领短袖针织迷你裙 · 米色高跟 · 米色包 | 腿 |
-| SPR-0059 | 浅蓝泡泡袖迷你裙（胸前蝴蝶结）· 草编帽（蓝缎带）· 米色凉鞋 | 腿 |
-| SPR-0062 | 粉裹身开衫（前襟蝴蝶结）· 粉百褶迷你裙 · 米色高跟 | 腰 |
-| SPR-0065 | 粉露肩系带上衣 · 米色微喇牛仔 · 粉长开衫 · 米色高跟 | 肩颈·腿 |
-| SPR-0092 | 浅蓝露肩迷你裙（白领）· 米色高跟 · 小包 | 肩颈·腿 |
-| SPR-0122 | 蜜桃色露肩抽褶上衣（薄纱袖）· 米色高跟 · 小包 | 肩颈 |
-| SPR-0162 | 橄榄绿飞行员夹克 · 白上衣 · 黑工装裤 · 黑球鞋 · 棕包 | — |
-| SPR-0171 | 黑透明欧根纱长袖衬衫 · 黑百褶薄纱中长裙 · 黑高跟 | 贴 |
-| SPR-0176 | 黑宽松西装 · 棕针织上衣 · 黑阔腿裤 · 黑高跟 | — |
-| SPR-0184 | 白短外套 · 藏青吊带裙 · 黑平底 · 黑包 | 肩颈 |
-| SPR-0194 | 白衬衫（领口系结）· 深蓝微喇牛仔 · 黑高跟 · 黑包 | 腰 |
-| SPR-0199 | 灰卫衣 · 蓝阔腿牛仔 · 灰棒球帽 · 黑球鞋 | — |
-| SPR-0203 | 米色蕾丝长袖上衣 · 黑缎面鱼尾长裙 · 黑高跟 · 黑包 | 腰 |
-| SPR-0204 | 黑方领短上衣 · 米色缎面裹身中长裙 · 黑高跟 · 黑包 | 腰 |
-| SPR-0206 | 米色连帽外套 · 黑阔腿牛仔 · 灰毛线帽 · 白球鞋 | — |
-| SPR-0207 | 棕针织马甲 · 蓝衬衫 · 黑百褶中长裙 · 黑鞋 | — |
-| SPR-0213 | 米色西装外套 · 黑上衣 · 米色短裤 · 黑靴 | 腿 |
-| SPR-0216 | 格纹衬衫外套 · 灰上衣 · 黑紧身牛仔 · 灰毛线帽 · 黑鞋 | 腿 |
-| SPR-0241 | 黑皮夹克 · 白胸衣式上衣 · 灰缎面长裙 · 黑高跟 | 肩颈·腰 |
+| Colour | keep structure, change hue | all-neutral (50%) or neutral + 1 chromatic (41%) |
+| Material | cotton → satin / velvet / tulle / tweed / leather / knit | one garment at a time |
+| Length | mini ↔ knee ↔ ankle; short ↔ long sleeve | length only, never structure |
+| Outer layer | add an open coat, or swap for a tonal one | worn open, never closed |
+| Accessory | change bag shape or heel height | accessories never carry the primary region |
+
+**③ The row does not outrank the grammar.** If a row conflicts with §3.2.0 — two chromatic colours, a closed outer layer over a waist line, legwear with no opt-in — **the grammar wins and the row is not used.**
 
 ---
 
-#### B. 夏 summer（254 → 32）
+#### 4. Legwear and lingerie: knowledge, not permission
 
-| ID | 组合 | 露 |
-|---|---|---|
-| SUM-0011 | 黑挂脖上衣 · 白迷你裙 · 白薄纱长罩衫 · 草编帽 · 棕绑带凉鞋 · 草编包 | 肩颈·腿 |
-| SUM-0016 | 橙挂脖上衣 · 松石绿微喇牛仔（缎带系带）· 草编包 · 白球鞋 | 肩颈 |
-| SUM-0017 | 橙格纹露肩上衣 · 亮粉荷叶迷你裙 · 草编包 · 棕凉鞋 | 肩颈·腿 |
-| SUM-0026 | 米色针织吊带 · 米色缎面吊带中长裙 · 米色开衫 · 白球鞋 · 米色包 | 肩颈 |
-| SUM-0035 | 浅蓝比基尼式上衣 · 松石绿迷你裙 · 白薄纱长罩衫 · 草编包 · 蓝高跟 | 肩颈·腰·腿 |
-| SUM-0036 | 浅蓝露肩迷你裙（缎带肩带）· 草编帽 · 白高跟 | 肩颈·腿 |
-| SUM-0044 | 藏青露肩上衣 · 橙百褶迷你裙 · 白薄纱开衫 · 棕凉鞋 | 肩颈·腿 |
-| SUM-0049 | 黄缎面吊带中长裙（蕾丝袖）· 白球鞋 | 肩颈 |
-| SUM-0052 | 藏青胸衣式上衣 · 亮粉迷你裙 · 白薄纱开衫 · 白高跟 | 肩颈·腿 |
-| SUM-0053 | 浅蓝胸衣式上衣 · 珊瑚荷叶迷你裙 · 白薄纱开衫 · 草编包 · 米色高跟 | 肩颈·腿 |
-| SUM-0065 | 薄荷绿长袖上衣 · 浅蓝层叠迷你裙 · 白球鞋 · 草编包 | 腿 |
-| SUM-0099 | 米色蕾丝连体短裤（泡泡袖）· 草编包 · 米色高跟 | 腿 |
-| SUM-0100 | 藏青碎花迷你裙（蕾丝边）· 草编帽 · 蓝高跟 · 蓝包 | 腿 |
-| SUM-0109 | 浅蓝胸衣式上衣 · 浅黄百褶迷你裙 · 白包 · 白高跟 | 肩颈·腿 |
-| SUM-0130 | 黑胸衣式上衣 · 白薄纱衬衫 · 黑高跟 | 肩颈·腰 |
-| SUM-0150 | 亮粉抹胸 · 橙阔腿裤 · 白薄纱长罩衫 · 草编帽 · 棕包 | 肩颈·腰 |
-| SUM-0163 | 棕贴身中长裙 · 黑短开衫 · 黑高跟 | 贴 |
-| SUM-0164 | 蓝衬衫式中长裙 · 黑高跟 · 黑包 | — |
-| SUM-0165 | 米色挂脖上衣 · 黑裹身长裙 · 黑高跟 · 黑包 | 肩颈 |
-| SUM-0171 | 白阔腿裤 · 棕开衫 · 白上衣 · 黑高跟 | — |
-| SUM-0177 | 白贴身 T · 棕皮阔腿裤 · 黑高跟 · 黑包 | 贴 |
-| SUM-0200 | 白短袖开衫 · 黑阔腿裤 · 黑高跟 | — |
-| SUM-0206 | 黑贴身 T · 墨绿缎面长裙 · 黑鞋 · 黑包 | 贴 |
-| SUM-0209 | 白 T · 卡其工装裤 · 黑棒球帽 · 黑球鞋 · 黑包 | — |
-| SUM-0210 | 黑短开衫 · 黑上衣 · 浅蓝阔腿牛仔 · 黑鞋 · 黑包 | 腰 |
-| SUM-0214 | 灰马甲 · 黑上衣 · 黑百褶中长裙 · 黑高跟 · 黑包 | — |
-| SUM-0217 | 卡其无袖连体裤（腰带）· 黑高跟 · 黑包 | 腰 |
-| SUM-0223 | 藏青 Polo 领无袖上衣 · 白裹身迷你裙 · 黑高跟 · 黑包 | 腿 |
-| SUM-0229 | 灰泡泡袖衬衫 · 蓝直筒牛仔 · 黑高跟 · 黑包 | — |
-| SUM-0231 | 灰拉链卫衣 · 黑百褶迷你裙 · 黑鞋 · 黑包 | 腿 |
-| SUM-0240 | 黑长袖上衣 · 灰牛仔短裤 · 黑靴 · 黑包 | 腿 |
-| SUM-0254 | 白 T · 黑长裙（前开衩）· 黑凉鞋 · 黑包 | 腿 |
+The file contains 865 hosiery records and 415 underlayer records (bra / panties / bodice / garter). **They are here on purpose.**
+
+§3.2.0 §4 gates legwear off by default: it does not exist unless the user names it or names a uniform that contains it. **That gate is about what gets generated, not about what the system is allowed to know.** A system that cannot describe how a stocking sits at the ankle will also fail to describe a boot shaft that ends there.
+
+So:
+
+- **Knowledge is unconditional.** The reference keeps every hosiery and lingerie combination, because the way a suspender strap sits, or the way a sheer denier reads against skin, is craft knowledge that transfers to garments that are allowed.
+- **Generation is conditional.** The gate in §3.2.0 §4 still governs every prompt. Reading a hosiery row does not license writing hosiery.
+- **The one thing the file cannot do** is tell you the user authorised it. That decision lives with the user, not with a data row.
+
+> **On `corset`:** 44 rows in the sensual family describe corsetry. Per §3.2.2 they are written into prompts as **胸衣式** (corset-style outer garment), never as a real corset. The row tells you the construction; the rule tells you how to name it.
 
 ---
 
-#### C. 秋 autumn（244 → 32）
+#### 5. What the corpus actually measures
 
-| ID | 组合 | 露 |
-|---|---|---|
-| AUT-0003 | 绿裹身上衣 · 黄迷你裙 · 薄纱印花围巾 · 棕包 · 棕靴 | 腰·腿 |
-| AUT-0004 | 棕绑带胸衣式上衣 · 棕迷你裙 · 棕色薄纱长开衫 · 棕靴 | 肩颈·腰 |
-| AUT-0005 | 棕泡泡袖迷你裙（格纹围巾）· 棕靴 | 腿 |
-| AUT-0008 | 橄榄绿外套 · 绿上衣 · 白层叠长裙 · 印花围巾 · 黑靴 · 棕包 | — |
-| AUT-0015 | 米色风衣 · 格纹迷你裙 · 白层叠长裙 · 棕靴 | 腿 |
-| AUT-0022 | 棕挂脖上衣 · 棕层叠长裙 · 棕薄纱长开衫 · 棕靴 | 肩颈 |
-| AUT-0025 | 芥末黄堆堆领上衣 · 酒红短裤 · 棕靴 · 棕包 | 腿 |
-| AUT-0032 | 米色开衫 · 白上衣 · 棕迷你裙 · 黑靴 · 黑包 | 腿 |
-| AUT-0037 | 米色风衣 · 棕吊带长裙 · 棕靴 · 米色包 | 肩颈 |
-| AUT-0042 | 米色风衣 · 灰荷叶迷你裙 · 黑靴 · 黑包 | 腿 |
-| AUT-0048 | 棕泡泡袖迷你裙（领口系带）· 棕靴 · 棕包 | 腿 |
-| AUT-0053 | 酒红单肩上衣 · 棕皮迷你裙 · 酒红靴 · 棕包 | 肩颈·腿 |
-| AUT-0077 | 米色西装外套 · 铁锈色抽褶迷你裙 · 棕靴 | 腿 |
-| AUT-0078 | 格纹迷你裙叠在米色薄纱中长裙外 · 芥末黄上衣 · 黑靴 | 腿 |
-| AUT-0079 | 米色长开衫 · 米色阔腿裤 · 黑鞋 | — |
-| AUT-0113 | 藏青衬衫 · 深灰微喇牛仔 · 黑靴 · 黑包 | 腿 |
-| AUT-0125 | 米色风衣 · 芥末黄丝绒迷你裙 · 黑高跟 · 米色包 | 腿 |
-| AUT-0161 | 灰卫衣 · 黑百褶中长裙 · 黑球鞋 | — |
-| AUT-0162 | 蓝薄纱长袖上衣 · 白胸衣式上衣 · 黑阔腿裤 · 蓝包 · 黑鞋 | 肩颈 |
-| AUT-0176 | 黑飞行员夹克 · 黑上衣 · 黑工装裤 · 黑靴 · 黑包 | — |
-| AUT-0194 | 棕露肩上衣 · 棕阔腿裤 · 黑鞋 · 黑包 | 肩颈 |
-| AUT-0198 | 黑蕾丝吊带 · 棕阔腿裤 · 黑鞋 · 黑包 | 肩颈 |
-| AUT-0200 | 米色麻花针织毛衣 · 格纹百褶中长裙 · 黑毛线帽 · 黑靴 · 黑包 | 腿 |
-| AUT-0201 | 黑方领上衣 · 棕迷你裙 · 棕靴 · 棕包 | 肩颈·腿 |
-| AUT-0204 | 米色高领 · 棕针织马甲 · 米色阔腿裤 · 黑鞋 · 黑包 | — |
-| AUT-0206 | 条纹针织毛衣 · 灰阔腿裤 · 黑鞋 · 黑包 | — |
-| AUT-0212 | 蓝衬衫 · 菱格针织马甲 · 灰阔腿裤 · 黑鞋 · 黑包 | — |
-| AUT-0213 | 黑短开衫 · 黑上衣 · 米色缎面长裙 · 黑高跟 · 黑包 | 腰 |
-| AUT-0216 | 米色蕾丝胸衣式上衣 · 灰阔腿裤 · 银包 · 白高跟 | 腰 |
-| AUT-0228 | 紫格纹长裤 · 米色毛衣 · 藏青帽 · 黑鞋 · 黑包 | — |
-| AUT-0246 | 米色裹身上衣 · 黑短裤 · 黑及膝靴 · 黑包 | 腿 |
-| AUT-0010 | 米色风衣 · 米色上衣 · 蓝牛仔短裤 · 米色靴 · 米色包 | 腿 |
+Useful when you need to justify a choice rather than guess:
+
+| Measurement | Value |
+|---|---|
+| Outfits | 1,407 |
+| Garment records | 7,447 (mean 5.29 per outfit) |
+| Construction details | 28,189 (mean 3.79 per garment) |
+| Outfits with 4–6 garments | 1,212 (86%) |
+| Distinct (slot, type) combinations | 1,327 (94% of outfits are unique) |
+| Unique garment fingerprints (type+material+colour) | 3,499 — **70% used only once** |
+| Unique construction details | 22,896 — **92% appear only once** |
+| Distinct types / materials / patterns / colours | 96 / 66 / 15 / 87 |
+
+**The near-total absence of repetition is the point.** There is no "top 50 outfits" to memorise; there are 1,407 specific decisions. What generalises is not the rows, it is the *distribution* — which is what §3.2.0 encodes and this file evidences.
+
+**The most common slot shapes**, for orientation:
+
+| Shape | Count |
+|---|---|
+| accessories + bag + bottom + footwear + hosiery + top | 131 |
+| accessories + bag + bottom + footwear + top | 128 |
+| accessories + bag + bottom + footwear + hosiery + outerwear + top | 113 |
+| accessories + bag + bottom + footwear + outerwear + top | 95 |
+| accessories + bag + dress + footwear + hosiery + outerwear | 87 |
+| accessories + bag + dress + footwear + hosiery | 71 |
+| bag + bottom + footwear + top | 69 |
+
+> Read that table as a warning about **completeness**, not as a target. The four- and five-piece shapes dominate because real outfits are finished, not because every frame needs six slots. A frame with a stated reason for two garments is not improved by adding four.
 
 ---
 
-#### D. 冬 winter（253 → 32）
+#### 6. Where this came from, and what it replaces
 
-| ID | 组合 | 露 |
-|---|---|---|
-| WIN-0001 | 米色仿皮草外套 · 绿缎面中长裙 · 米色靴 | — |
-| WIN-0006 | 红高领 · 灰缎面中长裙 · 棕包 · 棕靴 | — |
-| WIN-0007 | 棕胸衣式上衣 · 银迷你裙 · 棕靴 · 棕围巾 | 肩颈·腿 |
-| WIN-0008 | 棕仿皮草外套 · 米色高领 · 米色围巾 · 棕微喇长裤 · 棕鞋 · 格纹包 | — |
-| WIN-0012 | 米色针织毛衣（前襟蝴蝶结）· 白迷你裙 · 米色毛线帽 · 米色靴 | 腿 |
-| WIN-0032 | 米色仿皮草外套 · 米色蕾丝上衣 · 灰粗花呢迷你裙 · 米色围巾 · 米色靴 | 腿 |
-| WIN-0035 | 棕羽绒 · 棕针织裙 · 酒红迷你裙 · 酒红贝雷帽 · 米色靴 | 腿 |
-| WIN-0036 | 米色风衣 · 芥末黄抽褶迷你裙 · 米色贝雷帽 · 黑靴 | 腿 |
-| WIN-0037 | 黑上衣 · 驼色阔腿裤 · 米色毛线帽 · 黑鞋 · 棕包 | — |
-| WIN-0039 | 灰针织中长裙（侧开衩）· 黑毛线帽 · 黑及膝靴 · 黑包 | 腿 |
-| WIN-0044 | 橄榄绿外套 · 绿上衣 · 藏青迷你裙 · 米色围巾 · 米色皮草靴 | 腿 |
-| WIN-0046 | 米色麻花针织毛衣 · 酒红缎面长裙 · 红围巾 · 米色靴 | — |
-| WIN-0055 | 棕仿皮草外套 · 绿丝绒迷你裙 · 绿帽 · 米色皮草靴 | 腿 |
-| WIN-0058 | 米色外套 · 米色麻花针织 · 米色百褶迷你裙 · 黑及膝靴 | 腿 |
-| WIN-0062 | 米色长开衫（皮草镶边）· 米色针织迷你裙 · 米色靴 · 米色包 | 腿 |
-| WIN-0065 | 米色针织毛衣 · 酒红百褶迷你裙 · 米色毛线帽 · 米色靴 · 黑包 | 腿 |
-| WIN-0070 | 棕仿皮草外套 · 绿马甲 · 白上衣 · 酒红阔腿裤 · 酒红包 · 棕鞋 | — |
-| WIN-0077 | 藏青针织上衣 · 灰百褶迷你裙 · 灰围巾 · 白皮草靴 · 米色包 | 腿 |
-| WIN-0078 | 黑贴身中长裙（侧开衩）· 米色围巾 · 黑靴 · 黑包 | 贴 |
-| WIN-0088 | 黑羽绒 · 黑蕾丝胸衣式上衣 · 黑短裤 · 米色皮草靴 · 黑包 | 肩颈·腿 |
-| WIN-0090 | 棕仿皮草外套 · 棕针织上衣 · 灰百褶迷你裙 · 棕靴 · 米色包 | 腿 |
-| WIN-0101 | 酒红羽绒 · 酒红丝绒迷你裙 · 酒红贝雷帽 · 棕靴 · 酒红包 | 腿 |
-| WIN-0102 | 棕抽褶迷你裙（薄纱袖）· 棕靴 · 棕包 | 腿 |
-| WIN-0109 | 皮草针织开衫 · 绿长裤 · 麂皮 · 发带 · 靴 · 包 | — |
-| WIN-0120 | 藏青吊带迷你裙 · 针织皮草大衣 · 黑缎带 · 腰带 | 肩颈·腿 |
-| WIN-0128 | 象牙白高领针织 · 黑灯芯绒裙 · 皮草外套 · 缎带 · 腰带 | — |
-| WIN-0135 | 黑吊带迷你裙 · 针织皮草夹克 · 麂皮靴 | 肩颈·腿 |
-| WIN-0162 | 黑夹克 · 灰针织 · 蓝牛仔 · 金靴 · 包 · 项链 | — |
-| WIN-0163 | 黑大衣 · 象牙白针织 · 牛仔 · 皮靴 · 包 | — |
-| WIN-0182 | 棕米色衬衫外套 · 象牙白连帽 · 卡其长裤 · 黑球鞋 | — |
-| WIN-0214 | 黑丝绒 · 象牙白衬衫 · 迷你裙 · 金高跟 · 包 · 项链 | 腿 |
-| WIN-0241 | 象牙白大衣 · 黑针织 · 牛仔 · 皮托特 · 羊毛围巾 · 乐福鞋 | — |
+The reference is generated from `master.json` (v2.0, 1,407 records, eight families) — the same dataset the index spreadsheet carries, with the per-garment structure that the spreadsheet flattens away.
+
+It replaces the earlier 185-row table, which was a lossy reduction of the same source: it had already dropped all legwear, removed 95 lingerie rows, and compressed 1,407 outfits into 185 Chinese one-liners with no per-garment fields. **The full dataset is used now, not a distillation of it** — 94% of the outfits were unique, so any reduction was discarding information rather than removing duplication.
 
 ---
 
-#### E. 泳装 swim（54 → 8 templates）
 
-The whole family is 8 templates. Colour is the only variable — pick one and state it.
-
-| ID | 组合 | 露 |
-|---|---|---|
-| SWM-0001 | 碎花长裤 · 开衫 · 草编托特 · 凉鞋 · 项链 | — |
-| SWM-0003 | 荷叶短裤 · 衬衫 · 托特 · 凉鞋 | 腿 |
-| SWM-0004 | 泳装 · 同色小裙 · 缎带 · 凉鞋 · 草编帽 · 包 | 腿 |
-| SWM-0008 | 泳装 · 金腰带 · 凉鞋 · 墨镜 | 腰·腿 |
-| SWM-0014 | 泳装 · 夹克 · 网纱 · 球鞋 · 包 | — |
-| SWM-0015 | 迷你裙 · 短裤 · 开衫 · 凉鞋 · 包 · 帽 | 腿 |
-| SWM-0018 | 针织迷你裙 · 草编帽 · 凉鞋 · 包 | 腿 |
-| SWM-0038 | 波点荷叶裙 · 衬衫 · 凉鞋 · 包 | 腿 |
-
----
-
-#### F. 派对 party（48 → 9 templates）
-
-| ID | 组合 | 露 |
-|---|---|---|
-| PTY-0007 | 迷你裙 · 薄纱裙 · 缎面手套 · 高跟 | 腿 |
-| PTY-0008 | 丝绒迷你裙 · 缎带 · 高跟 | 腿 |
-| PTY-0014 | 迷你裙 · 薄纱裙 · 缎面手套 · 高跟 | 腿 |
-| PTY-0016 | 蕾丝中长裙 · 高跟 · 项链 | 贴 |
-| PTY-0019 | 缎面裙 · 蕾丝吊带 · 迷你高跟 · 包 | 肩颈 |
-| PTY-0021 | 蕾丝中长裙 · 高跟 · 项链 | 贴 |
-| PTY-0023 | 缎面中长裙 · 皮草 · 高跟 · 项链 | — |
-| PTY-0045 | 雪纺中长裙 · 缎带 · 高跟 | — |
-| PTY-0047 | 迷你裙 · 高跟 · 包 | 腿 |
-
----
-
-#### G. 性感 sensual（140 → 18 templates）
-
-`corset` 一律写作 **胸衣式**（§3.2.2 区分：胸衣式上衣是外衣，真束胸是 🔴）。
-
-| ID | 组合 | 露 |
-|---|---|---|
-| SXY-0001 | 针织高领迷你裙 · 高跟 | 腿 |
-| SXY-0002 | 缎面迷你裙 · 手套 · 高跟 | 腿 |
-| SXY-0004 | 黑红拼色裙 · 靴 | 腿 |
-| SXY-0005 | 迷你裙 · 胸衣式 · 蕾丝荷叶 · 发带 | 腿 |
-| SXY-0007 | 丝绒胸衣式迷你裙 · 帽 · 靴 | 腿 |
-| SXY-0009 | 黑裙 · 红白荷叶围裙 · 发带 · 缎带 | 腿 |
-| SXY-0010 | 迷你裙 · 白荷叶围裙 · 蕾丝 · 发带 | 腿 |
-| SXY-0012 | 象牙白丝绒胸衣式迷你裙 · 帽 · 靴 | 腿 |
-| SXY-0013 | 颈环 · 迷你裙 · 发带 · 缎带 | 腿 |
-| SXY-0016 | 象牙白缎面迷你裙 · 碎花 · 高跟 | 腿 |
-| SXY-0022 | 薰衣草胸衣式迷你裙 · 荷叶裙 · 手套 · 长靴 · 帽 | 肩颈·腿 |
-| SXY-0032 | 米色针织高领迷你裙 · 高跟 | 腿 |
-| SXY-0041 | 迷你裙 · 胸衣式 · 蕾丝荷叶 · 发带 | 腿 |
-| SXY-0045 | 夹克 · 百褶迷你裙 · 靴 | 腿 |
-| SXY-0051 | 双色百褶裙 · 发带 · 凉鞋 | 腿 |
-| SXY-0053 | 夹克 · 百褶迷你裙 · 靴 | 腿 |
-| SXY-0056 | 黑胸衣式迷你裙 · 荷叶 · 颈环 · 靴 | 肩颈·腿 |
-| SXY-0095 | 丝绒迷你裙 · 手套 · 高跟 | 腿 |
-
----
-
-#### H. 家居 homewear（内衣 199 → 104 legal → 22）
-
-C1 deleted 95 rows whose subject was `bra` / `briefs`. The remaining 104 are **camisole + shorts + robe** — homewear, which is legal. 22 representative rows are kept here.
-
-| ID | 组合 | 露 |
-|---|---|---|
-| LNG-0001 | 荷叶蕾丝吊带 · 粉短裤 · 开衫 · 缎带 | 肩颈 |
-| LNG-0002 | 蕾丝缎面吊带 · 红短裤 · 睡袍 | 肩颈 |
-| LNG-0003 | 碎花蕾丝吊带裙 · 藏青开衫 · 缎带 · 腰带 | 肩颈 |
-| LNG-0005 | 蕾丝吊带 · 短裤 · 开衫 · 高跟 | 肩颈 |
-| LNG-0006 | 蕾丝吊带 · 米色短裤 · 缎面 · 颈环 · 缎带 | 肩颈 |
-| LNG-0007 | 荷叶蕾丝吊带 · 象牙白短裤 · 开衫 · 缎带 | 肩颈 |
-| LNG-0010 | 缎面吊带 · 藏青短裤 · 蕾丝 · 颈环 · 缎带 | 肩颈 |
-| LNG-0011 | 缎面白蕾丝睡袍 | 肩颈 |
-| LNG-0012 | 荷叶吊带 · 粉蕾丝短裤 · 颈环 · 缎带 | 肩颈 |
-| LNG-0013 | 蕾丝缎面吊带 · 短裤 · 睡袍 | 肩颈 |
-| LNG-0014 | 蕾丝吊带 · 粉短裤 · 缎面 · 颈环 · 缎带 | 肩颈 |
-| LNG-0019 | 碎花蕾丝吊带裙 · 粉开衫 · 缎带 · 腰带 | 肩颈 |
-| LNG-0022 | 荷叶吊带 · 米色蕾丝短裤 · 颈环 · 缎带 | 肩颈 |
-| LNG-0028 | 碎花蕾丝吊带裙 · 红开衫 · 缎带 · 腰带 | 肩颈 |
-| LNG-0030 | 缎面吊带 · 短裤 · 白睡袍 | 肩颈 |
-| LNG-0032 | 碎花蕾丝吊带裙 · 薰衣草开衫 · 缎带 · 腰带 | 肩颈 |
-| LNG-0035 | 蕾丝缎面吊带 · 薄荷短裤 · 睡袍 | 肩颈 |
-| LNG-0052 | 碎花蕾丝吊带裙 · 蓝开衫 · 缎带 · 腰带 | 肩颈 |
-| LNG-0055 | 蕾丝吊带 · 短裤 · 缎面 · 颈环 · 缎带 | 肩颈 |
-| LNG-0073 | 蕾丝吊带 · 薰衣草短裤 · 缎面 · 颈环 · 缎带 | 肩颈 |
-| LNG-0079 | 短裤 · 薰衣草 · 发带 | 腿 |
-| LNG-0092 | 蕾丝缎面吊带 · 薰衣草短裤 · 睡袍 | 肩颈 |
-
----
-
-#### How to expand 185 rows into thousands
-
-Never copy a row. Mutate exactly one axis at a time, using the corpus's own distributions:
-
-| Axis | What to change | Safe range |
-|---|---|---|
-| **色彩** | 换主体或下装的颜色，保持中性为主 | 全中性（50%）或中性＋1 彩色（41%） |
-| **材质** | 把「棉」换成「缎面 / 丝绒 / 薄纱 / 粗花呢 / 皮革 / 针织」，剪裁不变 | 一次只换一件 |
-| **长度** | 迷你 ↔ 及膝 ↔ 及踝；短袖 ↔ 长袖 | 只改长度，不改结构 |
-| **覆盖层** | 加一件敞开的外套，或把外套换成同色系另一种 | 敞开，不系 |
-| **附件** | 换包的形状（托特 / 草编 / 手拿 / 腋下），换鞋的跟高 | 附件不承担主区域 |
-
-**Two mutations that are forbidden:**
-
-1. **加腿袜。** 见 §3.2.0 §4。变异不是后门。
-2. **为「更好看」改掉主区域。** 组合服从线条，不是反过来。
-
-**And one warning.** These rows were captioned by a machine, so they are **under-detailed by construction** — median 63 characters, 4 items, 0.4 materials. If you lift a row directly into the body, the result will be exactly the flat, list-like writing this skill spent v2.5–v2.9 removing. The row supplies *which garments*; §3.2.10 supplies *how they are made*; §3.2.0 §3 supplies *how they sit on the body*. Three inputs, one sentence.
-
----
 
 ## 3.3 SCENE SYSTEM
 
@@ -7004,14 +6930,14 @@ Every creative = Engine A (main axis) + 2 chosen from B/C/D/E (drivers)
 
 **Step 3 — link the local aesthetic**
 
-**Instruction**: after fixing the style, choose **exactly one** primary visual region from the four eligible regions defined by the **Body-Line Story Protocol** (Region 1 shoulder–neck–collarbone / Region 2 waist curve / Region 3 leg proportion / Region 4 back contour). The choice must be justified by the frame's existing potential — never by a desire to showcase a region.
+**Instruction**: after fixing the style, choose **exactly one** primary visual region from the five eligible regions defined by the **Body-Line Story Protocol** (Region 1 shoulder–neck–collarbone / Region 2 waist curve / Region 3 leg proportion / Region 4 back contour / Region 5 chest curve). The choice must be justified by the frame's existing potential — never by a desire to showcase a region.
 
 **Mapping examples:**
 
 | Image style | Recommended primary region | Reason |
 |-------------|----------------------------|--------|
 | Pure and ethereal | Region 1 — shoulder–neck–collarbone | emphasises slenderness, elegance |
-| Sensual and alluring | Region 2 — waist curve | emphasises silhouette, feminine charm |
+| Sensual and alluring | Region 2 — waist curve, or Region 5 — chest curve | silhouette and charm; Region 5 only when the garment and pose already support it |
 | Fashion-forward | Region 1 or Region 4 (shoulder line / back contour) | shows line, high-end feel |
 | Simple and elegant | Region 3 — leg proportion | proportion, presence |
 | Bright and stunning | whichever region the existing pose best supports | overall harmony |
@@ -7819,11 +7745,11 @@ After writing each description, ask yourself:
 - [ ] Does it violate no 🔴 absolute prohibition?
 - [ ] Has it passed the Visual Compensation Protocol self-check?
 - [ ] Is the outfit built around the single primary region chosen by Body-Line Story — with that region 露出 or 贴出, never 遮死?
-- [ ] Of the other three regions, is at most one 遮死? (Four erased regions = a coat hanger, not a person.)
+- [ ] Of the other four regions, is at most one 遮死? (Five erased regions = a coat hanger, not a person.)
 - [ ] Are there **zero** legwear items (丝袜 / 裤袜 / 长筒袜 / 及膝袜 / 网袜 / tights / stockings / knee socks) unless the user named legwear or named a uniform that contains it? (§3.2.0 §4)
 - [ ] Does the outfit contain at most **one** chromatic colour, with neutrals not counted? (§3.2.0 §5)
 - [ ] Are there 3–5 slots filled, and if an outer layer is present, is it open rather than closed?
-- [ ] Was every library row mutated rather than copied — combination from §3.2.15, construction from §3.2.10, coverage from §3.2.0 §3?
+- [ ] If the outfit reference (§3.2.15) was consulted, was the row mutated rather than copied — construction from §3.2.10, coverage from §3.2.0 §3?
 
 **Creative-fidelity gate 创意保真闸.** Run this last, and run it against the original brief, not against your own draft:
 
@@ -7955,7 +7881,7 @@ Measured from the 294-entry reference corpus.
 9. **An accessory in isolation does not exist.** Describe its physical linkage.
 10. **Large plain fabric areas are a visual waste.** Interrupt them.
 11. **The foreground is atmosphere, never subject.** When unsure, reduce it or omit it.
-12. **One frame tells one body-line story.** Choose exactly one of the four primary regions.
+12. **One frame tells one body-line story.** Choose exactly one of the five primary regions — and when several women share a frame, do not hand them the same one unless the user asks.
 13. **Never manufacture skin exposure.** Express body line through garment design, not by removing fabric.
 14. **Build the world from ordinary things.** Few strong anchors, many weak ones, high real-world frequency.
 15. **Text is a Typography Block on a real carrier, in the region's real language.** No placeholders, no "SECTOR 7", and no text at all is a valid choice.
